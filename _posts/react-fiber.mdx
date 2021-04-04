@@ -6,8 +6,6 @@ cover: /images/react-fiber-cover.jpeg
 tags:
   - react
 ---
-
-
 # React reconciliation
 
 Reconciliation은 React의 "비교(diffing)" 알고리즘입니다. 이 비교 알고리즘 덕분에 컴포넌트의 갱신이 예측 가능해지면서도 고성능 앱이라고 불러도 손색없을 만큼 충분히 빠른 앱을 만들 수 있습니다
@@ -45,7 +43,7 @@ React에 이 알고리즘을 적용한다면, 1000개의 엘리먼트를 그리�
 
 루트 엘리먼트 아래의 모든 컴포넌트도 언마운트되고 그 state도 사라집니다. 예를 들어, 아래와 같은 비교가 일어나면,
 
-```html
+```jsx
 <div>
   <Counter />
 </div>
