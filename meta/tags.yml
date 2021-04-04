@@ -3,3 +3,5 @@ tags:
     name: JavaScript
   - slug: web
     name: Web
+  - slug: react
+    name: React
