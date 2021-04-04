@@ -22,10 +22,6 @@ collections:
             label_singular: 'Tag'
             widget: list
             fields:
-              - label: 'Slug'
-                name: 'slug'
-                widget: 'string'
-                hint: 'The part of a URL identifies the tag'
               - label: 'Display Name'
                 name: 'name'
                 widget: 'string'
@@ -42,9 +38,6 @@ collections:
     summary: '{{title}}'
     preview_path: posts/{{slug}}.html
     fields:
-      - label: 'Slug'
-        name: 'slug'
-        widget: 'string'
       - label: 'Title'
         name: 'title'
         widget: 'string'
@@ -57,6 +50,7 @@ collections:
       - label: 'Cover'
         name: 'cover'
         widget: 'image'
+        required: false
         default: '/images/sample-cover.png'
       - label: Tags
         label_singular: 'Tag'
