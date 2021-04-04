@@ -4,12 +4,12 @@ import theme from '@/styles/theme';
 
 const SectionContainer = css`
   ${theme.media.desktop} {
-    max-width: 1024px;
+    max-width: 780px;
     margin: 0 auto;
   }
 
   ${theme.media.tablet} {
-    max-width: 960px;
+    max-width: 780px;
     margin: 0 32px;
   }
 
