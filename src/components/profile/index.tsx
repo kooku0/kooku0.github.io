@@ -40,6 +40,13 @@ const AuthorName = styled.div`
   background-color: #ecf0f2;
 `;
 
+const Introduction = styled.div`
+  margin-top: 4px;
+  font-size: 80%;
+  line-height: 1.4;
+  color: #3d3d3d;
+`;
+
 const SocialLink = styled.div`
   margin-top: 4px;
   font-size: 85%;
@@ -55,7 +62,9 @@ const Profile: React.FC = () => {
         <AuthorName>
           <span>{`@${metaConfig.author}`}</span>
         </AuthorName>
-        <span>{metaConfig.introduction}</span>
+        <Introduction>
+          <span>{metaConfig.introduction}</span>
+        </Introduction>
         <SocialLink>
           <a href={`https://github.com/${metaConfig.social.github}`} rel="noreferrer">
             GitHub
