@@ -158,3 +158,8 @@ fonts와 같은 일부 리소스들의 경우 `preconnect`와 함께 `crossorigi
 현재 페이지에서 반드시 필요한 리소스(Render-block resource or fonts)는 `preload` 합니다.
 `preconnect`와 `dns-prefetch`는 다른 도메인에서 리소스를 다운로드할 예정이지만 리소스의 정확한 URL을 모르는 경우 페이지 속도를 개선하는데 유용합니다. 예로 JavaScript 라이브러리, 이미지 또는 글꼴을 포하는 CDN이 있습니다. 그리고 중요한 리소스에 대해서만 `preconnect`를 이용하고 나머지는 `dns-prefetch`를 사용하는 것이 좋습니다.
 현재 사용하지 않지만 미래에 사용되는 리소스는 `prefetch`를 하는게 좋습니다.
+
+## Reference
+- [리소스 우선순위::Beomy](https://beomy.github.io/tech/browser/preload-preconnect-prefetch/)
+- [preconnect-and-dns-prefetch::web.dev](https://web.dev/preconnect-and-dns-prefetch/)
+- [uses-rel-preconnect::web.dev](https://web.dev/uses-rel-preconnect/)
