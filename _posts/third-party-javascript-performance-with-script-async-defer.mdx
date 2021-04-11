@@ -89,12 +89,12 @@ Synchronous scripts는 DOM Pharsing을 막아 rendering을 지연시키기에, t
 다음과 같은 코드가 있다고 했을 때 콘솔에는 다음과 같이 찍혔고 생각했던 대로 동작함을 확인할 수 있었습니다.
 
 ```
+async
 in sample
 in head
 end of body
 defer
 DOMContentLoaded is loaded
-async
 window is loaded
 ```
 
