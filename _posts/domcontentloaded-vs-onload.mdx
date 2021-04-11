@@ -1,0 +1,18 @@
+---
+title: domContentLoaded vs onLoad
+date: 2021-04-11
+cover: ""
+tags:
+  - web
+---
+## Overview
+
+script 태그의 `async` 와 `defer`에 대해서 공부하던 중 `domContentLoaded`와 `onLoad` 이벤트에 대해서 알게되었고 두 이벤트에 대해 정리하였습니다.
+
+공식문서에는 다음과 같이 말하고 있습니다.
+> `DOMContentLoaded` 이벤트는 초기 HTML 문서를 완전히 불러오고 분석했을 때 발생합니다. 스타일 시트, 이미지, 하위 프레임의 로딩은 기다리지 않습니다.<br/>
+> [DOMContentLoaded :: MOZ](https://developer.mozilla.org/ko/docs/Web/API/Window/DOMContentLoaded_event)<br/>
+> `load` 이벤트는 리소스와 그것에 의존하는 리소스들의 로딩이 완료되면 실행됩니다.<br/>
+> [load :: MOZ](https://developer.mozilla.org/ko/docs/Web/API/Window/load_event)
+
+하지만 
