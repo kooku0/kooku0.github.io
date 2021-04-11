@@ -5,9 +5,7 @@ cover: ""
 tags:
   - web
 ---
-
-
-css파일과 같은 리소스를 로드해올 때 다음과 같이 사용합니다.
+css파일과 같은 리소스를 로드해올 때 다음과 같이 많이 사용하는데,
 
 ```html
 <link rel="stylesheet" href="style.css"
@@ -60,9 +58,9 @@ css파일과 같은 리소스를 로드해올 때 다음과 같이 사용합니�
 
 페이지 초기 렌더링 시 반드시 로드되어야할 리소스들을 `preload`로 우선적으로 로드해야합니다.
 
-### Chrome dev tool
+### Chrome DevTools
 
-Chrome dev tool의 network panel에서 priority가 Highest로 찍힌걸 확인할 수 있습니다.
+Chrome DevTools의 network panel에서 priority가 Highest로 찍힌걸 확인할 수 있습니다.
 
 ![](/images/preload-highest.png)
 
@@ -121,7 +119,7 @@ fonts와 같은 일부 리소스들의 경우 `preconnect`와 함께 `crossorigi
 
 스크립트가 로드되고 스트리밍 데이터를 처리할 준비가 될 때까지 스트리밍을 기다리고 싶을 수 있습니다. preconnect는 미리 연결을 하기 때문에 리소스를 가져올 준비가 되면 연결을 설정하는 것이 아니라 미리 연결된 설정에 따라 리소스를 가져와 연결을 설정하는 대기 시간을 줄 일 수 있습니다.
 
-### Chrome dev tool
+### Chrome DevTools
 
 다음과 같이 실제로 리소스를 다운받지는 않는 걸 알 수 있다.
 
@@ -131,15 +129,32 @@ fonts와 같은 일부 리소스들의 경우 `preconnect`와 함께 `crossorigi
 
 ![](/images/preconnect-network.png)
 
-### 요약
-
-`preconnect`와 `dns-prefetch`는 다른 도메인에서 리소스를 다운로드할 예정이지만 리소스의 정확한 URL을 모르는 경우 페이지 속도를 개선하는데 유용합니다. 예로 JavaScript 라이브러리, 이미지 또는 글꼴을 포하는 CDN이 있습니다. 그리고 중요한 리소스에 대해서만 `preconnect`를 이요하고 나머지는 `dns-prefetch`를 사용하는 것이 좋습니다.
-
 ## prefetch
+
 미래에 사용될 것이라고 예상되는 리소스들을 `prefetch`합니다. 브라우저는 미래에 사용될 리소스들을 가져와 캐시에 저장합니다.
 `prefetch`는 사용자가 다음에 할 행동을 미리 준비하는데 적합한 기능입니다. 예를 들어, 결과 목록에서 첫 번째 상세 페이지를 가져오거나 다음 페이지를 가져오는 것을 이야기할 수 있습니다.
+
 ```html
 <link rel="prefetch" href="page-2.html">
 ```
+
 ### 주의사항
+
 #### 재귀적으로 동작하지 않는다.
+
+```html
+<link rel="prefetch" href="page-2.html">
+```
+
+위의 코드와 같이 `prefetch`를 사용한다면, `page-2.html`이라는 HTML 리소스를 가져올 수 있지만 `page-2.html`에서 사용되는 CSS등의 리소스들은 가져오지 않습니다.
+
+### Chrome DevTools
+
+다음과 같이 priority가 Lowest인 것을 확인할 수 있습니다.
+
+![](/images/prefetch-network.png)
+
+## 요약
+현재 페이지에서 반드시 필요한 리소스(Render-block resource or fonts)는 `preload` 합니다.
+`preconnect`와 `dns-prefetch`는 다른 도메인에서 리소스를 다운로드할 예정이지만 리소스의 정확한 URL을 모르는 경우 페이지 속도를 개선하는데 유용합니다. 예로 JavaScript 라이브러리, 이미지 또는 글꼴을 포하는 CDN이 있습니다. 그리고 중요한 리소스에 대해서만 `preconnect`를 이용하고 나머지는 `dns-prefetch`를 사용하는 것이 좋습니다.
+현재 사용하지 않지만 미래에 사용되는 리소스는 `prefetch` 합니다.
