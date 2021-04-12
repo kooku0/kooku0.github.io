@@ -87,7 +87,6 @@ const Contents = styled.div`
 
 const Markdown = styled.div`
   ${MarkdownStyle};
-  font-size: 18px;
 `;
 
 const ButtonContainer = styled.div`
