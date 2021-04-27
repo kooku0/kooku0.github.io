@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import styled from '@emotion/styled';
 import { GetStaticProps } from 'next';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import CardList from '@/components/card-list/CardList';
 import Profile from '@/components/profile';
@@ -8,7 +8,6 @@ import TagList from '@/components/tag-list';
 import { listPostContent, PostContent } from '@/lib/posts';
 import { listTags, TagContent } from '@/lib/tags';
 import SectionContainer from '@/styles/container/SectionContainer';
-
 import metaConfig from '~/meta-config';
 
 const Container = styled.div`
@@ -49,6 +48,10 @@ const TagListWrapper = styled.div`
 const Section = styled.section`
   ${SectionContainer};
   scroll-snap-align: start;
+`;
+
+const HeaderSection = styled(Section)`
+  margin: 0 16px;
 `;
 
 const Posts = styled.div`
@@ -123,6 +126,7 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
     });
 
     setHeightByTag(heights);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -179,19 +183,17 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
     if (touchStart - touchEnd < -100 && activeTagIdx > 0) {
       setActiveTagIdx(activeTagIdx - 1);
     }
-  }, [touchStart, touchEnd, activeTagIdx]);
+  }, [touchStart, touchEnd, activeTagIdx, tags.length]);
 
-  const updateActiveTag = useCallback((index: number) => setActiveTagIdx(index), [activeTagIdx]);
+  const updateActiveTag = useCallback((index: number) => setActiveTagIdx(index), []);
 
   return (
     <>
       <Container>
-        <Section>
-          <div style={{ margin: '0 16px' }}>
-            <Title>{metaConfig.title}</Title>
-            <Profile />
-          </div>
-        </Section>
+        <HeaderSection>
+          <Title>{metaConfig.title}</Title>
+          <Profile />
+        </HeaderSection>
         <Section ref={contentsRef}>
           <TagListWrapper ref={tagListRef}>
             <TagList tags={tags} activeTag={activeTagIdx} updateActiveTag={updateActiveTag} />
