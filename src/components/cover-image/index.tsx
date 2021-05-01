@@ -1,13 +1,17 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
+
+import { backgroundGrey20 } from '@/styles/css';
 
 const ImageContainer = styled.div`
   position: relative;
+  width: 171px;
+  height: 82px;
 
   &::after {
+    ${backgroundGrey20}
     display: block;
     content: '';
-    background-color: ${({ theme }) => theme.color.greyOpacity200};
     padding-bottom: calc(100% * (6.6 / 13));
   }
 
@@ -27,9 +31,9 @@ interface ImageCoverProps {
 const CoverImage: React.FC<ImageCoverProps> = ({ src }) => {
   return (
     <ImageContainer>
-      <img src={src} alt="cover" width={343} height={184} loading="lazy" />
+      <img src={src} alt="cover" width={171} height={82} loading="lazy" />
     </ImageContainer>
   );
 };
 
-export default CoverImage;
+export default React.memo(CoverImage);

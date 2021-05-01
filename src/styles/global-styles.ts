@@ -1,7 +1,12 @@
 import { css } from '@emotion/react';
 
 /* prettier-ignore */
-export const GlobalStyle = () => css`
+const GlobalStyle = css`
+  * {
+    user-select: none;
+    box-sizing: border-box;
+  }
+
   html, body {
     font-family: 'Spoqa Han Sans Neo', sans-serif !important;
     margin: 0;
@@ -63,6 +68,17 @@ export const GlobalStyle = () => css`
 
   a {
     text-decoration: none;
+  }
+
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  button,
+  *[role='button'] {
+    cursor: pointer;
   }
 `;
 
