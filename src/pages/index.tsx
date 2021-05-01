@@ -112,22 +112,28 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
   const contentsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const windowHeight =
-      MIN_WINDOW_HEIGHT <= global.innerHeight - NAVBAR_HEIGHT
-        ? global.innerHeight - NAVBAR_HEIGHT
-        : MIN_WINDOW_HEIGHT;
+    const setHeights = () => {
+      const windowHeight =
+        MIN_WINDOW_HEIGHT <= global.innerHeight - NAVBAR_HEIGHT
+          ? global.innerHeight - NAVBAR_HEIGHT
+          : MIN_WINDOW_HEIGHT;
 
-    const heights = tags.map(({ slug }) => {
-      const height = (document?.querySelector(
-        `.${parsedListClassName(slug)}${CARD_LIST_CLASSNAME_POSTFIX}`
-      )?.firstChild as HTMLDivElement)?.clientHeight;
+      const heights = tags.map(({ slug }) => {
+        const height = (document?.querySelector(
+          `.${parsedListClassName(slug)}${CARD_LIST_CLASSNAME_POSTFIX}`
+        )?.firstChild as HTMLDivElement)?.clientHeight;
 
-      return height > windowHeight ? height : windowHeight;
-    });
+        return height > windowHeight ? height : windowHeight;
+      });
+      setHeightByTag(heights);
+    };
 
-    setHeightByTag(heights);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    window.addEventListener('resize', setHeights);
+
+    return () => {
+      window.removeEventListener('resize', setHeights);
+    };
+  }, [tags]);
 
   useEffect(() => {
     if (contentsRef.current) {

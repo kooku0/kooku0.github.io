@@ -3,10 +3,9 @@ import React from 'react';
 
 import { backgroundGrey20 } from '@/styles/css';
 
-const ImageContainer = styled.div`
+const ImageContainer = styled.div<{ width?: number }>`
   position: relative;
-  width: 171px;
-  height: 82px;
+  ${({ width }) => width && `width: ${width}px`}
 
   &::after {
     ${backgroundGrey20}
@@ -26,12 +25,13 @@ const ImageContainer = styled.div`
 
 interface ImageCoverProps {
   src: string;
+  width?: number;
 }
 
-const CoverImage: React.FC<ImageCoverProps> = ({ src }) => {
+const CoverImage: React.FC<ImageCoverProps> = ({ src, width }) => {
   return (
-    <ImageContainer>
-      <img src={src} alt="cover" width={171} height={82} loading="lazy" />
+    <ImageContainer width={width}>
+      <img src={src} alt="cover" width={123} height={82} loading="lazy" />
     </ImageContainer>
   );
 };
