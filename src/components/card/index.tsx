@@ -17,6 +17,7 @@ const Container = styled.div`
 interface CardProps {
   coverImage: string;
   to: string;
+  children: React.ReactNode;
 }
 
 const Card: React.FC<CardProps> = ({ to, children, coverImage }) => {
