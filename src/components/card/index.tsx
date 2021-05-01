@@ -1,32 +1,31 @@
-import React, { ReactChild, useCallback } from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
+import React from 'react';
 
 import CoverImage from '@/components/cover-image';
+import { alignCenter, flex, justifySpaceBetween } from '@/styles/css';
 
-const Container = styled.div<{ width?: number }>`
-  width: ${({ width }) => (width ? `${width}px` : '100%')};
+const Container = styled.div`
+  ${flex}
+  ${justifySpaceBetween}
+  ${alignCenter}
+  width: 100%;
   height: 100%;
   overflow: hidden;
-  cursor: pointer;
 `;
 
 interface CardProps {
   coverImage: string;
-  width?: number;
   to: string;
-  children: ReactChild | ReactChild[];
 }
 
-const Card: React.FC<CardProps> = ({ width, to, children, coverImage }) => {
+const Card: React.FC<CardProps> = ({ to, children, coverImage }) => {
   return (
     <Link href={to}>
-      <div>
+      <Container>
+        {children}
         {coverImage && <CoverImage src={coverImage} />}
-        <Container width={width}>
-          <div>{children}</div>
-        </Container>
-      </div>
+      </Container>
     </Link>
   );
 };

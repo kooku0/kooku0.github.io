@@ -1,9 +1,9 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 
 import Card from '@/components/card';
 import { PostContent } from '@/lib/posts';
-import { spacing } from '@/styles';
+import { borderSolidGrey40, textBlack, textGrey40, textGrey200 } from '@/styles/css';
 
 const Container = styled.div`
   display: flex;
@@ -12,12 +12,21 @@ const Container = styled.div`
 `;
 
 const CardContainer = styled.div`
+  ${borderSolidGrey40}
+  border-width: 2px;
   flex: 0 0 auto;
   overflow: hidden;
-  margin: 10px 16px;
+  margin: 5px 8px;
   border-radius: 8px;
   padding: 16px;
-  border: 2px solid lightgray;
+
+  &:first-of-type {
+    margin-top: 10px;
+  }
+
+  ${({ theme }) => theme.media.mobile} {
+    margin: 2px 8px;
+  }
 `;
 
 const Contents = styled.div`
@@ -25,10 +34,14 @@ const Contents = styled.div`
   display: table;
   table-layout: fixed;
   width: 100%;
+
+  ${({ theme }) => theme.media.mobile} {
+    padding: 0;
+  }
 `;
 
 const Tag = styled.span`
-  color: ${({ theme }) => theme.color.grey500};
+  ${textGrey200}
   font-size: 14px;
   font-weight: bold;
   line-height: 1.57;
@@ -36,22 +49,22 @@ const Tag = styled.span`
 `;
 
 const Date = styled.time`
+  ${textGrey40}
   display: block;
   font-size: 0.7rem;
   margin-top: 0.5rem;
-  color: darkgray;
   font-weight: bold;
   line-height: 1.57;
 `;
 
 const Title = styled.h3`
+  ${textBlack}
   display: table-cell;
   margin-top: 4px;
-  color: black;
   font-size: 18px;
   width: 100%;
   font-weight: bold;
-  line-height: 1.56;
+  line-height: 1.2;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -70,19 +83,15 @@ const CardList: React.FC<CardListProps> = ({ posts }) => {
         <CardContainer key={post.slug} className="card">
           <Card coverImage={post.cover} to={`/posts/${post.slug}`}>
             <Contents>
-              {post.tags
-                ?.filter((item) => item.slug !== 'topic')
-                ?.slice(0, 2)
-                ?.map((tag) => (
-                  <Tag key={tag.slug}>{tag.name}</Tag>
-                ))}
+              {post.tags?.map((tag) => (
+                <Tag key={tag.slug}>{tag.name}</Tag>
+              ))}
               <Title>{post.title}</Title>
               <Date dateTime={post.date}>{post.date}</Date>
             </Contents>
           </Card>
         </CardContainer>
       ))}
-      <div css={[spacing.padding(4)]} />
     </Container>
   );
 };

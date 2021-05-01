@@ -1,50 +1,55 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 
 import { flutter } from '@/styles/animations';
-
+import {
+  alignCenter,
+  backgroundGrey20,
+  flex,
+  textBlue300,
+  textGrey200,
+  textGrey300
+} from '@/styles/css';
 import metaConfig from '~/meta-config';
 
 const Container = styled.div`
-  display: flex;
-  align-items: center;
+  ${flex}
+  ${alignCenter}
   margin-bottom: 16px;
 `;
 
 const Image = styled.img`
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
   object-fit: cover;
   margin-right: 12px;
 `;
 
 const Contents = styled.div`
   & > span {
+    ${textGrey200}
     font-size: 90%;
     margin-right: 4px;
-    color: #7d7d7d;
     font-weight: 600;
   }
 `;
 
 const AuthorName = styled.div`
+  ${textBlue300}
+  ${backgroundGrey20}
+  animation: ${flutter} 2s infinite linear;
   display: inline-block;
   font-size: 95%;
   padding: 5px 6px;
   font-weight: bolder;
   border-radius: 8px;
   transform-origin: center;
-  animation: ${flutter} 2s infinite linear;
-  color: #4287f5;
-  background-color: #ecf0f2;
 `;
 
 const Introduction = styled.div`
+  ${textGrey300}
   margin-top: 4px;
   font-size: 80%;
   line-height: 1.4;
-  color: #3d3d3d;
 `;
 
 const SocialLink = styled.div`
@@ -75,4 +80,4 @@ const Profile: React.FC = () => {
   );
 };
 
-export default Profile;
+export default React.memo(Profile);

@@ -1,32 +1,39 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 
 import { TagContent } from '@/lib/tags';
+import { TextButton } from '@/styles/components/button';
+import {
+  backgroundWhite,
+  borderBottomSolidBlue300,
+  borderBottomSolidGrey30,
+  flex,
+  textBlue300,
+  textGrey40
+} from '@/styles/css';
 
 const Container = styled.div`
-  background-color: white;
-  display: flex;
+  ${flex}
+  ${backgroundWhite}
+  ${borderBottomSolidGrey30}
   flex-wrap: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
   scrollbar-width: none;
-  border-bottom: 1px solid ${({ theme }) => theme.color.grey200};
 
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
-const Tag = styled.div<{ active: boolean }>`
+const Tag = styled(TextButton)<{ active: boolean }>`
+  ${({ active }) => (active ? textBlue300 : textGrey40)}
+  ${({ active }) => (active ? borderBottomSolidBlue300 : borderBottomSolidGrey30)}
   padding: 12px 16px;
   font-size: 16px;
   font-weight: bold;
   flex: 0 0 auto;
   line-height: 1.5;
-  cursor: pointer;
-  color: ${({ theme, active }) => (active ? theme.color.blue500 : theme.color.grey400)};
-  border-bottom: ${({ active, theme }) =>
-    active ? `2px solid ${theme.color.blue500}` : `0px solid ${theme.color.grey200}`};
 `;
 
 interface TagListProps {

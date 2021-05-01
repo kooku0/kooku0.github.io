@@ -1,20 +1,34 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { DOMElement, ReactElement, useCallback, useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { mdiClose, mdiHeart, mdiHeartOutline } from '@mdi/js';
 import Icon from '@mdi/react';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
+import React, { useCallback, useEffect, useState } from 'react';
 
 import CoverImage from '@/components/cover-image';
 import markdownToHtml from '@/lib/markdownToHtml';
 import { getPostBySlug, listPostContent } from '@/lib/posts';
-import { listTags, TagContent } from '@/lib/tags';
+import { TagContent } from '@/lib/tags';
 import color from '@/styles';
 import SectionContainer from '@/styles/container/SectionContainer';
+import {
+  alignCenter,
+  backgroundBlue40,
+  backgroundGrey30,
+  backgroundWhite,
+  flex,
+  flexColumn,
+  justifyCenter,
+  justifySpaceBetween,
+  textBlack,
+  textBlue300,
+  textGrey200,
+  textGrey300
+} from '@/styles/css';
 import MarkdownStyle from '@/styles/MarkdownStyle';
-import { openUrl, share } from '@/utils';
-
+import { share } from '@/utils';
 import metaConfig from '~/meta-config';
 
 const LayoutContainer = styled.div`
@@ -22,7 +36,11 @@ const LayoutContainer = styled.div`
 `;
 
 const NavBar = styled.nav`
-  ${SectionContainer};
+  ${flex}
+  ${justifySpaceBetween}
+  ${alignCenter}
+  ${SectionContainer}
+  ${backgroundWhite}
   position: sticky;
   left: 0;
   right: 0;
@@ -31,10 +49,6 @@ const NavBar = styled.nav`
   padding-right: 16px;
   z-index: 999;
   height: 48px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 `;
 
 const NavIconContainer = styled.div`
@@ -62,7 +76,7 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.span`
-  color: ${({ theme }) => theme.color.grey500};
+  ${textGrey200}
   font-size: 14px;
   font-weight: bold;
   line-height: 1.57;
@@ -70,19 +84,19 @@ const Tag = styled.span`
 `;
 
 const Title = styled.h1`
+  ${textBlack}
   margin: 8px 0 24px 0;
   font-size: 26px;
   font-weight: bold;
   line-height: 1.38;
-  color: black;
 `;
 
 const Contents = styled.div`
+  ${textGrey300}
   font-size: 16px;
   font-weight: normal;
   line-height: 1.63;
   min-height: 320px;
-  color: ${({ theme }) => theme.color.grey800};
 `;
 
 const Markdown = styled.div`
@@ -90,13 +104,15 @@ const Markdown = styled.div`
 `;
 
 const ButtonContainer = styled.div`
+  ${flexColumn}
+  ${justifyCenter}
   width: 100%;
-  display: flex;
-  flex-direction: column;
   margin-top: 48px;
-  justify-content: center;
 
   button {
+    ${flex}
+    ${alignCenter}
+    ${justifyCenter}
     width: 240px;
     height: 48px;
     border: none;
@@ -104,19 +120,16 @@ const ButtonContainer = styled.div`
     border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
     padding: 16px;
-    justify-content: center;
     position: relative;
-    cursor: pointer;
   }
 `;
 
 const LikeButton = styled.button<{ isLike: boolean }>`
+  ${({ isLike }) => (isLike ? backgroundGrey30 : backgroundBlue40)}
+  ${({ isLike }) => (isLike ? textGrey300 : textBlue300)}
   margin-bottom: 16px;
-  background-color: ${({ theme, isLike }) => (isLike ? theme.color.grey70 : theme.color.blue50)};
-  color: ${({ theme, isLike }) => (isLike ? theme.color.grey350 : theme.color.blue700)};
+
   & > svg {
     position: absolute;
     left: 16px;
@@ -124,8 +137,8 @@ const LikeButton = styled.button<{ isLike: boolean }>`
 `;
 
 const ShareButton = styled.button`
-  background-color: ${({ theme }) => theme.color.grey300};
-  color: ${({ theme }) => theme.color.grey600};
+  ${backgroundGrey30}
+  ${textGrey300}
   & > img {
     position: absolute;
     left: 16px;
@@ -233,12 +246,13 @@ function Post({ post }: PostProps) {
       </Head>
       <LayoutContainer>
         <NavBar>
-          <div onClick={closePost}>
-            <Icon path={mdiClose} size="24" color={color.grey600} />
+          <div role="button" tabIndex={0} onClick={closePost}>
+            <Icon path={mdiClose} size="24" color={color.grey300} />
           </div>
 
           <NavIconContainer className="like-button">
             <SvgIcon
+              role="button"
               onClick={toggleLike}
               src={isLike ? '/icon/like-on.svg' : '/icon/like-off.svg'}
               className="like-button"
@@ -246,7 +260,14 @@ function Post({ post }: PostProps) {
               height="24"
               width="24"
             />
-            <SvgIcon onClick={shareLink} src="/icon/share.svg" alt="share" height="24" width="24" />
+            <SvgIcon
+              role="button"
+              onClick={shareLink}
+              src="/icon/share.svg"
+              alt="share"
+              height="24"
+              width="24"
+            />
           </NavIconContainer>
         </NavBar>
 
@@ -255,8 +276,8 @@ function Post({ post }: PostProps) {
             <section>
               {cover && <CoverImage src={cover} />}
               <Tags>
-                {tags.map(({ slug, name }) => (
-                  <Tag key={slug}>{name}</Tag>
+                {tags.map(({ slug: tagSlug, name }) => (
+                  <Tag key={tagSlug}>{name}</Tag>
                 ))}
               </Tags>
               <header>
@@ -272,7 +293,7 @@ function Post({ post }: PostProps) {
                   <Icon
                     className="like-button"
                     path={isLike ? mdiHeart : mdiHeartOutline}
-                    color={isLike ? color.grey350 : color.blue700}
+                    color={isLike ? color.grey40 : color.blue300}
                     size="20"
                   />
                   LIKE

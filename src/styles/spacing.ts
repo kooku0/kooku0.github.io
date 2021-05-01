@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { css } from '@emotion/react';
 
 // prettier-ignore
