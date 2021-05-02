@@ -74,6 +74,7 @@ const CardListContainer = styled.div<{ tagIndex: number }>`
 export const getStaticProps: GetStaticProps = async () => {
   const tagSet = new Set();
   const posts = listPostContent();
+  console.log(posts[0]);
   let tags = listTags();
 
   posts.forEach((post) =>

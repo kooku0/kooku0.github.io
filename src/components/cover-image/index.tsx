@@ -4,8 +4,11 @@ import React from 'react';
 import { backgroundGrey20 } from '@/styles/css';
 
 const ImageContainer = styled.div<{ width?: number }>`
+  width: ${({ width }) => (width ? `${width}px` : '100%')};
+`;
+
+const ImageWrapper = styled.div`
   position: relative;
-  ${({ width }) => width && `width: ${width}px`}
 
   &::after {
     ${backgroundGrey20}
@@ -31,7 +34,9 @@ interface ImageCoverProps {
 const CoverImage: React.FC<ImageCoverProps> = ({ src, width }) => {
   return (
     <ImageContainer width={width}>
-      <img src={src} alt="cover" width={123} height={82} loading="lazy" />
+      <ImageWrapper>
+        <img src={src} alt="cover" width={123} height={82} loading="lazy" />
+      </ImageWrapper>
     </ImageContainer>
   );
 };
