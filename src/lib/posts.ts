@@ -1,8 +1,7 @@
 import fs from 'fs';
-import path, { join } from 'path';
-
 import matter from 'gray-matter';
 import yaml from 'js-yaml';
+import path, { join } from 'path';
 
 import { getTag, listTags, TagContent } from './tags';
 
@@ -52,7 +51,7 @@ function fetchPostContent(): PostContent[] {
       const tags = listTags();
 
       matterData.tags = (matterData.tags as string[]).map(
-        (tag) => tags.find(({ slug }) => slug === tag) ?? { slug: '', name: '' }
+        (tag) => tags.find(({ slug: slugOfTag }) => slugOfTag === tag) ?? { slug: '', name: '' }
       );
 
       return matterData;
@@ -77,7 +76,6 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const fullPath = join(postsDirectory, `${realSlug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  const tags = listTags();
 
   const items: any = {};
 

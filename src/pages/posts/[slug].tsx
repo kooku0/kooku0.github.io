@@ -3,14 +3,15 @@
 import styled from '@emotion/styled';
 import { mdiClose, mdiHeart, mdiHeartOutline } from '@mdi/js';
 import Icon from '@mdi/react';
+import { GetStaticProps } from 'next';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
+import { ParsedUrlQuery } from 'querystring';
 import React, { useCallback, useEffect, useState } from 'react';
 
 import CoverImage from '@/components/cover-image';
 import markdownToHtml from '@/lib/markdownToHtml';
-import { getPostBySlug, listPostContent } from '@/lib/posts';
-import { TagContent } from '@/lib/tags';
+import { getPostBySlug, listPostContent, PostContent } from '@/lib/posts';
 import color from '@/styles';
 import SectionContainer from '@/styles/container/SectionContainer';
 import {
@@ -61,7 +62,7 @@ const SvgIcon = styled.img``;
 
 const Article = styled.article``;
 
-const Container = styled.div`
+const Section = styled.section`
   ${SectionContainer};
   position: relative;
   padding-bottom: 32px;
@@ -88,7 +89,7 @@ const Title = styled.h1`
   margin: 8px 0 24px 0;
   font-size: 26px;
   font-weight: bold;
-  line-height: 1.38;
+  line-height: 1.2;
 `;
 
 const Contents = styled.div`
@@ -145,8 +146,19 @@ const ShareButton = styled.button`
   }
 `;
 
-export async function getStaticProps({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug, ['title', 'slug', 'author', 'content', 'cover', 'tags']);
+interface Props {
+  post: PostContent & {
+    readonly content: string;
+  };
+}
+
+interface Params extends ParsedUrlQuery {
+  slug: string;
+}
+
+export const getStaticProps: GetStaticProps<Props, Params> = async (context) => {
+  const params = context.params!;
+  const post = getPostBySlug(params.slug, ['title', 'slug', 'content', 'cover', 'tags']);
   const content = await markdownToHtml(post.content || '');
 
   return {
@@ -157,9 +169,9 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
       }
     }
   };
-}
+};
 
-export async function getStaticPaths() {
+export const getStaticPaths = () => {
   const posts = listPostContent();
 
   return {
@@ -172,20 +184,9 @@ export async function getStaticPaths() {
     }),
     fallback: false
   };
-}
+};
 
-interface PostProps {
-  post: {
-    author: string;
-    content: string;
-    cover: string;
-    slug: string;
-    title: string;
-    tags: TagContent[];
-  };
-}
-
-function Post({ post }: PostProps) {
+const Post: React.FC<Props> = ({ post }) => {
   const { content, cover, slug, title, tags } = post;
   const [isLike, setIsLike] = useState(false);
 
@@ -272,50 +273,48 @@ function Post({ post }: PostProps) {
         </NavBar>
 
         <Article>
-          <Container>
-            <section>
-              {cover && <CoverImage src={cover} />}
-              <Tags>
-                {tags.map(({ slug: tagSlug, name }) => (
-                  <Tag key={tagSlug}>{name}</Tag>
-                ))}
-              </Tags>
-              <header>
-                <Title>{title}</Title>
-              </header>
+          {cover && <CoverImage src={cover} />}
+          <Section>
+            <Tags>
+              {tags?.map(({ slug: slugOfTag, name }) => (
+                <Tag key={slugOfTag}>{name}</Tag>
+              ))}
+            </Tags>
+            <header>
+              <Title>{title}</Title>
+            </header>
 
-              <Contents>
-                <Markdown dangerouslySetInnerHTML={{ __html: content }} />
-              </Contents>
+            <Contents>
+              <Markdown dangerouslySetInnerHTML={{ __html: content }} />
+            </Contents>
 
-              <ButtonContainer>
-                <LikeButton onClick={toggleLike} isLike={isLike} className="like-button">
-                  <Icon
-                    className="like-button"
-                    path={isLike ? mdiHeart : mdiHeartOutline}
-                    color={isLike ? color.grey40 : color.blue300}
-                    size="20"
-                  />
-                  LIKE
-                </LikeButton>
+            <ButtonContainer>
+              <LikeButton onClick={toggleLike} isLike={isLike} className="like-button">
+                <Icon
+                  className="like-button"
+                  path={isLike ? mdiHeart : mdiHeartOutline}
+                  color={isLike ? color.grey40 : color.blue300}
+                  size="20"
+                />
+                LIKE
+              </LikeButton>
 
-                <ShareButton onClick={shareLink} className="share-button">
-                  <SvgIcon
-                    src="/icon/share.svg"
-                    alt="share"
-                    height="20"
-                    width="20"
-                    className="share-button"
-                  />
-                  SHARE
-                </ShareButton>
-              </ButtonContainer>
-            </section>
-          </Container>
+              <ShareButton onClick={shareLink} className="share-button">
+                <SvgIcon
+                  src="/icon/share.svg"
+                  alt="share"
+                  height="20"
+                  width="20"
+                  className="share-button"
+                />
+                SHARE
+              </ShareButton>
+            </ButtonContainer>
+          </Section>
         </Article>
       </LayoutContainer>
     </>
   );
-}
+};
 
 export default Post;
