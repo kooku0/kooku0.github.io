@@ -72,6 +72,8 @@ const Title = styled.h3`
   -webkit-box-orient: vertical;
 `;
 
+const CARD_CLASSNAME = 'card';
+
 interface CardListProps {
   posts: PostContent[];
 }
@@ -80,7 +82,7 @@ const CardList: React.FC<CardListProps> = ({ posts }) => {
   return (
     <Container>
       {posts.map((post: PostContent) => (
-        <CardContainer key={post.slug} className="card">
+        <CardContainer key={post.slug} className={CARD_CLASSNAME}>
           <Card coverImage={post.cover} to={`/posts/${post.slug}`}>
             <Contents>
               {post.tags?.map((tag) => (

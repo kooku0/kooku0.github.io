@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ to, children, coverImage }) => {
     <Link href={to}>
       <Container>
         {children}
-        {coverImage && <CoverImage src={coverImage} />}
+        {coverImage && <CoverImage src={coverImage} width={123} />}
       </Container>
     </Link>
   );
