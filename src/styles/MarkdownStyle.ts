@@ -12,9 +12,8 @@ const MarkdownStyle = css`
 
   a {
     font-size: 1rem;
-    color: #6f7580;
-    text-decoration: none;
-    font-weight: 550;
+    color: #358cd6;
+    text-decoration: underline;
   }
 
   h1 {
