@@ -277,8 +277,8 @@ const Post: React.FC<Props> = ({ post }) => {
         </NavBar>
 
         <Article>
-          {cover && <CoverImage src={cover} />}
           <Section>
+            {cover && <CoverImage src={cover} />}
             <Tags>
               {tags?.map(({ slug: slugOfTag, name }) => (
                 <Tag key={slugOfTag}>{name}</Tag>
