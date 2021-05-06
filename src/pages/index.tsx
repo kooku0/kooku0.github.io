@@ -11,14 +11,10 @@ import SectionContainer from '@/styles/container/SectionContainer';
 import metaConfig from '~/meta-config';
 
 const Container = styled.div`
-  position: relative;
   -webkit-overflow-scrolling: auto;
   overscroll-behavior: none;
   scroll-behavior: smooth;
   scrollbar-width: none;
-
-  scroll-snap-type: y proximity;
-  scroll-snap-stop: normal;
 
   &::-webkit-scrollbar {
     display: none;
@@ -39,7 +35,6 @@ const Title = styled.h1`
 `;
 
 const TagListWrapper = styled.div`
-  position: -webkit-sticky;
   position: sticky;
   top: -1px;
   z-index: 10;
@@ -74,7 +69,6 @@ const CardListContainer = styled.div<{ tagIndex: number }>`
 export const getStaticProps: GetStaticProps = async () => {
   const tagSet = new Set();
   const posts = listPostContent();
-  console.log(posts[0]);
   let tags = listTags();
 
   posts.forEach((post) =>
@@ -98,6 +92,7 @@ interface HomeProps {
 
 const NAVBAR_HEIGHT = 50;
 const MIN_WINDOW_HEIGHT = 500;
+const SNAP_SENSITIVITY = 100;
 const CARD_LIST_CLASSNAME_POSTFIX = '-list';
 
 const parsedListClassName = (slug: string) => {
@@ -160,6 +155,13 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
     }
   }, [activeTagIdx]);
 
+  const scrollToTop = () => {
+    if (contentsRef.current) {
+      const { top } = contentsRef.current.getBoundingClientRect();
+      window.scrollTo(0, top);
+    }
+  };
+
   const postsByTag: { [key: string]: PostContent[] } = useMemo(() => {
     const obj: { [key: string]: PostContent[] } = {};
     obj.total = [...posts];
@@ -183,16 +185,21 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
   }, []);
 
   const handleTouchEnd = useCallback(() => {
-    if (touchStart - touchEnd > 100 && activeTagIdx < tags.length - 1) {
+    if (touchStart - touchEnd > SNAP_SENSITIVITY && activeTagIdx < tags.length - 1) {
       setActiveTagIdx(activeTagIdx + 1);
+      scrollToTop();
     }
 
-    if (touchStart - touchEnd < -100 && activeTagIdx > 0) {
+    if (touchStart - touchEnd < -SNAP_SENSITIVITY && activeTagIdx > 0) {
       setActiveTagIdx(activeTagIdx - 1);
+      scrollToTop();
     }
-  }, [touchStart, touchEnd, activeTagIdx, tags.length]);
+  }, [touchStart, touchEnd, activeTagIdx, tags]);
 
-  const updateActiveTag = useCallback((index: number) => setActiveTagIdx(index), []);
+  const updateActiveTag = useCallback((index: number) => {
+    setActiveTagIdx(index);
+    scrollToTop();
+  }, []);
 
   return (
     <>

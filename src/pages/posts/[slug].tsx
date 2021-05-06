@@ -50,6 +50,10 @@ const NavBar = styled.nav`
   padding-right: 16px;
   z-index: 999;
   height: 48px;
+
+  ${({ theme }) => theme.media.desktop} {
+    display: none;
+  }
 `;
 
 const NavIconContainer = styled.div`
