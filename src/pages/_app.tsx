@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 
-import GlobalStyle from '@/styles/global-styles';
+import GlobalStyle from '@/styles/GlobalStyle';
 import theme from '@/styles/theme';
 import metaConfig from '~/meta-config';
 
