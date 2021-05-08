@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 /* eslint-disable jsx-a11y/iframe-has-title */
 import { Global, ThemeProvider } from '@emotion/react';
 import type { AppProps } from 'next/app';
@@ -17,6 +18,19 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>{metaConfig.title}</title>
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-88SF4487LG" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-88SF4487LG');
+              `
+          }}
+        />
       </Head>
 
       <Global styles={GlobalStyle} />
