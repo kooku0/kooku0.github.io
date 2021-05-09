@@ -1,4 +1,4 @@
-import '~/global.d';
+import '~/@types/global.d';
 
 import tags from '~/meta/tags.yml';
 
@@ -6,8 +6,6 @@ export type TagContent = {
   readonly slug: string;
   readonly name: string;
 };
-
-const tagMap: { [key: string]: TagContent } = generateTagMap();
 
 function generateTagMap(): { [key: string]: TagContent } {
   const result: { [key: string]: TagContent } = {};
@@ -17,6 +15,8 @@ function generateTagMap(): { [key: string]: TagContent } {
 
   return result;
 }
+
+const tagMap: { [key: string]: TagContent } = generateTagMap();
 
 export function getTag(slug: string) {
   return tagMap[slug];

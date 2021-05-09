@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "typeRoots": ["@types", "node_modeuls/@types", "global.d.ts"],
+    "typeRoots": ["@types", "node_modeuls/@types"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
