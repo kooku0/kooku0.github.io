@@ -24,8 +24,8 @@ function fetchPostContent(): PostContent[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
-    .filter((it: any) => it.endsWith('.mdx'))
-    .map((fileName) => {
+    ?.filter((it: any) => it.endsWith('.mdx'))
+    ?.map((fileName) => {
       // Read markdown file as string
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -50,7 +50,7 @@ function fetchPostContent(): PostContent[] {
 
       const tags = listTags();
 
-      matterData.tags = (matterData.tags as string[]).map(
+      matterData.tags = (matterData.tags as string[])?.map(
         (tag) => tags.find(({ slug: slugOfTag }) => slugOfTag === tag) ?? { slug: '', name: '' }
       );
 
@@ -93,7 +93,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
 
     if (field === 'tags') {
-      items[field] = items[field].map((item: string) => ({
+      items[field] = items[field]?.map((item: string) => ({
         slug: item,
         name: getTag(item).name
       }));

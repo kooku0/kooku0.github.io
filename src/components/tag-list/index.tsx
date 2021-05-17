@@ -45,7 +45,7 @@ interface TagListProps {
 const TagList: React.FC<TagListProps> = ({ tags, activeTag, updateActiveTag }) => {
   return (
     <Container>
-      {tags.map((tag, index) => (
+      {tags?.map((tag, index) => (
         <Tag key={tag.slug} active={index === activeTag} onClick={() => updateActiveTag(index)}>
           {tag.name}
         </Tag>

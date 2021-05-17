@@ -179,7 +179,7 @@ export const getStaticPaths = () => {
   const posts = listPostContent();
 
   return {
-    paths: posts.map((post) => {
+    paths: posts?.map((post) => {
       return {
         params: {
           slug: post.slug

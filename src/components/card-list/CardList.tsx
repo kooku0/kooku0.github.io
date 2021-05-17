@@ -81,7 +81,7 @@ interface CardListProps {
 const CardList: React.FC<CardListProps> = ({ posts }) => {
   return (
     <Container>
-      {posts.map((post: PostContent) => (
+      {posts?.map((post: PostContent) => (
         <CardContainer key={post.slug} className={CARD_CLASSNAME}>
           <Card coverImage={post.cover} to={`/posts/${post.slug}`}>
             <Contents>
