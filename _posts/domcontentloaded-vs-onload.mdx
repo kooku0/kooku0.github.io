@@ -1,11 +1,10 @@
 ---
 title: DOMContentLoaded vs onLoad
 date: 2021-04-11
-cover: ''
+cover: ""
 tags:
   - web
 ---
-
 ## Overview
 
 script 태그의 `async` 와 `defer`에 대해서 공부하던 중 `DOMContentLoaded`와 `load` 이벤트에 대해서 알게되었고 두 이벤트에 대해 정리하였습니다.
@@ -83,8 +82,10 @@ window is loaded
 
 전통적인 성능 측정 방식은 브라우저에서 발생하는 이벤트를 사용하는 것이었습니다. 웹 페이지가 로딩될 때 DOMContentLoaded, load 이벤트가 발생하며, 각 이벤트가 발생하는 시점으로 성능을 측정하게 되는데, DOMContentlLoaded 이벤트, load 이벤트 발생 시점이 빠를수록, 그리고 두 이벤트 발생 구간의 폭이 좁을수록 성능이 좋다고 말합니다.
 
+하지만 현재는 DOMContentLoaded or load 가 user가 screen에서 실제로 보는 것과 차이가 있기에 FCP(First Contentful Paint)로 성능을 측정합니다. FCP는 이지가 처음 로드되기 시작한 시점을 기준으로 뷰포트 내에 가장 큰 이미지 또는 텍스트 블록의 렌더링 시간을 측정합니다.
+
 ## Reference
 
-- [주요 렌더링 경로 성능 분석 :: developers.google.com](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp)
-- [DOMContentLoaded :: MOZ](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
-- [성능 최적화 :: TOAST UI](https://ui.toast.com/fe-guide/ko_PERFORMANCE)
+* [주요 렌더링 경로 성능 분석 :: developers.google.com](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp)
+* [DOMContentLoaded :: MOZ](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
+* [성능 최적화 :: TOAST UI](https://ui.toast.com/fe-guide/ko_PERFORMANCE)
