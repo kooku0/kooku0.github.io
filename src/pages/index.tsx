@@ -114,7 +114,7 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
           ? global.innerHeight - NAVBAR_HEIGHT
           : MIN_WINDOW_HEIGHT;
 
-      const heights = tags.map(({ slug }) => {
+      const heights = tags?.map(({ slug }) => {
         const height = (document?.querySelector(
           `.${parsedListClassName(slug)}${CARD_LIST_CLASSNAME_POSTFIX}`
         )?.firstChild as HTMLDivElement)?.clientHeight;
@@ -218,7 +218,7 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
             onTouchEnd={handleTouchEnd}
           >
             <CardListSection sectionNum={tags.length} height={heightByTag[activeTagIdx]}>
-              {tags.map((tag) => (
+              {tags?.map((tag) => (
                 <CardListContainer
                   key={tag.slug}
                   tagIndex={activeTagIdx}
