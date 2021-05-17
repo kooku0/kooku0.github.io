@@ -47,6 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         {/* <!-- End Global site tag (gtag.js) - Google Analytics --> */}
       </Head>
+
       {/* <!-- Google Tag Manager (noscript) --> */}
       <noscript>
         <iframe
