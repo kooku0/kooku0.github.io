@@ -132,12 +132,6 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
   }, [tags]);
 
   useEffect(() => {
-    if (contentsRef.current) {
-      contentsRef.current.scrollIntoView();
-    }
-  }, [activeTagIdx]);
-
-  useEffect(() => {
     if (tagListRef.current) {
       const tagContainerElm: HTMLDivElement = tagListRef.current.firstChild as HTMLDivElement;
       const tagElm: HTMLDivElement = tagContainerElm.childNodes[activeTagIdx] as HTMLDivElement;
@@ -157,8 +151,7 @@ const Home: React.FC<HomeProps> = ({ posts, tags }) => {
 
   const scrollToTop = () => {
     if (contentsRef.current) {
-      const { top } = contentsRef.current.getBoundingClientRect();
-      window.scrollTo(0, top);
+      contentsRef.current.scrollIntoView();
     }
   };
 
