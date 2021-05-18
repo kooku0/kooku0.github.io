@@ -23,7 +23,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ to, children, coverImage }) => {
   return (
     <Link href={to}>
-      <Container>
+      <Container role="button">
         {children}
         {coverImage && <CoverImage src={coverImage} width={123} />}
       </Container>
