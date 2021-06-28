@@ -20,5 +20,5 @@
     "@typescript-eslint/no-unused-expressions": ["error"],
     "prettier/prettier": ["error", { "endOfLine": "auto" }]
   },
-  "ignorePatterns": "out"
+  "ignorePatterns": "docs"
 }
