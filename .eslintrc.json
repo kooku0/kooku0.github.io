@@ -19,5 +19,6 @@
     "unused-imports/no-unused-imports": "error",
     "@typescript-eslint/no-unused-expressions": ["error"],
     "prettier/prettier": ["error", { "endOfLine": "auto" }]
-  }
+  },
+  "ignorePatterns": "out"
 }

@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/images
+public_folder: /images
+publish_mode: editorial_workflow
+
+collections:
+  - name: 'meta'
+    label: 'Meta'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'tags'
+        label: 'Tags'
+        file: 'meta/tags.yml'
+        description: 'List of tags'
+        fields:
+          - name: tags
+            label: Tags
+            label_singular: 'Tag'
+            widget: list
+            fields:
+              - label: 'Display Name'
+                name: 'name'
+                widget: 'string'
+                hint: 'Tag name for displaying on the site'
+
+  - name: 'posts'
+    label: 'Posts'
+    folder: '_posts'
+    extension: 'mdx'
+    format: 'frontmatter'
+    create: true
+    slug: '{{title}}'
+    identifier_field: slug
+    summary: '{{title}}'
+    preview_path: posts/{{slug}}.html
+    fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD'
+        dateFormat: 'YYYY-MM-DD'
+        timeFormat: false
+      - label: 'Cover'
+        name: 'cover'
+        widget: 'image'
+        required: false
+        default: '/images/sample-cover.png'
+      - label: Tags
+        label_singular: 'Tag'
+        name: 'tags'
+        widget: list
+        summary: '{{fields.tag}}'
+        field:
+          label: Tag
+          name: tag
+          widget: relation
+          collection: 'meta'
+          file: 'tags'
+          searchFields:
+            - 'tags.*.name'
+          displayFields:
+            - 'tags.*.name'
+          valueField: 'tags.*.slug'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
