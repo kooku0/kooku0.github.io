@@ -1,0 +1,83 @@
+{
+  "pageProps": {
+    "posts": [
+      {
+        "title": "Height Performace Animations",
+        "date": "2021-05-13",
+        "cover": "",
+        "tags": [{ "slug": "web", "name": "Web" }],
+        "slug": "height-performace-animations"
+      },
+      {
+        "title": "Use WebP images",
+        "date": "2021-05-03",
+        "cover": "",
+        "tags": [{ "slug": "web", "name": "Web" }],
+        "slug": "use-webp-images"
+      },
+      {
+        "title": "Throttling & Debouncing",
+        "date": "2021-05-03",
+        "cover": "",
+        "tags": [{ "slug": "web", "name": "Web" }],
+        "slug": "throttling-debouncing"
+      },
+      {
+        "title": "Execution Context",
+        "date": "2021-05-03",
+        "cover": "/images/excution-context-cover.png",
+        "tags": [{ "slug": "javascript", "name": "JavaScript" }],
+        "slug": "execution-context"
+      },
+      {
+        "title": "React v17",
+        "date": "2021-04-20",
+        "cover": "",
+        "tags": [{ "slug": "react", "name": "React" }],
+        "slug": "react-v17"
+      },
+      {
+        "title": "Resource Priority",
+        "date": "2021-04-11",
+        "cover": "",
+        "tags": [{ "slug": "web", "name": "Web" }],
+        "slug": "resource-priority"
+      },
+      {
+        "title": "Render-Blocking CSS",
+        "date": "2021-04-11",
+        "cover": "",
+        "tags": [{ "slug": "web", "name": "Web" }],
+        "slug": "render-blodking-css"
+      },
+      {
+        "title": "DOMContentLoaded vs onLoad",
+        "date": "2021-04-11",
+        "cover": "",
+        "tags": [{ "slug": "web", "name": "Web" }],
+        "slug": "domcontentloaded-vs-onload"
+      },
+      {
+        "title": "Third-party JavaScript performance",
+        "date": "2021-04-04",
+        "cover": "",
+        "tags": [{ "slug": "web", "name": "Web" }],
+        "slug": "third-party-javascript-performance-with-script-async-defer"
+      },
+      {
+        "slug": "react-fiber",
+        "title": "React fiber & reconciliation",
+        "date": "2021-04-04",
+        "cover": "/images/react-fiber-cover.jpeg",
+        "tags": [{ "slug": "react", "name": "React" }]
+      }
+    ],
+    "tags": [
+      { "slug": "total", "name": "Total" },
+      { "slug": "javascript", "name": "JavaScript" },
+      { "slug": "web", "name": "Web" },
+      { "slug": "react", "name": "React" }
+    ]
+  },
+  "__N_SSG": true
+}
