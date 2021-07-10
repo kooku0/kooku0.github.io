@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "kooku",
   "scripts": {
-    "export": "next build && next export",
+    "export": "next build && next export -o docs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
