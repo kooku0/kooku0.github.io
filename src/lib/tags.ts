@@ -7,6 +7,11 @@ export type TagContent = {
   readonly name: string;
 };
 
+export const TotalTag: TagContent = {
+  slug: 'total',
+  name: '전체'
+};
+
 function generateTagMap(): { [key: string]: TagContent } {
   const result: { [key: string]: TagContent } = {};
   tags.tags.forEach((tag: TagContent) => {

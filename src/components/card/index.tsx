@@ -1,34 +1,108 @@
 import styled from '@emotion/styled';
-import Link from 'next/link';
 import React from 'react';
 
-import CoverImage from '@/components/cover-image';
-import { alignCenter, flex, justifySpaceBetween } from '@/styles/css';
+import { PostContent } from '@/lib/posts';
+import {
+  alignCenter,
+  borderBottomSolidGrey30,
+  flex,
+  flexColumn,
+  justifySpaceBetween,
+  textBlack,
+  textGrey40,
+  textGrey200
+} from '@/styles/css';
+import theme from '@/styles/theme';
+
+interface CardProps {
+  post: PostContent;
+}
+
+const Card: React.FC<CardProps> = ({ post }) => {
+  return (
+    <Container role="button">
+      <Contents>
+        {post.tags?.map((tag) => (
+          <Tag key={tag.slug}>{tag.name}</Tag>
+        ))}
+        <Title>{post.title}</Title>
+        <Date dateTime={post.date}>{post.date}</Date>
+      </Contents>
+      {post.cover && <Thumbnail src={post.cover} />}
+    </Container>
+  );
+};
+
+export default React.memo(Card);
+
+const Contents = styled.div`
+  ${flexColumn}
+  width: calc(100% - 160px);
+
+  ${theme.media.mobile} {
+    width: calc(100% - 107px);
+  }
+`;
+
+const Title = styled.h3`
+  ${textBlack}
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+  color: #000;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+`;
+
+const Tag = styled.span`
+  ${textGrey200}
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.57;
+  margin-right: 8px;
+  padding-bottom: 6px;
+`;
+
+const Date = styled.time`
+  ${textGrey40}
+  display: block;
+  font-size: 13px;
+  line-height: 14px;
+  margin-top: 8px;
+`;
 
 const Container = styled.div`
   ${flex}
   ${justifySpaceBetween}
   ${alignCenter}
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  ${borderBottomSolidGrey30}
+  height: 192px;
+  padding: 32px 0;
+
+  &:hover ${Title} {
+    text-decoration: underline;
+  }
+
+  ${theme.media.mobile} {
+    height: 163px;
+  }
 `;
 
-interface CardProps {
-  coverImage: string;
-  to: string;
-  children: React.ReactNode;
-}
+const Thumbnail = styled.img`
+  width: 150px;
+  height: 128px;
+  border-radius: 4px;
+  object-fit: cover;
 
-const Card: React.FC<CardProps> = ({ to, children, coverImage }) => {
-  return (
-    <Link href={to}>
-      <Container role="button">
-        {children}
-        {coverImage && <CoverImage src={coverImage} width={123} />}
-      </Container>
-    </Link>
-  );
-};
-
-export default React.memo(Card);
+  ${theme.media.mobile} {
+    width: 98px;
+    height: 82px;
+  }
+`;
