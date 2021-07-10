@@ -22,6 +22,10 @@ collections:
             label_singular: 'Tag'
             widget: list
             fields:
+              - label: 'Slug'
+                name: 'slug'
+                widget: 'string'
+                hint: 'The part of a URL identifies the tag'
               - label: 'Display Name'
                 name: 'name'
                 widget: 'string'
