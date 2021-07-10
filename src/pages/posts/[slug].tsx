@@ -9,7 +9,7 @@ import Head from 'next/head';
 import { ParsedUrlQuery } from 'querystring';
 import React, { useCallback, useEffect, useState } from 'react';
 
-import CoverImage from '@/components/cover-image';
+import CoverImage from '@/components/CoverImage';
 import markdownToHtml from '@/lib/markdownToHtml';
 import { getPostBySlug, listPostContent, PostContent } from '@/lib/posts';
 import color from '@/styles';
