@@ -33,8 +33,9 @@ const BodySection: React.FC<Props> = ({ posts, tags, scrollToTop }) => {
   const moveActiveTagToCenter = () => {
     if (tagListRef.current) {
       const tagContainerElm: HTMLDivElement = tagListRef.current.firstChild as HTMLDivElement;
-      const tagElm: HTMLDivElement = tagContainerElm.childNodes[activeTagIdx] as HTMLDivElement;
-
+      const tagElm: HTMLDivElement = tagContainerElm.childNodes[0].childNodes[
+        activeTagIdx
+      ] as HTMLDivElement;
       const { x: tagX, width: tagWidth } = tagElm.getBoundingClientRect();
 
       if (tagX < 0) {
