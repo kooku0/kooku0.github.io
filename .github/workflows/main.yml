@@ -33,8 +33,8 @@ jobs:
       - name: Install
         run: yarn install
 
-      - name: Build
-        run: yarn build
+      - name: Build & Export
+        run: yarn export
       
       - name: Add & Commit
         uses: EndBug/add-and-commit@v7.2.1
