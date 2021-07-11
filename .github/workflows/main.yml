@@ -38,7 +38,7 @@ jobs:
       
       - name: Add & Commit
         uses: EndBug/add-and-commit
-        width:
+        with:
            add: 'docs'
            cwd: 'touch ./docs/.nojekyll'
            message: 'Publish post'
