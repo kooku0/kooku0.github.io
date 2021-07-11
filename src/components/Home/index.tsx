@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import { PostContent } from '@/lib/posts';
 import { TagContent } from '@/lib/tags';
 
+import Navigation from '../Navigation';
 import BodySection from './BodySection';
 import HeaderSection from './HeaderSection';
 
@@ -27,6 +28,7 @@ const Home: React.FC<Props> = ({ posts, tags }) => {
 
   return (
     <>
+      <Navigation />
       <HeaderSection />
       <Container ref={containerRef}>
         <BodySection posts={posts} tags={tags} scrollToTop={scrollToTopInElement(containerRef)} />

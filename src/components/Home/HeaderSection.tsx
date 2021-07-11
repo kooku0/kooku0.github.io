@@ -25,13 +25,13 @@ const Section = styled.section`
 
 const Title = styled.h1`
   padding: 32px 0 16px 0;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 800;
   line-height: 1.45;
   color: black;
 
   ${({ theme }) => theme.media.mobile} {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
   }
 `;
