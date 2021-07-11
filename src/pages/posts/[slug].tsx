@@ -124,7 +124,7 @@ const Post: React.FC<Props> = ({ post }) => {
         <meta property="og:type" content="article" key="type" />
       </Head>
       <LayoutContainer>
-        <Navigation sharePost={shareLink} />
+        <Navigation />
 
         <Article>
           <Section>
