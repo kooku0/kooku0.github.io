@@ -16,11 +16,12 @@ import theme from '@/styles/theme';
 
 interface CardProps {
   post: PostContent;
+  onClick: (slug: string) => void;
 }
 
-const Card: React.FC<CardProps> = ({ post }) => {
+const Card: React.FC<CardProps> = ({ post, onClick }) => {
   return (
-    <Container role="button">
+    <Container role="button" onClick={() => onClick(post.slug)}>
       <Contents>
         {post.tags?.map((tag) => (
           <Tag key={tag.slug}>{tag.name}</Tag>

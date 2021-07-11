@@ -12,6 +12,30 @@ import {
 } from '@/styles/css';
 import metaConfig from '~/meta-config';
 
+const Profile: React.FC = () => {
+  return (
+    <Container>
+      <Image src={metaConfig.profile} alt="profile" width="80" height="80" />
+      <Contents>
+        <span>Written by</span>
+        <AuthorName>
+          <span>{`@${metaConfig.author}`}</span>
+        </AuthorName>
+        <Introduction>
+          <span>{metaConfig.introduction}</span>
+        </Introduction>
+        <SocialLink>
+          <a href={`https://github.com/${metaConfig.social.github}`} rel="noreferrer">
+            GitHub
+          </a>
+        </SocialLink>
+      </Contents>
+    </Container>
+  );
+};
+
+export default React.memo(Profile);
+
 const Container = styled.div`
   ${flex}
   ${alignCenter}
@@ -57,27 +81,3 @@ const SocialLink = styled.div`
   font-size: 85%;
   font-weight: 700;
 `;
-
-const Profile: React.FC = () => {
-  return (
-    <Container>
-      <Image src={metaConfig.profile} alt="profile" width="80" height="80" />
-      <Contents>
-        <span>Written by</span>
-        <AuthorName>
-          <span>{`@${metaConfig.author}`}</span>
-        </AuthorName>
-        <Introduction>
-          <span>{metaConfig.introduction}</span>
-        </Introduction>
-        <SocialLink>
-          <a href={`https://github.com/${metaConfig.social.github}`} rel="noreferrer">
-            GitHub
-          </a>
-        </SocialLink>
-      </Contents>
-    </Container>
-  );
-};
-
-export default React.memo(Profile);

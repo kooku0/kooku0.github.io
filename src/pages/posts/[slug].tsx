@@ -1,15 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import styled from '@emotion/styled';
-import { mdiClose, mdiHeart, mdiHeartOutline } from '@mdi/js';
+import { mdiHeart, mdiHeartOutline } from '@mdi/js';
 import Icon from '@mdi/react';
 import { GetStaticProps } from 'next';
-import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import { ParsedUrlQuery } from 'querystring';
 import React, { useCallback, useEffect, useState } from 'react';
 
 import CoverImage from '@/components/CoverImage';
+import Navigation from '@/components/Navigation';
 import markdownToHtml from '@/lib/markdownToHtml';
 import { getPostBySlug, listPostContent, PostContent } from '@/lib/posts';
 import color from '@/styles';
@@ -18,11 +18,9 @@ import {
   alignCenter,
   backgroundBlue40,
   backgroundGrey30,
-  backgroundWhite,
   flex,
   flexColumn,
   justifyCenter,
-  justifySpaceBetween,
   textBlack,
   textBlue300,
   textGrey200,
@@ -32,34 +30,151 @@ import MarkdownStyle from '@/styles/MarkdownStyle';
 import { share } from '@/utils';
 import metaConfig from '~/meta-config';
 
+interface Props {
+  post: PostContent & {
+    readonly content: string;
+  };
+}
+
+interface Params extends ParsedUrlQuery {
+  slug: string;
+}
+
+export const getStaticProps: GetStaticProps<Props, Params> = async (context) => {
+  const params = context.params!;
+  const post = getPostBySlug(params.slug, ['title', 'slug', 'content', 'cover', 'tags']);
+  const content = await markdownToHtml(post.content || '');
+
+  return {
+    props: {
+      post: {
+        ...post,
+        content
+      }
+    }
+  };
+};
+
+export const getStaticPaths = () => {
+  const posts = listPostContent();
+
+  return {
+    paths: posts?.map((post) => {
+      return {
+        params: {
+          slug: post.slug
+        }
+      };
+    }),
+    fallback: false
+  };
+};
+
+const Post: React.FC<Props> = ({ post }) => {
+  const { content, cover, slug, title, tags } = post;
+  const [isLike, setIsLike] = useState(false);
+
+  useEffect(() => {
+    try {
+      const likes: string[] = JSON.parse(localStorage.getItem('likes') ?? '[]');
+      if (likes.indexOf(slug) !== -1) {
+        setIsLike(true);
+      } else {
+        setIsLike(false);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
+  const toggleLike = useCallback(() => {
+    try {
+      const likes: string[] = JSON.parse(localStorage.getItem('likes') ?? '[]');
+      if (isLike) {
+        likes.splice(likes.indexOf(slug), 1);
+      } else {
+        likes.push(slug);
+      }
+      localStorage.setItem('likes', JSON.stringify(likes));
+      setIsLike(!isLike);
+    } catch (error) {
+      console.error(error);
+    }
+  }, [isLike]);
+
+  const shareLink = useCallback(() => {
+    const data = {
+      title,
+      text: `${title}`,
+      url: `${window.location.origin}/posts/${slug}?shared=true`
+    };
+
+    share(data);
+  }, []);
+
+  return (
+    <>
+      <Head>
+        <title>{`${metaConfig.title} - ${title}`}</title>
+        <meta property="og:logo" content={`${metaConfig.siteUri}/favicon.ico`} key="logo" />
+        <meta property="og:title" content={title} key="title" />
+        <meta property="og:image" content={`${metaConfig.siteUri}${cover}`} key="image" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="article" key="type" />
+      </Head>
+      <LayoutContainer>
+        <Navigation sharePost={shareLink} />
+
+        <Article>
+          <Section>
+            {cover && <CoverImage src={cover} />}
+            <Tags>
+              {tags?.map(({ slug: slugOfTag, name }) => (
+                <Tag key={slugOfTag}>{name}</Tag>
+              ))}
+            </Tags>
+            <header>
+              <Title>{title}</Title>
+            </header>
+
+            <Contents>
+              <Markdown dangerouslySetInnerHTML={{ __html: content }} />
+            </Contents>
+
+            <ButtonContainer>
+              <LikeButton onClick={toggleLike} isLike={isLike} className="like-button">
+                <Icon
+                  className="like-button"
+                  path={isLike ? mdiHeart : mdiHeartOutline}
+                  color={isLike ? color.grey40 : color.blue300}
+                  size="20"
+                />
+                LIKE
+              </LikeButton>
+
+              <ShareButton onClick={shareLink} className="share-button">
+                <SvgIcon
+                  src="/icon/share.svg"
+                  alt="share"
+                  height="20"
+                  width="20"
+                  className="share-button"
+                />
+                SHARE
+              </ShareButton>
+            </ButtonContainer>
+          </Section>
+        </Article>
+      </LayoutContainer>
+    </>
+  );
+};
+
+export default Post;
+
 const LayoutContainer = styled.div`
   position: relative;
-`;
-
-const NavBar = styled.nav`
-  ${flex}
-  ${justifySpaceBetween}
-  ${alignCenter}
-  ${SectionContainer}
-  ${backgroundWhite}
-  position: sticky;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  z-index: 999;
-  height: 48px;
-
-  ${({ theme }) => theme.media.desktop} {
-    display: none;
-  }
-`;
-
-const NavIconContainer = styled.div`
-  & > img {
-    margin-left: 20px;
-  }
 `;
 
 const SvgIcon = styled.img``;
@@ -149,176 +264,3 @@ const ShareButton = styled.button`
     left: 16px;
   }
 `;
-
-interface Props {
-  post: PostContent & {
-    readonly content: string;
-  };
-}
-
-interface Params extends ParsedUrlQuery {
-  slug: string;
-}
-
-export const getStaticProps: GetStaticProps<Props, Params> = async (context) => {
-  const params = context.params!;
-  const post = getPostBySlug(params.slug, ['title', 'slug', 'content', 'cover', 'tags']);
-  const content = await markdownToHtml(post.content || '');
-
-  return {
-    props: {
-      post: {
-        ...post,
-        content
-      }
-    }
-  };
-};
-
-export const getStaticPaths = () => {
-  const posts = listPostContent();
-
-  return {
-    paths: posts?.map((post) => {
-      return {
-        params: {
-          slug: post.slug
-        }
-      };
-    }),
-    fallback: false
-  };
-};
-
-const Post: React.FC<Props> = ({ post }) => {
-  const { content, cover, slug, title, tags } = post;
-  const [isLike, setIsLike] = useState(false);
-
-  const router = useRouter();
-
-  useEffect(() => {
-    try {
-      const likes: string[] = JSON.parse(localStorage.getItem('likes') ?? '[]');
-      if (likes.indexOf(slug) !== -1) {
-        setIsLike(true);
-      } else {
-        setIsLike(false);
-      }
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
-
-  const toggleLike = useCallback(() => {
-    try {
-      const likes: string[] = JSON.parse(localStorage.getItem('likes') ?? '[]');
-      if (isLike) {
-        likes.splice(likes.indexOf(slug), 1);
-      } else {
-        likes.push(slug);
-      }
-      localStorage.setItem('likes', JSON.stringify(likes));
-      setIsLike(!isLike);
-    } catch (error) {
-      console.error(error);
-    }
-  }, [isLike]);
-
-  const closePost = useCallback(() => {
-    router.replace('/');
-  }, []);
-
-  const shareLink = useCallback(() => {
-    const data = {
-      title,
-      text: `${title}`,
-      url: `${window.location.origin}/posts/${slug}?shared=true`
-    };
-
-    share(data);
-  }, []);
-
-  return (
-    <>
-      <Head>
-        <title>{`${metaConfig.title} - ${title}`}</title>
-        <meta property="og:logo" content={`${metaConfig.siteUri}/favicon.ico`} key="logo" />
-        <meta property="og:title" content={title} key="title" />
-        <meta property="og:image" content={`${metaConfig.siteUri}${cover}`} key="image" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:type" content="article" key="type" />
-      </Head>
-      <LayoutContainer>
-        <NavBar>
-          <div role="button" tabIndex={0} onClick={closePost}>
-            <Icon path={mdiClose} size="24" color={color.grey300} />
-          </div>
-
-          <NavIconContainer className="like-button">
-            <SvgIcon
-              role="button"
-              onClick={toggleLike}
-              src={isLike ? '/icon/like-on.svg' : '/icon/like-off.svg'}
-              className="like-button"
-              alt="like"
-              height="24"
-              width="24"
-            />
-            <SvgIcon
-              role="button"
-              onClick={shareLink}
-              src="/icon/share.svg"
-              alt="share"
-              height="24"
-              width="24"
-            />
-          </NavIconContainer>
-        </NavBar>
-
-        <Article>
-          <Section>
-            {cover && <CoverImage src={cover} />}
-            <Tags>
-              {tags?.map(({ slug: slugOfTag, name }) => (
-                <Tag key={slugOfTag}>{name}</Tag>
-              ))}
-            </Tags>
-            <header>
-              <Title>{title}</Title>
-            </header>
-
-            <Contents>
-              <Markdown dangerouslySetInnerHTML={{ __html: content }} />
-            </Contents>
-
-            <ButtonContainer>
-              <LikeButton onClick={toggleLike} isLike={isLike} className="like-button">
-                <Icon
-                  className="like-button"
-                  path={isLike ? mdiHeart : mdiHeartOutline}
-                  color={isLike ? color.grey40 : color.blue300}
-                  size="20"
-                />
-                LIKE
-              </LikeButton>
-
-              <ShareButton onClick={shareLink} className="share-button">
-                <SvgIcon
-                  src="/icon/share.svg"
-                  alt="share"
-                  height="20"
-                  width="20"
-                  className="share-button"
-                />
-                SHARE
-              </ShareButton>
-            </ButtonContainer>
-          </Section>
-        </Article>
-      </LayoutContainer>
-    </>
-  );
-};
-
-export default Post;

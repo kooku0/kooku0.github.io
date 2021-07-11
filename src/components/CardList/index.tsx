@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { useRouter } from 'next/dist/client/router';
 import React, { useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -17,6 +18,8 @@ interface Props {
 const CardList: React.FC<Props> = ({ posts: postsByTag }) => {
   const [posts, setPosts] = useState<PostContent[]>([]);
 
+  const route = useRouter();
+
   useEffect(() => {
     setPosts(postsByTag.slice(0, LIMIT_OF_PAGE));
   }, [postsByTag]);
@@ -29,6 +32,10 @@ const CardList: React.FC<Props> = ({ posts: postsByTag }) => {
       console.error(error);
     }
   }
+
+  const moveToPost = (slug: string) => {
+    route.push(`/posts/${slug}`);
+  };
 
   return (
     <Container>
@@ -45,7 +52,7 @@ const CardList: React.FC<Props> = ({ posts: postsByTag }) => {
           >
             {posts.map((post: PostContent) => (
               <CSSTransition key={post.slug} in exit={false} timeout={1000} classNames="fade">
-                <Card post={post} />
+                <Card post={post} onClick={moveToPost} />
               </CSSTransition>
             ))}
           </InfiniteScroll>
