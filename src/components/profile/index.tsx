@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
 
-import { flutter } from '@/styles/animations';
 import {
   alignCenter,
   backgroundGrey20,
@@ -10,6 +9,7 @@ import {
   textGrey200,
   textGrey300
 } from '@/styles/css';
+import { flutter } from '@/styles/keyframes';
 import metaConfig from '~/meta-config';
 
 const Profile: React.FC = () => {

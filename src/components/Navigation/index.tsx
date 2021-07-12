@@ -7,7 +7,10 @@ import { SectionContainer } from '@/styles/components';
 import { alignCenter, flex, justifySpaceBetween, textWhite } from '@/styles/css';
 import metaConfig from '~/meta-config';
 
-const Navigation: React.FC = () => {
+interface Props {
+  sticky: boolean;
+}
+const Navigation: React.FC<Props> = ({ sticky }) => {
   const router = useRouter();
 
   const moveToHome = () => {
@@ -15,7 +18,7 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <Container>
+    <Container sticky={sticky}>
       <NavBar>
         <Title role="button" tabIndex={0} onClick={moveToHome}>
           {metaConfig.title}
@@ -29,9 +32,9 @@ const Navigation: React.FC = () => {
 
 export default React.memo(Navigation);
 
-const Container = styled.div`
+const Container = styled.div<{ sticky: boolean }>`
   background: linear-gradient(72deg, #6ecaf5, #e7c6f1);
-  position: sticky;
+  position: ${({ sticky }) => (sticky ? 'sticky' : 'static')};
   left: 0;
   right: 0;
   top: 0;

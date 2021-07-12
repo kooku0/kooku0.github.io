@@ -28,7 +28,7 @@ const Home: React.FC<Props> = ({ posts, tags }) => {
 
   return (
     <>
-      <Navigation />
+      <Navigation sticky={false} />
       <HeaderSection />
       <Container ref={containerRef}>
         <BodySection posts={posts} tags={tags} scrollToTop={scrollToTopInElement(containerRef)} />

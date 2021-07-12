@@ -12,7 +12,6 @@ import CoverImage from '@/components/CoverImage';
 import Navigation from '@/components/Navigation';
 import markdownToHtml from '@/lib/markdownToHtml';
 import { getPostBySlug, listPostContent, PostContent } from '@/lib/posts';
-import color from '@/styles';
 import SectionContainer from '@/styles/container/SectionContainer';
 import {
   alignCenter,
@@ -27,6 +26,7 @@ import {
   textGrey300
 } from '@/styles/css';
 import MarkdownStyle from '@/styles/MarkdownStyle';
+import { color } from '@/styles/theme';
 import { share } from '@/utils';
 import metaConfig from '~/meta-config';
 
@@ -124,7 +124,7 @@ const Post: React.FC<Props> = ({ post }) => {
         <meta property="og:type" content="article" key="type" />
       </Head>
       <LayoutContainer>
-        <Navigation />
+        <Navigation sticky />
 
         <Article>
           <Section>
