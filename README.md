@@ -1,7 +1,5 @@
 # Blog-Template
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4b1962ce-6206-4d8f-9516-63be92294198/deploy-status)](https://app.netlify.com/sites/blog-template-kooku/deploys)
-
 Blog Template with next.js &amp; emotion &amp; netlify-cms
 
 > Blog Template based on Next.js
@@ -12,20 +10,6 @@ In this template
 - Configurable
 - Enhance UX
 - Shared Link
-
-## Demo
-
-- [Demo Site](http://blog-template-kooku.netlify.app/)
-
-### PC
-
-![img](./assets/screenshot-pc.png)
-
-### Mobile
-
-![img](./assets/screenshot-mobile.png)
-
-![gif](./assets/demo.gif)
 
 ## Quick Start
 
@@ -62,11 +46,7 @@ export default {
 };
 ```
 
-### 4. Publish with [netlify](https://netlify.com)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kooku94/blog-template-kooku)
-
-### 5. Add post with [Netlify CMS](https://www.netlifycms.org/)
+### 4. Add post with [Netlify CMS](https://www.netlifycms.org/)
 
 you can posting with netlify cms..
 

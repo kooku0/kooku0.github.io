@@ -33,7 +33,7 @@ collections:
 
   - name: 'resume'
     label: 'Resume'
-    foloer: '_resume'
+    folder: '_resume'
     extension: 'mdx'
     format: 'frontmatter'
     create: false
