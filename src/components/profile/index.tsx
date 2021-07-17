@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import Link from 'next/link';
 import React from 'react';
 
 import {
@@ -6,6 +7,7 @@ import {
   backgroundGrey20,
   flex,
   textBlue300,
+  textBlue700,
   textGrey200,
   textGrey300
 } from '@/styles/css';
@@ -27,6 +29,7 @@ const Profile: React.FC = () => {
           <span>{metaConfig.introduction}</span>
         </Introduction>
         <SocialLink>
+          <Link href="/resume">Resume</Link>
           <a href={`https://github.com/${metaConfig.social.github}`} rel="noreferrer">
             GitHub
           </a>
@@ -75,7 +78,13 @@ const Introduction = styled.div`
 `;
 
 const SocialLink = styled.div`
+  ${flex}
   margin-top: 4px;
-  font-size: 85%;
-  font-weight: 700;
+
+  & > * {
+    ${textBlue700}
+    font-size: 85%;
+    font-weight: 900;
+    margin-right: 4px;
+  }
 `;
