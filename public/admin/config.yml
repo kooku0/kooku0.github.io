@@ -1,9 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: kooku94/kooku94.github.io
   branch: main
 media_folder: public/images
 public_folder: /images
-publish_mode: editorial_workflow
+site_url: https://kooku94.github.io
+local_backend: true
+# publish_mode: editorial_workflow
 
 collections:
   - name: 'meta'
@@ -42,9 +45,6 @@ collections:
     identifier_field: slug
     summary: 'Resume'
     fields:
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
