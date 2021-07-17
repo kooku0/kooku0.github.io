@@ -3,6 +3,23 @@ import React from 'react';
 
 import { backgroundGrey20 } from '@/styles/css';
 
+interface ImageCoverProps {
+  src: string;
+  width?: number;
+}
+
+const CoverImage: React.FC<ImageCoverProps> = ({ src, width }) => {
+  return (
+    <ImageContainer width={width}>
+      <ImageWrapper>
+        <img src={src} alt="cover" width={123} height={82} loading="lazy" />
+      </ImageWrapper>
+    </ImageContainer>
+  );
+};
+
+export default React.memo(CoverImage);
+
 const ImageContainer = styled.div<{ width?: number }>`
   width: ${({ width }) => (width ? `${width}px` : '100%')};
 `;
@@ -25,20 +42,3 @@ const ImageWrapper = styled.div`
     height: 100%;
   }
 `;
-
-interface ImageCoverProps {
-  src: string;
-  width?: number;
-}
-
-const CoverImage: React.FC<ImageCoverProps> = ({ src, width }) => {
-  return (
-    <ImageContainer width={width}>
-      <ImageWrapper>
-        <img src={src} alt="cover" width={123} height={82} loading="lazy" />
-      </ImageWrapper>
-    </ImageContainer>
-  );
-};
-
-export default React.memo(CoverImage);

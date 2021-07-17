@@ -5,7 +5,7 @@ import path, { join } from 'path';
 
 import { getTag, listTags, TagContent } from './tags';
 
-const postsDirectory = path.join(process.cwd(), '_posts');
+const mdxDirectory = (folder: string) => path.join(process.cwd(), folder);
 
 export type PostContent = {
   readonly date: string;
@@ -22,12 +22,12 @@ function fetchPostContent(): PostContent[] {
     return postCache;
   }
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs.readdirSync(mdxDirectory('_posts'));
   const allPostsData = fileNames
     ?.filter((it: any) => it.endsWith('.mdx'))
     ?.map((fileName) => {
       // Read markdown file as string
-      const fullPath = path.join(postsDirectory, fileName);
+      const fullPath = path.join(mdxDirectory('_posts'), fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
 
       // Use gray-matter to parse the post metadata section
@@ -73,7 +73,7 @@ export function listPostContent(): PostContent[] {
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.mdx$/, '');
-  const fullPath = join(postsDirectory, `${realSlug}.mdx`);
+  const fullPath = join(mdxDirectory('_posts'), `${realSlug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
@@ -101,4 +101,18 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   });
 
   return items;
+}
+
+export function getResume(slug: string) {
+  const realSlug = slug.replace(/\.mdx$/, '');
+  const fullPath = join(mdxDirectory('_resume'), `${realSlug}.mdx`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { content } = matter(fileContents);
+
+  const resume = {
+    slug,
+    content
+  };
+
+  return resume;
 }

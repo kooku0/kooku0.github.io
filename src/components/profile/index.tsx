@@ -12,10 +12,12 @@ import {
 import { flutter } from '@/styles/keyframes';
 import metaConfig from '~/meta-config';
 
+import CircleImage from '../Image/CircleImage';
+
 const Profile: React.FC = () => {
   return (
     <Container>
-      <Image src={metaConfig.profile} alt="profile" width="80" height="80" />
+      <CircleImage src={metaConfig.profile} alt="profile" width="80" height="80" />
       <Contents>
         <span>Written by</span>
         <AuthorName>
@@ -42,13 +44,9 @@ const Container = styled.div`
   margin-bottom: 16px;
 `;
 
-const Image = styled.img`
-  border-radius: 100%;
-  object-fit: cover;
-  margin-right: 12px;
-`;
-
 const Contents = styled.div`
+  margin-left: 12px;
+
   & > span {
     ${textGrey200}
     font-size: 90%;
