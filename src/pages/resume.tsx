@@ -31,9 +31,11 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 
 const Resume: React.FC<Props> = ({ content }) => {
   return (
-    <Contents>
-      <Markdown dangerouslySetInnerHTML={{ __html: content }} />
-    </Contents>
+    <Article>
+      <Contents>
+        <Markdown dangerouslySetInnerHTML={{ __html: content }} />
+      </Contents>
+    </Article>
   );
 };
 
@@ -46,6 +48,24 @@ const Contents = styled.div`
   min-height: 320px;
 `;
 
+const Article = styled.article`
+  max-width: 624px;
+  position: relative;
+  padding-bottom: 32px;
+  padding: 0.8125rem 1.21875rem 2.4375rem;
+  margin: auto;
+
+  ${({ theme }) => theme.media.mobile} {
+    padding: 0 16px;
+  }
+`;
+
 const Markdown = styled.div`
   ${MarkdownStyle};
+
+  tr th {
+    padding: 0;
+    height: 0;
+    border: 0;
+  }
 `;

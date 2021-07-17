@@ -1,43 +1,51 @@
 import { css } from '@emotion/react';
 
-import theme from '../theme';
+import { color } from '../theme';
 
 export const textWhite = css`
-  color: ${theme.color.white};
+  color: ${color.white};
 `;
 
 export const textBlack = css`
-  color: ${theme.color.black};
+  color: ${color.black};
 `;
 
 export const textBlue40 = css`
-  color: ${theme.color.blue40};
+  color: ${color.blue40};
 `;
 
 export const textBlue300 = css`
-  color: ${theme.color.blue300};
+  color: ${color.blue300};
+`;
+
+export const textBlue500 = css`
+  color: ${color.blue500};
+`;
+
+export const textBlue700 = css`
+  color: ${color.blue700};
 `;
 
 export const textRed400 = css`
-  color: ${theme.color.red400};
+  color: ${color.red400};
 `;
 
 export const textGrey20 = css`
-  color: ${theme.color.grey20};
+  color: ${color.grey20};
 `;
 
 export const textGrey40 = css`
-  color: ${theme.color.grey40};
+  color: ${color.grey40};
 `;
 
 export const textGrey30 = css`
-  color: ${theme.color.grey30};
+  color: ${color.grey30};
 `;
 
 export const textGrey200 = css`
-  color: ${theme.color.grey200};
+  color: ${color.grey200};
 `;
 
 export const textGrey300 = css`
-  color: ${theme.color.grey300};
+  color: ${color.grey300};
 `;

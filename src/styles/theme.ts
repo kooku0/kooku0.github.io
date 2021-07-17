@@ -19,6 +19,8 @@ const color = {
   black: '#000000',
   blue40: '#e8f3ff',
   blue300: '#1d6ff2',
+  blue500: '#3182f6',
+  blue700: '#1b64da',
   red400: '#dc2d44',
   grey20: '#f6f7f9',
   grey40: '#c5c7cb',
