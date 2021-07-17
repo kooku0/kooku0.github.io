@@ -8,7 +8,7 @@ import Head from 'next/head';
 import { ParsedUrlQuery } from 'querystring';
 import React, { useCallback, useEffect, useState } from 'react';
 
-import CoverImage from '@/components/CoverImage';
+import CoverImage from '@/components/Image/CoverImage';
 import Navigation from '@/components/Navigation';
 import markdownToHtml from '@/lib/markdownToHtml';
 import { getPostBySlug, listPostContent, PostContent } from '@/lib/posts';
