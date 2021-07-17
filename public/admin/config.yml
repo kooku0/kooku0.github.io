@@ -5,6 +5,7 @@ backend:
 media_folder: public/images
 public_folder: /images
 site_url: https://kooku94.github.io
+base_url: https://api.github.com
 local_backend: true
 # publish_mode: editorial_workflow
 
