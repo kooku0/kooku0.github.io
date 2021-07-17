@@ -13,8 +13,13 @@ interface Props {
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const slugOfResume = 'resume';
-  const resume = getResume(slugOfResume);
-  const content = await markdownToHtml(resume.content || '');
+  let content = '';
+  try {
+    const resume = getResume(slugOfResume);
+    content = await markdownToHtml(resume.content || '');
+  } catch (error) {
+    console.error(error);
+  }
 
   return {
     props: {
