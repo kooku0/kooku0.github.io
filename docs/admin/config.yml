@@ -31,6 +31,23 @@ collections:
                 widget: 'string'
                 hint: 'Tag name for displaying on the site'
 
+  - name: 'resume'
+    label: 'Resume'
+    foloer: '_resume'
+    extension: 'mdx'
+    format: 'frontmatter'
+    create: true
+    slug: 'resume'
+    identifier_field: slug
+    summary: 'Resume'
+    field:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+
   - name: 'posts'
     label: 'Posts'
     folder: '_posts'
