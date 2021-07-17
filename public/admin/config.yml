@@ -36,11 +36,12 @@ collections:
     foloer: '_resume'
     extension: 'mdx'
     format: 'frontmatter'
-    create: true
+    create: false
+    delete: false
     slug: 'resume'
     identifier_field: slug
     summary: 'Resume'
-    field:
+    fields:
       - label: 'Title'
         name: 'title'
         widget: 'string'
