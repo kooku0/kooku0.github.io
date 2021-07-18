@@ -26,7 +26,7 @@ import {
   textGrey300
 } from '@/styles/css';
 import MarkdownStyle from '@/styles/MarkdownStyle';
-import { color } from '@/styles/theme';
+import { color, media } from '@/styles/theme';
 import { share } from '@/utils';
 import metaConfig from '~/meta-config';
 
@@ -127,8 +127,8 @@ const Post: React.FC<Props> = ({ post }) => {
         <Navigation sticky />
 
         <Article>
+          {cover && <CoverImage src={cover} />}
           <Section>
-            {cover && <CoverImage src={cover} />}
             <Tags>
               {tags?.map(({ slug: slugOfTag, name }) => (
                 <Tag key={slugOfTag}>{name}</Tag>
@@ -179,14 +179,23 @@ const LayoutContainer = styled.div`
 
 const SvgIcon = styled.img``;
 
-const Article = styled.article``;
+const Article = styled.article`
+  ${media.desktop} {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  ${media.tablet} {
+    margin: 0 16px;
+  }
+`;
 
 const Section = styled.section`
   ${SectionContainer};
   position: relative;
   padding-bottom: 32px;
 
-  ${({ theme }) => theme.media.mobile} {
+  ${media.mobile} {
     margin: 0 16px;
   }
 `;
