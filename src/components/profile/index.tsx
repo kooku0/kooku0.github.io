@@ -14,12 +14,12 @@ import {
 import { flutter } from '@/styles/keyframes';
 import metaConfig from '~/meta-config';
 
-import CircleImage from '../Image/CircleImage';
+import ProfileImage from './ProfileImage';
 
 const Profile: React.FC = () => {
   return (
     <Container>
-      <CircleImage src={metaConfig.profile} alt="profile" width="80" height="80" />
+      <ProfileImage src={metaConfig.profile} alt="profile" width="80" height="80" />
       <Contents>
         <span>Written by</span>
         <AuthorName>
