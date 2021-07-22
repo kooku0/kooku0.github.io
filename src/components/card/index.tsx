@@ -14,6 +14,8 @@ import {
 } from '@/styles/css';
 import theme from '@/styles/theme';
 
+import Thumbnail from './Thumbnail';
+
 interface CardProps {
   post: PostContent;
   onClick: (slug: string) => void;
@@ -29,7 +31,7 @@ const Card: React.FC<CardProps> = ({ post, onClick }) => {
         <Title>{post.title}</Title>
         <Date dateTime={post.date}>{post.date}</Date>
       </Contents>
-      {post.cover && <Thumbnail src={post.cover} />}
+      <Thumbnail src={post.cover} />
     </Container>
   );
 };
@@ -87,23 +89,17 @@ const Container = styled.div`
   height: 192px;
   padding: 32px 0;
 
-  &:hover ${Title} {
-    text-decoration: underline;
+  &:hover {
+    ${Title} {
+      text-decoration: underline;
+    }
+
+    ${Thumbnail} {
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
   }
 
   ${theme.media.mobile} {
     height: 163px;
-  }
-`;
-
-const Thumbnail = styled.img`
-  width: 150px;
-  height: 128px;
-  border-radius: 4px;
-  object-fit: cover;
-
-  ${theme.media.mobile} {
-    width: 98px;
-    height: 82px;
   }
 `;
