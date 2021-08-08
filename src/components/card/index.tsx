@@ -4,15 +4,14 @@ import React from 'react';
 import { PostContent } from '@/lib/posts';
 import {
   alignCenter,
+  backgroundBlue300,
   borderBottomSolidGrey30,
   flex,
-  flexColumn,
   justifySpaceBetween,
   textBlack,
   textGrey40,
   textGrey200
 } from '@/styles/css';
-import theme from '@/styles/theme';
 
 import Thumbnail from './Thumbnail';
 
@@ -24,44 +23,32 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ post, onClick }) => {
   return (
     <Container role="button" onClick={() => onClick(post.slug)}>
-      <Contents>
-        {post.tags?.map((tag) => (
-          <Tag key={tag.slug}>{tag.name}</Tag>
-        ))}
-        <Title>{post.title}</Title>
-        <Date dateTime={post.date}>{post.date}</Date>
-      </Contents>
-      <Thumbnail src={post.cover} />
+      <InnerContainer>
+        <Contents>
+          {post.tags?.map((tag) => (
+            <Tag key={tag.slug}>{tag.name}</Tag>
+          ))}
+          <Title>{post.title}</Title>
+          <Date dateTime={post.date}>{post.date}</Date>
+        </Contents>
+        <Thumbnail src={post.cover} />
+      </InnerContainer>
     </Container>
   );
 };
 
 export default React.memo(Card);
 
-const Contents = styled.div`
-  ${flexColumn}
-  width: calc(100% - 160px);
-
-  ${theme.media.mobile} {
-    width: calc(100% - 107px);
-  }
-`;
-
 const Title = styled.h3`
   ${textBlack}
   font-weight: bold;
   font-size: 22px;
-  line-height: 1;
-  color: #000;
-  font-weight: normal;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.23;
 
-  text-overflow: ellipsis;
-  overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 `;
 
 const Tag = styled.span`
@@ -81,15 +68,23 @@ const Date = styled.time`
   margin-top: 8px;
 `;
 
-const Container = styled.div`
+const Contents = styled.div`
+  width: 100%;
+`;
+
+const InnerContainer = styled.div`
   ${flex}
-  ${justifySpaceBetween}
   ${alignCenter}
-  ${borderBottomSolidGrey30}
-  height: 192px;
-  padding: 32px 0;
+  ${justifySpaceBetween}
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition-duration: 1s;
+  padding: 32px 10px;
 
   &:hover {
+    transform: translateX(7px);
+
     ${Title} {
       text-decoration: underline;
     }
@@ -98,8 +93,9 @@ const Container = styled.div`
       box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
     }
   }
+`;
 
-  ${theme.media.mobile} {
-    height: 163px;
-  }
+const Container = styled.div`
+  ${borderBottomSolidGrey30}
+  ${backgroundBlue300}
 `;
