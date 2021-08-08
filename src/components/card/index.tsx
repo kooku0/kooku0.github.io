@@ -43,7 +43,7 @@ const Title = styled.h3`
   ${textBlack}
   font-weight: bold;
   font-size: 22px;
-  line-height: 1.23;
+  line-height: 1.3;
 
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -87,6 +87,8 @@ const InnerContainer = styled.div`
 
     ${Title} {
       text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-position: under;
     }
 
     ${Thumbnail} {
