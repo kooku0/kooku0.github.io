@@ -12,6 +12,6 @@ const Image = forwardRef(function (props: Props, forwardedRef: Ref<HTMLImageElem
 export default Image;
 
 const StyledImage = styled.img<{ visible: boolean }>`
-  visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};
+  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   object-fit: cover;
 `;
