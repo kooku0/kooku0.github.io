@@ -7,3 +7,5 @@ tags:
     name: React
   - slug: nextjs
     name: next.js
+  - name: 회고
+    slug: 회고
