@@ -9,3 +9,5 @@ tags:
     name: next.js
   - name: 회고
     slug: 회고
+  - slug: http
+    name: HTTP
