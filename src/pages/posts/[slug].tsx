@@ -27,7 +27,6 @@ import {
 } from '@/styles/css';
 import MarkdownStyle from '@/styles/MarkdownStyle';
 import { color, media } from '@/styles/theme';
-import { share } from '@/utils';
 import metaConfig from '~/meta-config';
 
 interface Props {
@@ -102,15 +101,7 @@ const Post: React.FC<Props> = ({ post }) => {
     }
   }, [isLike]);
 
-  const shareLink = useCallback(() => {
-    const data = {
-      title: `${title}`,
-      text: `${title}`,
-      url: `${window.location.origin}/posts/${slug}?shared=true`
-    };
-
-    share(data);
-  }, []);
+  const shareLink = () => null;
 
   return (
     <>
