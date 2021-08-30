@@ -104,7 +104,7 @@ const Post: React.FC<Props> = ({ post }) => {
 
   const shareLink = useCallback(() => {
     const data = {
-      title,
+      title: `${title}`,
       text: `${title}`,
       url: `${window.location.origin}/posts/${slug}?shared=true`
     };
