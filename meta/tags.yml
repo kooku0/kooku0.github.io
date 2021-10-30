@@ -11,3 +11,5 @@ tags:
     slug: 회고
   - slug: http
     name: HTTP
+  - slug: architecture
+    name: 아키텍처
