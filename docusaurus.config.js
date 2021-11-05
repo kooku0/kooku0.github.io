@@ -10,7 +10,7 @@ const config = {
   tagline: '공부하고 생각한 내용을 기록하는 공간입니다',
   url: 'https://kookug94.gihub.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore', // default is throw
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'kooku94', // Usually your GitHub org/user name.

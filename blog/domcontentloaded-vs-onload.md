@@ -1,7 +1,7 @@
 ---
 title: DOMContentLoaded vs onLoad
 date: 2021-04-11
-cover: ''
+cover: ""
 tags:
   - web
 ---
@@ -33,7 +33,7 @@ script 태그 `async` 와 `defer` 는 언제 script가 언제 실행되는지에
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,13 +46,13 @@ script 태그 `async` 와 `defer` 는 언제 script가 언제 실행되는지에
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"
     />
     <script>
-      console.log('in head');
-      window.addEventListener('DOMContentLoaded', function () {
-        console.log('DOMContentLoaded is loaded');
+      console.log("in head");
+      window.addEventListener("DOMContentLoaded", function () {
+        console.log("DOMContentLoaded is loaded");
       });
 
       window.onload = function () {
-        console.log('window is loaded');
+        console.log("window is loaded");
       };
     </script>
     <title>React App</title>
@@ -61,7 +61,7 @@ script 태그 `async` 와 `defer` 는 언제 script가 언제 실행되는지에
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
-      console.log('end of body');
+      console.log("end of body");
     </script>
   </body>
 </html>
