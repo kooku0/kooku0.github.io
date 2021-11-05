@@ -1,7 +1,7 @@
 ---
 title: Third-party JavaScript performance
 date: 2021-04-04
-cover: ''
+cover: ""
 tags:
   - web
 ---
@@ -57,7 +57,7 @@ Synchronous scripts는 DOM Pharsing을 막아 rendering을 지연시키기에, t
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,13 +66,13 @@ Synchronous scripts는 DOM Pharsing을 막아 rendering을 지연시키기에, t
     <script async src="./async.js"></script>
     <script src="./sample.js"></script>
     <script>
-      console.log('in head');
-      window.addEventListener('DOMContentLoaded', function () {
-        console.log('DOMContentLoaded is loaded');
+      console.log("in head");
+      window.addEventListener("DOMContentLoaded", function () {
+        console.log("DOMContentLoaded is loaded");
       });
 
       window.onload = function () {
-        console.log('window is loaded');
+        console.log("window is loaded");
       };
     </script>
     <title>React App</title>
@@ -81,7 +81,7 @@ Synchronous scripts는 DOM Pharsing을 막아 rendering을 지연시키기에, t
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
-      console.log('end of body');
+      console.log("end of body");
     </script>
   </body>
 </html>
