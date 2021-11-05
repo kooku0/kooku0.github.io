@@ -13,8 +13,8 @@ const config = {
   onBrokenLinks: 'ignore', // default is throw
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'kooku94', // Usually your GitHub org/user name.
-  projectName: 'kooku94.github.io', // Usually your repo name.
+  organizationName: 'kooku-dev', // Usually your GitHub org/user name.
+  projectName: 'kooku-dev.github.io', // Usually your repo name.
   deploymentBranch: 'main',
 
   presets: [
@@ -25,13 +25,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/kooku94/kooku94.github.io/edit/main/',
+          editUrl: 'https://github.com/kooku-dev/kooku-dev.github.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/kooku94/kooku94.github.io/edit/main/blog/',
+            'https://github.com/kooku-dev/kooku-dev.github.io/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,7 +58,7 @@ const config = {
           // },
           {to: '/blog', label: '블로그', position: 'left'},
           {
-            href: 'https://github.com/kooku94/kooku94.github.io',
+            href: 'https://github.com/kooku-dev/kooku-dev.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -102,7 +102,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/kooku94/kooku94.github.io',
+                href: 'https://github.com/kooku-dev/kooku-dev.github.io',
               },
             ],
           },
