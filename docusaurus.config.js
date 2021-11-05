@@ -15,6 +15,8 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'kooku-dev', // Usually your GitHub org/user name.
   projectName: 'kooku-dev.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: true,
 
   presets: [
     [
