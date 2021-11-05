@@ -1,13 +1,14 @@
-name: cd
+name: documentation
 
 on:
   pull_request:
-    branches: [main]
+    branches: [documentation]
   push:
-    branches: [main]
+    branches: [documentation]
 
 jobs:
   checks:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
