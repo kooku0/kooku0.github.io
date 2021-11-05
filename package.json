@@ -1,72 +1,46 @@
 {
-  "name": "blog-template-kooku",
-  "version": "0.1.0",
-  "author": "kooku",
+  "name": "kooku-log",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "export": "next build && next export -o docs",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint --fix",
-    "test": "jest"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "^11.1.2",
-    "@emotion/styled": "^11.0.0",
-    "@loadable/component": "^5.14.1",
-    "@mapbox/rehype-prism": "^0.6.0",
-    "@mdi/js": "^5.9.55",
-    "@mdi/react": "^1.4.0",
-    "gray-matter": "^4.0.2",
-    "js-yaml": "^4.0.0",
-    "next": "10.0.8-canary.9",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-infinite-scroller": "^1.2.4",
-    "react-transition-group": "^4.4.2",
-    "react-youtube": "^7.13.1",
-    "rehype-stringify": "^8.0.0",
-    "remark-gfm": "^1.0.0",
-    "remark-parse": "^9.0.0",
-    "remark-rehype": "^8.0.0",
-    "unified": "^9.2.1",
-    "xhr2": "^0.2.0",
-    "yaml-loader": "^0.6.0"
+    "@docusaurus/core": "2.0.0-beta.9",
+    "@docusaurus/preset-classic": "2.0.0-beta.9",
+    "@mdx-js/react": "^1.6.21",
+    "@svgr/webpack": "^5.5.0",
+    "clsx": "^1.1.1",
+    "file-loader": "^6.2.0",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.1.2",
-    "@emotion/babel-preset-css-prop": "^11.2.0",
-    "@types/jest": "^26.0.20",
-    "@types/js-yaml": "^4.0.0",
-    "@types/loadable__component": "^5.13.3",
-    "@types/node": "^14.14.6",
-    "@types/react": "^17.0.0",
-    "@types/react-infinite-scroller": "^1.2.2",
-    "@types/react-transition-group": "^4.4.2",
-    "@typescript-eslint/eslint-plugin": "^4.6.0",
-    "@typescript-eslint/parser": "^4.6.0",
-    "env-cmd": "^10.1.0",
-    "eslint": "^7.25.0",
-    "eslint-config-airbnb-typescript-prettier": "^4.1.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unused-imports": "^1.1.1",
-    "husky": "^4.3.7",
-    "jest": "^26.6.3",
-    "lint-staged": "^10.5.1",
-    "prettier": "^2.1.2",
-    "pretty-quick": "^3.1.0",
-    "typescript": "^4.1.2"
+    "@docusaurus/module-type-aliases": "2.0.0-beta.9",
+    "@tsconfig/docusaurus": "^1.0.4",
+    "typescript": "^4.3.5"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "pretty-quick --staged",
-      "eslint --fix",
-      "git add"
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }

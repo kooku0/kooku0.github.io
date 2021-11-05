@@ -1,42 +1,40 @@
-import { GetStaticProps } from 'next';
 import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import styles from './index.module.css';
+import HomepageFeatures from '../components/HomepageFeatures';
 
-import Home from '@/components/Home';
-import { listPostContent, PostContent } from '@/lib/posts';
-import { listTags, TagContent } from '@/lib/tags';
-
-export const getStaticProps: GetStaticProps = async () => {
-  const tagSet = new Set();
-  const posts = listPostContent();
-  let tags = listTags();
-
-  posts.forEach((post) =>
-    post.tags?.forEach((tag) => tagSet.has(tag.slug) || tagSet.add(tag.slug))
+function HomepageHeader() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <h1 className="hero__title">{siteConfig.title}</h1>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/blog/">
+            읽어보기 📖
+          </Link>
+        </div>
+      </div>
+    </header>
   );
-
-  tags = tags.filter((tag) => tagSet.has(tag.slug));
-
-  return {
-    props: {
-      posts,
-      tags: [{ slug: 'total', name: 'Total' }, ...tags]
-    }
-  };
-};
-
-interface Props {
-  posts: PostContent[];
-  tags: TagContent[];
 }
 
-export const LIMIT_OF_PAGE = 5;
-
-const HomePage: React.FC<Props> = (props) => {
+export default function Home(): JSX.Element {
+  const {siteConfig} = useDocusaurusContext();
   return (
-    <>
-      <Home {...props} />
-    </>
+    <Layout
+      title={`Hello from ${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />">
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
   );
-};
-
-export default HomePage;
+}
