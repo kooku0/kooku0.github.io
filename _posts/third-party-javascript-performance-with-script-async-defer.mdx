@@ -5,12 +5,13 @@ cover: ""
 tags:
   - web
 ---
+
 > Web.dev의 [Efficiently load third-party JavaScript](https://web.dev/efficiently-load-third-party-javascript/)를 참고하여 작성하였습니다.
 
 Third-party script 가 페이지의 로드를 느리게 할 경우, 성능을 향상시키기 위한 두가지 옵션이 있습니다.
 
-* 사이트에 명백한 가치를 주지않다면 제거해라.
-* loading process를 최적화 시켜라
+- 사이트에 명백한 가치를 주지않다면 제거해라.
+- loading process를 최적화 시켜라
 
 loading progess를 최적화시키는 방법으로는 다음과 같은 방법들이 있습니다.
 
@@ -47,8 +48,8 @@ Synchronous scripts는 DOM Pharsing을 막아 rendering을 지연시키기에, t
 
 ![](/images/defer.png)
 
-* `async`는 load process 초기에 스크립트를 실행시키는 것이 중요할 때 사용합니다.
-* `defer`는 덜 중요한 요소에 사용하는 것이 좋습니다. 예를 들어 스크롤을 해야 볼 수 있는 동영상 플레이어.
+- `async`는 load process 초기에 스크립트를 실행시키는 것이 중요할 때 사용합니다.
+- `defer`는 덜 중요한 요소에 사용하는 것이 좋습니다. 예를 들어 스크롤을 해야 볼 수 있는 동영상 플레이어.
 
 ### Code
 
@@ -56,7 +57,7 @@ Synchronous scripts는 DOM Pharsing을 막아 rendering을 지연시키기에, t
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

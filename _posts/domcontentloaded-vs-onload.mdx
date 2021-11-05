@@ -5,6 +5,7 @@ cover: ""
 tags:
   - web
 ---
+
 ## Overview
 
 script 태그의 `async` 와 `defer`에 대해서 공부하던 중 `DOMContentLoaded`와 `load` 이벤트에 대해서 알게되었고 두 이벤트에 대해 정리하였습니다.
@@ -32,7 +33,7 @@ script 태그 `async` 와 `defer` 는 언제 script가 언제 실행되는지에
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -45,13 +46,13 @@ script 태그 `async` 와 `defer` 는 언제 script가 언제 실행되는지에
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"
     />
     <script>
-      console.log('in head');
-      window.addEventListener('DOMContentLoaded', function () {
-        console.log('DOMContentLoaded is loaded');
+      console.log("in head");
+      window.addEventListener("DOMContentLoaded", function () {
+        console.log("DOMContentLoaded is loaded");
       });
 
       window.onload = function () {
-        console.log('window is loaded');
+        console.log("window is loaded");
       };
     </script>
     <title>React App</title>
@@ -60,7 +61,7 @@ script 태그 `async` 와 `defer` 는 언제 script가 언제 실행되는지에
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
-      console.log('end of body');
+      console.log("end of body");
     </script>
   </body>
 </html>
@@ -86,6 +87,6 @@ window is loaded
 
 ## Reference
 
-* [주요 렌더링 경로 성능 분석 :: developers.google.com](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp)
-* [DOMContentLoaded :: MOZ](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
-* [성능 최적화 :: TOAST UI](https://ui.toast.com/fe-guide/ko_PERFORMANCE)
+- [주요 렌더링 경로 성능 분석 :: developers.google.com](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp)
+- [DOMContentLoaded :: MOZ](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
+- [성능 최적화 :: TOAST UI](https://ui.toast.com/fe-guide/ko_PERFORMANCE)
