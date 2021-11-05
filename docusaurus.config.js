@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Kooku log',
   tagline: '공부하고 생각한 내용을 기록하는 공간입니다',
-  url: 'https://kookug94.gihub.io',
+  url: 'https://kooku-dev.gihub.io',
   baseUrl: '/',
   onBrokenLinks: 'ignore', // default is throw
   onBrokenMarkdownLinks: 'warn',
@@ -45,7 +45,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Kooku-log',
+        title: 'Kooku\'s log',
         logo: {
           alt: 'My Site Logo',
           src: 'img/favicon.ico',
