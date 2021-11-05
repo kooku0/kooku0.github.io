@@ -32,7 +32,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/kooku-dev/kooku-dev.github.io/edit/main/blog/',
+            'https://github.com/kooku-dev/kooku-dev.github.io/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
