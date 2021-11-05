@@ -1,9 +1,7 @@
 ---
 title: React v17
 date: 2021-04-20
-cover: ''
-tags:
-  - react
+tags: [react]
 ---
 
 2020년 10월 20일 React v17이 릴리즈 되었다.
@@ -31,7 +29,7 @@ React 17에서는 이를 해결하기 위해서(두가지 React버전을 사용�
 React 17에서는 event handler를 `docuemnt`에 달지않고 React tree가 랜더되는 root DOM container에 달았다.
 
 ```jsx
-const rootNode = document.getElementById('root');
+const rootNode = document.getElementById("root");
 ReactDOM.render(<App />, rootNode);
 ```
 

@@ -1,8 +1,10 @@
 name: cd
 
 on:
+  pull_request:
+    branches: [main]
   push:
-    branches: main
+    branches: [main]
 
 jobs:
   checks:
@@ -23,6 +25,7 @@ jobs:
           fi
           npm run build
   gh-release:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
