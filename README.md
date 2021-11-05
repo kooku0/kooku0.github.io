@@ -1,65 +1,33 @@
-# Blog-Template
+# Website
 
-Blog Template with next.js &amp; emotion &amp; netlify-cms
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-> Blog Template based on Next.js
+### Installation
 
-In this template
-
-- netlify-cms
-- Configurable
-- Enhance UX
-- Shared Link
-
-## Quick Start
-
-### 1. create Blog
-
-fork this repository
-
-### 2. Start developing.
-
-```shell
+```
 $ yarn
-$ yarn dev
-# open localhost:3000
 ```
 
-### 3. Update config
+### Local Development
 
-You can write...
-
-- update config at `/meta-config.ts`
-
-```ts
-export default {
-  title: "Kooku's log",
-  author: 'Kooku',
-  introduction: 'Development Blog',
-  siteUri: '',
-  profile: '/profile.png',
-  social: {
-    github: 'kooku94', // Your GitHub account
-    medium: '', // Your Medium account
-    facebook: '' // Your Facebook account
-  }
-};
+```
+$ yarn start
 ```
 
-### 4. Add post with [Netlify CMS](https://www.netlifycms.org/)
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-you can posting with netlify cms..
+### Build
 
-![img](./assets/screenshot-cms.png)
+```
+$ yarn build
+```
 
-if you want customize cms tool, edit `/public/admin/config.yml`
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## LICENSE
+### Deployment
 
-[MIT](./LICENSE)
+```
+$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
 
-<div align="center">
-
-<sub><sup>Project by <a href="https://github.com/kooku94">@Kooku</a></sup></sub>
-
-</div>
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
