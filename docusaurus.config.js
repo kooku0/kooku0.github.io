@@ -6,6 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  i18n: {
+    defaultLocale: 'ko',
+    locales: ['en', 'ko'],
+  },
   title: 'Kooku log',
   tagline: '공부하고 생각한 내용을 기록하는 공간입니다',
   url: 'https://kooku-dev.gihub.io',
