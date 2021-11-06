@@ -10,6 +10,8 @@ tags:
 
 script 태그의 `async` 와 `defer`에 대해서 공부하던 중 `DOMContentLoaded`와 `load` 이벤트에 대해서 알게되었고 두 이벤트에 대해 정리하였습니다.
 
+<!--truncate-->
+
 ## Docs
 
 공식문서에는 다음과 같이 말하고 있습니다.

@@ -1,12 +1,14 @@
 ---
 title: HTTP Caching
 date: 2021-08-22
-cover: ''
+cover: ""
 tags:
   - http
 ---
 
 > https://developer.mozilla.org/ko/docs/Web/HTTP/Caching 글을 정리했습니다.
+
+<!--truncate-->
 
 빠른 웹사이트 로딩(First load times)을 위한 방법들은 여러가지가 있습니다.
 

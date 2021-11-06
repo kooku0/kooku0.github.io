@@ -1,10 +1,14 @@
 ---
 title: React가 Class Component에서 Functional Component로 패러다임을 전환한 이유
 date: 2021-08-06
-cover: ''
+cover: ""
 tags:
   - react
 ---
+
+왜 Functional Component가 탄생했을까?
+
+<!--truncate-->
 
 ## 1. Reusing logic
 

@@ -8,6 +8,8 @@ tags:
 
 Data fetching library가 탄생하게된 배경과 장점
 
+<!--truncate-->
+
 ## 기존 상태관리 라이브러리들의 문제점
 
 ### 1. 데이터 일관성 (Consistency)

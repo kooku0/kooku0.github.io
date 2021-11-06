@@ -1,10 +1,12 @@
 ---
 title: Resource Priority
 date: 2021-04-11
-cover: ''
+cover: ""
 tags:
   - web
 ---
+
+<!--truncate-->
 
 css파일과 같은 리소스를 로드해올 때 다음과 같이 많이 사용하는데,
 
@@ -52,7 +54,8 @@ css파일과 같은 리소스를 로드해올 때 다음과 같이 많이 사용
 사용자가 사이트의 폰트를 기다리는 시간을 감소시키고, 시스템 폰트와 선언된 폰트의 충돌을 해결할 수 있습니다.
 
 ```html
-<link rel="preload" as "font" crossorigin="crossorigin" type="font/woff2" href="myfont.woff2">
+<link rel="preload" as "font" crossorigin="crossorigin" type="font/woff2"
+href="myfont.woff2">
 ```
 
 #### Critical Rendering Path의 CSS와 JavaScript

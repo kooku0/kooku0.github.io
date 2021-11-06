@@ -1,12 +1,14 @@
 ---
 title: Height Performace Animations
 date: 2021-05-13
-cover: ''
+cover: ""
 tags:
   - web
 ---
 
 ![rendering-process](../images/rendering-process.jpeg)
+
+<!--truncate-->
 
 > 출처: [developers.google.com](https://developers.google.com/web/fundamentals/performance/rendering/?hl=ko)
 

@@ -10,6 +10,8 @@ tags:
 동일한 환경에 있는 코드들을 실행할 때 필요한 환경 정보들을 모아 컨텍스트를 구성하고 이를 콜 스택에 쌓아올렸다가, 가장 위에 있는 컨텍스트를 실행하는 식으로 전체 코드의 환경과 순서를 보장합니다.
 여기서 '동일한 환경', 즉 하나의 실행 컨텍스트를 구성할 수 있는 방법으로 전역공간, eval() 함수, 함수 등이 있습니다. 자동으로 생성되는 전역공간과 악마로 취급받는 eval을 제외하면 우리가 흔히 실행 컨텍스트를 구성하는 방법은 **함수를 실행**하는 것 뿐입니다.
 
+<!--truncate-->
+
 한 실행 컨텍스트가 콜 스택의 맨 위에 쌓이는 순간이 곧 현재 실행할 코드에 관여하게 되는 시점입니다. 자바스크립트 엔진은 해당 컨텍스트에 관련된 코드들을 실행하는 데 필요한 환경 정보들을 수집해서 실행 컨텍스트 객체에 저장합니다. 이 객체는 자바스크립트 엔진이 활용할 목적으로 생성할 뿐 개발자가 코드를 통해 확인할 수는 없습니다. 여기에 담기는 정보들은 다음과 같습니다.
 
 - VariableEnvironment: 현재 컨텍스트 내의 식별자들에 대한 정보 + 외부 환경 정보, 선언 시점의 LexicalEnvironment의 스냅샷으로, 변경 사항은 반영되지 않음.
@@ -49,12 +51,12 @@ executionContext.LexicalEnvironment = executionContext.VariableEnvironment;
 `Variable Environment`와 `Lexical Environment`를 조금 더 알아보겠습니다.
 
 ```js
-var apple = 'apple';
-let banana = 'banana';
+var apple = "apple";
+let banana = "banana";
 
 {
-  let banana = 'banana2';
-  var orange = 'orange';
+  let banana = "banana2";
+  var orange = "orange";
   console.log(apple, orange, banana);
 }
 ```

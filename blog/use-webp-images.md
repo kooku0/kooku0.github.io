@@ -1,7 +1,7 @@
 ---
 title: Use WebP images
 date: 2021-05-03
-cover: ''
+cover: ""
 tags:
   - web
 ---
@@ -9,6 +9,8 @@ tags:
 > 구글이 Webp를 만들어서 무료로 뿌리는 이유는 돈 때문이다. 구글 혼자서 엄청난 인터넷 트래픽을 사용하고 있는데, 이미지 포맷만 최적화해도 서버 트래픽이 크게 줄어 서버비를 아낄 수 있다. 게다가 인터넷 속도가 빨라질수록 광고 매출도 늘어나기 때문에 구글은 항상 인터넷 속도를 올리려고 노력한다.
 >
 > [WebP 제작 배경 :: 나무위키](https://namu.wiki/w/WebP)
+
+<!--truncate-->
 
 webp 포멧의 이미지는 JPEG 및 PNG 이미지보다 작으며 일반적으로 파일크기가 25~35% 작습니다. 이로인해 First load times를 줄일 수 있습니다
 
@@ -52,10 +54,10 @@ Imagemin은 Webpack과 같은 build tools를 사용하는 프로젝트에서 사
 간단히 [imagemin-webp-webpack-plugin](https://www.npmjs.com/package/imagemin-webp-webpack-plugin)을 사용하면 될 것 같습니다.
 
 ```js
-const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
+const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 
 module.exports = {
-  plugins: [new ImageminWebpWebpackPlugin()]
+  plugins: [new ImageminWebpWebpackPlugin()],
 };
 ```
 
