@@ -51,13 +51,16 @@ const config = {
           src: 'img/favicon.ico',
         },
         items: [
+          {
+            to: '/blog',
+            label: '블로그',
+            position: 'left'
+          },
           // {
-          //   type: 'doc',
-          //   docId: 'intro',
+          //   to: '/docs/library',
           //   position: 'left',
-          //   label: 'Tutorial',
+          //   label: '책',
           // },
-          {to: '/blog', label: '블로그', position: 'left'},
           {
             href: 'https://github.com/kooku-dev/kooku-dev.github.io',
             label: 'GitHub',
@@ -68,15 +71,19 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: '블로그',
+                to: '/blog',
+              },
+              // {
+              //   label: '책',
+              //   to: '/docs/library',
+              // },
+            ],
+          },
           // {
           //   title: 'Community',
           //   items: [
@@ -98,17 +105,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: '블로그',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/kooku-dev/kooku-dev.github.io',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} kooku-log, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} kooku's log, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
