@@ -61,8 +61,8 @@ styled-component의 핵심은 스타일을 css 문서가 아닌 컴포넌트 레
   justify-content: center;
   border: 1px solid lightgray;
 
-  color: ${(props) =&gt; props.color || &#x27;gray&#x27;};
-  background-color: ${(props) =&gt; props.background || &#x27;white&#x27;};
+  color: ${(props) =&gt; props.color || &quot;gray&quot;};
+  background-color: ${(props) =&gt; props.background || &quot;white&quot;};
 `;
 
 function Button({ children, ...rest }) {
@@ -225,8 +225,8 @@ x-cache: Miss from cloudfront
         <id>React가 Class Component에서 Functional Component로 패러다임을 전환한 이유</id>
         <link href="https://kooku-dev.gihub.io/blog/react가-class-component에서-functional-component로-패러다임을-전환한-이유"/>
         <updated>2021-08-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[1. Reusing logic]]></summary>
-        <content type="html"><![CDATA[<h2>1. Reusing logic</h2><blockquote><p>you often end up with this wrapper hell</p></blockquote><p>React 개발자들은 code 재사용을 위해 <code>Higher-order components</code>, <code>Render props</code> 두 메인 패턴을 사용하고 있습니다.</p><p>하지만 이런 패턴의 사용은 컴포넌트의 재구성을 강요하며, 코드의 추적을 어렵게 만듭니다. 이런 패턴들을 사용하게 되면 React 개발자 도구에서 providers, hoc, render props 그리고 다른 추상화 레이어로 둘러싸인 &quot;레퍼 지옥(wrapper hell)&quot;을 보게 됩니다.</p><p>Hook을 사용하면 컴포넌트로 부터 상태관련 로직을 추상화 할 수 있습니다. 이를 통해 독립적인 테스트와 재사용이 가능합니다. <strong>Hook은 계층의 변화없이 상태 관련 로직을 재사용할 수 있도록 도와줍니다.</strong> 이것은 많은 컴포넌트들 사이에서 Hook을 공유하기 쉽게 만들어 줍니다.</p><p>상태로직의 재사용의 경우 Vue2에서는 Mixin을 사용하기에 React에서도 Mixin을 만들어 Class Component에 붙여 사용하면 되지 않느냐고 할 수 있겠지만, React 팀은 Mixin의 사용을 예전부터 극도로 싫어했습니다.</p><h3>mixin을 싫어하는 이유</h3><p><a href="https://ko.reactjs.org/blog/2016/07/13/mixins-considered-harmful.html">Mixins Considered Harmful - React Blog</a></p><h2>2. Giant components</h2><blockquote><p>logic split across different life cycles</p></blockquote><p>life-cycle method를 파악하기 힘들어 컴포넌트가 unmounted 될 때 리소스를 clean up 하는 것을 잊거나 life-cycle method와 관련없는 로직들이 섞여들어가기도 쉽습니다.
+        <summary type="html"><![CDATA[왜 Functional Component가 탄생했을까?]]></summary>
+        <content type="html"><![CDATA[<p>왜 Functional Component가 탄생했을까?</p><h2>1. Reusing logic</h2><blockquote><p>you often end up with this wrapper hell</p></blockquote><p>React 개발자들은 code 재사용을 위해 <code>Higher-order components</code>, <code>Render props</code> 두 메인 패턴을 사용하고 있습니다.</p><p>하지만 이런 패턴의 사용은 컴포넌트의 재구성을 강요하며, 코드의 추적을 어렵게 만듭니다. 이런 패턴들을 사용하게 되면 React 개발자 도구에서 providers, hoc, render props 그리고 다른 추상화 레이어로 둘러싸인 &quot;레퍼 지옥(wrapper hell)&quot;을 보게 됩니다.</p><p>Hook을 사용하면 컴포넌트로 부터 상태관련 로직을 추상화 할 수 있습니다. 이를 통해 독립적인 테스트와 재사용이 가능합니다. <strong>Hook은 계층의 변화없이 상태 관련 로직을 재사용할 수 있도록 도와줍니다.</strong> 이것은 많은 컴포넌트들 사이에서 Hook을 공유하기 쉽게 만들어 줍니다.</p><p>상태로직의 재사용의 경우 Vue2에서는 Mixin을 사용하기에 React에서도 Mixin을 만들어 Class Component에 붙여 사용하면 되지 않느냐고 할 수 있겠지만, React 팀은 Mixin의 사용을 예전부터 극도로 싫어했습니다.</p><h3>mixin을 싫어하는 이유</h3><p><a href="https://ko.reactjs.org/blog/2016/07/13/mixins-considered-harmful.html">Mixins Considered Harmful - React Blog</a></p><h2>2. Giant components</h2><blockquote><p>logic split across different life cycles</p></blockquote><p>life-cycle method를 파악하기 힘들어 컴포넌트가 unmounted 될 때 리소스를 clean up 하는 것을 잊거나 life-cycle method와 관련없는 로직들이 섞여들어가기도 쉽습니다.
 또한 life-cycle 관련 로직들이 한 공간안에 묶여 있기 때문에 컴포넌트들을 작게 분리하기 힘들고 테스트하기도 어렵습니다.</p><p>이런 문제를 해결하기 위해 life-cycle method를 기반으로 쪼개는 것 보다는, <strong>hook을 통해 서로 비슷한 것을 하는 작은 함수의 묶음으로 컴포넌트를 나누는 방법을 사용할 수 있게 만들었습니다.</strong></p><h2>3. Confusing classes</h2><blockquote><p>difficult for both humans and machines</p></blockquote><h3>Hard for humans</h3><p>Class Component를 사용할 때 이벤트 핸들러가 등록되는 방법을 정확히 파악해야 했으며, JavaScript의 <code>this</code>가 어떻게 동작하는지도 알아야만 했습니다.</p><p>React 내의 함수와 Class 컴포넌트의 구별, 각 요소의 사용 타이밍 등은 숙련된 React 개발자 사이에서도 의견이 일치하지 않습니다. (많은 개발자들이 binding하는 방식과 class에서 동작하는 작업들에 혼란을 많이 느꼈다고 react-core 팀에 많이 호소를 했다고 합니다.)</p><h3>Hard for machines</h3><p>React App을 빌드해서 manified component file들을 보게된다면 manified된 method names과 여전히 manified되지 않은 method name들을 볼 수 있습니다. manified되지 않은 method name이 있다는 것은 사용하지 않는 method가 있더라도 삭제되지 않는 다는 것을 이야기하고, 이는 컴파일시간이 오래걸리는 것을 말해줍니다.(functional component에서는 사용하지 않는 inner function들이 자동삭제) 이는 class가 hot reloading을 안정적으로 구현하기 어렵다는 것을 말해줍니다.</p><p>실제로 react-core team이 class component 와 functional component를 prototyping하여 컴파일러가 컴포넌트 성능을 개선시킬 수 있는지 테스트 해보았을 때, 클래스형 컴포넌트는 컴파일러가 최적화하는 것을 어렵게하는 일부 패턴들이 있었다고 합니다.</p><h1>reference</h1><ul><li><a href="https://youtu.be/dpw9EHDh2bM?t=287">https://youtu.be/dpw9EHDh2bM?t=287</a></li><li><a href="https://ko.reactjs.org/docs/hooks-intro.html#motivation">https://ko.reactjs.org/docs/hooks-intro.html#motivation</a></li></ul>]]></content>
     </entry>
     <entry>
@@ -243,13 +243,18 @@ x-cache: Miss from cloudfront
         <link href="https://kooku-dev.gihub.io/blog/next-image-에-대해"/>
         <updated>2021-05-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Brand site를 개발하며 SEO를 높히기 위해 기존 Vue.js로 되어있는 프로젝트를 next.js 로 프레임워크를 변경하는 작업을 진행한 경험이 있습니다. 이때 새로운 프레임워크로 Next.js를 선택한 배경으로는 새로운 v10이 나왔기도 했고, 가장 인기있는 프레임워크 중 하나이기 때문입니다.]]></summary>
-        <content type="html"><![CDATA[<p>Brand site를 개발하며 SEO를 높히기 위해 기존 Vue.js로 되어있는 프로젝트를 next.js 로 프레임워크를 변경하는 작업을 진행한 경험이 있습니다. 이때 새로운 프레임워크로 Next.js를 선택한 배경으로는 새로운 v10이 나왔기도 했고, 가장 인기있는 프레임워크 중 하나이기 때문입니다.</p><p>Next.js가 이번 v10이 나오게 되면서 많은 기능들이 추가 되었는데, 그 중 가장 관심이 갔던게 <a href="https://nextjs.org/blog/next-10#built-in-image-component-and-automatic-image-optimization"><code>next/image</code></a> 입니다.</p><pre><code class="language-jsx">import Image from &#x27;next/image&#x27;;
+        <content type="html"><![CDATA[<p>Brand site를 개발하며 SEO를 높히기 위해 기존 Vue.js로 되어있는 프로젝트를 next.js 로 프레임워크를 변경하는 작업을 진행한 경험이 있습니다. 이때 새로운 프레임워크로 Next.js를 선택한 배경으로는 새로운 v10이 나왔기도 했고, 가장 인기있는 프레임워크 중 하나이기 때문입니다.</p><p>Next.js가 이번 v10이 나오게 되면서 많은 기능들이 추가 되었는데, 그 중 가장 관심이 갔던게 <a href="https://nextjs.org/blog/next-10#built-in-image-component-and-automatic-image-optimization"><code>next/image</code></a> 입니다.</p><pre><code class="language-jsx">import Image from &quot;next/image&quot;;
 
 function Home() {
   return (
     &lt;&gt;
       &lt;h1&gt;My Homepage&lt;/h1&gt;
-      &lt;Image src=&quot;/me.png&quot; alt=&quot;Picture of the author&quot; width={500} height={500} /&gt;
+      &lt;Image
+        src=&quot;/me.png&quot;
+        alt=&quot;Picture of the author&quot;
+        width={500}
+        height={500}
+      /&gt;
       &lt;p&gt;Welcome to my homepage!&lt;/p&gt;
     &lt;/&gt;
   );
@@ -260,8 +265,8 @@ export default Home;
 실제 이미지는 <code>image/bg-kasa.png</code> path에 있지만 <code>_next/image</code> 로 요청된 것을 알 수 있습니다. query를 살펴보면 q=75 로 되어있는데 이는 image-quality를 75%로 보내달라는 것 입니다. 즉, 현재 viewport width가 크지 않으니 100% quality로 보내면 network상 손해이기 때문에 75%로 보내는 것 입니다. 그리고 업로드한 이미지는 파일포멧이 png인데, response headers를 보게되면 <code>Content-Type: image/webp</code> 인 것을 확인할 수 있습니다.(webp로 파일포멧 변경)</p><p><code>next/image</code>를 사용하면 브라우저에서 지원하는 경우 WebP와 같은 최신 형식의 이미지로 변환하여 전송하고, 이미지 크기를 조정하고 최적화할 수 있습니다. 이렇게 하면 viewPort가 더 작은 장치로 큰 이미지가 전송되는 것을 막을 수 있습니다.</p><p>생성 가능한 총 이미지 수를 줄이기 위해 <code>deviceSizes</code> 및 <code>imageSizes</code>를 구성 할 수도 있습니다.</p><pre><code class="language-js">module.exports = {
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
-  }
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
 };
 </code></pre><h2>memory leak</h2><p><code>next/image</code>에서 memory leak 문제가 지속적으로 제기 되었습니다.</p><ul><li><a href="https://github.com/vercel/next.js/issues/20915">https://github.com/vercel/next.js/issues/20915</a></li><li><a href="https://github.com/vercel/next.js/issues/23189">https://github.com/vercel/next.js/issues/23189</a></li></ul><p><code>next/image</code>에 의해 최적화된 이미지는 만료일에 도달할 때까지 <code>&lt;distDir&gt;/cache../images</code>에 캐싱을 하고, 만료가 되면 캐싱된 이미지를 삭제하고 다시 최적화 이미지를 생성한 후 캐싱을 하는 기능이 있는데 이때 캐싱된 이미지를 삭제하는 라이브러리가 제대로 삭제를 시켜주지 않는 문제였습니다.</p><p>next.js 레포에 v9에서 v10으로 변경한 후 memory 사용량이 비정상적으로 높아졌으며 이로 인해 <code>next/image</code>의 image component를 제거해야만 했다라는 이슈가 계속 올라왔습니다.</p><p><img src="https://camo.githubusercontent.com/d88fbdef185b40d56b3a42a699550a469dbaa28f0ca50e2e344644900b972691/68747470733a2f2f692e696d6775722e636f6d2f434b54457863722e706e67" alt="img"/>
 <img src="https://user-images.githubusercontent.com/13972013/104264344-72379580-5459-11eb-8285-7bb2a50adfa5.png" alt="img"/>
@@ -274,13 +279,13 @@ export default Home;
         <updated>2021-05-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[CRA를 통해 프로젝트를 생성하면 Web-Vitals를 봤을 겁니다. 이 Web Vitals은 어떤 작업을 하고 어떻게 사용하는 것 일까요?]]></summary>
         <content type="html"><![CDATA[<p>CRA를 통해 프로젝트를 생성하면 Web-Vitals를 봤을 겁니다. 이 Web Vitals은 어떤 작업을 하고 어떻게 사용하는 것 일까요?</p><h2>Overview</h2><p>Web Vietals은 웹에서 좋은 사용자 경험을 제공하는데 필수적인 품질에 대해 구글이 제공하는 지표입니다.</p><p>Google은 web 성능을 측정할 수 있는 여러 tools들을 제공했지만 일부 개발자들만 유용하게 사용할 뿐 많은 개발자들이 무관심했습니다.
-이러한 문제를 해결하기 위해 Web Vitals의 환경을 단순화하고 사이트 성능 지표에 가장 중요한 Core Web Vitals에 집중하도록 돕게 발전했습니다.</p><h2>Core Web Vitals</h2><p>Core Web Vitals는 Web Vitals 중 가장 중요하게 생각되는 부분집합으로 LCP(Largest Contents Pain), FID(First Input Delay), CLS(Cumulative Layout Shift)가 포함되어 있습니다.</p><ul><li><strong>Largest Contentful Paint (LCP)</strong>: 페이지가 처음 로드되기 시작한 시점을 기준으로 뷰포트 내에 표시되는 가장 큰 이미지 또는 텍스트 블록의 렌더링 시간을 측정합니다.</li><li><strong>First Input Delay (FID)</strong>: 사용자가 페이지와 처음 상호작용한 시간(ex: 링크나 버튼을 클릭하거나 JavaScript 기반 컨트롤을 사용할 때)부터 실제로 이벤트 핸들러 처리를 시작할 수 때까지의 시간을 측정합니다.</li><li><strong>Cumulative Layout Shift (CLS)</strong>: 예기치 않은 <em>layout sift</em> 에 대한 모든 개별 레이아웃 이동 점수들의 합계를 측정합니다. <em>layout sift</em>는 element가 렌더링 된 프레임에서 다음 프레임으로 위치가 변경될때 마다 발생합니다.</li></ul><h2>Core Web Vitals을 측정하고 레포팅할 수 있는 Tools</h2><p>Google은 Core Web Vitals가 모든 web 경험에서 매우 중요하다고 생각합니다. 결과적으로 인기있는 Web Vitals 측정 도구들은 Core Web Vitals을 측정할 있습니다.</p><table><thead><tr><th></th><th>LCP</th><th>FID</th><th>CLS</th></tr></thead><tbody><tr><td><a href="https://developers.google.com/web/tools/chrome-user-experience-report">Chrome User Experience Report</a></td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><a href="https://support.google.com/webmasters/answer/9205520">Search Console (Core Web Vitals report)</a></td><td>✔</td><td>✔</td><td>✔</td></tr></tbody></table><h2>JavaScript로 Core Web Vitals 측정하기</h2><p>Core Web Vitals는 standard web API를 사용하여 JavaScript에서 측정할 수 있습니다.</p><p>가장 쉬운 방법은 <a href="https://github.com/GoogleChrome/web-vitals">web-vitals</a> JavaScript library를 사용하는 방법입니다. 크기가 작고, production에서 사용할 때도 문제가 없으며 위에 나열된 Google tools에서 측정하는 방식으로 동일하게 측정합니다.</p><pre><code class="language-js">import { getCLS, getFID, getLCP } from &#x27;web-vitals&#x27;;
+이러한 문제를 해결하기 위해 Web Vitals의 환경을 단순화하고 사이트 성능 지표에 가장 중요한 Core Web Vitals에 집중하도록 돕게 발전했습니다.</p><h2>Core Web Vitals</h2><p>Core Web Vitals는 Web Vitals 중 가장 중요하게 생각되는 부분집합으로 LCP(Largest Contents Pain), FID(First Input Delay), CLS(Cumulative Layout Shift)가 포함되어 있습니다.</p><ul><li><strong>Largest Contentful Paint (LCP)</strong>: 페이지가 처음 로드되기 시작한 시점을 기준으로 뷰포트 내에 표시되는 가장 큰 이미지 또는 텍스트 블록의 렌더링 시간을 측정합니다.</li><li><strong>First Input Delay (FID)</strong>: 사용자가 페이지와 처음 상호작용한 시간(ex: 링크나 버튼을 클릭하거나 JavaScript 기반 컨트롤을 사용할 때)부터 실제로 이벤트 핸들러 처리를 시작할 수 때까지의 시간을 측정합니다.</li><li><strong>Cumulative Layout Shift (CLS)</strong>: 예기치 않은 <em>layout sift</em> 에 대한 모든 개별 레이아웃 이동 점수들의 합계를 측정합니다. <em>layout sift</em>는 element가 렌더링 된 프레임에서 다음 프레임으로 위치가 변경될때 마다 발생합니다.</li></ul><h2>Core Web Vitals을 측정하고 레포팅할 수 있는 Tools</h2><p>Google은 Core Web Vitals가 모든 web 경험에서 매우 중요하다고 생각합니다. 결과적으로 인기있는 Web Vitals 측정 도구들은 Core Web Vitals을 측정할 있습니다.</p><table><thead><tr><th></th><th>LCP</th><th>FID</th><th>CLS</th></tr></thead><tbody><tr><td><a href="https://developers.google.com/web/tools/chrome-user-experience-report">Chrome User Experience Report</a></td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><a href="https://support.google.com/webmasters/answer/9205520">Search Console (Core Web Vitals report)</a></td><td>✔</td><td>✔</td><td>✔</td></tr></tbody></table><h2>JavaScript로 Core Web Vitals 측정하기</h2><p>Core Web Vitals는 standard web API를 사용하여 JavaScript에서 측정할 수 있습니다.</p><p>가장 쉬운 방법은 <a href="https://github.com/GoogleChrome/web-vitals">web-vitals</a> JavaScript library를 사용하는 방법입니다. 크기가 작고, production에서 사용할 때도 문제가 없으며 위에 나열된 Google tools에서 측정하는 방식으로 동일하게 측정합니다.</p><pre><code class="language-js">import { getCLS, getFID, getLCP } from &quot;web-vitals&quot;;
 
 function sendToAnalytics(metric) {
   const body = JSON.stringify(metric);
   // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
-  (navigator.sendBeacon &amp;&amp; navigator.sendBeacon(&#x27;/analytics&#x27;, body)) ||
-    fetch(&#x27;/analytics&#x27;, { body, method: &#x27;POST&#x27;, keepalive: true });
+  (navigator.sendBeacon &amp;&amp; navigator.sendBeacon(&quot;/analytics&quot;, body)) ||
+    fetch(&quot;/analytics&quot;, { body, method: &quot;POST&quot;, keepalive: true });
 }
 
 getCLS(sendToAnalytics);
@@ -290,11 +295,12 @@ getLCP(sendToAnalytics);
 <a href="https://nextjs.org/docs/advanced-features/measuring-performance">https://nextjs.org/docs/advanced-features/measuring-performance</a></p><pre><code class="language-jsx">export function reportWebVitals({ id, name, label, value }) {
   // Use `window.gtag` if you initialized Google Analytics as this example:
   // https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics/pages/_document.js
-  window.gtag(&#x27;event&#x27;, name, {
-    event_category: label === &#x27;web-vital&#x27; ? &#x27;Web Vitals&#x27; : &#x27;Next.js custom metric&#x27;,
-    value: Math.round(name === &#x27;CLS&#x27; ? value * 1000 : value), // values must be integers
+  window.gtag(&quot;event&quot;, name, {
+    event_category:
+      label === &quot;web-vital&quot; ? &quot;Web Vitals&quot; : &quot;Next.js custom metric&quot;,
+    value: Math.round(name === &quot;CLS&quot; ? value * 1000 : value), // values must be integers
     event_label: id, // id unique to current page load
-    non_interaction: true // avoids affecting bounce rate.
+    non_interaction: true, // avoids affecting bounce rate.
   });
 }
 </code></pre><p>다음과 같이 구글 analytics에서 이벤트가 로깅된 것을 확인할 수 있습니다.</p><p><img src="../images/web-vitals-event.png" alt="web-vitals-event"/></p><p>로깅된 결과를 그래프로 볼 수 있는, GoogleChromeLabs에서 만든 오픈소스가 존재하는데, 바로 <a href="https://github.com/GoogleChromeLabs/web-vitals-report">Web Vitals Report</a> 입니다. 참고로 <a href="https://web-vitals-report.web.app/">Web Service</a>도 제공하고 있습니다.</p><p>GA4는 아직 지원하지 않기에, GA4 이하에서만 확인할 수 있습니다.
@@ -327,12 +333,12 @@ width, height, left, right등의 요소를 사용하기 보다는 다음의 네�
         <content type="html"><![CDATA[<p>실행 컨텍스트는 자바스크립트에서 가장 중요한 핵심 개념 중 하나로, <strong>실행할 코드에 제공할 환경 정보들을 모아놓은 객체</strong>입니다.
 동일한 환경에 있는 코드들을 실행할 때 필요한 환경 정보들을 모아 컨텍스트를 구성하고 이를 콜 스택에 쌓아올렸다가, 가장 위에 있는 컨텍스트를 실행하는 식으로 전체 코드의 환경과 순서를 보장합니다.
 여기서 &#x27;동일한 환경&#x27;, 즉 하나의 실행 컨텍스트를 구성할 수 있는 방법으로 전역공간, eval() 함수, 함수 등이 있습니다. 자동으로 생성되는 전역공간과 악마로 취급받는 eval을 제외하면 우리가 흔히 실행 컨텍스트를 구성하는 방법은 <strong>함수를 실행</strong>하는 것 뿐입니다.</p><p>한 실행 컨텍스트가 콜 스택의 맨 위에 쌓이는 순간이 곧 현재 실행할 코드에 관여하게 되는 시점입니다. 자바스크립트 엔진은 해당 컨텍스트에 관련된 코드들을 실행하는 데 필요한 환경 정보들을 수집해서 실행 컨텍스트 객체에 저장합니다. 이 객체는 자바스크립트 엔진이 활용할 목적으로 생성할 뿐 개발자가 코드를 통해 확인할 수는 없습니다. 여기에 담기는 정보들은 다음과 같습니다.</p><ul><li>VariableEnvironment: 현재 컨텍스트 내의 식별자들에 대한 정보 + 외부 환경 정보, 선언 시점의 LexicalEnvironment의 스냅샷으로, 변경 사항은 반영되지 않음.</li><li>LexicalEnvironment: 처음에는 VariableEnvironment와 같지만 변경 사항이 실시간으로 반영됨.</li><li>ThisBinding: this 식별자가 바라봐야 할 대상 객체.</li></ul><table><thead><tr><th align="center"></th><th align="left"></th></tr></thead><tbody><tr><td align="center">VariableEnvironment</td><td align="left">- environmentRecord (snapshot)</td></tr><tr><td align="center"></td><td align="left">- outerEnvironmentReference (snapshot)</td></tr><tr><td align="center">LexicalEnvironment</td><td align="left">- environmentRecord</td></tr><tr><td align="center"></td><td align="left">- outerEnvironmentReference</td></tr><tr><td align="center">ThisBinding</td><td align="left"></td></tr></tbody></table><h2>Lexical Environment</h2><p>Lexical Environment는 자바스크립트 코드에서 변수나 함수 등의 식별자를 정의하는데 사용하는 객체로 생각하면 쉽습니다. Lexical Environment는 식별자와 참조 혹은 값을 기록하는 <code>environmentRecode</code>와 <code>outerEnvironmentReference</code>라는 또 다른 Lexical Environment를 참조하는 포인터로 구성됩니다.</p><h3>Environment Recode</h3><p><code>environmentRecode</code>는 현재 컨텍스트와 관련된 식별자 정보들이 저장됩니다. 컨텍스트를 구성하는 함수에 지정된 매개변수 식별자, 선언한 함수가 있을 경우 그 함수 자체, var로 선언된 변수의 식별자 등이 식별자에 해당합니다. 컨텍스트 내부 전체를 처음부터 끝까지 쭉 훑어나가며 순서대로 수집합니다. 변수 정보를 수집하는 과정을 모두 마쳤더라도 아직 실행 컨텍스트가 관여할 코드들은 실행도기 전의 상태입니다. 코드가 실행되기 전임에도 불구하고 자바스크립트 엔진은 이미 해당 환경에 속한 코드의 변수명들을 모두 알고 있게 되는 것이죠. 이러한 과정을 <strong>Hoisting</strong>이라고 합니다.</p><h3>Outer Environment Reference</h3><p><code>outerEnvironmentReference</code>는 외부 Lexical Environment를 참조하는 포인터로, 중첩된 자바스크립트 코드에서 스코프 탐색을 하기 위해 사용됩니다. (따라서 Global Execution Context의 <code>outerEnvironmentReference</code>는 null 입니다.)</p><h2>Variable Environment</h2><p>VariableEnvironment에 담기는 내용은 LexicalEnvironment와 같지만 최초 실행 시의 스냅샷을 유지한다는 점이 다릅니다. 실행 컨텍스트를 생성할 때 VariableEnvironment에 정보를 먼저 담은 다음, 이를 그대로 복사해서 LexicalEnvironment를 만들고, 이후에는 LexicalEnvironment를 주로 활용하게 됩니다.</p><pre><code class="language-js">executionContext.LexicalEnvironment = executionContext.VariableEnvironment;
-</code></pre><h3>Variable Environment vs Lexical Environment</h3><p><code>Variable Environment</code>와 <code>Lexical Environment</code>를 조금 더 알아보겠습니다.</p><pre><code class="language-js">var apple = &#x27;apple&#x27;;
-let banana = &#x27;banana&#x27;;
+</code></pre><h3>Variable Environment vs Lexical Environment</h3><p><code>Variable Environment</code>와 <code>Lexical Environment</code>를 조금 더 알아보겠습니다.</p><pre><code class="language-js">var apple = &quot;apple&quot;;
+let banana = &quot;banana&quot;;
 
 {
-  let banana = &#x27;banana2&#x27;;
-  var orange = &#x27;orange&#x27;;
+  let banana = &quot;banana2&quot;;
+  var orange = &quot;orange&quot;;
   console.log(apple, orange, banana);
 }
 </code></pre><p>처음에 <code>var</code> 키워드를 가진 변수들이 <code>Variable Environment</code>의 <code>Environment Records</code>에 등록이 됩니다. 그리고 Global EC 이기에 <code>Outer Environment Reference</code>는 null이 되게 됩니다.</p><p>그리고 <code>let</code> 키워드를 가진 변수들이 <code>Lexical Environment</code>의 Environment Records<code>에 등록이 됩니다.</code>var<code>키워드는 undefined로 초기화가 되는 반면에 </code>let` 키워드는 초기화가 되지않아 할당전 호출하게 되면 Reference Error가 발생하게 됩니다.</p><p><img src="../images/ec2.png" alt="ec-2"/></p><p>코드가 실행이 됨에 따라 각 변수에 값이 할당되게 됩니다.</p><p><img src="../images/ec3.png" alt="ec-3"/></p><p>이후 block scope를 만나게 되면 <code>Lexical Environment</code>의 <code>Environment Records</code>의 새로운 area를 만들어 기존과 다른 area에 식별자를 등록하게 됩니다. 그리고 이러한 area는 stack으로 관리하여 변수가 충하지 않습니다.</p><p><img src="../images/ec4.png" alt="ec-4"/></p><p>block scope가 실행이 되고 상위 area의 banana에 값이 할당됩니다.</p><p><img src="../images/ec5.png" alt="ec-5"/></p><p>이후 block scope의 실행이 끝나면 <code>Environment Records</code> block scope가 제거됩니다.</p><p><img src="../images/ec6.png" alt="ec-6"/></p><h2>ThisBinding</h2><p>this에 대해서는 다른 포스트에서 다루도록 하겠습니다.</p><h2>Reference</h2><ul><li>코어 자바스크립트 (정재남 지음)</li><li><a href="https://cabulous.medium.com/javascript-execution-context-lexical-environment-and-block-scope-part-3-fc2551c92ce0">JavaScript execution context — lexical environment and block scope :: carson</a></li></ul>]]></content>
@@ -352,7 +358,7 @@ let banana = &#x27;banana&#x27;;
     .then((res) =&gt; console.log(res));
 };
 
-document.getElementById(&#x27;input&#x27;).addEventListener(&#x27;keyup&#x27;, handleKeyup);
+document.getElementById(&quot;input&quot;).addEventListener(&quot;keyup&quot;, handleKeyup);
 </code></pre><h3>Throttle</h3><p>키가 입력되었을 때마다 api가 호출되는것이 아닌 0.5s 마다 api가 호출됩니다.</p><pre><code class="language-js">let throttle = null;
 
 function getAutoComplete(value) {
@@ -373,7 +379,7 @@ const handleKeyup = (e) =&gt; {
   }
 };
 
-document.getElementById(&#x27;input&#x27;).addEventListener(&#x27;keyup&#x27;, handleKeyup);
+document.getElementById(&quot;input&quot;).addEventListener(&quot;keyup&quot;, handleKeyup);
 </code></pre><h3>Debounce</h3><p>키가 입력되는 이벤트가 끝나고 0.2s 동안 이벤트가 발생하지 않다면 api가 호출됩니다.</p><pre><code class="language-js">let debounce = null;
 
 function getAutoComplete(value) {
@@ -395,7 +401,7 @@ const handleKeyup = (e) =&gt; {
   }, 200);
 };
 
-document.getElementById(&#x27;input&#x27;).addEventListener(&#x27;keyup&#x27;, handleKeyup);
+document.getElementById(&quot;input&quot;).addEventListener(&quot;keyup&quot;, handleKeyup);
 </code></pre><h2>마무리</h2><p>Throttling 과 Debouncing 은 성능을 높힐 수 있는 정말 유용한 기법입니다. 예제에서는 autocomplete를 예시로 들었지만 지도 api등에서 사용할 때 매우 높은 성능 향상을 경험할 수 있을 것이라 생각됩니다.
 underscore <code>_.debounce</code> 와 <code>_.throttle</code> 을 사용하면 쉽게 사용할 수도 있지만 직접 구현해보면서 어떻게 동작하는지 확인해볼 수 있었습니다.</p>]]></content>
     </entry>
@@ -408,10 +414,10 @@ underscore <code>_.debounce</code> 와 <code>_.throttle</code> 을 사용하면 
         <content type="html"><![CDATA[<blockquote><p>구글이 Webp를 만들어서 무료로 뿌리는 이유는 돈 때문이다. 구글 혼자서 엄청난 인터넷 트래픽을 사용하고 있는데, 이미지 포맷만 최적화해도 서버 트래픽이 크게 줄어 서버비를 아낄 수 있다. 게다가 인터넷 속도가 빨라질수록 광고 매출도 늘어나기 때문에 구글은 항상 인터넷 속도를 올리려고 노력한다.</p><p><a href="https://namu.wiki/w/WebP">WebP 제작 배경 :: 나무위키</a></p></blockquote><p>webp 포멧의 이미지는 JPEG 및 PNG 이미지보다 작으며 일반적으로 파일크기가 25~35% 작습니다. 이로인해 First load times를 줄일 수 있습니다</p><ul><li>YouTube는 Thumbnail 이미지를 WebP로 전환한 결과 페이지로드 속도가 10% 빨라졌습니다.</li><li>Facebook은 WebP를 사용하도록 전환했을 때 JPEG와 비교했을 경우 25 ~ 35%, PNG와 비교했을 경우 80%의 파일크기 절감을 경험했습니다.</li></ul><p>WebP는 JPEG, PNG 및 GIF 이미지를 완전히 대체할 수 있으며, lossless and lossy compression 을 모두 지원합니다. <code>lossless compression</code> 은 데이터의 손실이 발생하지않고 <code>lossy compression</code>는 파일크기가 줄어들고 이미지 화질을 떨어지게 하는 압축입니다.</p><h2>Convert images to WebP</h2><p>이미지를 WebP로 변환할 때 보통 <a href="https://developers.google.com/speed/webp/docs/using">cwebp command-line tool</a> 와 <a href="https://github.com/imagemin/imagemin-webp">Imagemin WebP plugin</a>을 사용합니다. Imagemin WebP plugin은 Webpack이나 Gulp와 같은 build tools를 사용하는 프로젝트에 최고의 선택이고 CLI는 image를 한 번만 변환시킬 때 사용하기 좋습니다.</p><p>이미지를 WebP로 변환할 때 다양한 압축 설정을 지정할 수 있지만 가장 중요하게 봐야할 것이 품질수준입니다. 0(최약)에서 100(최상)까지 품질 수준을 지정할 수 있기에 필요에 맞는 이미지 품질과 파일크기를 고려하여 선택하면 됩니다.</p><h3>Use cwebp</h3><p>간단히 하나의 파일을 변경할 때는 cwebp를 사용하면 됩니다.</p><p>default:</p><pre><code class="language-bash">cwebp images/flower.jpg -o images/flower.webp
 </code></pre><p>using a query level of <code>50</code>:</p><pre><code class="language-bash">cwebp -q 50 images/flower.jpg -o images/flower.webp
 </code></pre><p>Convert all files in a directory:</p><pre><code class="language-bash">for file in images/*; do cwebp &quot;$file&quot; -o &quot;${file%.*}.webp&quot;; done
-</code></pre><h3>Use Imagemin</h3><p>Imagemin은 Webpack과 같은 build tools를 사용하는 프로젝트에서 사용하기 좋습니다.</p><p>간단히 <a href="https://www.npmjs.com/package/imagemin-webp-webpack-plugin">imagemin-webp-webpack-plugin</a>을 사용하면 될 것 같습니다.</p><pre><code class="language-js">const ImageminWebpWebpackPlugin = require(&#x27;imagemin-webp-webpack-plugin&#x27;);
+</code></pre><h3>Use Imagemin</h3><p>Imagemin은 Webpack과 같은 build tools를 사용하는 프로젝트에서 사용하기 좋습니다.</p><p>간단히 <a href="https://www.npmjs.com/package/imagemin-webp-webpack-plugin">imagemin-webp-webpack-plugin</a>을 사용하면 될 것 같습니다.</p><pre><code class="language-js">const ImageminWebpWebpackPlugin = require(&quot;imagemin-webp-webpack-plugin&quot;);
 
 module.exports = {
-  plugins: [new ImageminWebpWebpackPlugin()]
+  plugins: [new ImageminWebpWebpackPlugin()],
 };
 </code></pre><h2>Serve WebP images</h2><p>만약 WebP를 제공하지 않는 <a href="https://caniuse.com/?search=webp">브라우저</a>라면 fallback을 설정할 수도 있습니다.</p><h4>Before:</h4><pre><code class="language-html">&lt;img src=&quot;flower.jpg&quot; alt=&quot;&quot; /&gt;
 </code></pre><h4>After:</h4><pre><code class="language-html">&lt;picture&gt;
@@ -508,7 +514,8 @@ CSS가 사용 가능해질 때까지(CSSOM이 만들어질 때까지)렌더링�
         <content type="html"><![CDATA[<p>css파일과 같은 리소스를 로드해올 때 다음과 같이 많이 사용하는데,</p><pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;
 </code></pre><p>좀 더 나아가서 이러한 리소스의 우선순위를 지정할 수 있는 <code>link</code> 태그의 <code>preload</code>, <code>preconnect</code>, <code>prefetch</code>, <code>dns-prefetch</code>에 대해서 알아보겠습니다.</p><h2>preload</h2><p>현재 페이지에서 사용될 것이 확실한 리소스들을 최우선 순위로 가지고 와야할 때 <code>preload</code>를 사용해야합니다.</p><pre><code class="language-html">&lt;link rel=&quot;preload&quot; as=&quot;script&quot; href=&quot;super-important.js&quot; /&gt;
 &lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;critical.css&quot; /&gt;
-</code></pre><p><code>preload</code>는 위의 코드와 같이 <code>&lt;link rel=&quot;preload&quot; as=&quot;...&quot;&gt;</code>와 같이 사용합니다.</p><h3>주의사항</h3><h4><code>as</code> 속성 사용</h4><p><code>as</code> 속성을 사용하여 리소스의 유형을 브라우저에게 알려줘야합니다. 올바른 유형이 설정되어 있지 않다면 브라우저는 해당 리소스를 요청하지 않습니다.</p><h4>중복 리소스 참조</h4><p><code>preload</code>는 브라우저가 반드시 리소스를 가져오게 만듭니다. 리소스를 중복 참조하면 중복된 개수만큼 리소스를 가져오기 때문에 리소스를 중복해서 참조하지 않도록 해야 합니다.</p><h4>반드시 사용되는 리소스에만 사용</h4><p><code>preload</code>는 현재 페이지에서 반드시 사용되는 리소스에만 사용되어야 합니다.</p><p><img src="../images/preload-warning.png"/></p><p><code>preload</code>를 사용했지만 현재 페이지에서 3초 내로 사용되지 않다면 위와 같은 warning이 출력되게 됩니다.</p><h3>사용 사례</h3><p>이번에는 <code>preload</code>를 사용하기 좋은 리소스를 살펴보도록 하겠습니다.</p><h4>폰트</h4><p>사용자가 사이트의 폰트를 기다리는 시간을 감소시키고, 시스템 폰트와 선언된 폰트의 충돌을 해결할 수 있습니다.</p><pre><code class="language-html">&lt;link rel=&quot;preload&quot; as &quot;font&quot; crossorigin=&quot;crossorigin&quot; type=&quot;font/woff2&quot; href=&quot;myfont.woff2&quot;&gt;
+</code></pre><p><code>preload</code>는 위의 코드와 같이 <code>&lt;link rel=&quot;preload&quot; as=&quot;...&quot;&gt;</code>와 같이 사용합니다.</p><h3>주의사항</h3><h4><code>as</code> 속성 사용</h4><p><code>as</code> 속성을 사용하여 리소스의 유형을 브라우저에게 알려줘야합니다. 올바른 유형이 설정되어 있지 않다면 브라우저는 해당 리소스를 요청하지 않습니다.</p><h4>중복 리소스 참조</h4><p><code>preload</code>는 브라우저가 반드시 리소스를 가져오게 만듭니다. 리소스를 중복 참조하면 중복된 개수만큼 리소스를 가져오기 때문에 리소스를 중복해서 참조하지 않도록 해야 합니다.</p><h4>반드시 사용되는 리소스에만 사용</h4><p><code>preload</code>는 현재 페이지에서 반드시 사용되는 리소스에만 사용되어야 합니다.</p><p><img src="../images/preload-warning.png"/></p><p><code>preload</code>를 사용했지만 현재 페이지에서 3초 내로 사용되지 않다면 위와 같은 warning이 출력되게 됩니다.</p><h3>사용 사례</h3><p>이번에는 <code>preload</code>를 사용하기 좋은 리소스를 살펴보도록 하겠습니다.</p><h4>폰트</h4><p>사용자가 사이트의 폰트를 기다리는 시간을 감소시키고, 시스템 폰트와 선언된 폰트의 충돌을 해결할 수 있습니다.</p><pre><code class="language-html">&lt;link rel=&quot;preload&quot; as &quot;font&quot; crossorigin=&quot;crossorigin&quot; type=&quot;font/woff2&quot;
+href=&quot;myfont.woff2&quot;&gt;
 </code></pre><h4>Critical Rendering Path의 CSS와 JavaScript</h4><p>페이지 초기 렌더링 시 반드시 로드되어야할 리소스들을 <code>preload</code>로 우선적으로 로드해야합니다.</p><h3>Chrome DevTools</h3><p>Chrome DevTools의 network panel에서 priority가 Highest로 찍힌걸 확인할 수 있습니다.</p><p><img src="../images/preload-highest.png"/></p><h2>preconnect &amp; dns-prefetch</h2><h3>preconnect</h3><p>browser가 server로 부터 resource를 요청하기 전에 connection이 필요합니다. 이 connection을 하기 위해서는 다음의 3 step이 있습니다.</p><ul><li>Look up the domain name and resolve it to an IP address (dns-lookup)</li><li>Set up a connection to the server</li><li>Encrypt the connection for security</li></ul><p>각 step에서 브라우저는 data 조각을 서버로 보내고 응답을 받습니다. 이러한 origin으로 부터 server로 갔다가 되돌아 오는 것을 round-trip 이라고 부릅니다.</p><p>network 상황에 따라서 한 번의 round-trip이 상당한 시간이 소요될 수 있고, 세번의 round-trip을 포함한 connection setup 과정이 네트워크 환경이 최적화 되지 않은 경우에 세번 이상이이 될 수도 있습니다. 이러한 과정을 리소스가 필요한 시점에 하는것이 아니라 미리 해놓는다면, 리소스가 필요한 시점에 더 빨리 로드할 수 있는데, <code>&lt;link rel=preconnect&gt;</code> 와 <code>&lt;link rel=dns-prefetch&gt;</code>를 통해서 할 수 있습니다.</p><p><code>preconnect</code>와 <code>dns-prefetch</code>는 실제로 리소스를 다운하는게 아니라 리소스 다운을 위한 network connection을 미리 해두는 것 입니다.</p><p><img src="../images/preconnect.png"/></p><p>이러한 방법으로 connection setup을 하는 100ms~500ms정도의 시간을 단축할 수 있습니다.</p><h3>dns-prefetch</h3><p><code>preconnect</code>를 사용하여 미리 connection setup을 하는 과정은 critical connections들에 사용을 하고 대부분의 경우에는 <code>&lt;link rel=dns-prefetch&gt;</code>를 사용하는 것이 좋습니다. <code>dns-prefetch</code>를 통하여 첫 번째 단계인 DNS-loopup만 수행해 20~120ms 정도의 시간을 줄일 수 있습니다.
 또한 <code>preconnect</code>를 지원하지 않는 브라우저가 많기에 이에 대한 fallback으로 <code>dns-prefetch</code>를 사용할 수도 있습니다.</p><pre><code class="language-html">&lt;link rel=&quot;preconnect&quot; href=&quot;http://example.com&quot; /&gt;
 &lt;link rel=&quot;dns-prefetch&quot; href=&quot;http://example.com&quot; /&gt;
