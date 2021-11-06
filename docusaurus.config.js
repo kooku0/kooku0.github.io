@@ -33,6 +33,7 @@ const config = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/kooku-dev/kooku-dev.github.io/edit/main/',
+          postsPerPage: 'ALL',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,7 +58,7 @@ const config = {
             position: 'left'
           },
           // {
-          //   to: '/docs/library',
+          //   to: '/docs',
           //   position: 'left',
           //   label: '책',
           // },
@@ -120,7 +121,8 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: false
-      }
+      },
+      hideableSidebar: true,
     }),
 };
 

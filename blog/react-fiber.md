@@ -11,6 +11,8 @@ tags:
 
 Reconciliation은 React의 "비교(diffing)" 알고리즘입니다. 이 비교 알고리즘 덕분에 컴포넌트의 갱신이 예측 가능해지면서도 고성능 앱이라고 불러도 손색없을 만큼 충분히 빠른 앱을 만들 수 있습니다
 
+<!--truncate-->
+
 ### [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#react-rendering-logic)React rendering logic
 
 리액트 컴포넌트가 화면에 렌더링 되는 과정은 다음과 같습니다.

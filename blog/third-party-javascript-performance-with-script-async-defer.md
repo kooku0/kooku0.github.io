@@ -8,6 +8,8 @@ tags:
 
 > Web.dev의 [Efficiently load third-party JavaScript](https://web.dev/efficiently-load-third-party-javascript/)를 참고하여 작성하였습니다.
 
+<!--truncate-->
+
 Third-party script 가 페이지의 로드를 느리게 할 경우, 성능을 향상시키기 위한 두가지 옵션이 있습니다.
 
 - 사이트에 명백한 가치를 주지않다면 제거해라.

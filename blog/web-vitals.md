@@ -1,12 +1,14 @@
 ---
 title: Web Vitals
 date: 2021-05-18
-cover: ''
+cover: ""
 tags:
   - web
 ---
 
 CRA를 통해 프로젝트를 생성하면 Web-Vitals를 봤을 겁니다. 이 Web Vitals은 어떤 작업을 하고 어떻게 사용하는 것 일까요?
+
+<!--truncate-->
 
 ## Overview
 
@@ -40,13 +42,13 @@ Core Web Vitals는 standard web API를 사용하여 JavaScript에서 측정할 �
 가장 쉬운 방법은 [web-vitals](https://github.com/GoogleChrome/web-vitals) JavaScript library를 사용하는 방법입니다. 크기가 작고, production에서 사용할 때도 문제가 없으며 위에 나열된 Google tools에서 측정하는 방식으로 동일하게 측정합니다.
 
 ```js
-import { getCLS, getFID, getLCP } from 'web-vitals';
+import { getCLS, getFID, getLCP } from "web-vitals";
 
 function sendToAnalytics(metric) {
   const body = JSON.stringify(metric);
   // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
-  (navigator.sendBeacon && navigator.sendBeacon('/analytics', body)) ||
-    fetch('/analytics', { body, method: 'POST', keepalive: true });
+  (navigator.sendBeacon && navigator.sendBeacon("/analytics", body)) ||
+    fetch("/analytics", { body, method: "POST", keepalive: true });
 }
 
 getCLS(sendToAnalytics);
@@ -65,11 +67,12 @@ https://nextjs.org/docs/advanced-features/measuring-performance
 export function reportWebVitals({ id, name, label, value }) {
   // Use `window.gtag` if you initialized Google Analytics as this example:
   // https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics/pages/_document.js
-  window.gtag('event', name, {
-    event_category: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
-    value: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
+  window.gtag("event", name, {
+    event_category:
+      label === "web-vital" ? "Web Vitals" : "Next.js custom metric",
+    value: Math.round(name === "CLS" ? value * 1000 : value), // values must be integers
     event_label: id, // id unique to current page load
-    non_interaction: true // avoids affecting bounce rate.
+    non_interaction: true, // avoids affecting bounce rate.
   });
 }
 ```

@@ -1,12 +1,14 @@
 ---
 title: Throttling & Debouncing
 date: 2021-05-03
-cover: ''
+cover: ""
 tags:
   - web
 ---
 
 Throttle과 Debounce는 자주 사용되는 이벤트나 함수의 실행 빈도를 줄여 성능상에 이점을 가져오기 위해 사용되는 기법입니다.
+
+<!--truncate-->
 
 ## Throttling
 
@@ -38,7 +40,7 @@ const handleKeyup = (e) => {
     .then((res) => console.log(res));
 };
 
-document.getElementById('input').addEventListener('keyup', handleKeyup);
+document.getElementById("input").addEventListener("keyup", handleKeyup);
 ```
 
 ### Throttle
@@ -66,7 +68,7 @@ const handleKeyup = (e) => {
   }
 };
 
-document.getElementById('input').addEventListener('keyup', handleKeyup);
+document.getElementById("input").addEventListener("keyup", handleKeyup);
 ```
 
 ### Debounce
@@ -95,7 +97,7 @@ const handleKeyup = (e) => {
   }, 200);
 };
 
-document.getElementById('input').addEventListener('keyup', handleKeyup);
+document.getElementById("input").addEventListener("keyup", handleKeyup);
 ```
 
 ## 마무리

@@ -1,7 +1,7 @@
 ---
 title: next/image 에 대해
 date: 2021-05-23
-cover: ''
+cover: ""
 tags:
   - nextjs
 ---
@@ -10,14 +10,21 @@ Brand site를 개발하며 SEO를 높히기 위해 기존 Vue.js로 되어있는
 
 Next.js가 이번 v10이 나오게 되면서 많은 기능들이 추가 되었는데, 그 중 가장 관심이 갔던게 [`next/image`](https://nextjs.org/blog/next-10#built-in-image-component-and-automatic-image-optimization) 입니다.
 
+<!--truncate-->
+
 ```jsx
-import Image from 'next/image';
+import Image from "next/image";
 
 function Home() {
   return (
     <>
       <h1>My Homepage</h1>
-      <Image src="/me.png" alt="Picture of the author" width={500} height={500} />
+      <Image
+        src="/me.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
       <p>Welcome to my homepage!</p>
     </>
   );
@@ -49,8 +56,8 @@ export default Home;
 module.exports = {
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
-  }
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
 };
 ```
 
