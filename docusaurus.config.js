@@ -61,11 +61,11 @@ const config = {
             label: '블로그',
             position: 'left'
           },
-          // {
-          //   to: '/docs',
-          //   position: 'left',
-          //   label: '책',
-          // },
+          {
+            to: '/docs/books/',
+            position: 'left',
+            label: '책',
+          },
           {
             href: 'https://github.com/kooku1dev/kooku1dev.github.io',
             label: 'GitHub',
@@ -83,10 +83,10 @@ const config = {
                 label: '블로그',
                 to: '/blog',
               },
-              // {
-              //   label: '책',
-              //   to: '/docs/library',
-              // },
+              {
+                label: '책',
+                to: '/docs/books/',
+              },
             ],
           },
           // {
