@@ -11,7 +11,7 @@ tags:
 
 Reconciliation은 React의 "비교(diffing)" 알고리즘입니다. 이 비교 알고리즘 덕분에 컴포넌트의 갱신이 예측 가능해지면서도 고성능 앱이라고 불러도 손색없을 만큼 충분히 빠른 앱을 만들 수 있습니다
 
-### [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#react-rendering-logic)React rendering logic
+### [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#react-rendering-logic)React rendering logic
 
 리액트 컴포넌트가 화면에 렌더링 되는 과정은 다음과 같습니다.
 
@@ -19,7 +19,7 @@ Reconciliation은 React의 "비교(diffing)" 알고리즘입니다. 이 비교 �
 2. `React.createElement`함수 호출에 의해 리액트 엘리먼트 트리가 반환됨
 3. React의 `reconciliation` 알고리즘에 의해 리액트 엘리먼트 트리를 재귀적으로 순회하면서 이전 트리와 현재 트리의 변경사항을 비교한다음 변경된 부분만 실제 DOM에 반영함 (Virtual-DOM)
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#overview)Overview
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#overview)Overview
 
 React를 사용하다 보면, "`render()` 함수는 React 엘리먼트 트리를 만드는 것이다." 라고 생각이 드는 순간이 있습니다. state나 props가 갱신되면 `render()`함수는 새로운 React 엘리먼트 트리를 반환하기 때문입니다. 이때 React는 방금 반환된 트리에 맞게 가장 효과적으로 UI를 갱신하는 방법을 알아야할 필요가 있습니다.
 
@@ -32,11 +32,11 @@ React에 이 알고리즘을 적용한다면, 1000개의 엘리먼트를 그리�
 
 실제로 거의 모든 사용 사례에서 이 가정들은 들어맞습니다.
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#%EB%B9%84%EA%B5%90-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-diffing-algorithm)비교 알고리즘 (Diffing Algorithm)
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#%EB%B9%84%EA%B5%90-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-diffing-algorithm)비교 알고리즘 (Diffing Algorithm)
 
 두 개의 트리를 비교할 때, React는 두 엘리먼트의 루트(root) 엘림먼트부터 비교합니다. 이후의 동작은 루트 엘리먼트 타입에 따라 달라집니다.
 
-### [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EC%9D%98-%ED%83%80%EC%9E%85%EC%9D%B4-%EB%8B%A4%EB%A5%B8-%EA%B2%BD%EC%9A%B0)엘리먼트의 타입이 다른 경우
+### [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EC%9D%98-%ED%83%80%EC%9E%85%EC%9D%B4-%EB%8B%A4%EB%A5%B8-%EA%B2%BD%EC%9A%B0)엘리먼트의 타입이 다른 경우
 
 두 루트 엘리먼트의 타입이 다르면, React는 이전 트리를 버리고 완전히 새로운 트리를 구축합니다. `<a>` 에서 `<img>`로 바뀌는 등 트리 전체를 재구축하는 경우입니다.
 
@@ -56,7 +56,7 @@ React에 이 알고리즘을 적용한다면, 1000개의 엘리먼트를 그리�
 
 이전 `Counter`는 사라지고, 새로 다시 마운트가 될 것입니다.
 
-### [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#dom-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EC%9D%98-%ED%83%80%EC%9E%85%EC%9D%B4-%EA%B0%99%EC%9D%80-%EA%B2%BD%EC%9A%B0)DOM 엘리먼트의 타입이 같은 경우
+### [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#dom-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EC%9D%98-%ED%83%80%EC%9E%85%EC%9D%B4-%EA%B0%99%EC%9D%80-%EA%B2%BD%EC%9A%B0)DOM 엘리먼트의 타입이 같은 경우
 
 같은 타입의 두 React DOM 엘리먼트를 비교할 때, React는 두 엘리먼트의 속성을 확인하여, 동일한 내역은 유지하고 변경된 속성들만 갱신합니다. 예를 들어,
 
@@ -80,7 +80,7 @@ React에 이 알고리즘을 적용한다면, 1000개의 엘리먼트를 그리�
 
 DOM 노드의 처리가 끝나면, React는 이어서 해당 노드의 자식들을 재귀적으로 처리합니다.
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#%EC%9E%90%EC%8B%9D%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9E%AC%EA%B7%80%EC%A0%81-%EC%B2%98%EB%A6%AC)자식에 대한 재귀적 처리
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#%EC%9E%90%EC%8B%9D%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9E%AC%EA%B7%80%EC%A0%81-%EC%B2%98%EB%A6%AC)자식에 대한 재귀적 처리
 
 DOM 노드의 자식들을 재귀적으로 처리할 때, React는 기본적으로 동시에 두 리스트를 순회하고 차이점이 있으면 변경을 생성합니다.
 
@@ -118,7 +118,7 @@ React는 두 트리에서 `<li>first</li>`가 일치하는 것을 확인하고,
 
 React는 `<li>Duke</li>`와 `<li>Villanova</li>` 종속 트리를 그대로 유지하는 대신 모든 자식을 변경합니다. 이러한 비효율은 문제가 될 수 있습니다.
 
-### [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#keys)Keys
+### [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#keys)Keys
 
 이러한 문제를 해결하기 위해, React는 `key` 속성을 지원합니다. 자식들이 key를 가지고 있다면, React는 key를 통해 기존 트리와 이후 트리의 자식들이 일치하는지 확인합니다. 예를 들어, 위 비효율적인 예시에 `key`를 추가하여 트리의 변환 작업이 효율적으로 수행되도록 수정할 수 있습니다.
 
@@ -141,7 +141,7 @@ React는 `<li>Duke</li>`와 `<li>Villanova</li>` 종속 트리를 그대로 �
 
 인덱스를 key로 사용 중 배열이 재배열되면 컴포넌트의 state와 관련된 문제가 발생할 수 있습니다. 컴포넌트 인스턴스는 key를 기반으로 갱신되고 재사용됩니다. 인덱스를 key로 사용하면, 항목의 순서가 바뀌었을 때 key 또한 바뀔 것입니다. 그 결과로, 컴포넌트의 state가 엉망이 되거나 의도하지 않은 방식으로 바뀔 수도 있습니다.
 
-# [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#react-fiber)React Fiber
+# [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#react-fiber)React Fiber
 
 React Fiber는 React v16에 포함된 새로운 reconciliation algorithm 입니다.
 
@@ -154,7 +154,7 @@ React's core algorithm을 대부분 갈아엎은 2년 이상의 연구로 만들
 - UI에서 모든 업데이트를 즉시 적용할 필요가 없다. 실제로 그렇게 하면 frame drop과 사용자 경험이 저하될 수 있다.
 - 업데이트마다 우선순위가 다르다. 애니메이션은 data update 보다 더 빨리 완료되어야한다.
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#what-is-fiber)What is fiber?
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#what-is-fiber)What is fiber?
 
 UI를 다룰 때, 너무 많은 작업이 한 번에 실행될 때 문제가 생기기 마련입니다. 이럴 때 animation을 수행하게 되면 frame drop 과 사용자에게 툭툭 끊기게 보여지게 됩니다.
 
@@ -162,7 +162,7 @@ UI를 다룰 때, 너무 많은 작업이 한 번에 실행될 때 문제가 생
 
 UI rendering을 최적화하기 위해 call stack의 동작을 사용자 마음대로 정의할 수 있다면 좋지 않을까요? call stack을 마음대로 중단하고 stack frame을 수동으로 조작할 수 있다면 좋지 않을까요? 이것이 React Fiber의 목적입니다. Fiber는 React 컴포넌트에 특화된 stack의 재구현으로 **virtual stack frame**으로 생각하면 됩니다.
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#incremental-rendering)Incremental rendering
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#incremental-rendering)Incremental rendering
 
 - pause work and come back to it later
 - assign priority to different types of work
@@ -173,17 +173,17 @@ Fiber에서는 `requestIdleCallback`을 활용해서 동작중인 React 코드�
 
 어느 시점에서나 작업을 멈출 수 있어야 한다는 것은 task가 잘게 쪼개질 수 있어야 가능해 보입니다. 그리고 이러한 작업이 Incremental task 입니다.
 
-# [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#phases)Phases
+# [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#phases)Phases
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#phase-1-render--reconciliation)Phase 1 (render / reconciliation)
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#phase-1-render--reconciliation)Phase 1 (render / reconciliation)
 
 interrupible
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#phase-2-commit)Phase 2 (commit)
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#phase-2-commit)Phase 2 (commit)
 
 no interruptible
 
-## [](https://github.com/kooku-dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#reference)Reference
+## [](https://github.com/kooku1dev/kooku-s-log/blob/main/content/blog/react/react-reconciliation-%26-fiber.md#reference)Reference
 
 - [react - reconciliation](https://ko.reactjs.org/docs/reconciliation.html)
 - [Lin Clark - A Cartoon Intro to Fiber - React Conf 2017](https://www.youtube.com/watch?v=ZCuYPiUIONs)

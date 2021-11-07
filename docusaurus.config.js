@@ -12,13 +12,13 @@ const config = {
   },
   title: 'Kooku log',
   tagline: '공부하고 생각한 내용을 기록하는 공간입니다',
-  url: 'https://kooku-dev.gihub.io',
+  url: 'https://kooku1dev.gihub.io',
   baseUrl: '/',
   onBrokenLinks: 'ignore', // default is throw
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'kooku-dev', // Usually your GitHub org/user name.
-  projectName: 'kooku-dev.github.io', // Usually your repo name.
+  organizationName: 'kooku1dev', // Usually your GitHub org/user name.
+  projectName: 'kooku1dev.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: true,
 
@@ -30,13 +30,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/kooku-dev/kooku-dev.github.io/edit/main/',
+          editUrl: 'https://github.com/kooku1dev/kooku1dev.github.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/kooku-dev/kooku-dev.github.io/edit/main/',
+            'https://github.com/kooku1dev/kooku1dev.github.io/edit/main/',
           postsPerPage: 'ALL',
         },
         theme: {
@@ -67,7 +67,7 @@ const config = {
           //   label: '책',
           // },
           {
-            href: 'https://github.com/kooku-dev/kooku-dev.github.io',
+            href: 'https://github.com/kooku1dev/kooku1dev.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -111,7 +111,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/kooku-dev/kooku-dev.github.io',
+                href: 'https://github.com/kooku1dev/kooku1dev.github.io',
               },
             ],
           },
