@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /
+slug: /books/
 ---
 
 # 읽은 책 목록
