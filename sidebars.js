@@ -29,7 +29,7 @@ const sidebars = {
       label: '오브젝트',
       items: [
         'books/object/introduction',
-        'books/object/chapter01'
+        'books/object/01'
       ]
     },
     {
@@ -37,7 +37,7 @@ const sidebars = {
       label: '스칼라로 배우는 함수형 프로그래밍',
       items: [
         'books/functional-programming-in-scala/introduction',
-        'books/functional-programming-in-scala/chapter04'
+        'books/functional-programming-in-scala/04'
       ]
     },
   ],
