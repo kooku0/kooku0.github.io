@@ -29,7 +29,8 @@ const sidebars = {
       label: '오브젝트',
       items: [
         'books/object/introduction',
-        'books/object/01'
+        'books/object/01',
+        'books/object/02'
       ]
     },
     {
