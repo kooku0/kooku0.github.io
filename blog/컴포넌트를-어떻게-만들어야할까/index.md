@@ -82,7 +82,7 @@ Container Component에서는 비즈니스 로직을 처리하고 Presentational 
 
 **Event-handler**의 경우 대부분 해당 컴포넌트에서만 사용되는 경우가 많을꺼라 공통로직이 거의 없을 것이고 컴포넌트 내부에서 구현해야할 것 입니다.
 
-## 결론
+## 정리
 
 컴포넌트를 어떻게 쪼개냐에 따라 달라지겠지만 하나의 컴포넌트는 자신이 필요한 데이터는 자신이 요청해 받아오고 그 데이터를 functional 혹은 custom-hooks로 가공해 사용하게 됩니다.  
 Container Component에 있었던 Event handler는 컴포넌트 내부로 옮겨왔고, 자신의 컴포넌트에 있는 dom의 이벤트를 직접 핸들링합니다. 그리고 컴포넌트간의 통신은 props를 최대한 지양하고 global state를 통해 통신이 일어나도록 해야 합니다. props로 데이터를 전달하는 순간 절차적 프로그래밍으로 변모될 가능성이 농후하기 때문입니다. 따라서 컴포넌트 사이의 통신은 global state로, 컴포넌트의 비즈니스 로직들은 custom-hooks 혹은 컴포넌트 내부에서 일어나야 합니다. (공통 dom&styled를 추상화 시킨 컴포넌트를 사용할 때에만 props를 사용해야 합니다.)
@@ -90,3 +90,8 @@ Container Component에 있었던 Event handler는 컴포넌트 내부로 옮겨�
 각각의 컴포넌트가 이전의 container component의 역할을 수행한다고는 하지만 그렇다고 presentational component가 완전히 사라지는건 아닙니다. 공통적으로 사용되는 button, input, dialog, alert 들은 재사용할 수 있는 dom, style 요소들이 많습니다. 이런 부분은 common component 혹은 styled component로 따로 빼서 재사용하면 중복되는 코드나 스타일도 줄일 수 있을 것 같습니다.
 
 `Presentaional and Container Components`와 뭐가 다르냐고 생각이 들 수 있습니다. `Presentaional and Container Components`가 비즈니스 로직을 처리하는 컴포넌트, view를 처리하는 컴포넌트로 관심사를 기준으로 컴포넌트를 구분했다면 이제는 컴포넌트를 책임과 역할 단위로 구분하고, 공통된 비즈니스 로직, 스타일, dom들을 추상화 시켜 뺌으로써 모든 컴포넌트가 작은 Container Component이자 Presentaional Component가 되는 것 입니다.
+
+## 정말로 이게 정답일까?
+
+각 컴포넌트가 자신이 해야할 일을 스스로하고 복잡한 비즈니스 로직을 쪼개고, 공통된 로직, dom, style은 추상화 시켰다. 이렇게만하면 모든 문제가 해결될까?  
+완벽한 정답은 없듯이 여기에도 문제점은 있다. 바로 성능이다. 서버야 비싼 서버를 사용하고 스펙을 올리면 그만이겠지만 프론트엔드는 유저의 디바이스에서 돌아가기에 불필요한 리렌더링이나 메모리를 잡아먹는 행위는 지양되어야만 한다. 위의 방식대로 ToDoList를 구현한다고 생각해보자. List Component 안에 Item Component가 있을 것이고, 이 Item Component는 객체지향에서 말하듯이 Item Component에서 일어나는 일을 스스로 처리할 것이다. Item에 삭제 버튼과 수정버튼, 우선순위조절 버튼 등 많은 기능들이 있다면 다른 컴포넌트에서 처리하는게 아니라 Item Component에서 처리될 것이다. 만약 Item이 천개라면 어떨까? Container Component가 있었다면 Item이 몇개가 되든 ContainerComponent안에 handler 하나씩만 구현하여 props로 내려주면 되지만 위의 방식대로 구현한다면 아이템 컴포넌트들이 각자 handler를 포함하고 있고 아이템의 수만큼 handler가 늘어날 것이다. 이렇듯 항상 트레이드오프는 존재한다. 훌륭한 설계는 적절한 트레이드오프의 결과물이고 적절한 트레이드오프는 좋은 어플리케이션을 만든다는 사실을 인지해야할 것 같다.
