@@ -83,7 +83,7 @@ Container Component에서는 비즈니스 로직을 처리하고 Presentational 
 **Event-handler**의 경우 대부분 해당 컴포넌트에서만 사용되는 경우가 많을꺼라 공통로직이 거의 없을 것이고 컴포넌트 내부에서 구현해야할 것 입니다.
 
 컴포넌트를 어떻게 쪼개냐에 따라 달라지겠지만 하나의 컴포넌트는 자신이 필요한 데이터는 자신이 요청해 받아오고 그 데이터를 functional 혹은 custom-hooks로 가공해 사용하게 됩니다.  
-Container Component에 있었던 Event handler는 컴포넌트 내부로 옮겨왔고, 자신의 컴포넌트에 있는 dom의 이벤트를 직접 핸들링합니다. 그리고 컴포넌트간의 통신은 props가 아닌 global state를 통해 통신이 일어납니다. props로 데이터를 전달하는 순간 Container Component와 Presentational Component pattern으로 변모될 가능성이 농후하기 때문입니다. 따라서 컴포넌트 사이의 인터페이스는 global state로, 컴포넌트의 비즈니스 로직들은 custom-hooks 혹은 컴포넌트 내부에서 일어나야 합니다. (공통 dom&styled를 추상화 시킨 컴포넌트를 사용할 때에만 props를 사용해야 합니다.)
+Container Component에 있었던 Event handler는 컴포넌트 내부로 옮겨왔고, 자신의 컴포넌트에 있는 dom의 이벤트를 직접 핸들링합니다. 그리고 컴포넌트간의 통신은 props를 최대한 지양하고 global state를 통해 통신이 일어나도록 해야 합니다. props로 데이터를 전달하는 순간 절차적 프로그래밍으로 변모될 가능성이 농후하기 때문입니다. 따라서 컴포넌트 사이의 통신은 global state로, 컴포넌트의 비즈니스 로직들은 custom-hooks 혹은 컴포넌트 내부에서 일어나야 합니다. (공통 dom&styled를 추상화 시킨 컴포넌트를 사용할 때에만 props를 사용해야 합니다.)
 
 각각의 컴포넌트가 이전의 container component의 역할을 수행한다고는 하지만 그렇다고 presentational component가 완전히 사라지는건 아닙니다. 공통적으로 사용되는 button, input, dialog, alert 들은 재사용할 수 있는 dom, style 요소들이 많습니다. 이런 부분은 common component 혹은 styled component로 따로 빼서 재사용하면 중복되는 코드나 스타일도 줄일 수 있을 것 같습니다.
 
