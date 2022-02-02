@@ -89,4 +89,4 @@ Container Component에 있었던 Event handler는 컴포넌트 내부로 옮겨�
 
 ## 결론
 
-이렇게하면 `Presentaional and Container Components`와 뭐가 다르냐고 생각이 들 수 있습니다. `Presentaional and Container Components`가 비즈니스 로직을 처리하는 컴포넌트, view를 처리하는 컴포넌트로 관심사를 기준으로 컴포넌트를 구분했다면 이제는 컴포넌트를 책임과 역할 단위로 구분하고, 공통된 비즈니스 로직, 스타일, dom들을 추상화 시켜 뺌으로써 모든 컴포넌트가 작은 Container Component이자 Presentaional Component가 되는 것 입니다.
+`Presentaional and Container Components`와 뭐가 다르냐고 생각이 들 수 있습니다. `Presentaional and Container Components`가 비즈니스 로직을 처리하는 컴포넌트, view를 처리하는 컴포넌트로 관심사를 기준으로 컴포넌트를 구분했다면 이제는 컴포넌트를 책임과 역할 단위로 구분하고, 공통된 비즈니스 로직, 스타일, dom들을 추상화 시켜 뺌으로써 모든 컴포넌트가 작은 Container Component이자 Presentaional Component가 되는 것 입니다.
