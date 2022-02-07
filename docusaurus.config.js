@@ -4,7 +4,6 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   i18n: {
     defaultLocale: 'ko',
@@ -42,13 +41,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-KVSM4B0KPY',
+        }
       }),
-    ],
-    [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-KVSM4B0KPY',
-      },
     ],
   ],
 
