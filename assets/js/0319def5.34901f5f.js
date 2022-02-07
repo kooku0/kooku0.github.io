@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[2752],{2712:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/how-to-use","name":"how-to-use","count":1,"permalink":"/blog/tags/how-to-use"}')}}]);
