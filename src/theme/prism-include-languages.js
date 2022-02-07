@@ -19,8 +19,6 @@ const prismIncludeLanguages = (PrismObject) => {
     });
     delete window.Prism;
   }
-
-  require('/path/to/your/prism-language-definition');
 };
 
 export default prismIncludeLanguages;
