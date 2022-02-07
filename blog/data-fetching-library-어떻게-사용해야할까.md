@@ -1,9 +1,10 @@
 ---
-title: Data Fetching Library
+title: Data Fetching Library 어떻게 사용해야할까?
 date: 2021-07-22
 cover: ../images/data-fetching-library-cover.png
 tags:
   - react
+  - how-to-use
 ---
 
 Data fetching library가 탄생하게된 배경과 장점
@@ -40,7 +41,88 @@ Data fetching library를 사용하게 되면 데이터 일관성의 문제를 �
 
 일일히 정의해줘야할 data-fetching과 관련된 상태(status, data, isFetching, isSuccess, isError)를 한꺼번에 제어할 수 있으며 데이터 동기화 로직과 redux-saga에서 작업하는 비동기 로직을 완전히 걷어낼 수 있습니다.
 
-## 📌 reference
+## 어떻게 사용해야할까?
+
+:::note
+예시로 react-query를 이용하겠습니다.
+:::
+
+기본적으로 api call을 해와서 사용해야하는 모든 데이터들은 server-state-library를 사용해야합니다. api call을 해온 데이터는 서버에서 내려주는 데이터이기 때문에 client에서 서버의 데이터와 동기화를 하기 위해서 입니다. 그렇다면 컴포넌트에서 바로 사용하는 것일까요?
+
+```tsx title="/src/components/TodoList.tsx"
+function TodoList() {
+  // highlight-start
+  const { status, data, error } = useQuery("todos", fetchTodoList, {
+    suspense: true,
+    staleTime: 5 * 60 * 1000,
+  });
+  // highlight-end
+
+  if (status === "loading") {
+    return <span>Loading...</span>;
+  }
+
+  if (status === "error") {
+    return <span>Error: {error.message}</span>;
+  }
+
+  return (
+    <ul>
+      {data
+        .filter((item) => item.enabled)
+        .map((todo) => (
+          <li key={todo.id}>{todo.title}</li>
+        ))}
+    </ul>
+  );
+}
+```
+
+보통 외부 라이브러리를 사용할 경우 바로 사용하는 것 보다 hooks로 감싸줘 컴포넌트와 인터페이스로 소통하면 좋습니다. 그래야 테스트코드도 짜기 쉽고 외부 라이브러리와의 의존성도 낮아지게 됩니다. 훅스를 사용해 각 api 마다 다르게 해줘야할 셋팅도 해줄 수 있죠. 예를 들면 몇 초마다 pulling 해올지, cache-key 등등...  
+이렇게 받은 데이터는 각 컴포넌트에서 바로 사용하지 않고 select를 이용해 가공한다던가 순수 함수를 이용해 각 컴포넌트에 맞게 가공해서 사용하면 됩니다.
+
+```tsx title="/src/hooks/useTodos"
+function useTodos() {
+  return useQuery("todos", fetchTodoList, {
+    select: (todos: Todo[]) => {
+      todos.filter(item => item.enabled);
+    }
+    suspense: true,
+    staleTime: 5 * 60 * 1000,
+  });
+}
+
+export default useTodos
+```
+
+```tsx title="/src/components/TodoList.tsx"
+import useTodos from "src/hooks/useTodos";
+
+function TodoList() {
+  // highlight-next-line
+  const { status, data, error } = useTodos();
+
+  if (status === "loading") {
+    return <span>Loading...</span>;
+  }
+
+  if (status === "error") {
+    return <span>Error: {error.message}</span>;
+  }
+
+  return (
+    <ul>
+      {data
+        .filter((item) => item.enabled)
+        .map((todo) => (
+          <li key={todo.id}>{todo.title}</li>
+        ))}
+    </ul>
+  );
+}
+```
+
+## reference
 
 - [리덕스 잘 쓰고 계시나요?](https://ridicorp.com/story/how-to-use-redux-in-ridi/)
 - [Does React Query replace Redux, MobX or other global state managers?](https://react-query.tanstack.com/guides/does-this-replace-client-state)
