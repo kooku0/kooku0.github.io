@@ -30,7 +30,9 @@ const sidebars = {
       items: [
         'books/object/introduction',
         'books/object/01',
-        'books/object/02'
+        'books/object/02',
+        'books/object/03'
+
       ]
     },
     {
