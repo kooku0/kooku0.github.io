@@ -37,6 +37,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '프레임워크 없는 프론트엔드 개발',
+      items: [
+        'books/frameworkless-front-end-development/introduction',
+        'books/frameworkless-front-end-development/01',
+      ]
+    },
+    {
+      type: 'category',
       label: '스칼라로 배우는 함수형 프로그래밍',
       items: [
         'books/functional-programming-in-scala/introduction',
