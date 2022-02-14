@@ -45,6 +45,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '만들면서 배우는 클린 아키텍처',
+      items: [
+        'books/get-your-hands-dirty-on-clean-architecture/introduction',
+        'books/get-your-hands-dirty-on-clean-architecture/01',
+      ]
+    },
+    {
+      type: 'category',
       label: '스칼라로 배우는 함수형 프로그래밍',
       items: [
         'books/functional-programming-in-scala/introduction',
