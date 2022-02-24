@@ -160,7 +160,7 @@ function Map(): ReactElement {
 
 위에서 라이브러리와 컴포넌트를 분리하면 테스트하기가 쉬워진다고 거듭 말했기에 이번에는 테스트코드 짜기가 얼마나 쉬워졌는지 알아보자. 처음 컴포넌트에서 라이브러리를 그대로 가져와 사용한 경우에 어떻게 테스트코드를 짜야했을까?
 
-```tsx
+```tsx title="외부 라이브러리를 포함하고 있는 컴포넌트의 테스트코드"
 describe("Map", () => {
   const initZoomLevel = 3;
   const setLevel = jest.fn();
@@ -215,7 +215,7 @@ describe("Map", () => {
 
 컴포넌트와 라이브러리를 분리하면 테스트코드가 짜여질까?
 
-```tsx
+```tsx title="외부 라이브러리를 포함하지 않는 컴포넌트의 테스트코드"
 jest.mock("@/hooks/useMap");
 
 describe("Map", () => {
