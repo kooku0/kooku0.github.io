@@ -64,6 +64,14 @@ const sidebars = {
         'books/functional-programming-in-scala/04'
       ]
     },
+    {
+      type: 'category',
+      label: '이펙티브 타입스크립트',
+      items: [
+        'books/effective-typescript/introduction',
+        'books/effective-typescript/03',
+      ]
+    },
   ],
 
   // But you can create a sidebar manually
