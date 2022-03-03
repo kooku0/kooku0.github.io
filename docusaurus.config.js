@@ -39,6 +39,8 @@ const config = {
           editUrl:
             'https://github.com/kooku0/kooku0.github.io/edit/main/',
           postsPerPage: 'ALL',
+          path: 'blog',
+          id: 'blog'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -69,6 +71,11 @@ const config = {
             to: '/docs/books/',
             position: 'left',
             label: '책',
+          },
+          {
+            to: '/retrospect',
+            position: 'left',
+            label: '회고',
           },
           {
             href: 'https://github.com/kooku0/kooku0.github.io',
@@ -133,6 +140,18 @@ const config = {
       },
       hideableSidebar: true,
     }),
+    plugins: [
+      [
+        '@docusaurus/plugin-content-blog',
+        {
+          id: 'retrospect',
+          routeBasePath: 'retrospect',
+          path: 'retrospect',
+          blogTitle: '회고!',
+          blogDescription: '배운 내용과 생각한 내용들을 기록합니다.',
+        },
+      ],
+    ]
 };
 
 module.exports = config;
