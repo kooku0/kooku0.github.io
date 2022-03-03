@@ -2,8 +2,8 @@
 title: Throttling & Debouncing
 date: 2021-05-03
 cover: ""
-tags:
-  - web
+tags: ["성능"]
+keywords: ["성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능"]
 ---
 
 Throttle과 Debounce는 자주 사용되는 이벤트나 함수의 실행 빈도를 줄여 성능상에 이점을 가져오기 위해 사용되는 기법입니다.

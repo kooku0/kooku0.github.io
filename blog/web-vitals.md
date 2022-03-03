@@ -2,8 +2,8 @@
 title: Web Vitals
 date: 2021-05-18
 cover: ""
-tags:
-  - web
+tags: ["성능"]
+keywords: ["web vitals", "성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능"]
 ---
 
 CRA를 통해 프로젝트를 생성하면 Web-Vitals를 봤을 겁니다. 이 Web Vitals은 어떤 작업을 하고 어떻게 사용하는 것 일까요?

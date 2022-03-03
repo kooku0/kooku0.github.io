@@ -2,8 +2,9 @@
 title: Resource Priority
 date: 2021-04-11
 cover: ""
-tags:
-  - web
+tags: ["성능"]
+keywords:
+  ["리소스 우선순위", "성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능"]
 ---
 
 <!--truncate-->

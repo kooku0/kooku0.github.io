@@ -2,8 +2,15 @@
 title: React가 Class Component에서 Functional Component로 패러다임을 전환한 이유
 date: 2021-08-06
 cover: ""
-tags:
-  - react
+tags: ["리액트"]
+keywords:
+  [
+    "class component vs functional component",
+    "react",
+    "아키텍처",
+    "프론트엔드 컴포넌트",
+    "프론트엔드 아키텍처",
+  ]
 ---
 
 왜 Functional Component가 탄생했을까?
