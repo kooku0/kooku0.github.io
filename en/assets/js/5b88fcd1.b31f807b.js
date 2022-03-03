@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[8620],{1547:function(a){a.exports=JSON.parse('{"allTagsPath":"/en/blog/tags","slug":"/en/blog/tags/javascript","name":"javascript","count":1,"permalink":"/en/blog/tags/javascript"}')}}]);

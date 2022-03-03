@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[2250],{611:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/\uc131\ub2a5","name":"\uc131\ub2a5","count":8,"permalink":"/blog/tags/\uc131\ub2a5"}')}}]);

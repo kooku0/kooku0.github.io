@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[5689],{8895:function(e){e.exports=JSON.parse('{"allTagsPath":"/en/blog/tags","slug":"/en/blog/tags/nextjs","name":"nextjs","count":1,"permalink":"/en/blog/tags/nextjs"}')}}]);
