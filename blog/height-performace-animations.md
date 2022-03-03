@@ -2,8 +2,8 @@
 title: Height Performace Animations
 date: 2021-05-13
 cover: ""
-tags:
-  - web
+tags: ["성능"]
+keywords: ["성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능"]
 ---
 
 ![rendering-process](../images/rendering-process.jpeg)

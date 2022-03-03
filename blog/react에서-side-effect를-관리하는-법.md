@@ -2,9 +2,8 @@
 title: React에서 side effect를 관리하는 법
 date: 2021-11-05
 cover: ""
-tags:
-  - architecture
-  - react
+tags: ["아키텍처"]
+keywords: ["아키텍처", "프론트엔드 컴포넌트", "프론트엔드 아키텍처"]
 ---
 
 요즘 `스칼라로 배우는 함수형 프로그래밍` 책을 읽고 있습니다.

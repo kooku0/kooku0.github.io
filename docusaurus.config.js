@@ -32,6 +32,8 @@ const config = {
           editUrl: 'https://github.com/kooku0/kooku0.github.io/edit/main/',
         },
         blog: {
+          blogSidebarTitle: '모든 게시물',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:

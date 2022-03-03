@@ -2,8 +2,8 @@
 title: Render-Blocking CSS
 date: 2021-04-11
 cover: ""
-tags:
-  - web
+tags: ["성능"]
+keywords: ["성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능"]
 ---
 
 기본적으로 CSS는 rendering-blocking resource입니다. 브라우저가 렌더링을 하기 위한 render tree를 생성하기 위해서는 DOM tree 와 CSSOM이 모두 필요합니다. CSSOM이 만들어지지 않았다면 render tree도 만들수가 없는거죠. <br/>

@@ -2,8 +2,8 @@
 title: Third-party JavaScript performance
 date: 2021-04-04
 cover: ""
-tags:
-  - web
+tags: ["성능"]
+keywords: ["성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능"]
 ---
 
 > Web.dev의 [Efficiently load third-party JavaScript](https://web.dev/efficiently-load-third-party-javascript/)를 참고하여 작성하였습니다.

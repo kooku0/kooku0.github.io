@@ -2,9 +2,8 @@
 title: Data Fetching Library 어떻게 사용해야할까?
 date: 2021-07-22
 cover: ../images/data-fetching-library-cover.png
-tags:
-  - react
-  - how-to-use
+tags: ["라이브러리"]
+keywords: ["data fetching library", "react-query", "라이브러리"]
 ---
 
 Data fetching library가 탄생하게된 배경과 장점

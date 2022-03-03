@@ -2,8 +2,16 @@
 title: HTTP Caching
 date: 2021-08-22
 cover: ""
-tags:
-  - http
+tags: ["성능"]
+keywords:
+  [
+    "http cache",
+    "caching",
+    "성능",
+    "아키텍처",
+    "프론트엔드 아키텍처",
+    "웹 성능",
+  ]
 ---
 
 > https://developer.mozilla.org/ko/docs/Web/HTTP/Caching 글을 정리했습니다.
