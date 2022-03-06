@@ -48,6 +48,10 @@ const config = {
         gtag: {
           trackingID: 'G-KVSM4B0KPY',
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
       }),
     ],
   ],
