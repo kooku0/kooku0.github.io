@@ -72,6 +72,7 @@ const sidebars = {
       items: [
         'books/effective-typescript/introduction',
         'books/effective-typescript/03',
+        'books/effective-typescript/04',
       ]
     },
   ],
