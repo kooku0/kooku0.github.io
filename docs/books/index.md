@@ -3,9 +3,7 @@ sidebar_position: 1
 slug: /books/
 ---
 
-# 읽은 책 목록
-
-읽은 책 목록
+# Index
 
 - [오브젝트](./object/introduction.md)
 - [클린코드](./clean-code/introduction.md)
