@@ -13,4 +13,3 @@ slug: /books/
 - [프레임워크 없는 프론트엔드 개발](./frameworkless-front-end-development/introduction.md)
 - [스칼라로 배우는 함수형 프로그래밍](./functional-programming-in-scala/introduction.md)
 - [만들면서 배우는 클린 아키텍처](./get-your-hands-dirty-on-clean-architecture/introduction.md)
-- [리펙터링]()
