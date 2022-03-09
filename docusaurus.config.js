@@ -9,8 +9,8 @@ const config = {
     defaultLocale: 'ko',
     locales: ['en', 'ko'],
   },
-  title: 'Kooku log',
-  tagline: '공부하고 생각한 내용을 기록하는 공간입니다',
+  title: 'Kooku\'s log',
+  tagline: '문제에 대해 고민하고, 공부한 내용들을 기록하는 공간입니다.',
   url: 'https://kooku0.gihub.io',
   baseUrl: '/',
   onBrokenLinks: 'ignore', // default is throw
