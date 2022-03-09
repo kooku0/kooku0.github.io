@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kooku0.gihub.io/en/blog</id>
-    <title>Kooku log Blog</title>
+    <title>Kooku's log Blog</title>
     <updated>2022-03-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kooku0.gihub.io/en/blog"/>
-    <subtitle>Kooku log Blog</subtitle>
+    <subtitle>Kooku's log Blog</subtitle>
     <icon>https://kooku0.gihub.io/en/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[auto로 버전관리와 배포관리하기]]></title>
