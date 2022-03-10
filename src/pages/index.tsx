@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { ReactChannelIO } from 'react-channel-plugin';
+
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
@@ -28,13 +30,15 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <ReactChannelIO pluginKey={process.env.CHANNEL_ID_PLUGIN_KEY} autoBoot>
+      <Layout
+        title={`Hello from ${siteConfig.title}`}
+        description="Description will go into a meta tag in <head />">
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+        </main>
+      </Layout>
+    </ReactChannelIO>
   );
 }

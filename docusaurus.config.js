@@ -155,6 +155,12 @@ const config = {
           blogDescription: '배운 내용과 생각한 내용들을 기록합니다.',
         },
       ],
+      [
+        "docusaurus2-dotenv",
+        {
+          systemvars: true,
+        },
+      ],
     ]
 };
 
