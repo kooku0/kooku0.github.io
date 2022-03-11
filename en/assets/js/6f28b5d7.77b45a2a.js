@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[9825],{5610:function(e){e.exports=JSON.parse('{"permalink":"/en/blog/tags/\uc131\ub2a5","page":1,"postsPerPage":8,"totalPages":1,"totalCount":8,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
