@@ -139,7 +139,7 @@ const config = {
         additionalLanguages: ['java', 'scala']
       },
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: 'dark',
         respectPrefersColorScheme: false
       },
       hideableSidebar: true,
