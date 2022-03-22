@@ -36,9 +36,7 @@ const SUSPENSE_CONFIG = { timeoutMs: 2000 };
 
 function App() {
   const [resource, setResource] = useState(initialResource);
-  {
-    /* highlight-next-line */
-  }
+  /* highlight-next-line */
   const [startTransition, isPending] = useTransition(SUSPENSE_CONFIG);
   return (
     <>
