@@ -64,6 +64,8 @@ const sidebars = {
         'books/get-your-hands-dirty-on-clean-architecture/08',
         'books/get-your-hands-dirty-on-clean-architecture/09',
         'books/get-your-hands-dirty-on-clean-architecture/10',
+        'books/get-your-hands-dirty-on-clean-architecture/11',
+        'books/get-your-hands-dirty-on-clean-architecture/12',
       ]
     },
     {
