@@ -19,6 +19,8 @@ keywords:
 
 Concurrent suspense는 React v18의 Concurrent mode 매커니즘을 통해 구현된 기능입니다. 정확히는 **Concurrent mode의 Intentional Loading Sequences**를 구현했죠.
 
+<!--truncate-->
+
 :::tip
 
 실제 Concurrent Suspense가 개발된건 오래되었습니다. [Building Great User Experiences with Concurrent Mode and Suspense](https://ko.reactjs.org/blog/2019/11/06/building-great-user-experiences-with-concurrent-mode-and-suspense.html) 하지만 React 팀에서는 1년간 검증과 테스트를 하였죠.
