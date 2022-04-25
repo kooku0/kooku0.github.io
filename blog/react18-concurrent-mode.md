@@ -15,6 +15,8 @@ react-18-plan 블로그의 첫 문단을 읽어보면 react 18에서 어떤 부�
 
 글에서 "concurrent rendering"을 강조하고 있듯이 이번 v18의 핵심주제는 concurrent rendering입니다.
 
+<!--truncate-->
+
 React v16.3에 나온 Fiber도 그렇고 이번 v18에 올라온 Concurrent mode에도 그렇듯이 UX을 매우 중시하여 지속적으로 개선시키는 노력을 하고 있습니다. 그리고 그러한 노력에는 update-rendering을 할때 발생하는 recoiliation의 시간이 오래걸리면 UX를 해치는데 이를 어떻게 최적화할 수 있을까? 라는 문제해결이 바탕이 된 것 같습니다.
 
 React Fiber의 경우 Reconciliation에서 시간이 오래걸릴 경우 main-thread를 계속 점유하고 있으니 RequestAnimationFrame Queue에 쌓여 있는 작업들이 화면주사율에 따라 제대로 실행되지않아 버벅이는 문제를 해결하고자 나왔습니다.
@@ -22,8 +24,6 @@ React Fiber의 경우 Reconciliation에서 시간이 오래걸릴 경우 main-th
 이번 Concurrent mode의 경우 RequestAnimationFrame에서 확장하여 다른 유저 이벤트들도 제대로 보여주지 않는 문제들을 해결하려고 했습니다. 예를 들자면 렌더링이 진행중일 때 유저가 input창에 key를 입력해도 입력한 key가 보이지 않는경우 (Blocking rendering의 문제)가 있습니다.
 
 React 팀의 지속적인 관심과 노력으로 위의 문제점들을 해결하려고 했던 것 같고 이번 v18에 concurrent mode를 적용함으로써 도입되는 매우 유용한 기능들도 있습니다.
-
-<!--truncate-->
 
 다음으로 공식문서에 올라왔던 Concurrent 모드 소개 페이지를 읽기 쉽게 제가 조금 가다듬어 보았습니다. 아직 읽어보지 않으셨다면 읽어보시면 좋을 것 같습니다.
 
