@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Kooku's log Blog</title>
-        <link>https://kooku0.gihub.io/en/retrospect</link>
+        <link>https://kooku0.github.io/en/retrospect</link>
         <description>Kooku's log Blog</description>
         <lastBuildDate>Mon, 18 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[2021년 10월 둘째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-10월-둘째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-10월-둘째-주-회고</link>
             <guid>/2021년-10월-둘째-주-회고</guid>
             <pubDate>Mon, 18 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -18,7 +18,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 10월 첫째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-10월-첫째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-10월-첫째-주-회고</link>
             <guid>/2021년-10월-첫째-주-회고</guid>
             <pubDate>Thu, 07 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -27,7 +27,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 9월 넷째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-9월-넷째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-9월-넷째-주-회고</link>
             <guid>/2021년-9월-넷째-주-회고</guid>
             <pubDate>Tue, 05 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -36,7 +36,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 9월 셋째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-9월-셋째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-9월-셋째-주-회고</link>
             <guid>/2021년-9월-셋째-주-회고</guid>
             <pubDate>Sun, 19 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -45,7 +45,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 9월 둘째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-9월-둘째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-9월-둘째-주-회고</link>
             <guid>/2021년-9월-둘째-주-회고</guid>
             <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -54,7 +54,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 9월 첫째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-9월-첫째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-9월-첫째-주-회고</link>
             <guid>/2021년-9월-첫째-주-회고</guid>
             <pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -63,7 +63,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 8월 넷째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-8월-넷째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-8월-넷째-주-회고</link>
             <guid>/2021년-8월-넷째-주-회고</guid>
             <pubDate>Mon, 30 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -72,7 +72,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 8월 셋째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-8월-셋째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-8월-셋째-주-회고</link>
             <guid>/2021년-8월-셋째-주-회고</guid>
             <pubDate>Sun, 22 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Facts (사실, 객관)]]></description>
@@ -84,7 +84,7 @@
         </item>
         <item>
             <title><![CDATA[2021년 8월 둘째 주 회고]]></title>
-            <link>https://kooku0.gihub.io/en/retrospect/2021년-8월-둘째-주-회고</link>
+            <link>https://kooku0.github.io/en/retrospect/2021년-8월-둘째-주-회고</link>
             <guid>/2021년-8월-둘째-주-회고</guid>
             <pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[최근에 개발을 하며 누군가에게 피드백을 받아보고 싶다는 생각이 많이 들었다. 나의 실력이 제자리 걸음을 하고 있다는 생각도 들었고, 책에서 이야기하는 이론을 바탕으로 실제 코드를 작성했을 때 단지 흉내만 내고 있는지, 개발 철학을 반영하여 개발하고 있는지 궁금했다.]]></description>

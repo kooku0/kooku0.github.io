@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Kooku's log Blog</title>
-        <link>https://kooku0.gihub.io/en/blog</link>
+        <link>https://kooku0.github.io/en/blog</link>
         <description>Kooku's log Blog</description>
         <lastBuildDate>Thu, 17 Mar 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[React Concurrent suspense]]></title>
-            <link>https://kooku0.gihub.io/en/blog/react-concurrent-suspense</link>
+            <link>https://kooku0.github.io/en/blog/react-concurrent-suspense</link>
             <guid>/react-concurrent-suspense</guid>
             <pubDate>Thu, 17 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[이번에는 React v18에 추가된 Concurrent suspense에 대해 소개하려고 합니다.]]></description>
@@ -18,7 +18,7 @@
         </item>
         <item>
             <title><![CDATA[React v18 Concurrent mode]]></title>
-            <link>https://kooku0.gihub.io/en/blog/react18-concurrent-mode</link>
+            <link>https://kooku0.github.io/en/blog/react18-concurrent-mode</link>
             <guid>/react18-concurrent-mode</guid>
             <pubDate>Thu, 17 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[아직 React 18이 정식 릴리즈되지 않았지만 React 18 Plan을 통해 어떤 기능들이 추가되는지 대부분 알고 있을 것이라고 생각됩니다. 아마 실제로 사용하고 있는 팀들도 있을 것 같네요.]]></description>
@@ -27,7 +27,7 @@
         </item>
         <item>
             <title><![CDATA[auto로 버전관리와 배포관리하기]]></title>
-            <link>https://kooku0.gihub.io/en/blog/auto로-버전관리와-배포관리하기</link>
+            <link>https://kooku0.github.io/en/blog/auto로-버전관리와-배포관리하기</link>
             <guid>/auto로-버전관리와-배포관리하기</guid>
             <pubDate>Sat, 05 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[auto를 활용해 release 버전관리와 자동배포를 작업한 경험을 다루었습니다.]]></description>
@@ -37,7 +37,7 @@ scripts를 통해 command를 custom할 수도 있습니다.</p><div class="codeB
         </item>
         <item>
             <title><![CDATA[외부 라이브러리 테스트코드 짜기]]></title>
-            <link>https://kooku0.gihub.io/en/blog/외부-라이브러리-테스트코드-짜기</link>
+            <link>https://kooku0.github.io/en/blog/외부-라이브러리-테스트코드-짜기</link>
             <guid>/외부-라이브러리-테스트코드-짜기</guid>
             <pubDate>Thu, 24 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[애플리케이션을 개발할 때 모든 코드를 직접 개발하기는 어렵습니다. 잘 개발되어있고 관리되고 있는 오픈소스를 사용하는 경우가 대부분입니다.]]></description>
@@ -49,7 +49,7 @@ scripts를 통해 command를 custom할 수도 있습니다.</p><div class="codeB
         </item>
         <item>
             <title><![CDATA[컴포넌트를 어떻게 만들어야 할까?]]></title>
-            <link>https://kooku0.gihub.io/en/blog/컴포넌트를-어떻게-만들어야할까</link>
+            <link>https://kooku0.github.io/en/blog/컴포넌트를-어떻게-만들어야할까</link>
             <guid>/컴포넌트를-어떻게-만들어야할까</guid>
             <pubDate>Sun, 30 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[프론트엔드에서의 설계방식의 변천사를 소개한 뒤 앞으로 어떻게 컴포넌트를 만들어야 할지 저의 생각을 이야기 해보겠습니다.]]></description>
@@ -66,7 +66,7 @@ Container Component에서는 비즈니스 로직을 처리하고 Presentational 
         </item>
         <item>
             <title><![CDATA[프론트엔드에서 테스트코드 짜기]]></title>
-            <link>https://kooku0.gihub.io/en/blog/프론트엔드에서-테스트코드 짜기</link>
+            <link>https://kooku0.github.io/en/blog/프론트엔드에서-테스트코드 짜기</link>
             <guid>/프론트엔드에서-테스트코드 짜기</guid>
             <pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[개발관련 서적들을 읽으면 공통적으로 테스트코드작성의 중요성들을 언급하고 있습니다. 하지만 많은 개발자들, 특히 프론트엔드 개발자들 중 테스트코드를 짜는 사람들은 많지 않은 것 같습니다. 그렇다면 왜 테스트코드를 짜지 않을까요? 그리고 테스트코드를 어떻게 짜야할까요?]]></description>
@@ -75,7 +75,7 @@ Container Component에서는 비즈니스 로직을 처리하고 Presentational 
         </item>
         <item>
             <title><![CDATA[컴포넌트 응집도]]></title>
-            <link>https://kooku0.gihub.io/en/blog/컴포넌트-응집도</link>
+            <link>https://kooku0.github.io/en/blog/컴포넌트-응집도</link>
             <guid>/컴포넌트-응집도</guid>
             <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[보통 모듈의 독립성을 판단하는 지표로 응집도와 결합도를 이야기합니다. 응집도는 높을수록 좋고 결합도는 낮을수록 좋다는 이야기를 많이 들어봤는데 프론트엔드에서 어떻게 적용할 수 있을지 적어보았습니다.]]></description>
@@ -85,7 +85,7 @@ CCP에서는 동일한 유형의 변경에 대해 닫혀 있는 클래스들을 
         </item>
         <item>
             <title><![CDATA[React에서 side effect를 관리하는 법]]></title>
-            <link>https://kooku0.gihub.io/en/blog/react에서-side-effect를-관리하는-법</link>
+            <link>https://kooku0.github.io/en/blog/react에서-side-effect를-관리하는-법</link>
             <guid>/react에서-side-effect를-관리하는-법</guid>
             <pubDate>Fri, 05 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[요즘 스칼라로 배우는 함수형 프로그래밍 책을 읽고 있습니다.]]></description>
@@ -95,7 +95,7 @@ CCP에서는 동일한 유형의 변경에 대해 닫혀 있는 클래스들을 
         </item>
         <item>
             <title><![CDATA[마이크로서비스 아키텍처를 모노레포로 관리하기]]></title>
-            <link>https://kooku0.gihub.io/en/blog/마이크로서비스-아키텍처를-모노레포로-관리하기</link>
+            <link>https://kooku0.github.io/en/blog/마이크로서비스-아키텍처를-모노레포로-관리하기</link>
             <guid>/마이크로서비스-아키텍처를-모노레포로-관리하기</guid>
             <pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[회사에서 여러 프로젝트를 모노레포로 전환하려한 경험을 다루었습니다.]]></description>
@@ -106,7 +106,7 @@ CCP에서는 동일한 유형의 변경에 대해 닫혀 있는 클래스들을 
         </item>
         <item>
             <title><![CDATA[재사용 가능한 컴포넌트]]></title>
-            <link>https://kooku0.gihub.io/en/blog/재사용-가능한-컴포넌트</link>
+            <link>https://kooku0.github.io/en/blog/재사용-가능한-컴포넌트</link>
             <guid>/재사용-가능한-컴포넌트</guid>
             <pubDate>Sat, 23 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[프론트엔드에서 화면을 구현하기 많은 컴포넌트들이 만들고, 그 컴포넌트들을 조합하여 화면을 구성하게 됩니다.\]]></description>
@@ -129,7 +129,7 @@ styled-component의 핵심은 스타일을 css 문서가 아닌 컴포넌트 레
         </item>
         <item>
             <title><![CDATA[HTTP Caching]]></title>
-            <link>https://kooku0.gihub.io/en/blog/http-caching</link>
+            <link>https://kooku0.github.io/en/blog/http-caching</link>
             <guid>/http-caching</guid>
             <pubDate>Sun, 22 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[https://developer.mozilla.org/ko/docs/Web/HTTP/Caching 글을 정리했습니다.]]></description>
@@ -144,7 +144,7 @@ response contents가 언제 만료되는지를 나타내며, Cache-Control의 ma
         </item>
         <item>
             <title><![CDATA[React가 Class Component에서 Functional Component로 패러다임을 전환한 이유]]></title>
-            <link>https://kooku0.gihub.io/en/blog/react가-class-component에서-functional-component로-패러다임을-전환한-이유</link>
+            <link>https://kooku0.github.io/en/blog/react가-class-component에서-functional-component로-패러다임을-전환한-이유</link>
             <guid>/react가-class-component에서-functional-component로-패러다임을-전환한-이유</guid>
             <pubDate>Fri, 06 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[왜 Functional Component가 탄생했을까?]]></description>
@@ -154,7 +154,7 @@ response contents가 언제 만료되는지를 나타내며, Cache-Control의 ma
         </item>
         <item>
             <title><![CDATA[Data Fetching Library 어떻게 사용해야할까?]]></title>
-            <link>https://kooku0.gihub.io/en/blog/data-fetching-library-어떻게-사용해야할까</link>
+            <link>https://kooku0.github.io/en/blog/data-fetching-library-어떻게-사용해야할까</link>
             <guid>/data-fetching-library-어떻게-사용해야할까</guid>
             <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Data fetching library가 탄생하게된 배경과 장점]]></description>
@@ -164,7 +164,7 @@ response contents가 언제 만료되는지를 나타내며, Cache-Control의 ma
         </item>
         <item>
             <title><![CDATA[next/image 에 대해]]></title>
-            <link>https://kooku0.gihub.io/en/blog/next-image-에-대해</link>
+            <link>https://kooku0.github.io/en/blog/next-image-에-대해</link>
             <guid>/next-image-에-대해</guid>
             <pubDate>Sun, 23 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Brand site를 개발하며 SEO를 높히기 위해 기존 Vue.js로 되어있는 프로젝트를 next.js 로 프레임워크를 변경하는 작업을 진행한 경험이 있습니다. 이때 새로운 프레임워크로 Next.js를 선택한 배경으로는 새로운 v10이 나왔기도 했고, 가장 인기있는 프레임워크 중 하나이기 때문입니다.]]></description>
@@ -176,7 +176,7 @@ response contents가 언제 만료되는지를 나타내며, Cache-Control의 ma
         </item>
         <item>
             <title><![CDATA[Web Vitals]]></title>
-            <link>https://kooku0.gihub.io/en/blog/web-vitals</link>
+            <link>https://kooku0.github.io/en/blog/web-vitals</link>
             <guid>/web-vitals</guid>
             <pubDate>Tue, 18 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[CRA를 통해 프로젝트를 생성하면 Web-Vitals를 봤을 겁니다. 이 Web Vitals은 어떤 작업을 하고 어떻게 사용하는 것 일까요?]]></description>
@@ -189,7 +189,7 @@ response contents가 언제 만료되는지를 나타내며, Cache-Control의 ma
         </item>
         <item>
             <title><![CDATA[Height Performace Animations]]></title>
-            <link>https://kooku0.gihub.io/en/blog/height-performace-animations</link>
+            <link>https://kooku0.github.io/en/blog/height-performace-animations</link>
             <guid>/height-performace-animations</guid>
             <pubDate>Thu, 13 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[rendering-process]]></description>
@@ -207,7 +207,7 @@ width, height, left, right등의 요소를 사용하기 보다는 다음의 네�
         </item>
         <item>
             <title><![CDATA[Execution Context]]></title>
-            <link>https://kooku0.gihub.io/en/blog/execution-context</link>
+            <link>https://kooku0.github.io/en/blog/execution-context</link>
             <guid>/execution-context</guid>
             <pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[실행 컨텍스트는 자바스크립트에서 가장 중요한 핵심 개념 중 하나로, 실행할 코드에 제공할 환경 정보들을 모아놓은 객체입니다.]]></description>
@@ -218,7 +218,7 @@ width, height, left, right등의 요소를 사용하기 보다는 다음의 네�
         </item>
         <item>
             <title><![CDATA[Throttling & Debouncing]]></title>
-            <link>https://kooku0.gihub.io/en/blog/throttling-debouncing</link>
+            <link>https://kooku0.github.io/en/blog/throttling-debouncing</link>
             <guid>/throttling-debouncing</guid>
             <pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Throttle과 Debounce는 자주 사용되는 이벤트나 함수의 실행 빈도를 줄여 성능상에 이점을 가져오기 위해 사용되는 기법입니다.]]></description>
@@ -228,7 +228,7 @@ underscore <code>_.debounce</code> 와 <code>_.throttle</code> 을 사용하면 
         </item>
         <item>
             <title><![CDATA[Use WebP images]]></title>
-            <link>https://kooku0.gihub.io/en/blog/use-webp-images</link>
+            <link>https://kooku0.github.io/en/blog/use-webp-images</link>
             <guid>/use-webp-images</guid>
             <pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[구글이 Webp를 만들어서 무료로 뿌리는 이유는 돈 때문이다. 구글 혼자서 엄청난 인터넷 트래픽을 사용하고 있는데, 이미지 포맷만 최적화해도 서버 트래픽이 크게 줄어 서버비를 아낄 수 있다. 게다가 인터넷 속도가 빨라질수록 광고 매출도 늘어나기 때문에 구글은 항상 인터넷 속도를 올리려고 노력한다.]]></description>
@@ -237,7 +237,7 @@ underscore <code>_.debounce</code> 와 <code>_.throttle</code> 을 사용하면 
         </item>
         <item>
             <title><![CDATA[React v17]]></title>
-            <link>https://kooku0.gihub.io/en/blog/react-v17</link>
+            <link>https://kooku0.github.io/en/blog/react-v17</link>
             <guid>/react-v17</guid>
             <pubDate>Tue, 20 Apr 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[2020년 10월 20일 React v17이 릴리즈 되었다.]]></description>
@@ -253,7 +253,7 @@ React 17에서는 이를 해결하기 위해서(두가지 React버전을 사용�
         </item>
         <item>
             <title><![CDATA[DOMContentLoaded vs onLoad]]></title>
-            <link>https://kooku0.gihub.io/en/blog/domcontentloaded-vs-onload</link>
+            <link>https://kooku0.github.io/en/blog/domcontentloaded-vs-onload</link>
             <guid>/domcontentloaded-vs-onload</guid>
             <pubDate>Sun, 11 Apr 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Overview]]></description>
@@ -263,7 +263,7 @@ React 17에서는 이를 해결하기 위해서(두가지 React버전을 사용�
         </item>
         <item>
             <title><![CDATA[Render-Blocking CSS]]></title>
-            <link>https://kooku0.gihub.io/en/blog/render-blocking-css</link>
+            <link>https://kooku0.github.io/en/blog/render-blocking-css</link>
             <guid>/render-blocking-css</guid>
             <pubDate>Sun, 11 Apr 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[기본적으로 CSS는 rendering-blocking resource입니다. 브라우저가 렌더링을 하기 위한 render tree를 생성하기 위해서는 DOM tree 와 CSSOM이 모두 필요합니다. CSSOM이 만들어지지 않았다면 render tree도 만들수가 없는거죠.]]></description>
@@ -273,7 +273,7 @@ CSS가 사용 가능해질 때까지(CSSOM이 만들어질 때까지)렌더링�
         </item>
         <item>
             <title><![CDATA[Resource Priority]]></title>
-            <link>https://kooku0.gihub.io/en/blog/resource-priority</link>
+            <link>https://kooku0.github.io/en/blog/resource-priority</link>
             <guid>/resource-priority</guid>
             <pubDate>Sun, 11 Apr 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[css파일과 같은 리소스를 로드해올 때 다음과 같이 많이 사용하는데,]]></description>
@@ -287,7 +287,7 @@ CSS가 사용 가능해질 때까지(CSSOM이 만들어질 때까지)렌더링�
         </item>
         <item>
             <title><![CDATA[React fiber & reconciliation]]></title>
-            <link>https://kooku0.gihub.io/en/blog/react-fiber</link>
+            <link>https://kooku0.github.io/en/blog/react-fiber</link>
             <guid>react-fiber</guid>
             <pubDate>Sun, 04 Apr 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Reconciliation은 React의 "비교(diffing)" 알고리즘입니다. 이 비교 알고리즘 덕분에 컴포넌트의 갱신이 예측 가능해지면서도 고성능 앱이라고 불러도 손색없을 만큼 충분히 빠른 앱을 만들 수 있습니다]]></description>
@@ -296,7 +296,7 @@ CSS가 사용 가능해질 때까지(CSSOM이 만들어질 때까지)렌더링�
         </item>
         <item>
             <title><![CDATA[Third-party JavaScript performance]]></title>
-            <link>https://kooku0.gihub.io/en/blog/third-party-javascript-performance-with-script-async-defer</link>
+            <link>https://kooku0.github.io/en/blog/third-party-javascript-performance-with-script-async-defer</link>
             <guid>/third-party-javascript-performance-with-script-async-defer</guid>
             <pubDate>Sun, 04 Apr 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Web.dev의 Efficiently load third-party JavaScript를 참고하여 작성하였습니다.]]></description>
