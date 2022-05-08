@@ -128,6 +128,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/kooku0/kooku0.github.io',
               },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/mingyu-gu-25aa761b5/'
+              }
             ],
           },
         ],
