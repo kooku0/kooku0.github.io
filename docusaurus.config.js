@@ -11,7 +11,7 @@ const config = {
   },
   title: 'Kooku\'s log',
   tagline: '문제에 대해 고민하고, 공부한 내용들을 기록하는 공간입니다.',
-  url: 'https://kooku0.gihub.io',
+  url: 'https://kooku0.github.io',
   baseUrl: '/',
   onBrokenLinks: 'ignore', // default is throw
   onBrokenMarkdownLinks: 'warn',
