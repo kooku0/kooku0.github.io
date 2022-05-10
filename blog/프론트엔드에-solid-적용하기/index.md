@@ -283,7 +283,7 @@ export default useNaverMap;
 
 #### 예제
 
-지도 모듈의 인터페이스에 모든 지도기능들을 포함시켜본다고 생각해보자. 로드뷰기능을 지도모듈에 포함시켜 달라는 요구상이 생겼다고 해보자. 로드뷰기능이 과연 지도모듈을 사용하는 모든 곳들에 필요할까? 실제로 사용되는 곳은 매우 한정적일 것이다. 이렇게 필요 이상으로 많은 걸 포함하는 모듈에 의존하게 되면 사용하지 않는 것들에도 의존성이 생겨버리게 되어 문제가 발생하게 된다.
+지도 모듈의 인터페이스에 모든 지도기능들을 포함시켜본다고 생각해보자. 로드뷰기능을 지도모듈에 포함시켜 달라는 요구사항이 생겼다고 해보자. 로드뷰기능이 과연 지도모듈을 사용하는 모든 곳들에 필요할까? 실제로 사용되는 곳은 매우 한정적일 것이다. 이렇게 필요 이상으로 많은 걸 포함하는 모듈에 의존하게 되면 사용하지 않는 것들에도 의존성이 생겨버리게 되어 문제가 발생하게 된다.
 
 그래서 이럴때는 모듈을 쪼개고 인터페이스를 분리시키는 것이 좋다. 정말로 연관있는, 그리고 관련있는 것들만 의존할 수 있게 하는 모듈을 만들자.
 
@@ -295,6 +295,125 @@ export default useNaverMap;
 
 ### DIP: 의존성 역전 원칙 (Dependency Inversion Principle)
 
+> 유연성이 극대화된 시스템은 소스 코드 의존성이 추상에 의존하며 구체에는 의존하지 않는 시스템이다.
+
+우리는 변동성이 큰 구체적인 요소에 의존하는 것을 피해야한다.
+
+#### 예제
+
+지도가 포함된 컴포넌트안에서 바로 지도 라이브러리를 호출해서 사용한다고 해보자.
+
+```tsx title="카카오지도 모듈"
+import { useRef } from "react";
+
+function Map() {
+    const [map, setMap] = useState<naver.maps.Map | null>(null);
+
+  useEffect(() => {
+    const mapElement = ref.current;
+
+    if (!mapElement) {
+      return;
+    }
+
+    const mapOption = {
+      center: new naver.maps.LatLng(center.latitude, center.longitude),
+      zoom: zoomLevel,
+    };
+    const naverMap = new naver.maps.Map(mapElement, mapOption);
+    setMap(naverMap);
+  }, []);
+
+  const setZoom = (zoomLevel: int) => {
+    if (!map) {
+      return;
+    }
+
+    map.setZoom(zoomLevel);
+    return;
+  };
+
+  const getZoom = () => {
+    if (!map) {
+      return;
+    }
+
+    return map.getZoom();
+  };
+
+  return {
+    setZoom
+    getZoom,
+  };
+}
+```
+
+여기에서 네이버지도를 카카오지도로 변경해달라는 요청이 있다면 어떻게 해야할까? 우선 카카오지도는 줌을 컨트롤하는 메소드로 `setZoom`, `getZoom` 이 아니라 `setLevel`, `getLevel`을 사용한다.
+
+Map 커스텀훅을 사용하고 있는 모든 컴포넌트를 수정해야하는 상황이 생겼다. 이는 컴포넌트가 네이버지도라는 구체적인 구현에 의존성이 있기에 발생한 문제이다. 이 문제를 해결하기 위해 네이버지도, 카카오지도, 구글지도 등 모든 지도의 공통적인 요구사항 즉 지도의 최상위 요구사항을 정립해야한다. 이 요구사항은 어느 플랫폼의 지도든 기능이 포함되어 있을 것이다. 이 요구사항을 **안정된 추상 인터페이스**라고 부르고 이 안정된 추상 인터페이스를 바탕으로 여러 플랫폼의 지도를 구현하게 되면 지도 플랫폼을 바꾸더라도 다른 변경없이 사용할 수 있게 된다.
+
+```tsx title="안정된 추상 인터페이스를 구현한 지도 모듈"
+function useNaverMap({ ref, center, zoomLevel }: Params): Map {
+  const [map, setMap] = useState<naver.maps.Map | null>(null);
+
+  useEffect(() => {
+    const mapElement = ref.current;
+
+    if (!mapElement) {
+      return;
+    }
+
+    const mapOption = {
+      center: new naver.maps.LatLng(center.latitude, center.longitude),
+      zoom: zoomLevel,
+    };
+    const naverMap = new naver.maps.Map(mapElement, mapOption);
+    setMap(naverMap);
+  }, []);
+
+  const zoomIn = () => {
+    if (!map) {
+      return;
+    }
+
+    map.setZoom(map.getZoom() + 1);
+    return;
+  };
+
+  const zoomOut = () => {
+    if (!map) {
+      return;
+    }
+
+    map.setZoom(map.getZoom() - 1);
+    return;
+  };
+
+  return {
+    zoomIn,
+    zoomOut,
+  };
+}
+
+export default useNaverMap;
+```
+
+의존성 방향이 어떻게 달라졌는지 살펴보자.
+
+![img](./images/dip01.png)
+
+Map이라는 네이버지도라는 sdk에 강하게 의존적인 Component는 Map의 구현이 변경되거나 수정이 발생할 때 필연적으로 Component의 수정이 필요했다.
+
+![img](./images/dip02.png)
+
+안정된 추상 인터페이스를 기반으로 Navermap을 구현했다면 인터페이스가 변하지 않는다면 Component의 수정은 필요없다. Map에서 발생한 변경이 다른 곳으로 전파되지 않음을 뜻한다.
+
+#### 안정된 추상화
+
+추상 인터페이스에 변경이 생기면 이를 구체화한 구현체들도 따라서 수정해야 한다. 반대로 구체적인 구현체에 변경이 생기도라도 그 구현체가 구현하는 인터페이스는 변경될 필요가 없다.
+
+안정된 소프트웨어 아키텍처란 변동성이 큰 구현체에 의존하는 일은 지양하고, 안정된 추상 인터페이스를 선호하는 아키텍처라는 뜻이다.
+
 ## 4) 마무리
 
-> 작성중...
+> 작성중..
