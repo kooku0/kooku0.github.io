@@ -303,7 +303,7 @@ export default useNaverMap;
 
 지도가 포함된 컴포넌트안에서 바로 지도 라이브러리를 호출해서 사용한다고 해보자.
 
-```tsx title="카카오지도 모듈"
+```tsx title="네이버지도 모듈"
 import { useRef } from "react";
 
 function Map() {
