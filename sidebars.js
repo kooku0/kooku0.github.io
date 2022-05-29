@@ -85,6 +85,14 @@ const sidebars = {
         'books/effective-typescript/04',
       ]
     },
+    {
+      type: 'category',
+      label: '실용주의 프로그래머',
+      items: [
+        'books/the-pragmatic-programmer/introduction',
+        'books/the-pragmatic-programmer/preface',
+      ]
+    },
   ],
 
   // But you can create a sidebar manually
