@@ -91,20 +91,10 @@ const sidebars = {
       items: [
         'books/the-pragmatic-programmer/introduction',
         'books/the-pragmatic-programmer/preface',
+        'books/the-pragmatic-programmer/01',
       ]
     },
   ],
-
-  // But you can create a sidebar manually
-  /*
-  tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['hello'],
-    },
-  ],
-   */
 };
 
 module.exports = sidebars;
