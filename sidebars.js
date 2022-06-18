@@ -92,6 +92,7 @@ const sidebars = {
         'books/the-pragmatic-programmer/introduction',
         'books/the-pragmatic-programmer/preface',
         'books/the-pragmatic-programmer/01',
+        'books/the-pragmatic-programmer/02',
       ]
     },
   ],
