@@ -95,6 +95,14 @@ const sidebars = {
         'books/the-pragmatic-programmer/02',
       ]
     },
+    {
+      type: 'category',
+      label: '테스트 주도 개발',
+      items: [
+        'books/test-driven-development/introduction',
+        'books/test-driven-development/preface',
+      ]
+    },
   ],
 };
 
