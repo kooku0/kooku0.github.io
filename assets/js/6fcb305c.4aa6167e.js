@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[8615],{754:function(e){e.exports=JSON.parse('{"allTagsPath":"/retrospect/tags","slug":"/retrospect/tags/\ud68c\uace0","name":"\ud68c\uace0","count":9,"permalink":"/retrospect/tags/\ud68c\uace0"}')}}]);
