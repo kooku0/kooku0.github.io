@@ -88,6 +88,12 @@ const config = {
           },
         ],
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true
+        }
+      },
       footer: {
         style: 'dark',
         links: [
@@ -146,7 +152,6 @@ const config = {
         defaultMode: 'dark',
         respectPrefersColorScheme: false
       },
-      hideableSidebar: true,
     }),
     plugins: [
       [
