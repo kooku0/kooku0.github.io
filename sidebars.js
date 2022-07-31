@@ -101,6 +101,7 @@ const sidebars = {
       items: [
         'books/test-driven-development/introduction',
         'books/test-driven-development/preface',
+        'books/test-driven-development/01'
       ]
     },
   ],
