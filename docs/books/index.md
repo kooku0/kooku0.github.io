@@ -13,3 +13,4 @@ slug: /books/
 - [만들면서 배우는 클린 아키텍처](./get-your-hands-dirty-on-clean-architecture/introduction.md)
 - [실용주의 프로그래머](./the-pragmatic-programmer/introduction.md)
 - [테스트 주도 개발](./test-driven-development/introduction.md)
+- [함수형 자바스크립트](./functional-programming-in-javascript/introduction.md)

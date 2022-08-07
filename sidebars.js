@@ -104,6 +104,15 @@ const sidebars = {
         'books/test-driven-development/01'
       ]
     },
+    {
+      type: 'category',
+      label: '함수형 자바스크립트',
+      items: [
+        'books/functional-programming-in-javascript/introduction',
+        'books/functional-programming-in-javascript/preface',
+        'books/functional-programming-in-javascript/01'
+      ]
+    },
   ],
 };
 
