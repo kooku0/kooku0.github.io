@@ -1,4 +1,5 @@
 ---
+title: 책 목록
 sidebar_position: 1
 slug: /books/
 ---
