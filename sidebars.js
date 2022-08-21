@@ -21,7 +21,7 @@ const sidebars = {
       type: 'category',
       label: '클린코드',
       items: [
-        'books/clean-code/introduction'
+        'books/clean-code/introduction',
       ]
     },
     {
@@ -32,7 +32,7 @@ const sidebars = {
         'books/object/01',
         'books/object/02',
         'books/object/03',
-        'books/object/04'
+        'books/object/04',
       ]
     },
     {
@@ -73,7 +73,7 @@ const sidebars = {
       label: '스칼라로 배우는 함수형 프로그래밍',
       items: [
         'books/functional-programming-in-scala/introduction',
-        'books/functional-programming-in-scala/04'
+        'books/functional-programming-in-scala/04',
       ]
     },
     {
@@ -101,7 +101,8 @@ const sidebars = {
       items: [
         'books/test-driven-development/introduction',
         'books/test-driven-development/preface',
-        'books/test-driven-development/01'
+        'books/test-driven-development/01',
+        'books/test-driven-development/01',
       ]
     },
     {
@@ -110,7 +111,7 @@ const sidebars = {
       items: [
         'books/functional-programming-in-javascript/introduction',
         'books/functional-programming-in-javascript/preface',
-        'books/functional-programming-in-javascript/01'
+        'books/functional-programming-in-javascript/01',
       ]
     },
   ],
