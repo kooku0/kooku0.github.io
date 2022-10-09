@@ -118,6 +118,7 @@ const sidebars = {
         'books/functional-programming-in-javascript/05',
         'books/functional-programming-in-javascript/06',
         'books/functional-programming-in-javascript/07',
+        'books/functional-programming-in-javascript/08',
       ]
     },
   ],
