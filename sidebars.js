@@ -121,6 +121,17 @@ const sidebars = {
         'books/functional-programming-in-javascript/08',
       ]
     },
+    {
+      type: 'category',
+      label: '디자이너를 위한 웹 성능 최적화 기법',
+      items: [
+        'books/design-for-performance/introduction',
+        'books/design-for-performance/01',
+        'books/design-for-performance/02',
+        'books/design-for-performance/03',
+        'books/design-for-performance/04',
+      ]
+    }
   ],
 };
 
