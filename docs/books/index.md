@@ -15,3 +15,4 @@ slug: /books/
 - [실용주의 프로그래머](./the-pragmatic-programmer/introduction.md)
 - [테스트 주도 개발](./test-driven-development/introduction.md)
 - [함수형 자바스크립트](./functional-programming-in-javascript/introduction.md)
+- [디자이너를 위한 웹 성능 최적화 기법](./designing-for-performance/introduction.md)
