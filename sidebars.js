@@ -29,6 +29,7 @@ const sidebars = {
       label: '오브젝트',
       items: [
         'books/object/introduction',
+        'books/object/preface',
         'books/object/01',
         'books/object/02',
         'books/object/03',
@@ -130,6 +131,14 @@ const sidebars = {
         'books/designing-for-performance/02',
         'books/designing-for-performance/03',
         'books/designing-for-performance/04',
+      ]
+    },
+    {
+      type: 'category',
+      label: '쏙쏙 들어오는 함수형 코딩',
+      items: [
+        'books/grokking-simplicity/introduction',
+        'books/grokking-simplicity/01',
       ]
     }
   ],
