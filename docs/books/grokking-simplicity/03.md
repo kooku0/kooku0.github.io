@@ -186,3 +186,281 @@ title: 03 액션과 계산, 데이터의 차이를 알기
 ![img](./images/3.4.png)
 
 ### 데이터베이스에서 가져온 구독자 데이터
+
+```ts
+var subscriber = {
+  email: "sam@pmail.com",
+  rec_count: 16
+}
+```
+
+### 쿠폰 등급은 문자열입니다.
+
+```ts
+var rank1 = "best";
+var rank2 = "good";
+```
+
+### 쿠폰 등급을 결정하는 것은 함수입니다.
+
+```ts
+function subCouponRank(subscriber) {
+  if (subscriber.rec_count >= 10) {
+    return "best";
+  } else {
+    return "good";
+  }
+}
+```
+
+어떤 구독자가 어떤 등급의 쿠폰을 받을지 결정하는 것은 함수로 구현했습니다. 이 함수는 명확하고 테스트하기 쉬우며 재사용할 수 있습니다.
+
+### 데이터베이스에서 가져온 쿠폰 데이터
+
+구독자 데이터처럼 쿠폰 데이터도 객체로 표현할 수 있습니다.
+
+```ts
+var coupon = {
+  code: "10PERCENT",
+  rank: "bad"
+}
+```
+
+### 특정 등급의 쿠폰 목록을 선택하는 계산은 함수입니다.
+
+입력값은 전체 쿠폰 목록과 선택할 등급입니다. 출력값은 선택한 등급을 가진 쿠폰 목록입니다.
+
+```ts
+function selectCouponsByRank(coupons, rang) {
+  var ret = [];
+  for (var c = 0; c < coupons.length; c++) {
+    var coupon = coupons[c];
+    if (coupon.rank === rank) {
+      ret.push(coupon.code);
+    }
+  }
+  return ret;
+}
+```
+
+selectCouponsByRank() 함수는 계산입니다.
+
+### 이메일은 그냥 데이터입니다.
+
+이메일을 데이터로 표현해봅시다.
+
+```ts
+var message = {
+  from: "newsletter@coupondog.co",
+  to: "sam@pmail.com",
+  subject: "Your weekly coupons inside",
+  body: "Here are your coupons ..."
+}
+```
+
+### 구독자가 받을 이메일을 계획하는 계산
+
+구독자에 대한 이메일을 만드는 함수이기 때문에 구독자를 인자로 받아야 합니다. 그리고 이메일에는 쿠폰 정보가 있어야 하기 때문에 쿠폰 목록도 입력값으로 받아야 합니다. 
+
+```ts
+function emailForSubscriber(subscriber, goods, bests) {
+  var rank = subScriberRank(subscriber);
+  if (rank === "best") {
+    return {
+      from: "newsletter@coupondog.co",
+      to: subscriber.email,
+      subject: "Your best weekly coupons inside",
+      body: "Here are the best coupons: " + bests.join(", ");
+    };
+  } else {
+    return {
+      from: "newsletter@coupondog.co",
+      to: subscriber.email,
+      subject: "Your good weekly coupons inside",
+      body: "Here are the good coupons: " + goods.join(", ");
+    };
+  }
+}
+```
+
+### 보낼 이메일 목록을 준비하기
+
+앞서 구독자가 받을 이메일을 생성하는 계산을 만들었습니다. 이제 필요한 것은 구독자 목록으로 전체 이메일 목록을 만드는 것입니다.
+
+```ts
+function emailsForSubscribers(subscribers, goods, bests) {
+  var emails = [];
+  for (var s = 0; s < subscribers.length; s++) {
+    var subscriber = subscribers[s];
+    emails.push(emailForSubscriber(subscriber, goods, bests));
+  }
+  return emails;
+}
+```
+
+### 이메일 보내기는 액션입니다.
+
+일반적으로 액션도 계산처럼 함수로 구현합니다. 그래서 함수만 보고 계산인지 액션인지 알아보기는 쉽지 않습니다.
+
+```ts
+function sendIssue() {
+  var coupons = fetchCouponsFromDB();
+  var goodCoupons = selectCouponsByRank(coupons, "good");
+  var bestCoupons = selectCouponsByRank(coupons, "best");
+  var subscribers = fetchSubscribersFromDB();
+  var emails = emailsForSubscribers(subscribers, goodCoupons, bestCoupons);
+  for (var e = 0; e < emails.length; e++) {
+    var email = emails[e];
+    emailSystem.send(email);
+  }
+}
+```
+
+모든 기능을 코드로 구현해 봤습니다. 이와 같이 데이터를 먼저 구현하고 계산을 구현한 후에 마지막으로 액션을 구현하는 것이 함수형 프로그래밍의 일반적인 구현 순서입니다.
+
+:::important 계산에 대해 자세히 알아보기
+
+#### 계산은 무엇인가요?
+
+계산은 입력값으로 출력을 만드는 것입니다. 실행 시점과 횟수에 관계없이 항상 같은 입력값에 대해 같은 출력값을 돌려줍니다.
+
+#### 어떻게 계산에 의미를 담을 수 있나요?
+
+계산에는 연산을 담을 수 있습니다. 계산은 입력값을 출력값으로 만드는 것을 표현합니다. 계산을 언제 사용할지 또는 어떻게 사용할지는 때에 따라 다릅니다.
+
+### 왜 액션보다 계산이 좋나요?
+
+액션보다 좋은 점은 아래와 같습니다.
+
+1. 테스트하기 쉽습니다.
+2. 기계적인 분석이 쉽습니다. 정적 분석
+3. 계산은 조합하기 좋습니다. 계산을 조합해 더 큰 계산을 만들 수 있습니다.
+
+> 함수형 프로그래밍의 대부분은 계산을 가지고 하는 일입니다. 계산은 일반적으로 함수형 프로그래밍 외부에 있는 액션을 통해 수행됩니다.
+
+### 꼐산을 쓰면서 걱정하지 않아도 되는 것
+
+계산을 사용하면 아래를 걱정하지 않아도 됩니다.
+
+1. 동시에 실행되는 것
+2. 과거에 실행되었던 것이나 미래에 실행할 것
+3. 실행 횟수
+
+### 계산의 단점
+
+계산과 액션은 실행하기 전에 어떤 일이 발생할지 알 수 없다는 단점이 있습니다.
+
+소프트웨어 측면에서 함수는 블랙박스입니다. 입력값으로 실행해야 결과를 알 수 있ㅅ브니다.
+
+### 계산은 일반적으로 무엇이라고 하나요?
+
+다른 책에서 보통 **순수 함수** 또는 **수학 함수**라고 부릅니다.
+
+:::
+
+## 이미 있는 코드에 함수형 사고 적용하기
+
+제나가 자회사에 수수료를 보내기 위해 만든 코드입니다. `sendPayout()` 함수는 실제 은행 계좌로 송금하는 액션입니다.
+
+```js
+function figurePayout(affiliate) {
+  var owed = affiliate.sales * affiliate.commission;
+  if (owed > 100) {// 100 달러 이하면 송금하지 않기
+    sendPayout(affiliate.bank_code, owed);
+  }
+}
+
+function affiliatePayout(affiliates) {
+  for (var i = 0; i < affiliates.length; i++) {
+    figurePayout(affiliates[i]);
+  }
+}
+
+function main(affiliates) {
+  affiliatePayout(affiliates);
+}
+```
+
+제나가 만든 코드는 함수형 코드라고 하기 어렵습니다. 그리고 액션은 하나가 아닙니다.
+
+`sendPayout()` 함수부터 시작해 점점 액션이 코드 전체로 퍼져나갑니다.
+
+## 액션은 코드 전체로 퍼집니다.
+
+제나가 만든 코드는 잘못된 코드가 아닙니다. 다만 함수형 사고를 적용하지 않은 코드입니다.
+
+액션을 부르는 함수가 있다면 그 함수도 액션이 됩니다. 또 그 함수를 부르는 다른 함수도 역시 액션이 됩니다. 이런식으로 작은 액션 하나가 코드 전체로 퍼져 나갑니다.
+
+## 액션은 다양한 형태로 나타납니다.
+
+자바스크립트에서 발생할 수 있는 액션을 살펴봅시다. 액션은 어디서나 쉽게 볼 수 있습니다.
+
+```js title="함수 호출"
+alert("Hello world!"); // 팝업 창이 뜨는 것은 액션입니다.
+```
+
+```js title="메서드 호출"
+console.log("hello"); // 콘솔에 출력합니다.
+```
+
+```js title="생성자"
+new Date(); // 기본적으로 부르는 시점에 현재 날짜와 시간을 초기화하기 때문에 호출되는 시점에 따라 다른 값을 가집니다.
+```
+
+```js title="표현식"
+// 변수 참조
+y
+// 속성 참조
+user.first_name
+// 배열 참조
+stack[0]
+```
+
+```js title="상태"
+// 값 할당
+z = 3;
+// 속성 삭제
+delete user.first_name;
+```
+
+액션을 찾기 위해 액션 코드를 모두 찾을 필요는 없습니다. 단지 코드가 호출 시점이나 횟수에 의존하는지 생각해보면 됩니다.
+
+:::important 액션에 대해 자세히 알아보기
+### 액션은 무엇입니까?
+
+액션은 외부 세계에 영향을 주거나 받는 것을 말합니다. 그리고 액션은 실행 시점과 횟수에 의존합니다.
+
+- 언제 실행되는지 - **순서**
+- 얼마나 실행되는지 - **반복**
+
+### 어떻게 액션에 의미를 담을 수 있나요?
+
+액션으로 외부 세강에 영향을 줄 수 있습니다.
+
+### 액션은 일반적으로 무엇이라고 하나요?
+
+다른 책에서 액션은 **순수하지 않은 함수**, **부수 효과 함수** 라고 부릅니다.
+
+> 액션은 함수형 프로그래밍에서 가장 중요합니다. 앞으로 액션을 제한적으로 사용하는 법에 다루겠습니다.
+
+### 액션은 쉽지 않습니다.
+
+- 액션은 다루기 힘듭니다.
+- 액션은 우리가 소프트웨어를 실행하려는 가장 중요한 이유입니다.
+
+액션은 사용하기 어렵습니다. 하지만 꼭 써야 합니다. 다음은 액션을 잘 사용하는 방법입니다.
+
+1. 가능한 액션을 적게 사용합니다. 액션을 전혀 쓰지 않을 수 없습니다. 액션 대신 계산을 사용할 수 있을지 생각해 봐야 합니다.
+2. 액션은 가능한 작게 만듭니다.
+3. 액션이 외부 세계와 상호작용하는 것을 제한할 수 있습니다. 내부에 계산과 데이터만 있고 가장 바깥쪽에 액션이 있는 구조가 이상적입니다.
+4. 액션이 호출 시점에 의존하는 것을 제한합니다.
+:::
+
+## 요점 정리
+
+- 함수형 프로그래머는 액션과 계산, 데이터를 구분합니다.
+- 액션은 실행 시점이나 횟수에 의존합니다. 일반적으로 액션은 외부 세게에 영향을 주거나 받습니다.
+- 계산은 입력값으로 출력값을 만드는 것입니다. 외부 세계에 영향을 주거나 받지 않고 실행 시점이나 횟수에 의존하지 않습니다.
+- 데이터는 이벤트에 대한 사실입니다.
+- 함수형 프로그래머는 액션보다 계산을 좋아하고 계산보다 데이터를 좋아합니다.
+- 계산은 같은 입력값을 주면 항상 같은 출력값이 나오기 때문에 액션보다 테스트하기 쉽습니다.
