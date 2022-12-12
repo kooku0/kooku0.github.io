@@ -27,10 +27,10 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-html[data-theme="dark"] .theme-code-block-highlighted-line {
-  background-color: var(--ifm-color-primary-darkest) !important;
-}
-
 .theme-code-block-highlighted-line {
   background-color: var(--ifm-color-primary-lightest) !important;
+}
+
+html[data-theme="dark"] .theme-code-block-highlighted-line {
+  background-color: rgba(0, 0, 0, 0.3) !important;
 }
