@@ -37,8 +37,8 @@ alt="book"
 - Chapter 12. 함수형 반복
 - Chapter 13. 함수형 도구 체이닝
 - Chapter 14. 중첩된 데이터에 함수형 도구 사용하기
-- Chapter 15. 타임라인 격리하기
-- Chapter 16. 타임라인 사이에 자원 공유하기
+- [Chapter 15. 타임라인 격리하기](./15.md)
+- [Chapter 16. 타임라인 사이에 자원 공유하기](./16.md)
 - Chapter 17. 타임라인 조율하기
 - Chapter 18. 반응형 아키텍처와 어니언 아키텍처
 - Chapter 19. 함수형 프로그래밍 여행에 앞서
