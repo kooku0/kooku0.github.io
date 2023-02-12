@@ -145,6 +145,7 @@ const sidebars = {
         'books/grokking-simplicity/05',
         'books/grokking-simplicity/06',
         'books/grokking-simplicity/07',
+        'books/grokking-simplicity/08',
         'books/grokking-simplicity/10',
         'books/grokking-simplicity/15',
         'books/grokking-simplicity/16',
