@@ -26,13 +26,13 @@ alt="book"
 - [Chapter 1. 쏙쏙 들어오는 함수형 코딩에 오신 것을 환영합니다](./01.md)
 - [Chapter 2. 현실에서의 함수형 사고](./02.md)
 - [Chapter 3. 액션과 계산, 데이터](./03.md)
-- Chapter 4. 액션에서 계산 빼내기
-- Chapter 5. 더 좋은 액션 만들기
-- Chapter 6. 변경 가능한 데이터 구조를 가진 언어에서 불변성 유지하기
-- Chapter 7. 신뢰할 수 없는 코드를 쓰면서 불변성 지키기
-- Chapter 8. 계층형 설계 I
+- [Chapter 4. 액션에서 계산 빼내기](./04.md)
+- [Chapter 5. 더 좋은 액션 만들기](./05.md)
+- [Chapter 6. 변경 가능한 데이터 구조를 가진 언어에서 불변성 유지하기](./06.md)
+- [Chapter 7. 신뢰할 수 없는 코드를 쓰면서 불변성 지키기](./07.md)
+- [Chapter 8. 계층형 설계 I](./08.md)
 - Chapter 9. 계층형 설계 II
-- Chapter 10. 일급 함수 I
+- [Chapter 10. 일급 함수 I](./10.md)
 - Chapter 11. 일급 함수 II
 - Chapter 12. 함수형 반복
 - Chapter 13. 함수형 도구 체이닝
