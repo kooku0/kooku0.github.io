@@ -16,3 +16,4 @@ slug: /books/
 - [테스트 주도 개발](./test-driven-development/introduction.md)
 - [함수형 자바스크립트](./functional-programming-in-javascript/introduction.md)
 - [디자이너를 위한 웹 성능 최적화 기법](./designing-for-performance/introduction.md)
+- [쏙쏙 들어오는 함수형 코딩](./grokking-simplicity/introduction.md)
