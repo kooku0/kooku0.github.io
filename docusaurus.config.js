@@ -79,7 +79,7 @@ const config = {
           {
             to: '/retrospect',
             position: 'left',
-            label: '회고',
+            label: '경험을 돌아봄',
           },
           {
             href: 'https://github.com/kooku0/kooku0.github.io',
@@ -110,23 +110,6 @@ const config = {
               },
             ],
           },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
           {
             title: 'More',
             items: [
@@ -160,8 +143,9 @@ const config = {
           id: 'retrospect',
           routeBasePath: 'retrospect',
           path: 'retrospect',
-          blogTitle: '회고!',
-          blogDescription: '배운 내용과 생각한 내용들을 기록합니다.',
+          blogTitle: '경험을 돌아봄',
+          blogDescription: '경험을 돌아보고 깨달음을 얻어 발전하는 과정',
+          exclude: ['**/archive'],
         },
       ],
       [
