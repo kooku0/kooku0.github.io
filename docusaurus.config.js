@@ -68,18 +68,23 @@ const config = {
         items: [
           {
             to: '/blog',
-            label: '블로그',
+            label: 'Blog',
             position: 'left'
           },
           {
             to: '/docs/books/',
             position: 'left',
-            label: '책',
+            label: 'Book',
+          },
+          {
+            to: '/journal',
+            label: 'Journal',
+            position: 'left',
           },
           {
             to: '/retrospect',
             position: 'left',
-            label: '경험을 돌아봄',
+            label: 'Retrospect',
           },
           {
             href: 'https://github.com/kooku0/kooku0.github.io',
@@ -146,6 +151,15 @@ const config = {
           blogTitle: '경험을 돌아봄',
           blogDescription: '경험을 돌아보고 깨달음을 얻어 발전하는 과정',
           exclude: ['**/archive'],
+        }
+      ],
+      [
+        '@docusaurus/plugin-content-blog',
+        {
+          id: 'journal',
+          routeBasePath: 'journal',
+          path: 'journal',
+          blogTitle: 'Journal',
         },
       ],
       [
