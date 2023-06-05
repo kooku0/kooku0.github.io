@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[2993],{3338:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"","permalink":"/en/journal/2023/06/05/"}]}')}}]);
