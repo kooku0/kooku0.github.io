@@ -4,10 +4,17 @@
         <title>Kooku's log Blog</title>
         <link>https://kooku0.github.io/journal</link>
         <description>Kooku's log Blog</description>
-        <lastBuildDate>Tue, 06 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <link>https://kooku0.github.io/journal/2023/06/07/</link>
+            <guid>https://kooku0.github.io/journal/2023/06/07/</guid>
+            <pubDate>Wed, 07 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. 올해 목표를 세워보자.]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-올해-목표를-세워보자">1. 올해 목표를 세워보자.<a href="#1-올해-목표를-세워보자" class="hash-link" aria-label="1. 올해 목표를 세워보자.에 대한 직접 링크" title="1. 올해 목표를 세워보자.에 대한 직접 링크">​</a></h2><p>한 해 목표는 보통 새해 첫 날에 세우기 마련인데 나는 좀 늦게 정하게 되었다. 그때는 하고싶은게 뚜렷하지 않았기 때문이다. 그냥 일이나 열심히 해야지~ 돈이나 모아야지~ 생각했던 것 같다.</p><p>저번달 회사 문화의 날에 와인 시음을 해보고 급 관심을 가지게 되었다. 집에가서 유튜브 영상도 찾아보고 오늘 와인 책까지 사게 되었다. <code>와인 테이스팅 코스</code> 책인데 추천도 많이 했고 그림이 많아 이해하기 쉬워 보였다.</p><p>아무튼 올해 목표!</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="취미">[취미]<a href="#취미" class="hash-link" aria-label="[취미]에 대한 직접 링크" title="[취미]에 대한 직접 링크">​</a></h3><ol><li>WSET Level 2 따기</li><li>와인관련 앱 개발하기 (혼자서)</li></ol><h3 class="anchor anchorWithStickyNavbar_LWe7" id="회사">[회사]<a href="#회사" class="hash-link" aria-label="[회사]에 대한 직접 링크" title="[회사]에 대한 직접 링크">​</a></h3><ol start="3"><li>web-client project들 모두 하나로 합치기</li></ol><p>단 몇 일만에 정해버린 올해 목표지만 지금은 의욕이 넘친다. 가보자고~</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-flutter와-dart">2. Flutter와 Dart<a href="#2-flutter와-dart" class="hash-link" aria-label="2. Flutter와 Dart에 대한 직접 링크" title="2. Flutter와 Dart에 대한 직접 링크">​</a></h2><p>앱을 만들어보고 싶다고 회사 동료분께 이야기하자 Flutter를 추천해주셨다. 객체지향 쓰는게 마음에 들기도 했고 빠르게 배워서 개발할 수 있다길래 기대되었다. 이전에는 RN을 사용했는데 이게... native 기능을 사용하려면 쉽지 않고 버벅이는게 눈에 보였다. 그런데 Flutter는 조금 낫지 않을까? 생각이 드는데 이건 개발해봐야 알 것 같다.</p><p>니꼴라스 선생님 강의 Dart, Flutter 신청완료!</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2023.06.06]]></title>
             <link>https://kooku0.github.io/journal/2023/06/06/</link>
