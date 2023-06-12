@@ -2,11 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kooku0.github.io/en/journal</id>
     <title>Kooku's log Blog</title>
-    <updated>2023-06-09T00:00:00.000Z</updated>
+    <updated>2023-06-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kooku0.github.io/en/journal"/>
     <subtitle>Kooku's log Blog</subtitle>
     <icon>https://kooku0.github.io/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2023.06.12]]></title>
+        <id>https://kooku0.github.io/en/journal/2023/06/12/</id>
+        <link href="https://kooku0.github.io/en/journal/2023/06/12/"/>
+        <updated>2023-06-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1. 성급함을 줄이는 연습]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-성급함을-줄이는-연습">1. 성급함을 줄이는 연습<a href="#1-성급함을-줄이는-연습" class="hash-link" aria-label="Direct link to 1. 성급함을 줄이는 연습" title="Direct link to 1. 성급함을 줄이는 연습">​</a></h2><p>요즘 Flutter 공부에 진심이다. dart 강의는 모두 들었고 flutter 강의를 25%정도 들은 상태인데 이런 강의를 듣다보면 빨리 코드를 짜고 싶어 손이 먼저 나가는 경우가 많다. 나도 그게 매우 심해서 강의를 제대로 다 듣지도 않고 프로젝트 만들어서 돌리는데 그러면 안된다. 나는 요즘 이것을 참는 연습을 하고 있다. 아직 스팩정리도 되지 않았는데 손부터 나가 코드를 작성한다던가 아직 완성도 안되었는데 공개를 한다던가 이런 조급함과 성급함이 몸에 베여있는 나는 무언가를 제대로 마치거나 완성시킨게 많이 없다. 그래서 이런걸 줄이고 싶어서 참는 연습을 하고 있다. 나의 욕구와 싸우는 중이다. 침착하게 꼼꼼하게 생각하고 행동하자!</p><p>이런 대표적인 기업이 애플이 아닌가 싶다. 애플은 제품을 낼때 절대로 성급하게 내지 않는다. 완성되지 않았다던가 부족한 부분이 있다면 절대로 출시하지 않는다. 이번 비전프로도 마찬가지다 부족한게 많아도 출시하면 많은 사람들이 구매할꺼고 거기서 많은 피드백을 받아 개선시킬 수 있겠지만 자신만의 기준을 세우고 그걸 넘지 않으면 프로젝트를 없애버리기 까지한다. (애플카, 폴더블.. 등) 이런 애플의 디테일에 많은 사람들이 감동하고 찬양하는 것 같다. 조금 무겁더라도 동작하는 기능이 조금 없더라도 다른게 완벽하니깐.. 생각하지 못한 부분들까지 많이 신경을 쓰니깐.</p><p>이런걸 보면 요즘 스타트업 마인드랑은 확실히 다르다. 요즘 스타트업들은 빠르게 출시하고 반응을 보고 빠르게 개선하는걸 장려하고 그런 사람들을 채용하려고 한다. 그게 성공할 수 있는 방법이라고 생각한다. 그런데 애플은 완전히 다른 길을 가는데 성공한걸까? 왜 스타트업의 빠른 출시 빠른 테스트 빠른 개선을 하는 린 형식의 방법을 만들떄 애플의 레퍼런스를 참고하지 않았을까? 그것도 세계 최고&amp;최대 기업을 말이다. 당시에는 애플이 이렇게 큰 기업이 아니여서 그랬을까?</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-flutter">2. Flutter<a href="#2-flutter" class="hash-link" aria-label="Direct link to 2. Flutter" title="Direct link to 2. Flutter">​</a></h2><p>요즘 Flutter를 공부하고 있다. 예전에는 무조껀 react-native를 공부했을텐데 flutter 추천해주신 동료분의 말을 듣고 비교영상까지 보고나니 flutter가 진짜 좋다는걸 많이 느낀다. react-native는 js와 native가 bridge로 소통하여 native component를 그리고 제어하는 반면 flutter는 게임 엔진같은 rendering 엔진이 native에 embed되어 canvas같이 컴포넌트를 그린다. 그래서 native와 커뮤니케이션 하는 시간이 없고 os에 따라 다르게 동작하지 않는 장점이 있다. 그리고 vscode 개발경험이 너무 좋다. google pay 앱이 flutter로 만들어 졌다는 소식도 내가 flutter를 선택한 이유이기도 했다.</p><p>혹시나 multi-platform 앱 개발을 해야한다면 fe 개발자 이거나 js&amp;react에 익숙하더라도 flutter로 개발해보길 추천한다. flutter architecture 공식 문서 이번주에 정독 해야겠다.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2023.06.09]]></title>
         <id>https://kooku0.github.io/en/journal/2023/06/09/</id>
