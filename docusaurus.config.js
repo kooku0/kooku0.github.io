@@ -160,6 +160,7 @@ const config = {
           routeBasePath: 'journal',
           path: 'journal',
           blogTitle: 'Journal',
+          blogSidebarCount: 'ALL',
         },
       ],
       [
