@@ -2,11 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kooku0.github.io/en/journal</id>
     <title>Kooku's log Blog</title>
-    <updated>2023-06-18T00:00:00.000Z</updated>
+    <updated>2023-06-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kooku0.github.io/en/journal"/>
     <subtitle>Kooku's log Blog</subtitle>
     <icon>https://kooku0.github.io/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2023.06.19]]></title>
+        <id>https://kooku0.github.io/en/journal/2023/06/19/</id>
+        <link href="https://kooku0.github.io/en/journal/2023/06/19/"/>
+        <updated>2023-06-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1. 나는 나의 길을 가야지]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-나는-나의-길을-가야지">1. 나는 나의 길을 가야지<a href="#1-나는-나의-길을-가야지" class="hash-link" aria-label="Direct link to 1. 나는 나의 길을 가야지" title="Direct link to 1. 나는 나의 길을 가야지">​</a></h2><p>회사에 퇴사 예정이신 분이 두분이나 계신다. 이전 회사 카사에서 동료가 떠나는 슬픔을 너무나 많이 겪었기에 다음 회사를 선택할 때 퇴사율을 최우선적으로 보았다. 당근은 퇴사율이 낮다고 이미 소문이 나있었고, 당근페이의 경우 설립이후 1년동안 퇴사자가 없었다는 점이 너무 마음에 들어 입사를 했다. 이제 페이가 생긴지 2년이 좀 넘어가는 시점에서 퇴사자가 나올만 했는데 막상 맞닥들이니 마음이 싱숭생숭하다. 카사에서는 일주일에 한 명씩 퇴사해서 어지간해서는 동요가 안되는데 이번에는 조금 슬펐다. 당근에서 근무하면서 느꼈지만 당근은 절대 망하지 않을꺼고 이력서도 많이 들어와 채용도 카사보다 매우 쉬울 것이다. 그럼에도 같이 일한 동료, 같이 일을 하지 않았어도 같은 사무실에 있었던 동료가 떠나는 일은 슬프다.</p><p>이전에도 말했듯이 슬프다고 해결되는건 아니다. 나는 묵묵히 나의 길을 가면된다. 내가 옳다고 생각하는 길. 지금 내가 해야하는 일. 주변에 휩쓸려 내가 나의 삶의 주체가 되지 못한다면 항상 슬픔속에서 살기에 나는 나의 길을 가면된다.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2023.06.18]]></title>
         <id>https://kooku0.github.io/en/journal/2023/06/18/</id>
