@@ -161,6 +161,7 @@ const config = {
           path: 'journal',
           blogTitle: 'Journal',
           blogSidebarCount: 'ALL',
+          postsPerPage: 'ALL',
         },
       ],
       [
