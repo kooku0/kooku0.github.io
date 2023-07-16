@@ -82,11 +82,6 @@ const config = {
             position: 'left',
           },
           {
-            to: '/retrospect',
-            position: 'left',
-            label: 'Retrospect',
-          },
-          {
             href: 'https://github.com/kooku0/kooku0.github.io',
             label: 'GitHub',
             position: 'right',
