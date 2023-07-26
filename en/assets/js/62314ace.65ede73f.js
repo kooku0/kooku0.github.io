@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[8509],{6208:function(o){o.exports=JSON.parse('{"permalink":"/en/blog/tags/\uc544\ud0a4\ud14d\ucc98","page":1,"postsPerPage":6,"totalPages":1,"totalCount":6,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
