@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   
   return (
-    <ReactChannelIO pluginKey={process.env.CHANNEL_ID_PLUGIN_KEY} autoBoot={!location.host.startsWith("localhost")}>
+    <ReactChannelIO pluginKey={process.env.CHANNEL_ID_PLUGIN_KEY} autoBoot>
       <Layout
         title={`Hello from ${siteConfig.title}`}
         description="Description will go into a meta tag in <head />">
