@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -29,6 +29,10 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
+
+  useEffect(() => {
+    window.location.replace('/journal')
+  }, []);
   
   return (
     <ReactChannelIO pluginKey={process.env.CHANNEL_ID_PLUGIN_KEY} autoBoot>
