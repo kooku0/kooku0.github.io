@@ -2,11 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kooku0.github.io/journal</id>
     <title>Kooku's log Blog</title>
-    <updated>2023-09-27T00:00:00.000Z</updated>
+    <updated>2023-10-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kooku0.github.io/journal"/>
     <subtitle>Kooku's log Blog</subtitle>
     <icon>https://kooku0.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2023.10.10]]></title>
+        <id>https://kooku0.github.io/journal/2023/10/10/</id>
+        <link href="https://kooku0.github.io/journal/2023/10/10/"/>
+        <updated>2023-10-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1. 와인앱 출시]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-와인앱-출시">1. 와인앱 출시<a href="#1-와인앱-출시" class="hash-link" aria-label="1. 와인앱 출시에 대한 직접 링크" title="1. 와인앱 출시에 대한 직접 링크">​</a></h2><p>와인 앱을 드디어 playstore에 올렸다. 아직 검토중이라 보이지는 않겠지만, 이건 빠른시일 내에 되겠지..</p><p><img loading="lazy" alt="img" src="/assets/images/popo-dashboard-01-c7816253232789ceee27fb7f2bdf4d95.png" width="2138" height="520" class="img_ev3q"></p><p>처음에는 추석 연휴때 올리려고 했으나 부족한 기능들이 생각보다 너무 많았고 배포를 위해 준비해야할 스크린샷등도 필요해서 미룰 수 밖에 없었다 ㅠㅠ</p><p>그래도 처음 앱을 기획했을 때의 모든 기능들이 포함되어 있어 만족한다. 처음부터 내가 사용하기 위해 만든 앱이기도 하고 실제 와인 매장에서 사용해 봤을때도 나름 유용했다.</p><p>이제는 이 앱을 계속 유지보수하여 다른 사람들도 편리하게 사용하게 만들지 아니면 새로운 프로젝트를 진행할지 고민이다. 와인 서비스의 핵심은 와인정보를 얼마나 자세히 많이 가지고 있느냐의 data 싸움이고 이건 내가 너무 불리하니 이걸 스스로 해결할지 아니면 다른 와인 서비스와 컨택하여 풀어나갈지 고민이 된다. 이게 어렵다면 새로운 프로젝트를 진행해야할 듯 하다. 이미 아이디어도 있고.</p><p>(유사 서비스를 탐색하다 와인그래프라는 한국 서비스를 발견했는데 정말 많은 와인정보를 가지고 있어서 놀랐다. 와인그래프와 티타임이라도 해볼까 생각중이다.)</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2023.09.27]]></title>
         <id>https://kooku0.github.io/journal/2023/09/27/</id>
