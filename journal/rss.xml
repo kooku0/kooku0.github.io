@@ -4,10 +4,19 @@
         <title>Kooku's log Blog</title>
         <link>https://kooku0.github.io/journal</link>
         <description>Kooku's log Blog</description>
-        <lastBuildDate>Wed, 18 Oct 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Oct 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[2023.10.22]]></title>
+            <link>https://kooku0.github.io/journal/2023/10/22/</link>
+            <guid>https://kooku0.github.io/journal/2023/10/22/</guid>
+            <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[0. 와인]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O99L" id="0-와인">0. 와인<a href="#0-와인" class="hash-link" aria-label="0. 와인에 대한 직접 링크" title="0. 와인에 대한 직접 링크">​</a></h2><ul><li>WSET Level 3 는 국비교육이 오픈되지 않아 내년에 신청할 것 같다.</li><li>POPO는 4명이 설치했다가 지금은 2명만 설치되어 있다. IOS도 배포를 할지 고민중이다.</li></ul><h2 class="anchor anchorWithStickyNavbar_O99L" id="1-스마트-팜">1. 스마트 팜<a href="#1-스마트-팜" class="hash-link" aria-label="1. 스마트 팜에 대한 직접 링크" title="1. 스마트 팜에 대한 직접 링크">​</a></h2><ul><li><a href="https://www.youtube.com/watch?v=OHFhVfsT_cs" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=OHFhVfsT_cs</a> 영상을 시청했다.</li><li>댓글을 보고 흥미로운 정보를 발견했는데, 인공광은 태양광을 대체하지 못한다. 특정 식물이 필요로 하는 스팩트럼만 인공광으로 쏴주면 식물을 키울 수 있다. 하지만, 태양광은 식물이 필요로 하는 스팩트럼을 모두 가지고 있기 때문에 태양광이 더 효율적이다. 인공광은 태양광을 보완하는 역할을 한다. (특정 스팩트럼이 부족할 경우, 인공광으로 보완한다.) 라는 댓글이다.</li><li>태양광을 무시하고 실내나 지하에서 스마트팜을 하는 건 매우 비효율적인 방법인 것 같다. 스마트 팜이라도 태양광이 내부로 들어올 수 있어야 하고 스마트팜은 내부로 들어오는 태양광의 양을 조절하고 부족한 빛은 인공광으로 대체하도록 해야한다. 그게 아니면 전기 에너지도 너무 많이 들고, 식물이 필요로 하는 스팩트럼을 모두 제공하지 못한다.</li></ul><h2 class="anchor anchorWithStickyNavbar_O99L" id="2-http-status-0">2. HTTP Status 0<a href="#2-http-status-0" class="hash-link" aria-label="2. HTTP Status 0에 대한 직접 링크" title="2. HTTP Status 0에 대한 직접 링크">​</a></h2><p>서비스를 운영하면서 http status 0인 케이스가 여러번 있는데 해당 케이스에 대해 조사를 해봤다.</p><blockquote><p>XMLHttpRequest의 스팩이 httpStatus의 초깃값이 0였다가 서버의 response header로 httpStatus가 업데이트됨. (status === 0로 throw되었다면 "요청에 실패함"으로 생각하면 됨)</p><h3 class="anchor anchorWithStickyNavbar_O99L" id="다음-상황에서-발생">다음 상황에서 발생<a href="#다음-상황에서-발생" class="hash-link" aria-label="다음 상황에서 발생에 대한 직접 링크" title="다음 상황에서 발생에 대한 직접 링크">​</a></h3><ol><li>불법적인 교차 출처 요청( CORS 참조 )</li><li>방화벽 차단 또는 필터링</li><li>요청 자체가 코드에서 취소되었습니다.</li><li>설치된 브라우저 확장 프로그램이 문제를 일으키고 있습니다.
+sentry에서 올라온 모든 status 0 에러는 3번 케이스인 "요청 자체가 코드에서 취소된 경우"로 XMLHttpRequest가 요청을 보낼때 request timeout 디폴트 0로 잡고 있는데 이때까지 request를 하지 않으면 status 0로 AxiosError를 throw해버림. (네트워크 연결이 잘 안된경우)</li></ol><h3 class="anchor anchorWithStickyNavbar_O99L" id="reference">Reference<a href="#reference" class="hash-link" aria-label="Reference에 대한 직접 링크" title="Reference에 대한 직접 링크">​</a></h3><ul><li><a href="https://stackoverflow.com/questions/872206/what-does-it-mean-when-an-http-request-returns-status-code-0" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/questions/872206/what-does-it-mean-when-an-http-request-returns-status-code-0</a></li><li><a href="https://fetch.spec.whatwg.org/#concept-network-error" target="_blank" rel="noopener noreferrer">https://fetch.spec.whatwg.org/#concept-network-error</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/status" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/status</a></li></ul></blockquote><h2 class="anchor anchorWithStickyNavbar_O99L" id="3-공부">3. 공부<a href="#3-공부" class="hash-link" aria-label="3. 공부에 대한 직접 링크" title="3. 공부에 대한 직접 링크">​</a></h2><ul><li>밋코더 11월 신청을 했다. 공부에 소홀한 나를 이끄는 건 역시나 스터디..! 이번에 공부할 껀 "유닛 테스트" 와 "그릿" 책을 읽어볼 예정이다.</li><li>추가로 웹뷰간 통신 or 웹뷰 네이티브 간 통신에 대한 내용, 카드결제에 대한 내용들을 공부하고 정리해 볼 예정이다.</li></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2023.10.18]]></title>
             <link>https://kooku0.github.io/journal/2023/10/18/</link>
