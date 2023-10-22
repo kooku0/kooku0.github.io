@@ -1,7 +1,10 @@
 import { themes } from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type {Options as DocsOptions} from '@docusaurus/plugin-content-docs';
+import type {Options as BlogOptions} from '@docusaurus/plugin-content-blog';
 
 export default async function createConfigAsync() {
-  return ({
+  return {
   i18n: {
     defaultLocale: 'ko',
     locales: ['ko'],
@@ -20,14 +23,14 @@ export default async function createConfigAsync() {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           editUrl: 'https://github.com/kooku0/kooku0.github.io/edit/main/',
-        },
+        } satisfies DocsOptions,
         blog: {
           blogSidebarTitle: '모든 게시물',
           blogSidebarCount: 'ALL',
@@ -38,7 +41,7 @@ export default async function createConfigAsync() {
           postsPerPage: 'ALL',
           path: 'blog',
           id: 'blog'
-        },
+        } satisfies BlogOptions,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -50,6 +53,38 @@ export default async function createConfigAsync() {
           priority: 0.5,
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      'content-blog',
+      {
+        id: 'retrospect',
+        routeBasePath: 'retrospect',
+        path: 'retrospect',
+        blogTitle: '경험을 돌아봄',
+        blogDescription: '경험을 돌아보고 깨달음을 얻어 발전하는 과정',
+        exclude: ['**/archive'],
+      } satisfies BlogOptions,
+    ],
+    [
+      'content-blog',
+      {
+        id: 'journal',
+        routeBasePath: 'journal',
+        path: 'journal',
+        blogTitle: 'Journal',
+        blogSidebarCount: 'ALL',
+        postsPerPage: 'ALL',
+      } satisfies BlogOptions,
+    ],
+    [
+      "docusaurus-plugin-dotenv",
+      {
+        path: './.env',
+        systemvars: true,
+      },
     ],
   ],
 
@@ -77,6 +112,12 @@ export default async function createConfigAsync() {
             to: '/journal',
             label: 'Journal',
             position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'smart-farm',
+            label: 'Smart Farm',
           },
           {
             href: 'https://github.com/kooku0/kooku0.github.io',
@@ -133,35 +174,5 @@ export default async function createConfigAsync() {
         respectPrefersColorScheme: false
       },
     }),
-    plugins: [
-      [
-        '@docusaurus/plugin-content-blog',
-        {
-          id: 'retrospect',
-          routeBasePath: 'retrospect',
-          path: 'retrospect',
-          blogTitle: '경험을 돌아봄',
-          blogDescription: '경험을 돌아보고 깨달음을 얻어 발전하는 과정',
-          exclude: ['**/archive'],
-        }
-      ],
-      [
-        '@docusaurus/plugin-content-blog',
-        {
-          id: 'journal',
-          routeBasePath: 'journal',
-          path: 'journal',
-          blogTitle: 'Journal',
-          blogSidebarCount: 'ALL',
-          postsPerPage: 'ALL',
-        },
-      ],
-      [
-        "docusaurus-plugin-dotenv",
-        {
-          path: './.env',
-          systemvars: true,
-        },
-      ],
-    ]
-})};
+  } satisfies Config;
+};
