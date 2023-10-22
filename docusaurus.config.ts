@@ -1,10 +1,7 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import { themes } from 'prism-react-renderer';
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-const config = {
+export default async function createConfigAsync() {
+  return ({
   i18n: {
     defaultLocale: 'ko',
     locales: ['ko'],
@@ -27,7 +24,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           editUrl: 'https://github.com/kooku0/kooku0.github.io/edit/main/',
         },
@@ -43,7 +40,7 @@ const config = {
           id: 'blog'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
         gtag: {
           trackingID: 'G-KVSM4B0KPY',
@@ -127,8 +124,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} kooku's log, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: themes.github,
+        darkTheme: themes.vsDark,
         additionalLanguages: ['java', 'scala', 'docker', 'yaml']
       },
       colorMode: {
@@ -167,6 +164,4 @@ const config = {
         },
       ],
     ]
-};
-
-module.exports = config;
+})};
