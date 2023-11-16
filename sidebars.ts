@@ -156,6 +156,7 @@ const sidebars: SidebarsConfig = {
       label: 'study',
       items: [
         'smart-farm/study/hydroponics',
+        'smart-farm/study/hydroponics-pros-cons',
       ]
     },
   ]
