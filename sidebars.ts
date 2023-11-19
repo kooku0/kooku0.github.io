@@ -170,6 +170,7 @@ const sidebars: SidebarsConfig = {
             'smart-farm/study/light/food-crops',
             'smart-farm/study/light/growing-underground',
             'smart-farm/study/light/light-spectrum',
+            'smart-farm/study/light/light-point',
           ]
         }
       ]
