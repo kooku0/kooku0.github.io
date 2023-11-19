@@ -155,8 +155,23 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'study',
       items: [
-        'smart-farm/study/hydroponics',
-        'smart-farm/study/hydroponics-pros-cons',
+        {
+          type: 'category',
+          label: 'hydroponics',
+          items: [
+            'smart-farm/study/hydroponics/hydroponics',
+            'smart-farm/study/hydroponics/hydroponics-pros-cons',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'light',
+          items: [
+            'smart-farm/study/light/food-crops',
+            'smart-farm/study/light/growing-underground',
+            'smart-farm/study/light/plant-spectrum',
+          ]
+        }
       ]
     },
   ]

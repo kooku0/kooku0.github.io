@@ -2,7 +2,9 @@
 title: 수경재배 종류와 장단점
 ---
 
-> 이글은 공부&기록 목적으로 https://jeonkkochbi.tistory.com/56 글을 그대로 가져왔습니다. 빠진 내용도 많이 있습니다.
+:::info 정보
+이글은 공부&기록 목적으로 https://jeonkkochbi.tistory.com/56 글을 그대로 가져왔습니다. 빠진 내용도 많이 있습니다.
+:::
 
 ## 고형재배 방식
 
@@ -11,7 +13,7 @@ title: 수경재배 종류와 장단점
 ### 무기물 배지
 #### 펄라이트(perlite) 배지
 
-<img src={require("../images/perlite.jpeg").default} width="500px"/>
+<img src={require("../../images/perlite.jpeg").default} width="500px"/>
 
 진주암 원석을 고온에 구운 인공토양
 
@@ -21,7 +23,7 @@ title: 수경재배 종류와 장단점
 
 #### 암면 배지 (rockwool)
 
-<img src={require("../images/rockwool.jpeg").default} width="300px"/>
+<img src={require("../../images/rockwool.jpeg").default} width="300px"/>
 
 여러 화성암을 용해하여 공기를 주입하면 광물 섬유가 된다.
 
@@ -33,7 +35,7 @@ title: 수경재배 종류와 장단점
 
 #### 코코피트 배지 (cocopeat)
 
-<img src={require("../images/cocopeat.jpeg").default} width="300px"/>
+<img src={require("../../images/cocopeat.jpeg").default} width="300px"/>
 
 코코넛 기름 착유 후 남은 찌꺼기의 섬유질로 만든 배지
 
@@ -45,7 +47,7 @@ title: 수경재배 종류와 장단점
 
 ### 1. 담액식 수경재배 (water culture)
 
-<img src={require("../images/dwc-system.jpeg").default} width="500px"/>
+<img src={require("../../images/dwc-system.jpeg").default} width="500px"/>
 
 - 가장 단순하고 고전적인 방식
 - 뿌리가 배양액 속에 담겨져 있다.
@@ -57,7 +59,7 @@ title: 수경재배 종류와 장단점
 
 ### 2. 박막식 수경재배 (nutrient film technique)
 
-<img src={require("../images/nft-system.jpeg").default} width="500px"/>
+<img src={require("../../images/nft-system.jpeg").default} width="500px"/>
 
 - 파이프 내에 배양액을 조금씩 흘려보내 재배하는 방법
 - 뿌리에 산소가 충분히 공급될 수 있도록 배양액이 계속 순환
@@ -75,7 +77,7 @@ title: 수경재배 종류와 장단점
 
 ### 3. 분무식 수경재배 (aeroponics)
 
-<img src={require("../images/aeroponics-system.jpeg").default} width="500px"/>
+<img src={require("../../images/aeroponics-system.jpeg").default} width="500px"/>
 
 - 뿌리가 공중에 매달려 있는 상태에서 배양액을 뿌리로 분사하여 재배하는 방식
 - 담액식의 뿌리 산소 공급 문제 해결을 위해 고안됨
@@ -92,7 +94,7 @@ title: 수경재배 종류와 장단점
 
 ### 4. 점적식 수경재배 (drip system)
 
-<img src={require("../images/drip-system.jpeg").default} width="500px"/>
+<img src={require("../../images/drip-system.jpeg").default} width="500px"/>
 
 - 양액 탱크에서 펌프를 이용해 일정 시간 마다 약간의 양액을 각 작물에 흘려보내주는 방식
 - 펌프는 미리 설정된 타이머를 통해 작동(자동)
@@ -130,7 +132,7 @@ title: 수경재배 종류와 장단점
 
 ### 5. 밀물썰물식 수경재배 (ebb and flow)
 
-<img src={require("../images/ebb-and-flow-system.jpeg").default} width="500px"/>
+<img src={require("../../images/ebb-and-flow-system.jpeg").default} width="500px"/>
 
 - edd and flow 또는 flood and drain 이라고 한다.
 - 밀물과 썰물처럼 물을 넣었다 뺐다 하는 방식

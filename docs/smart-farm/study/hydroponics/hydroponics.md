@@ -2,7 +2,9 @@
 title: 수경재배 (hydroponics)
 ---
 
-> 이글은 공부&기록 목적으로 https://brunch.co.kr/@ecotown/184 글을 그대로 가져왔습니다. 빠진 내용도 많이 있습니다.
+:::info 정보
+이글은 공부&기록 목적으로 https://brunch.co.kr/@ecotown/184 글을 그대로 가져왔습니다. 빠진 내용도 많이 있습니다.
+:::
 
 # 수경재배 (hydroponics) 란?
 
@@ -39,7 +41,7 @@ title: 수경재배 (hydroponics)
 - (회수형 점적관수 시스템) 양액을 재사용하는 시스템을 말한다. 식물 뿌리를 통과한 과량의 양액을 다시 저장조로 되돌려 보네 양분 사용 효율성을 높인다. 이 방식에서는 정기적으로 양분의 농도를 검사해야 한다. 시간이 지날수록 식물이 양분을 흡수하면서 농도가 낮아지기 때문이다.
 - (비회수형 점적관수 시스템) 양액을 재사용하지 않고 흘려보내는 방식이다. 이 방식은 pH와 양분 농도를 유지하기 쉽고, 설치비가 상대적으로 적게 든다는 장점이 있다. 또한 식물 병의 전염을 최소화하는 데도 유리하다.
 
-![img](../images/drip-system.jpeg)
+![img](../../images/drip-system.jpeg)
 
 ### 2. 간헐흐름식 수경재배 (Ebb and Flow system/Flood and Drain System)
 
@@ -49,7 +51,7 @@ title: 수경재배 (hydroponics)
 
 유거수 필터가 저장조로 되돌아오는 물을 거르기 때문에 유지관리가 비교적 쉽다. 단점으로는 저장탱크의 양액을 자주 점검하여 최적의 양분 농도, 산소, pH 수준을 맞추어야 한다는 것이다.
 
-![img](../images/ebb-and-flow-system.jpeg)
+![img](../../images/ebb-and-flow-system.jpeg)
 
 ### 3. 담액식 수경재배 (Water Culture System)
 
@@ -69,7 +71,7 @@ title: 수경재배 (hydroponics)
 
 담액식 수경재배는 기술적으로는 단순하고 사용이 쉽지만, 재배할 수 있는 식물의 종류는 제한된다. 뿌리가 양액에 잠기기 때문에, 일부 식물은 수분 과잉으로 고사한다. 따라서 상추와 같이 뿌리가 잠겨도 잘 자라는 식물 정도가 재배 가능하다.
 
-![img](../images/dwc-system.jpeg)
+![img](../../images/dwc-system.jpeg)
 
 ### 4. 박막식 수경재배시스템 (Nutrient Film Technique, NFT system)
 
@@ -86,7 +88,7 @@ title: 수경재배 (hydroponics)
 
 튜브형 생육판에서 추천되는 양액 흐름속도는 1-2 리터/분이다. 흐름속도는 어리고 예민한 식물일수록 성숙한 식물에 비해 느리게 한다. 흐름속도는 양분결핍 정도에 맞추어 조절한다. 박막기술은 전기가 나갈 경우 바로 식물 뿌리가 말라버릴 수 있으므로, 정기적으로 펌프와 전기설비를 점검하고 보수하는 게 중요하다.
 
-![img](../images/nft-system.jpeg)
+![img](../../images/nft-system.jpeg)
 
 ### 5. 분무형 수경재배 (Aeroponics system)
 
@@ -106,7 +108,7 @@ title: 수경재배 (hydroponics)
 - 고압분무식 수경재배 (true aeroponics) 고압을 사용하는 시스템은 설치 비용이 많이 들고 기술적 난이도도 높지만 가장 효율적인 분무식 수경재배 방법이다. 고압(60~90 psi)으로 분사하여 미세한 물방울로 뿌리에 뿌려주어 충분한 산소와 양분을 공급한다. 식물의 생육이 빠르다.
 - 초음파 안개 발생기 (ultrasonic fogger, fogponics) : 이 방법은 초음파를 이용해 미세방울을 만든다. 이 방법은 주로 전시용으로 많이 사용된다. 충분한 수분과 양분을 식물 뿌리에 공급하기는 쉽지 않아 실제 사용에는 제약이 많이 따른다.
 
-![img](../images/aeroponics-system.jpeg)
+![img](../../images/aeroponics-system.jpeg)
 
 ## 수경재배에 사용되는 기질/불활성 지지체
 
