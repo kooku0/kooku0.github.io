@@ -149,6 +149,7 @@ const sidebars: SidebarsConfig = {
       label: 'article',
       items: [
         'smartfarm/article/01',
+        'smartfarm/article/02',
       ]
     },
     {
@@ -171,6 +172,29 @@ const sidebars: SidebarsConfig = {
             'smartfarm/study/light/growing-underground',
             'smartfarm/study/light/light-spectrum',
             'smartfarm/study/light/light-point',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'photosynthesis',
+          items: [
+            'smartfarm/study/photosynthesis/01',
+            'smartfarm/study/photosynthesis/02',
+            'smartfarm/study/photosynthesis/03',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'co2',
+          items: [
+            'smartfarm/study/co2/01',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'plant',
+          items: [
+            'smartfarm/study/plant/01',
           ]
         }
       ]

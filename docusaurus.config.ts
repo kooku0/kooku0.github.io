@@ -117,7 +117,7 @@ export default async function createConfigAsync() {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'smartfarm',
-            label: 'Smart Farm',
+            label: 'Smartfarm',
           },
           {
             href: 'https://github.com/kooku0/kooku0.github.io',
