@@ -116,7 +116,7 @@ export default async function createConfigAsync() {
           {
             type: 'docSidebar',
             position: 'left',
-            sidebarId: 'smart-farm',
+            sidebarId: 'smartfarm',
             label: 'Smart Farm',
           },
           {

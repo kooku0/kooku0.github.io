@@ -141,14 +141,14 @@ const sidebars: SidebarsConfig = {
       ]
     }
   ],
-  'smart-farm': [
-    'smart-farm/index',
-    'smart-farm/plan',
+  'smartfarm': [
+    'smartfarm/index',
+    'smartfarm/plan',
     {
       type: 'category',
       label: 'article',
       items: [
-        'smart-farm/article/01',
+        'smartfarm/article/01',
       ]
     },
     {
@@ -159,18 +159,18 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'hydroponics',
           items: [
-            'smart-farm/study/hydroponics/hydroponics',
-            'smart-farm/study/hydroponics/hydroponics-pros-cons',
+            'smartfarm/study/hydroponics/hydroponics',
+            'smartfarm/study/hydroponics/hydroponics-pros-cons',
           ]
         },
         {
           type: 'category',
           label: 'light',
           items: [
-            'smart-farm/study/light/food-crops',
-            'smart-farm/study/light/growing-underground',
-            'smart-farm/study/light/light-spectrum',
-            'smart-farm/study/light/light-point',
+            'smartfarm/study/light/food-crops',
+            'smartfarm/study/light/growing-underground',
+            'smartfarm/study/light/light-spectrum',
+            'smartfarm/study/light/light-point',
           ]
         }
       ]
