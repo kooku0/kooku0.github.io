@@ -181,6 +181,7 @@ const sidebars: SidebarsConfig = {
             'smartfarm/study/photosynthesis/01',
             'smartfarm/study/photosynthesis/02',
             'smartfarm/study/photosynthesis/03',
+            'smartfarm/study/photosynthesis/04',
           ]
         },
         {
