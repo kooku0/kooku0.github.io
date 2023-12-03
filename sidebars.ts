@@ -144,11 +144,13 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '아주 작은 습관의 힘',
       items: [
-        'books/atomic-habit/09.md',
-        'books/atomic-habit/10.md',
-        'books/atomic-habit/11.md',
-        'books/atomic-habit/12.md',
-        'books/atomic-habit/13.md',
+        'books/atomic-habit/09',
+        'books/atomic-habit/10',
+        'books/atomic-habit/11',
+        'books/atomic-habit/12',
+        'books/atomic-habit/13',
+        'books/atomic-habit/14',
+        'books/atomic-habit/15',
       ]
     }
   ],
