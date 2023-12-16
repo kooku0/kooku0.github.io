@@ -154,7 +154,7 @@ const sidebars: SidebarsConfig = {
       ]
     }
   ],
-  'smartfarm': [
+  smartfarm: [
     'smartfarm/index',
     'smartfarm/plan',
     {
@@ -213,6 +213,9 @@ const sidebars: SidebarsConfig = {
         }
       ]
     },
+  ],
+  stock: [
+    'stock/financial-statements'
   ]
 };
 

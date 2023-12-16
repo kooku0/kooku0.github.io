@@ -29,10 +29,6 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
-
-  useEffect(() => {
-    window.location.replace('/journal')
-  }, []);
   
   return (
     <ReactChannelIO pluginKey={process.env.CHANNEL_ID_PLUGIN_KEY || ''} autoBoot>

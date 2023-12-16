@@ -104,7 +104,9 @@ export default async function createConfigAsync() {
             position: 'left'
           },
           {
-            to: '/docs/books/',
+            to: '/books/',
+            type: 'docSidebar',
+            sidebarId: 'books',
             position: 'left',
             label: 'Book',
           },
@@ -114,10 +116,18 @@ export default async function createConfigAsync() {
             position: 'left',
           },
           {
+            to: '/smartfarm',
             type: 'docSidebar',
-            position: 'left',
             sidebarId: 'smartfarm',
             label: 'Smartfarm',
+            position: 'left',
+          },
+          {
+            to: '/stock',
+            type: 'docSidebar',
+            sidebarId: 'stock',
+            label: 'Stock',
+            position: 'left',
           },
           {
             href: 'https://github.com/kooku0/kooku0.github.io',
