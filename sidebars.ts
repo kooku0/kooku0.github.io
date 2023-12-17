@@ -215,7 +215,14 @@ const sidebars: SidebarsConfig = {
     },
   ],
   stock: [
-    'stock/financial-statements'
+    'stock/financial-statements',
+    {
+      type: 'category',
+      label: '기업분석',
+      items: [
+        'stock/corp-analysis/nvda',
+      ]
+    },
   ]
 };
 
