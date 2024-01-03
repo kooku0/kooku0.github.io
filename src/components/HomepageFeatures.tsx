@@ -5,10 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 import React from 'react';
-import styles from './HomepageFeatures.module.css';
+
 import MandalArt from './MandalArt';
 
-export default function HomepageFeatures(): JSX.Element {
+import styles from './HomepageFeatures.module.css';
+
+const HomepageFeatures = () => {
   return (
     <section className={styles.features}>
       <div className="container">
@@ -18,4 +20,6 @@ export default function HomepageFeatures(): JSX.Element {
       </div>
     </section>
   );
-}
+};
+
+export default HomepageFeatures;
