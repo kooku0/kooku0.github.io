@@ -1,0 +1,28 @@
+.outerTable {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #000;
+  margin: 0;
+}
+
+.outerTableTd > tbody > tr > td {
+  padding: 0;
+}
+
+.innerTable {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #000;
+  margin: 0;
+}
+
+.innerTable > tbody > tr > td {
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+}
