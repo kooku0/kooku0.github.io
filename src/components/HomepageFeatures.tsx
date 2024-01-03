@@ -12,12 +12,9 @@ import styles from './HomepageFeatures.module.css';
 
 const HomepageFeatures = () => {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          <MandalArt />
-        </div>
-      </div>
+    <section className={styles.section}>
+      <h1>2024 Mandalart</h1>
+      <MandalArt />
     </section>
   );
 };
