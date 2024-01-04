@@ -1,17 +1,17 @@
 /* eslint-disable react/no-array-index-key */
 import type { FC } from 'react';
 
-import styles from './MandalArt.module.css';
+import styles from './Mandalart.module.css';
 
-const MandalArt: FC = () => {
+const Mandalart: FC = () => {
   return (
     <div>
-      <OuterTable data={mandalArt} />
+      <OuterTable data={mandalart} />
     </div>
   );
 };
 
-export default MandalArt;
+export default Mandalart;
 
 const OuterTable = ({ data }: { data: string[][][][] }) => {
   return (
@@ -49,7 +49,7 @@ const InnerTable = ({ data }: { data: string[][] }) => {
   );
 };
 
-const mandalArt = [
+const mandalart = [
   [
     [
       ['7시간 자기', '매일 1시간 운동', '하루 20분 명상'],

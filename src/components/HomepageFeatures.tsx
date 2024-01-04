@@ -6,7 +6,7 @@
  */
 import React from 'react';
 
-import MandalArt from './MandalArt';
+import Mandalart from './Mandalart';
 
 import styles from './HomepageFeatures.module.css';
 
@@ -14,7 +14,7 @@ const HomepageFeatures = () => {
   return (
     <section className={styles.section}>
       <h1>2024 Mandalart</h1>
-      <MandalArt />
+      <Mandalart />
     </section>
   );
 };
