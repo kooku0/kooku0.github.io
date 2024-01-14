@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   books: [
@@ -6,9 +6,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '클린코드',
-      items: [
-        'books/clean-code/introduction',
-      ]
+      items: ['books/clean-code/introduction'],
     },
     {
       type: 'category',
@@ -20,7 +18,7 @@ const sidebars: SidebarsConfig = {
         'books/object/02',
         'books/object/03',
         'books/object/04',
-      ]
+      ],
     },
     {
       type: 'category',
@@ -34,7 +32,7 @@ const sidebars: SidebarsConfig = {
         'books/frameworkless-front-end-development/06',
         'books/frameworkless-front-end-development/07',
         'books/frameworkless-front-end-development/08',
-      ]
+      ],
     },
     {
       type: 'category',
@@ -53,15 +51,12 @@ const sidebars: SidebarsConfig = {
         'books/get-your-hands-dirty-on-clean-architecture/10',
         'books/get-your-hands-dirty-on-clean-architecture/11',
         'books/get-your-hands-dirty-on-clean-architecture/12',
-      ]
+      ],
     },
     {
       type: 'category',
       label: '스칼라로 배우는 함수형 프로그래밍',
-      items: [
-        'books/functional-programming-in-scala/introduction',
-        'books/functional-programming-in-scala/04',
-      ]
+      items: ['books/functional-programming-in-scala/introduction', 'books/functional-programming-in-scala/04'],
     },
     {
       type: 'category',
@@ -70,7 +65,7 @@ const sidebars: SidebarsConfig = {
         'books/effective-typescript/introduction',
         'books/effective-typescript/03',
         'books/effective-typescript/04',
-      ]
+      ],
     },
     {
       type: 'category',
@@ -80,7 +75,7 @@ const sidebars: SidebarsConfig = {
         'books/the-pragmatic-programmer/preface',
         'books/the-pragmatic-programmer/01',
         'books/the-pragmatic-programmer/02',
-      ]
+      ],
     },
     {
       type: 'category',
@@ -90,7 +85,7 @@ const sidebars: SidebarsConfig = {
         'books/test-driven-development/preface',
         'books/test-driven-development/01',
         'books/test-driven-development/01',
-      ]
+      ],
     },
     {
       type: 'category',
@@ -106,7 +101,7 @@ const sidebars: SidebarsConfig = {
         'books/functional-programming-in-javascript/06',
         'books/functional-programming-in-javascript/07',
         'books/functional-programming-in-javascript/08',
-      ]
+      ],
     },
     {
       type: 'category',
@@ -117,7 +112,7 @@ const sidebars: SidebarsConfig = {
         'books/designing-for-performance/02',
         'books/designing-for-performance/03',
         'books/designing-for-performance/04',
-      ]
+      ],
     },
     {
       type: 'category',
@@ -138,7 +133,12 @@ const sidebars: SidebarsConfig = {
         'books/grokking-simplicity/17',
         'books/grokking-simplicity/18',
         'books/grokking-simplicity/19',
-      ]
+      ],
+    },
+    {
+      type: 'category',
+      label: '단위 테스트',
+      items: ['books/unit-testing/01'],
     },
     {
       type: 'category',
@@ -151,8 +151,8 @@ const sidebars: SidebarsConfig = {
         'books/atomic-habit/13',
         'books/atomic-habit/14',
         'books/atomic-habit/15',
-      ]
-    }
+      ],
+    },
   ],
   smartfarm: [
     'smartfarm/index',
@@ -160,10 +160,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'article',
-      items: [
-        'smartfarm/article/01',
-        'smartfarm/article/02',
-      ]
+      items: ['smartfarm/article/01', 'smartfarm/article/02'],
     },
     {
       type: 'category',
@@ -172,10 +169,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'hydroponics',
-          items: [
-            'smartfarm/study/hydroponics/hydroponics',
-            'smartfarm/study/hydroponics/hydroponics-pros-cons',
-          ]
+          items: ['smartfarm/study/hydroponics/hydroponics', 'smartfarm/study/hydroponics/hydroponics-pros-cons'],
         },
         {
           type: 'category',
@@ -185,7 +179,7 @@ const sidebars: SidebarsConfig = {
             'smartfarm/study/light/growing-underground',
             'smartfarm/study/light/light-spectrum',
             'smartfarm/study/light/light-point',
-          ]
+          ],
         },
         {
           type: 'category',
@@ -195,23 +189,19 @@ const sidebars: SidebarsConfig = {
             'smartfarm/study/photosynthesis/02',
             'smartfarm/study/photosynthesis/03',
             'smartfarm/study/photosynthesis/04',
-          ]
+          ],
         },
         {
           type: 'category',
           label: 'co2',
-          items: [
-            'smartfarm/study/co2/01',
-          ]
+          items: ['smartfarm/study/co2/01'],
         },
         {
           type: 'category',
           label: 'plant',
-          items: [
-            'smartfarm/study/plant/01',
-          ]
-        }
-      ]
+          items: ['smartfarm/study/plant/01'],
+        },
+      ],
     },
   ],
   stock: [
@@ -219,11 +209,9 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '기업분석',
-      items: [
-        'stock/corp-analysis/nvda',
-      ]
+      items: ['stock/corp-analysis/nvda'],
     },
-  ]
+  ],
 };
 
 export default sidebars;
