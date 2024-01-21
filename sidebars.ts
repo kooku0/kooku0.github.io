@@ -138,7 +138,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '단위 테스트',
-      items: ['books/unit-testing/01', 'books/unit-testing/02', 'books/unit-testing/03'],
+      items: [
+        'books/unit-testing/introduction',
+        'books/unit-testing/01',
+        'books/unit-testing/02',
+        'books/unit-testing/03',
+        'books/unit-testing/04',
+      ],
     },
     {
       type: 'category',
