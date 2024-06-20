@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[6001],{87099:o=>{o.exports=JSON.parse('{"permalink":"/journal","page":1,"postsPerPage":58,"totalPages":1,"totalCount":58,"blogDescription":"Blog","blogTitle":"Journal"}')}}]);
