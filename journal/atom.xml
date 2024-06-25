@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kooku0.github.io/journal</id>
     <title>Kooku's log Blog</title>
-    <updated>2024-06-20T00:00:00.000Z</updated>
+    <updated>2024-06-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kooku0.github.io/journal"/>
     <subtitle>Kooku's log Blog</subtitle>
     <icon>https://kooku0.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2024.06.25]]></title>
+        <id>https://kooku0.github.io/journal/2024/06/25/</id>
+        <link href="https://kooku0.github.io/journal/2024/06/25/"/>
+        <updated>2024-06-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[0. 일상]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-일상">0. 일상<a href="https://kooku0.github.io/journal/2024/06/25/#0-%EC%9D%BC%EC%83%81" class="hash-link" aria-label="0. 일상에 대한 직접 링크" title="0. 일상에 대한 직접 링크">​</a></h2>
+<ul>
+<li>그냥그냥 사는중</li>
+<li>일 이외는 없음. 집에오면 침대에 누워서 쇼츠.. 덜덜..</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024.06.20]]></title>
         <id>https://kooku0.github.io/journal/2024/06/20/</id>
@@ -37,7 +49,7 @@
         <link href="https://kooku0.github.io/journal/2024/06/12/"/>
         <updated>2024-06-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[0. "더 시스템" 완독]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-더-시스템-완독">0. "더 시스템" 완독<a href="https://kooku0.github.io/journal/2024/06/12/#0-%EB%8D%94-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%99%84%EB%8F%85" class="hash-link" aria-label="0. &quot;더 시스템&quot; �완독에 대한 직접 링크" title="0. &quot;더 시스템&quot; 완독에 대한 직접 링크">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-더-시스템-완독">0. "더 시스템" 완독<a href="https://kooku0.github.io/journal/2024/06/12/#0-%EB%8D%94-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%99%84%EB%8F%85" class="hash-link" aria-label="0. &quot;더 시스템&quot; 완독에 대한 직접 링크" title="0. &quot;더 시스템&quot; 완독에 대한 직접 링크">​</a></h2>
 <p>마지막에 속도가 느려졌지만 어쨌든 다 읽었다.</p>
 <p>이 책을 읽게 된건 <a href="https://jojoldu.tistory.com/" target="_blank" rel="noopener noreferrer">https://jojoldu.tistory.com/</a> 블로그 글에서 추천받아서 읽었는데 매우 만족한다. 공감되는 내용은 물론이고, 읽은 내용을 나에게 적용하고 있다.</p>
 <p>책 내용을 다시 복기할 겸 책 마지막에 정리된 내용을 남겨본다.</p>
@@ -76,7 +88,7 @@
 <li><a href="https://sarahtavel.medium.com/white-space-for-building-a-marketplace-how-to-find-your-competitions-vulnerabilities-and-79674aa4d399" target="_blank" rel="noopener noreferrer">https://sarahtavel.medium.com/white-space-for-building-a-marketplace-how-to-find-your-competitions-vulnerabilities-and-79674aa4d399</a></li>
 </ul>
 <p>나도 일단 사이드 프로젝트 PMF부터 정의를 다시 시작해야할 것 같다.</p>
-<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-잘-한-일">1. 잘 한 일<a href="https://kooku0.github.io/journal/2024/06/08/#1-%EC%9E%98-%ED%95%9C-%EC%9D%BC" class="hash-link" aria-label="1. 잘 한 일�에 대한 직접 링크" title="1. 잘 한 일에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-잘-한-일">1. 잘 한 일<a href="https://kooku0.github.io/journal/2024/06/08/#1-%EC%9E%98-%ED%95%9C-%EC%9D%BC" class="hash-link" aria-label="1. 잘 한 일에 대한 직접 링크" title="1. 잘 한 일에 대한 직접 링크">​</a></h2>
 <ul>
 <li>사업기획 관련 자료 읽고 정리</li>
 <li>충분한 숙면</li>
@@ -107,7 +119,7 @@
 <li>명상</li>
 <li>충분한 숙면</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="4-내일-할-일-진짜-해야함">4. 내일 할 일 (진짜 해야함)<a href="https://kooku0.github.io/journal/2024/06/07/#4-%EB%82%B4%EC%9D%BC-%ED%95%A0-%EC%9D%BC-%EC%A7%84%EC%A7%9C-%ED%95%B4%EC%95%BC%EF%BF%BD%EF%BF%BD%ED%95%A8" class="hash-link" aria-label="4. 내일 할 일 (진짜 해야함)에 대한 직접 링크" title="4. 내일 할 일 (진짜 해야함)에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="4-내일-할-일-진짜-해야함">4. 내일 할 일 (진짜 해야함)<a href="https://kooku0.github.io/journal/2024/06/07/#4-%EB%82%B4%EC%9D%BC-%ED%95%A0-%EC%9D%BC-%EC%A7%84%EC%A7%9C-%ED%95%B4%EC%95%BC%ED%95%A8" class="hash-link" aria-label="4. 내일 할 일 (진짜 해야함)에 대한 직접 링크" title="4. 내일 할 일 (진짜 해야함)에 대한 직접 링크">​</a></h2>
 <ul>
 <li>책 1시간 읽기</li>
 <li>명상</li>
@@ -122,7 +134,7 @@
         <link href="https://kooku0.github.io/journal/2024/06/06/"/>
         <updated>2024-06-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[0. 한 일이 없음]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-한-일이-없음">0. 한 일이 없음<a href="https://kooku0.github.io/journal/2024/06/06/#0-%ED%95%9C-%EC%9D%BC%EC%9D%B4-%EC%97%86%EC%9D%8C" class="hash-link" aria-label="0. 한 일이 없음에 대한 직접 링크" title="0. 한 일이 �없음에 대한 직접 링크">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-한-일이-없음">0. 한 일이 없음<a href="https://kooku0.github.io/journal/2024/06/06/#0-%ED%95%9C-%EC%9D%BC%EF%BF%BD%EF%BF%BD%EC%9D%B4-%EC%97%86%EC%9D%8C" class="hash-link" aria-label="0. 한 일이 없음에 대한 직접 링크" title="0. 한 일이 없음에 대한 직접 링크">​</a></h2>
 <ul>
 <li>가족끼리 카페에 가서 쉬다가 집에와서 잠만 잤음</li>
 </ul>
@@ -156,7 +168,7 @@
 <li>아침 운동 40분</li>
 <li>충분한 숙면</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="3-내일-할-일">3. 내일 할 일<a href="https://kooku0.github.io/journal/2024/06/05/#3-%EB%82%B4%EC%9D%BC-%ED%95%A0-%EC%9D%BC" class="hash-link" aria-label="3. 내일 할 ��일에 대한 직접 링크" title="3. 내일 할 일에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="3-내일-할-일">3. 내일 할 일<a href="https://kooku0.github.io/journal/2024/06/05/#3-%EB%82%B4%EC%9D%BC-%ED%95%A0-%EC%9D%BC" class="hash-link" aria-label="3. 내일 할 일에 대한 직접 링크" title="3. 내일 할 일에 대한 직접 링크">​</a></h2>
 <ul>
 <li>책 1시간 읽기</li>
 <li>명상</li>
@@ -171,7 +183,7 @@
         <link href="https://kooku0.github.io/journal/2024/06/04/"/>
         <updated>2024-06-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[0. 집에 있는 시간을 최소화]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-집에-있는-시간을-최소화">0. 집에 있는 시간을 최소화<a href="https://kooku0.github.io/journal/2024/06/04/#0-%EC%A7%91%EC%97%90-%EC%9E%88%EB%8A%94-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%B5%9C%EC%86%8C%ED%99%94" class="hash-link" aria-label="0. �집에 있는 시간을 최소화에 대한 직접 링크" title="0. 집에 있는 시간을 최소화에 대한 직접 링크">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-집에-있는-시간을-최소화">0. 집에 있는 시간을 최소화<a href="https://kooku0.github.io/journal/2024/06/04/#0-%EC%A7%91%EC%97%90-%EC%9E%88%EB%8A%94-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%B5%9C%EC%86%8C%ED%99%94" class="hash-link" aria-label="0. 집에 있는 시간을 최소화에 대한 직접 링크" title="0. 집에 있는 시간을 최소화에 대한 직접 링크">​</a></h2>
 <p>9시 조금 안되어 출근한 것 같다. 어제 집에 일찍 들어가니 침대에서 헤어나오질 못했다. 현재 집은 책상과 침대가 같이 있고, 집이 구축 빌라일 뿐더러 보니 습기가 많고 햇빛이 많이 들지 않아 집에서 뭘 하는게 마음이 편하지는 않다. 이제부터는 출근하여 회사에서 최대한 시간을 보내던가 저녁먹고 회사 앞 카페에서 나의 시간을 보내다 집에 들어가 잠만 자는게 좋을 것 같다.
 추가로 오늘도 최대한 회사에 있다가 집에 들어갔지만 해야할 일을 많이 했다는 느낌은 없어서 나의 시간 확보와 그 시간을 유용하게 사용하는 법을 계속 탐구해야할 듯 하다.</p>
 <h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-책-구매">1. 책 구매<a href="https://kooku0.github.io/journal/2024/06/04/#1-%EC%B1%85-%EA%B5%AC%EB%A7%A4" class="hash-link" aria-label="1. 책 구매에 대한 직접 링크" title="1. 책 구매에 대한 직접 링크">​</a></h2>
@@ -196,7 +208,7 @@
         <link href="https://kooku0.github.io/journal/2024/06/03/"/>
         <updated>2024-06-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[0. 아침형 인간]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-아침형-인간">0. 아침형 인간<a href="https://kooku0.github.io/journal/2024/06/03/#0-%EC%95%84%EC%B9%A8%ED%98%95-%EC%9D%B8%EA%B0%84" class="hash-link" aria-label="0. 아침형 인간에 대한 직접 링크" title="0. 아침형 인간�에 대한 직접 링크">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-아침형-인간">0. 아침형 인간<a href="https://kooku0.github.io/journal/2024/06/03/#0-%EC%95%84%EC%B9%A8%ED%98%95-%EF%BF%BD%EF%BF%BD%EC%9D%B8%EA%B0%84" class="hash-link" aria-label="0. 아침형 인간에 대한 직접 링크" title="0. 아침형 인간에 대한 직접 링크">​</a></h2>
 <p>어제 11시 즈음 잠들어 6시50분 즈음 일어나 8시에 회사에 도착했다. 그 시간에도 지하철에 사람이 많아서 놀랐다. 자리가 부족했다 ㅠ 출근하여 코드리뷰하고 운동도 갔다왔다. 일찍 하루를 시작해서 좋았고 머리도 맑았다.
 그런데 집에와서 보상심리인지 간식먹고 침대에 누워서 자버렸다. 그러면 안되는데.. 그래서 오늘은 조금 늦게 잠을 자도록하고 내일 부터 좀 더 자제력을 키워야할 듯 하다.</p>
 <h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-낭랑이">1. 낭랑이<a href="https://kooku0.github.io/journal/2024/06/03/#1-%EB%82%AD%EB%9E%91%EC%9D%B4" class="hash-link" aria-label="1. 낭랑이에 대한 직접 링크" title="1. 낭랑이에 대한 직접 링크">​</a></h2>
@@ -216,7 +228,7 @@
         <link href="https://kooku0.github.io/journal/2024/06/02/"/>
         <updated>2024-06-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[0. 등산]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-등산">0. 등산<a href="https://kooku0.github.io/journal/2024/06/02/#0-%EB%93%B1%EC%82%B0" class="hash-link" aria-label="0. 등산에 대한 직접 링크" title="0. 등산에 대한 직접 링크">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-등산">0. 등산<a href="https://kooku0.github.io/journal/2024/06/02/#0-%EB%93%B1%EC%82%B0" class="hash-link" aria-label="0. �등산에 대한 직접 링크" title="0. 등산에 대한 직접 링크">​</a></h2>
 <ul>
 <li>용마산 등산했다. 계단이 많아서 조금 힘이 들긴 했다.</li>
 <li>가방이랑 물을 못 챙겨서 아쉽... 다음 번에는 잘 챙겨서 가야지</li>
@@ -273,7 +285,7 @@
 <li>일기를 쓰기 위한 동기부여를 준다. (일기 쓰는게 나에게 많은 도움이 된다는 것을 인식)</li>
 <li>규칙적인 삶. 그리고 매일 일기를 쓰도록 단련한다. 습관으로 자리잡도록 한다.</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-그동안-있었던-주요한-일들">1. 그동안 있었던 주요한 일들<a href="https://kooku0.github.io/journal/2024/05/29/#1-%EA%B7%B8%EB%8F%99%EC%95%88-%EC%9E%88%EC%97%88%EB%8D%98-%EC%A3%BC%EC%9A%94%ED%95%9C-%EC%9D%BC%EB%93%A4" class="hash-link" aria-label="1. 그동안 있었던 주요한 일들에 대한 직접 링크" title="1. 그동안 있었던 주요한 일들에 대��한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-그동안-있었던-주요한-일들">1. 그동안 있었던 주요한 일들<a href="https://kooku0.github.io/journal/2024/05/29/#1-%EA%B7%B8%EB%8F%99%EC%95%88-%EC%9E%88%EC%97%88%EB%8D%98-%EC%A3%BC%EC%9A%94%ED%95%9C-%EC%9D%BC%EB%93%A4" class="hash-link" aria-label="1. 그동안 있었던 주요한 일들에 대한 직접 링크" title="1. 그동안 있었던 주요한 일들에 대한 직접 링크">​</a></h2>
 <p>다 적기엔 양이 있기도 하고 공개하고 싶지도 않아서 간략하게만 적어본다.</p>
 <ul>
 <li>장한평역에서 군자역 부근으로 이사<!-- -->
@@ -489,7 +501,7 @@
         <link href="https://kooku0.github.io/journal/2023/11/28/"/>
         <updated>2023-11-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[0. 주식스터디]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-주식스터디">0. 주식스터디<a href="https://kooku0.github.io/journal/2023/11/28/#0-%EC%A3%BC%EC%8B%9D%EC%8A%A4%ED%84%B0%EB%94%94" class="hash-link" aria-label="0. 주식스터디에 대한 직접 링크" title="0. 주식스터디에 �대한 직접 링크">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="0-주식스터디">0. 주식스터디<a href="https://kooku0.github.io/journal/2023/11/28/#0-%EC%A3%BC%EC%8B%9D%EC%8A%A4%ED%84%B0%EF%BF%BD%EB%94%94" class="hash-link" aria-label="0. 주식스터디에 대한 직접 링크" title="0. 주식스터디에 대한 직접 링크">​</a></h2>
 <p>주식 스터디를 진행하고 있다. 어떤걸 공부해야할지 몰라서 우선 책을 사서 보기로 했다.</p>
 <p>책은 <a href="https://www.yes24.com/Product/Goods/117650984?pid=123487&amp;cosemkid=go16775748852804245&amp;gad_source=1&amp;gclid=CjwKCAiAmZGrBhAnEiwAo9qHiUTzdbccZk94JiJn9MYS99vzJzoTaaNjg9u5mnGJJISd9_Pu_SZdLRoCQsIQAvD_BwE" target="_blank" rel="noopener noreferrer">초수익 성장주 투자</a>로 결정했고, 어제 chapter 2까지 읽었다.</p>
 <h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-smartfarm">1. smartfarm<a href="https://kooku0.github.io/journal/2023/11/28/#1-smartfarm" class="hash-link" aria-label="1. smartfarm에 대한 직접 링크" title="1. smartfarm에 대한 직접 링크">​</a></h2>
@@ -508,50 +520,8 @@
 <li>GeekNews: <a href="https://news.hada.io/topic?id=9677&amp;utm_source=slack&amp;utm_medium=bot&amp;utm_campaign=T04J76D4C" target="_blank" rel="noopener noreferrer">https://news.hada.io/topic?id=9677&amp;utm_source=slack&amp;utm_medium=bot&amp;utm_campaign=T04J76D4C</a></li>
 <li>책: 아주 작은 습관의 힘 (Atomic habits)</li>
 </ul>
-<div class="theme-admonition theme-admonition-note admonition_A1zi alert alert--secondary"><div class="admonitionHeading_eDcb"><span class="admonitionIcon_ipkc"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>아주 작은 습관의 힘</div><div class="admonitionContent_AARn"><h2 class="anchor anchorWithStickyNavbar_r3Xo" id="chapter-06-환경이-행동을-결정한다">Chapter 06 환경이 행동을 결정한다<a href="https://kooku0.github.io/journal/2023/11/14/#chapter-06-%ED%99%98%EA%B2%BD%EC%9D%B4-%ED%96%89%EB%8F%99%EC%9D%84-%EA%B2%B0%EC%A0%95%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="Chapter 06 환경이 행동을 결정한다에 대한 직접 링크" title="Chapter 06 환경이 행동을 결정한다에 대한 직접 링크">​</a></h2><p>환경은 인간의 행동을 형성하는 보이지 않는 손이다. 우리 모두가 성격이 다르긴 해도 특정한 행동들은 특정한 환경 아래서 반복적으로 일어나곤 한다. 교회에서는 속삭이며 대화를 나누고, 어두운 길에서는 주변을 살피며 방어적인 태도로 행동한다. 이처럼 일반적인 변화 대부분이 내적이 아닌 외적 환경에 따라 일어난다. 우리는 주위를 둘러싼 세계 때문에 변화한다. <strong>습관은 모두 맥락을 따른다.</strong></p><p>우리가 매일 하는 많은 행동들은 목적이나 선택에 따른 것이 아니라 대부분 확실하게 눈에 보이는 선택지라는 이유로 실행된 것이다.</p><p>인간은 감각신경 체계로 인지한다. 하지만 인간의 온갖 감각 능력들 중 가장 강력한 것은 시각이다. 이런 이유에서 우리가 '보는' 것에 작은 변화가 일어나면 우리가 '하는' 일에 큰 변화가 일어날 수 있다. 따라서 생활 및 직장 환경에 생산적인 신호들을 채우고 비생산적인 신호들을 제거하는 것은 매우 중요하다.</p><p>어떤 습관을 삶의 큰 부분으로 만들고 싶다면 그와 관련된 신호를 자주 인지할 수 있는 환경을 만들어라. 지속적인 행위 대부분은 대개 다양한 신호들을 갖는다.</p><p>환경 디자인은 우리가 자신을 통제할 수 있게 해주고, 자기 삶의 설계자가 되도록 만들어준다.</p><h3 class="anchor anchorWithStickyNavbar_r3Xo" id="왜-집보다-스타벅스에서-공부가-더-잘-될까">왜 집보다 스타벅스에서 공부가 더 잘 될까<a href="https://kooku0.github.io/journal/2023/11/14/#%EC%99%9C-%EC%A7%91%EB%B3%B4%EB%8B%A4-%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%EC%97%90%EC%84%9C-%EA%B3%B5%EB%B6%80%EA%B0%80-%EB%8D%94-%EC%9E%98-%EB%90%A0%EA%B9%8C" class="hash-link" aria-label="왜 집보다 스타벅스에서 공부가 더 잘 될까에 대한 직접 링크" title="왜 집보다 스타벅스에서 공부가 더 잘 될까에 대한 직접 링크">​</a></h3><p>습관을 촉발하는 신호는 처음에는 매우 특정한 것일 수 있다. 하지만 시간이 지나면 우리의 습관은 한 가지 촉매에 따른 것이 아니라 행동을 둘러싼 전체 '맥락'과 연결되기 시작한다. 예를 들어 사람들은 집에 혼자 있을 때보다 사회적 상황에서 술을 더 많이 마신다.</p><p>이처럼 우리의 마음은 습관을 집, 사무실, 체육관같이 그 행위가 일어나는 장소들에 연결한다. 각각의 장소는 특정 습관이나 일상 행위들에 연결되고 강화된다. 우리는 책상, 주방 조리대, 침실에 놓인 용품들과 특정한 관계를 맺는다.</p><p>우리는 특정한 맥락에 특정한 습관을 연결시킴으로써 스스로 훈련할 수 있다. 불면증과 관련된 한 가지 연구에서 과학자들은 불면증 환자들에게 피곤할 때만 침대에 누우라고 지시했다. 이들은 졸릴 때까지 다른 방에 가서 앉아 있어야 했다. 시간이 지나자 이들은 침대를 수면 행위와 연결시키기 시작했고, 침대에 누웠을 때 빨리 잠들 수 있었다.</p><p>맥락의 힘은 행동을 변화시키는 중요한 전략을 하나 더 알려준다. 새로운 환경에서는 습관을 바꾸기가 쉽다는 것이다. 우리가 현재의 습관을 계속 이어가도록 몰아가는 촉매들과 신호들에서 탈출하게 도와주기 때문이다. 색다른 커피솦, 공원 벤치, 평소 거의 이용하지 않는 방구석 자리 등 새로운 장소로 가서 새로운 습관을 만들어보라.</p><p>가능하다면 한 가지 습관이 일어나는 맥락을 다른 것과 섞지 않도록 하라. 맥락들을 섞기 시작하면 습관들도 뒤섞인다. 그러면서 그중 더 쉬운 일을 하게 된다.</p><h2 class="anchor anchorWithStickyNavbar_r3Xo" id="chapter-09-왜-주위-사람에-따라-내-습관이-변할까">Chapter 09 왜 주위 사람에 따라 내 습관이 변할까<a href="https://kooku0.github.io/journal/2023/11/14/#chapter-09-%EC%99%9C-%EC%A3%BC%EC%9C%84-%EC%82%AC%EB%9E%8C%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%82%B4-%EC%8A%B5%EA%B4%80%EC%9D%B4-%EB%B3%80%ED%95%A0%EA%B9%8C" class="hash-link" aria-label="Chapter 09 왜 주위 사람에 따라 내 습관이 변할까에 대한 직접 링크" title="Chapter 09 왜 주위 사람에 따라 내 습관이 변할까에 대한 직접 링크">​</a></h2><h3 class="anchor anchorWithStickyNavbar_r3Xo" id="우리의-행동을-결정하는-세-집단">우리의 행동을 결정하는 세 집단<a href="https://kooku0.github.io/journal/2023/11/14/#%EC%9A%B0%EB%A6%AC%EC%9D%98-%ED%96%89%EB%8F%99%EC%9D%84-%EA%B2%B0%EC%A0%95%ED%95%98%EB%8A%94-%EC%84%B8-%EC%A7%91%EB%8B%A8" class="hash-link" aria-label="우리의 행동을 결정하는 세 집단에 대한 직접 링��크" title="우리의 행동을 결정하는 세 집단에 대한 직접 링크">​</a></h3><p>다른 사람들과 협력하고 유대 관계를 맺으면 안전이 보장되고 짝짓기 가능성이 높아지며, 자원에 대한 접근성도 높아진다. 찰스 다윈은 "역사적으로 볼 때 타인과 협력하고 가장 효율적으로 임기응변하는 법을 배운 사람이 승리했다."라고 썼다.</p><p>아주 어린 시절의 습관은 '선택하는 것'이 아니라 '모방한 것'이다. 우리는 일반적으로 친구, 가족, 교회 또는 학교, 지역사회와 국가로부터 넘겨받은 대본을 따른다. 이런 집단에는 각자의 가치관과 기준들이 존재한다. 언제 결혼을 해야 하는지, 결혼을 할지 말지 등에 대한 기준들이다.</p><p>이런 사회적 규범들은 보이지 않는 규칙으로 작용해 매일의 행동을 이끈다. 우리는 이것들을 마음속 가장 중요한 곳에 두지는 않더라도 늘 염두에 두고 산다. 종종 우리는 생각하거나 의문을 품지 않고, 어떨 때는 기억해내지 않고도 자기 문화에 있는 습관을 따른다.</p><p>집단을 따르는 것은 대부분 부담스럽게 느껴지지 않는다. 모두 어딘가에 소속되길 원한다.</p><p>우리는 특히 다음 세 집단의 습관을 모방한다.</p><h4 class="anchor anchorWithStickyNavbar_r3Xo" id="1-가까운-사람을-모방한다">1. 가까운 사람을 모방한다.<a href="https://kooku0.github.io/journal/2023/11/14/#1-%EA%B0%80%EA%B9%8C%EC%9A%B4-%EC%82%AC%EB%9E%8C%EC%9D%84-%EB%AA%A8%EB%B0%A9%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="1. 가까운 사람을 모방한다.에 대한 직접 링크" title="1. 가까운 사람을 모방한다.에 대한 직접 링크">​</a></h4><p>가까운 사람들은 우리의 행동에 가장 강력한 영향을 끼친다.</p><p>우리는 주변 사람들의 습관을 보고 배운다. 부모님이 논쟁에 대처하는 방식, 또래들이 다른 사람들과 시시덕거리는 방식, 동료 직원들이 결과를 얻어내는 방식등을 모방한다.</p><p>우리는 가까운 사람일수록 그 사람의 습관을 모방하기 쉽다. 1만 2,000명을 32년간 추적 조사한 획기적인 연구에 따르면 "비만이 될 확률은 친구가 비만일 경우 57퍼센트로 증가했다."</p><p>더 나은 습관을 세우는 가장 효율적인 방법 중 하나는 자신이 원하는 행동이 일반화된 집단에 들어가는 것이다. 매일 어떤 습관을 행하는 사람들을 보고 있으면 그 습관을 새로이 습득하기 쉽다.</p><p>우리를 둘러싼 문화는 무엇이 '일반적'인지에 관한 기대치를 설정한다. 따라서 어떤 습관을 들이고 싶다면 그런 습관을 지닌 사람들 사이에 있어라. 그러면 함께 성장할 것이다.</p><p>습관을 매력적으로 만들고 싶다면 자신이 원하는 행동이 일반적인 집단, 자신과 공통점을 가지고 있는 집단으로 들어가라.</p><p>무리에 소속되는 것보다 더 동기를 지속시키는 것은 없다. 그것은 개인적으로 추구하는 것을 공통의 것으로 바꿔준다. 무리에서 정체성이 공유되면 나의 개인적인 정체성도 강화된다. 따라서 목표를 달성한 뒤에도 집단의 일원으로 남아 있는 것이 습관을 유지하는 데 중요하다. 새로운 정체성을 끼워 넣고 행동을 장기적으로 지속하는 걸 돕는 건 우정과 커뮤니티다.</p><h4 class="anchor anchorWithStickyNavbar_r3Xo" id="2-다수를-모방한다">2. 다수를 모방한다<a href="https://kooku0.github.io/journal/2023/11/14/#2-%EB%8B%A4%EC%88%98%EB%A5%BC-%EB%AA%A8%EB%B0%A9%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="2. 다수를 모방한다에 대한 직접 링크" title="2. 다수를 모방한다에 대한 직접 링크">​</a></h4><p>어떻게 행동해야 하는지 확실하지 않을 때 우리는 집단을 보고 행동 방향을 찾는다. 계속해서 주변 환경을 살피고 의문을 품는다. '다른 사람은 어떻게 하고 있지?' 사람들이 아마존, 옐프, 트립어드바이저의 리뷰를 확인하는 이유는 가장 좋은 것을 모방하고 싶어서다. 이는 대부분 영리한 전략이다. 다수가 증거로 보여주기 때문이다.</p><p>하지만 여기에는 문제가 있다. 집단이 하는 일반적인 행동은 종종 개인이 욕망하는 행동을 제압한다. 예를 들어 어느 집단에서 효율적으로 땅콩을 쪼개는 방법을 습득한 침팬지는 그보다 덜 효율적인 방법을 사용하는 새로운 집단을 옮겼을 때, 그 무리에 섞이기 위해 전에 사용하던 훨씬 나은 방법을 사용하지 않는다.</p><p>인간 역시 마찬가지다. 우리는 집단의 규범을 따라야 한다는 어마어마한 내적 압력을 받는다. 무리의 일원이 되는 건 종종 논쟁에서 이기는 것, 똑똑해 보이는 것, 진실을 찾아내는 것보다 보상이 훨씬 크다. 대부분 우리는 홀로 옳은 길을 따르기보다 집단과 함께 잘못되는 길을 선택한다.</p><p>우리가 속한 문화와 다른 방향으로 달리려면 또 다른 노력이 필요하다. 습관을 바꾸는 것이 무리에 도전하는 일이 될 때 변화는 매력적이지 않다. 반대로 습관을 바꾸는 것이 무리와 합치될 때 변화는 무척이나 매력적인 것이 된다.</p><h4 class="anchor anchorWithStickyNavbar_r3Xo" id="3-유력자를-모방한다">3. 유력자를 모방한다.<a href="https://kooku0.github.io/journal/2023/11/14/#3-%EC%9C%A0%EB%A0%A5%EC%9E%90%EB%A5%BC-%EB%AA%A8%EB%B0%A9%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="3. 유력자를 모방한다.에 대한 직접 링크" title="3. 유력자를 모방한다.에 대한 직접 링크">​</a></h4><p>성공한 사람의 행동을 모방하려고 하는 것은 성공을 욕망하기 때문이다. 일상의 많은 습관들은 자신이 찬탄하는 사람들을 모방한 것이다. 자기가 속한 산업에서 가장 성공한 회사의 마케팅 전략을 모방하고, 가장 좋아하는 제빵사의 조리법대로 음식을 만든다. 상사의 대화법을 흉내 낸다. 자신이 선망하는 사람을 모방한다.</p><p>그렇게 해서 지위가 높아진 사람들은 인정과 존경, 타인의 칭찬을 즐긴다. 우리는 어떤 행동이 인정, 존경, 칭찬을 가져다준다면 그 행동에 매력을 느낀다. 또한 우리는 자신의 지위를 낮출 만한 행동들을 피하고 싶어 한다. 울타리를 손질하고 잔디를 깎는 것은 이웃에게 게으른 모습을 보이지 않고 싶어서다. 우리는 계속해서 다른 사람들이 자신을 어떻게 생각할지 궁금해하고, 그 대답에 근거해 행동을 수정한다.</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_A1zi alert alert--secondary"><div class="admonitionHeading_eDcb"><span class="admonitionIcon_ipkc"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>아주 작은 습관의 힘</div><div class="admonitionContent_AARn"><h2 class="anchor anchorWithStickyNavbar_r3Xo" id="chapter-06-환경이-행동을-결정한다">Chapter 06 환경이 행동을 결정한다<a href="https://kooku0.github.io/journal/2023/11/14/#chapter-06-%ED%99%98%EA%B2%BD%EC%9D%B4-%ED%96%89%EB%8F%99%EC%9D%84-%EA%B2%B0%EC%A0%95%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="Chapter 06 환경이 행동을 결정한다에 대한 직접 링크" title="Chapter 06 환경이 행동을 결정한다에 대한 직접 링크">​</a></h2><p>환경은 인간의 행동을 형성하는 보이지 않는 손이다. 우리 모두가 성격이 다르긴 해도 특정한 행동들은 특정한 환경 아래서 반복적으로 일어나곤 한다. 교회에서는 속삭이며 대화를 나누고, 어두운 길에서는 주변을 살피며 방어적인 태도로 행동한다. 이처럼 일반적인 변화 대부분이 내적이 아닌 외적 환경에 따라 일어난다. 우리는 주위를 둘러싼 세계 때문에 변화한다. <strong>습관은 모두 맥락을 따른다.</strong></p><p>우리가 매일 하는 많은 행동들은 목적이나 선택에 따른 것이 아니라 대부분 확실하게 눈에 보이는 선택지라는 이유로 실행된 것이다.</p><p>인간은 감각신경 체계로 인지한다. 하지만 인간의 온갖 감각 능력들 중 가장 강력한 것은 시각이다. 이런 이유에서 우리가 '보는' 것에 작은 변화가 일어나면 우리가 '하는' 일에 큰 변화가 일어날 수 있다. 따라서 생활 및 직장 환경에 생산적인 신호들을 채우고 비생산적인 신호들을 제거하는 것은 매우 중요하다.</p><p>어떤 습관을 삶의 큰 부분으로 만들고 싶다면 그와 관련된 신호를 자주 인지할 수 있는 환경을 만들어라. 지속적인 행위 대부분은 대개 다양한 신호들을 갖는다.</p><p>환경 디자인은 우리가 자신을 통제할 수 있게 해주고, 자기 삶의 설계자가 되도록 만들어준다.</p><h3 class="anchor anchorWithStickyNavbar_r3Xo" id="왜-집보다-스타벅스에서-공부가-더-잘-될까">왜 집보다 스타벅스에서 공부가 더 잘 될까<a href="https://kooku0.github.io/journal/2023/11/14/#%EC%99%9C-%EC%A7%91%EB%B3%B4%EB%8B%A4-%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%EC%97%90%EC%84%9C-%EA%B3%B5%EB%B6%80%EA%B0%80-%EB%8D%94-%EC%9E%98-%EB%90%A0%EA%B9%8C" class="hash-link" aria-label="왜 집보다 스타벅스에서 공부가 더 잘 될까에 대한 직접 링크" title="왜 집보다 스타벅스에서 공부가 더 잘 될까에 대한 직접 링크">​</a></h3><p>습관을 촉발하는 신호는 처음에는 매우 특정한 것일 수 있다. 하지만 시간이 지나면 우리의 습관은 한 가지 촉매에 따른 것이 아니라 행동을 둘러싼 전체 '맥락'과 연결되기 시작한다. 예를 들어 사람들은 집에 혼자 있을 때보다 사회적 상황에서 술을 더 많이 마신다.</p><p>이처럼 우리의 마음은 습관을 집, 사무실, 체육관같이 그 행위가 일어나는 장소들에 연결한다. 각각의 장소는 특정 습관이나 일상 행위들에 연결되고 강화된다. 우리는 책상, 주방 조리대, 침실에 놓인 용품들과 특정한 관계를 맺는다.</p><p>우리는 특정한 맥락에 특정한 습관을 연결시킴으로써 스스로 훈련할 수 있다. 불면증과 관련된 한 가지 연구에서 과학자들은 불면증 환자들에게 피곤할 때만 침대에 누우라고 지시했다. 이들은 졸릴 때까지 다른 방에 가서 앉아 있어야 했다. 시간이 지나자 이들은 침대를 수면 행위와 연결시키기 시작했고, 침대에 누웠을 때 빨리 잠들 수 있었다.</p><p>맥락의 힘은 행동을 변화시키는 중요한 전략을 하나 더 알려준다. 새로운 환경에서는 습관을 바꾸기가 쉽다는 것이다. 우리가 현재의 습관을 계속 이어가도록 몰아가는 촉매들과 신호들에서 탈출하게 도와주기 때문이다. 색다른 커피솦, 공원 벤치, 평소 거의 이용하지 않는 방구석 자리 등 새로운 장소로 가서 새로운 습관을 만들어보라.</p><p>가능하다면 한 가지 습관이 일어나는 맥락을 다른 것과 섞지 않도록 하라. 맥락들을 섞기 시작하면 습관들도 뒤섞인다. 그러면서 그중 더 쉬운 일을 하게 된다.</p><h2 class="anchor anchorWithStickyNavbar_r3Xo" id="chapter-09-왜-주위-사람에-따라-내-습관이-변할까">Chapter 09 왜 주위 사람에 따라 내 습관이 변할까<a href="https://kooku0.github.io/journal/2023/11/14/#chapter-09-%EC%99%9C-%EC%A3%BC%EC%9C%84-%EC%82%AC%EB%9E%8C%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%82%B4-%EC%8A%B5%EA%B4%80%EC%9D%B4-%EB%B3%80%ED%95%A0%EA%B9%8C" class="hash-link" aria-label="Chapter 09 왜 주위 사람에 따라 내 습관이 변할까에 대한 직접 링크" title="Chapter 09 왜 주위 사람에 따라 내 습관이 변할까에 대한 직접 링크">​</a></h2><h3 class="anchor anchorWithStickyNavbar_r3Xo" id="우리의-행동을-결정하는-세-집단">우리의 행동을 결정하는 세 집단<a href="https://kooku0.github.io/journal/2023/11/14/#%EC%9A%B0%EB%A6%AC%EC%9D%98-%ED%96%89%EB%8F%99%EC%9D%84-%EA%B2%B0%EC%A0%95%ED%95%98%EF%BF%BD%EF%BF%BD%EB%8A%94-%EC%84%B8-%EC%A7%91%EB%8B%A8" class="hash-link" aria-label="우리의 행동을 결정하는 세 집단에 대한 직접 링크" title="우리의 행동을 결정하는 세 집단에 대한 직접 링크">​</a></h3><p>다른 사람들과 협력하고 유대 관계를 맺으면 안전이 보장되고 짝짓기 가능성이 높아지며, 자원에 대한 접근성도 높아진다. 찰스 다윈은 "역사적으로 볼 때 타인과 협력하고 가장 효율적으로 임기응변하는 법을 배운 사람이 승리했다."라고 썼다.</p><p>아주 어린 시절의 습관은 '선택하는 것'이 아니라 '모방한 것'이다. 우리는 일반적으로 친구, 가족, 교회 또는 학교, 지역사회와 국가로부터 넘겨받은 대본을 따른다. 이런 집단에는 각자의 가치관과 기준들이 존재한다. 언제 결혼을 해야 하는지, 결혼을 할지 말지 등에 대한 기준들이다.</p><p>이런 사회적 규범들은 보이지 않는 규칙으로 작용해 매일의 행동을 이끈다. 우리는 이것들을 마음속 가장 중요한 곳에 두지는 않더라도 늘 염두에 두고 산다. 종종 우리는 생각하거나 의문을 품지 않고, 어떨 때는 기억해내지 않고도 자기 문화에 있는 습관을 따른다.</p><p>집단을 따르는 것은 대부분 부담스럽게 느껴지지 않는다. 모두 어딘가에 소속되길 원한다.</p><p>우리는 특히 다음 세 집단의 습관을 모방한다.</p><h4 class="anchor anchorWithStickyNavbar_r3Xo" id="1-가까운-사람을-모방한다">1. 가까운 사람을 모방한다.<a href="https://kooku0.github.io/journal/2023/11/14/#1-%EA%B0%80%EA%B9%8C%EC%9A%B4-%EC%82%AC%EB%9E%8C%EC%9D%84-%EB%AA%A8%EB%B0%A9%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="1. 가까운 사람을 모방한다.에 대한 직접 링크" title="1. 가까운 사람을 모방한다.에 대한 직접 링크">​</a></h4><p>가까운 사람들은 우리의 행동에 가장 강력한 영향을 끼친다.</p><p>우리는 주변 사람들의 습관을 보고 배운다. 부모님이 논쟁에 대처하는 방식, 또래들이 다른 사람들과 시시덕거리는 방식, 동료 직원들이 결과를 얻어내는 방식등을 모방한다.</p><p>우리는 가까운 사람일수록 그 사람의 습관을 모방하기 쉽다. 1만 2,000명을 32년간 추적 조사한 획기적인 연구에 따르면 "비만이 될 확률은 친구가 비만일 경우 57퍼센트로 증가했다."</p><p>더 나은 습관을 세우는 가장 효율적인 방법 중 하나는 자신이 원하는 행동이 일반화된 집단에 들어가는 것이다. 매일 어떤 습관을 행하는 사람들을 보고 있으면 그 습관을 새로이 습득하기 쉽다.</p><p>우리를 둘러싼 문화는 무엇이 '일반적'인지에 관한 기대치를 설정한다. 따라서 어떤 습관을 들이고 싶다면 그런 습관을 지닌 사람들 사이에 있어라. 그러면 함께 성장할 것이다.</p><p>습관을 매력적으로 만들고 싶다면 자신이 원하는 행동이 일반적인 집단, 자신과 공통점을 가지고 있는 집단으로 들어가라.</p><p>무리에 소속되는 것보다 더 동기를 지속시키는 것은 없다. 그것은 개인적으로 추구하는 것을 공통의 것으로 바꿔준다. 무리에서 정체성이 공유되면 나의 개인적인 정체성도 강화된다. 따라서 목표를 달성한 뒤에도 집단의 일원으로 남아 있는 것이 습관을 유지하는 데 중요하다. 새로운 정체성을 끼워 넣고 행동을 장기적으로 지속하는 걸 돕는 건 우정과 커뮤니티다.</p><h4 class="anchor anchorWithStickyNavbar_r3Xo" id="2-다수를-모방한다">2. 다수를 모방한다<a href="https://kooku0.github.io/journal/2023/11/14/#2-%EB%8B%A4%EC%88%98%EB%A5%BC-%EB%AA%A8%EB%B0%A9%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="2. 다수를 모방한다에 대한 직접 링크" title="2. 다수를 모방한다에 대한 직접 링크">​</a></h4><p>어떻게 행동해야 하는지 확실하지 않을 때 우리는 집단을 보고 행동 방향을 찾는다. 계속해서 주변 환경을 살피고 의문을 품는다. '다른 사람은 어떻게 하고 있지?' 사람들이 아마존, 옐프, 트립어드바이저의 리뷰를 확인하는 이유는 가장 좋은 것을 모방하고 싶어서다. 이는 대부분 영리한 전략이다. 다수가 증거로 보여주기 때문이다.</p><p>하지만 여기에는 문제가 있다. 집단이 하는 일반적인 행동은 종종 개인이 욕망하는 행동을 제압한다. 예를 들어 어느 집단에서 효율적으로 땅콩을 쪼개는 방법을 습득한 침팬지는 그보다 덜 효율적인 방법을 사용하는 새로운 집단을 옮겼을 때, 그 무리에 섞이기 위해 전에 사용하던 훨씬 나은 방법을 사용하지 않는다.</p><p>인간 역시 마찬가지다. 우리는 집단의 규범을 따라야 한다는 어마어마한 내적 압력을 받는다. 무리의 일원이 되는 건 종종 논쟁에서 이기는 것, 똑똑해 보이는 것, 진실을 찾아내는 것보다 보상이 훨씬 크다. 대부분 우리는 홀로 옳은 길을 따르기보다 집단과 함께 잘못되는 길을 선택한다.</p><p>우리가 속한 문화와 다른 방향으로 달리려면 또 다른 노력이 필요하다. 습관을 바꾸는 것이 무리에 도전하는 일이 될 때 변화는 매력적이지 않다. 반대로 습관을 바꾸는 것이 무리와 합치될 때 변화는 무척이나 매력적인 것이 된다.</p><h4 class="anchor anchorWithStickyNavbar_r3Xo" id="3-유력자를-모방한다">3. 유력자를 모방한다.<a href="https://kooku0.github.io/journal/2023/11/14/#3-%EC%9C%A0%EB%A0%A5%EC%9E%90%EB%A5%BC-%EB%AA%A8%EB%B0%A9%ED%95%9C%EB%8B%A4" class="hash-link" aria-label="3. 유력자를 모방한다.에 대한 직접 링크" title="3. 유력자를 모방한다.에 대한 직접 링크">​</a></h4><p>성공한 사람의 행동을 모방하려고 하는 것은 성공을 욕망하기 때문이다. 일상의 많은 습관들은 자신이 찬탄하는 사람들을 모방한 것이다. 자기가 속한 산업에서 가장 성공한 회사의 마케팅 전략을 모방하고, 가장 좋아하는 제빵사의 조리법대로 음식을 만든다. 상사의 대화법을 흉내 낸다. 자신이 선망하는 사람을 모방한다.</p><p>그렇게 해서 지위가 높아진 사람들은 인정과 존경, 타인의 칭찬을 즐긴다. 우리는 어떤 행동이 인정, 존경, 칭찬을 가져다준다면 그 행동에 매력을 느낀다. 또한 우리는 자신의 지위를 낮출 만한 행동들을 피하고 싶어 한다. 울타리를 손질하고 잔디를 깎는 것은 이웃에게 게으른 모습을 보이지 않고 싶어서다. 우리는 계속해서 다른 사람들이 자신을 어떻게 생각할지 궁금해하고, 그 대답에 근거해 행동을 수정한다.</p></div></div>
 <p>회사 사무실 입구에 간식바가 있다. 간식바가 없다면 나는 살이 덜 쪘을까? 만약 내가 성장하고 싶다면, 좋은 습관을 들이고 싶다면 뛰어난 사람이 있는 그룹에 들어가거나 내가 들이고 싶은 습관을 꾸준하게 하고있는 그룹에 들어가야 한다는 것에 200% 동의한다.</p>
 <p>자기개발을 꾸준히 하는 모임에 들어가고 싶은데 어떻게 들어갈 수 있을지.. 흠..</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2023.11.05]]></title>
-        <id>https://kooku0.github.io/journal/2023/11/05/</id>
-        <link href="https://kooku0.github.io/journal/2023/11/05/"/>
-        <updated>2023-11-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[1. Nuphy air75 v2 키보드]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="1-nuphy-air75-v2-키보드">1. Nuphy air75 v2 키보드<a href="https://kooku0.github.io/journal/2023/11/05/#1-nuphy-air75-v2-%ED%82%A4%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="1. Nuphy air75 v2 키보드에 대한 �직접 링크" title="1. Nuphy air75 v2 키보드에 대한 직접 링크">​</a></h2>
-<p>요즘 꽂힌 키보드가 있는데 Nuphy air75 v2 키보드다. <a href="https://nuphy.com/collections/keyboards/products/air75-v2" target="_blank" rel="noopener noreferrer">https://nuphy.com/collections/keyboards/products/air75-v2</a> 진짜 이쁘다.</p>
-<p>나는 확실히 로우프로파일을 좋아한다. 키보드 누를 때 짧게 누르면서 손가락이 많이 움직이거나 힘이 들어가는걸 좋아하지 않는 것 같다. 그래서 매직키보드도 잘 사용하고 있다.</p>
-<p>하지만 일시적인 소유욕인 것 같아서 12월에도 구매하길 원한다면 그 때 구매할 예정이다.</p>
-<h2 class="anchor anchorWithStickyNavbar_r3Xo" id="2-스마트-팜">2. 스마트 팜<a href="https://kooku0.github.io/journal/2023/11/05/#2-%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%9C" class="hash-link" aria-label="2. 스마트 팜에 대한 직접 링크" title="2. 스마트 팜에 대한 직접 링크">​</a></h2>
-<ul>
-<li>엽채류 생산은 확실히 채산성이 안좋다. LED로 식물을 키우면 맛이 없다는 이야기도 있다.</li>
-<li>채산성은 안좋지만 밤에도 빛을 쐬어주어 빠르게 자라기에 많은 양을 생산하면 된다는 이야기도 있다. 하지만 이럴 경우 판매경로를 제대로 뚫어 놓지 않는다면 손해를 보기 쉬울 것 같다.</li>
-<li>식물을 키울 때 병은 거의 없지만 벌레는 어떻게든 생기게 된다. 이럴 때 마늘이 함유된 제품을 사용한다는 이야기도 있었다. 참고: <a href="https://youtu.be/UOU60rd77TU?si=X_DN4M_YpXMp70iV" target="_blank" rel="noopener noreferrer">https://youtu.be/UOU60rd77TU?si=X_DN4M_YpXMp70iV</a></li>
-<li>과일을 키워야 할 것 같다. 한국은 과일이 비싸서 채산성이 괜찮다고 한다.<!-- -->
-<ul>
-<li>스마트 팜의 경우 어떤 작물을 키워야 할 지 선택하는게 매우 중요한 것 같다.</li>
-</ul>
-</li>
-<li>과일의 경우 키우는데 시간이 오래 걸리기 때문에 수익이 빠르게 나지 않는다.</li>
-<li>과일의 경우 대부분 나무에 열리기에 vertical farming이 가능할지 찾아봐야하고, 열매를 어떻게 자동으로 수확할 수 있을지도 고민이 필요하다.<!-- -->
-<ul>
-<li>딸기는 vertical farming으로 잘 키우기는 하더라. 하지만 손으로 모든걸 수확한다.</li>
-</ul>
-</li>
-<li>Aeroponics 기법의 경우 구멍이 자주 막히는 문제가 있다.</li>
-<li>24평의 경우 전기비가 1달에 100만원 정도 들었다는 이야기를 들었다.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r3Xo" id="정리">정리<a href="https://kooku0.github.io/journal/2023/11/05/#%EC%A0%95%EB%A6%AC" class="hash-link" aria-label="정리에 대한 직접 링크" title="정리에 대한 직접 링크">​</a></h3>
-<ul>
-<li>어떤 작물을 키울지가 매우 중요하다. (채산성, 수확 시간, 난이도 등을 고려해야 한다.)</li>
-<li>엽채류는 채산성이 안좋지만 밤에도 LED를 쏴주면 빠르게 자라기에 단기간에 많은 량을 수확할 수 있다. 하지만 맛이 없다는 이야기도 있고, 판매로를 제대로 뚫어 놓지 않는다면 손해를 볼 수 있다.</li>
-<li>과일은 채산성이 좋다. 하지만 키우는데 시간이 오래 걸리기에 수익이 빠르게 나지 않는다. 또한 vertical farming이 가능한지, 자동으로 수확할 수 있는지 고민해야 한다.</li>
-<li>자연에너지를 충분히 활용하지 않는다면 전기에너지가 많이들어 부담이 될 것 이다.<!-- -->
-<ul>
-<li>태양광, 바람, 실외 온도를 충분히 활용해야 한다.</li>
-</ul>
-</li>
-<li>병충해 중 충해는 어떻게든 생기기에 대비를 해야한다.</li>
-</ul>]]></content>
     </entry>
 </feed>
