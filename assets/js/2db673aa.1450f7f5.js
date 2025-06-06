@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[7401],{84960:e=>{e.exports=JSON.parse('{"blogBasePath":"/retrospect","blogTitle":"\uacbd\ud5d8\uc744 \ub3cc\uc544\ubd04","authorsListPath":"/retrospect/authors"}')}}]);
