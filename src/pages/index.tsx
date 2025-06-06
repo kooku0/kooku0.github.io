@@ -6,8 +6,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
 
-import HomepageFeatures from '../components/HomepageFeatures';
-
 import styles from './index.module.css';
 
 const HomepageHeader = () => {
@@ -35,9 +33,7 @@ export default function Home(): JSX.Element {
     <ReactChannelIO autoBoot pluginKey={process.env.CHANNEL_ID_PLUGIN_KEY || ''}>
       <Layout description="Description will go into a meta tag in <head />" title={`Hello from ${siteConfig.title}`}>
         <HomepageHeader />
-        <main>
-          <HomepageFeatures />
-        </main>
+        <main>Hi</main>
       </Layout>
     </ReactChannelIO>
   );
