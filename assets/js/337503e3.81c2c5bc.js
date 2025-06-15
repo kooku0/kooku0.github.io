@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[1450],{915:e=>{e.exports=JSON.parse('{"tag":{"label":"react","permalink":"/tech/tags/react","allTagsPath":"/tech/tags","count":3,"unlisted":false},"listMetadata":{"permalink":"/tech/tags/react","page":1,"postsPerPage":3,"totalPages":1,"totalCount":3,"blogDescription":"Tech","blogTitle":"Tech"}}')}}]);

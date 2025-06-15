@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[6378],{68671:s=>{s.exports=JSON.parse('{"tags":[{"label":"VAN","permalink":"/somethings/tags/van","count":1},{"label":"PG","permalink":"/somethings/tags/pg","count":1}]}')}}]);

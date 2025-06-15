@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[1387],{47152:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/somethings","page":1,"postsPerPage":1,"totalPages":1,"totalCount":1,"blogDescription":"\uc774\uac83\uc800\uac83","blogTitle":"\uc774\uac83\uc800\uac83"}}')}}]);
