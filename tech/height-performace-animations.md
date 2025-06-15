@@ -6,7 +6,7 @@ tags: ["성능"]
 keywords: ["성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능"]
 ---
 
-![rendering-process](../images/rendering-process.jpeg)
+![rendering-process](./images/rendering-process.jpeg)
 
 <!--truncate-->
 
@@ -14,7 +14,7 @@ keywords: ["성능", "아키텍처", "프론트엔드 아키텍처", "웹 성능
 
 JS와 CSS를 이용하여 animation을 구현해야할 때 성능 상 가장 고려해야할 부분이 Reflow(Layout) 와 Repaint(Paint)를 최소화하는 것이다.
 
-![rendering-process-2](../images/rendering-process-2.gif)
+![rendering-process-2](./images/rendering-process-2.gif)
 
 <small> DOM 트리 및 스타일, 레이아웃 트리, 페인트 트리의 순서로 생성된다</small>
 

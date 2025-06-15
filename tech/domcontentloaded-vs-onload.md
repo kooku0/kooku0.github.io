@@ -26,7 +26,7 @@ script 태그의 `async` 와 `defer`에 대해서 공부하던 중 `DOMContentLo
 
 Chrome dev tool에서 측정해보면 \`DOMContentLoaded\`가 stylesheet와 img등의 리소스와는 상관없다는 것을 확인할 수 있습니다.
 
-![](../images/domcontentload.png)
+![](./images/domcontentload.png)
 
 ## async & defer
 

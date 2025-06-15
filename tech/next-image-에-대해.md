@@ -43,7 +43,7 @@ export default Home;
 
 자동 이미지 최적화 기능이 매우 흥미로운데, image request가 들어올 때마다 device 크기별로 이미지 크기(image quality)를 조절해서 보내줍니다.
 
-![next-image-header](../images/next-image.png)
+![next-image-header](./images/next-image.png)
 
 `next/image` header를 살펴보겠습니다.
 실제 이미지는 `image/bg-kasa.png` path에 있지만 `_next/image` 로 요청된 것을 알 수 있습니다. query를 살펴보면 q=75 로 되어있는데 이는 image-quality를 75%로 보내달라는 것 입니다. 즉, 현재 viewport width가 크지 않으니 100% quality로 보내면 network상 손해이기 때문에 75%로 보내는 것 입니다. 그리고 업로드한 이미지는 파일포멧이 png인데, response headers를 보게되면 `Content-Type: image/webp` 인 것을 확인할 수 있습니다.(webp로 파일포멧 변경)
@@ -82,9 +82,9 @@ next.js 레포에 v9에서 v10으로 변경한 후 memory 사용량이 비정상
 
 다음은 제가 작업한 프로젝트에서 `next/image`를 사용했다가 제거한 후의 cpu, memory 사용량입니다. **5/11 15:30** 에 제거한 후 배포를 했는데 확연한 차이를 확인할 수 있습니다. (그래프가 요동치는 곳의 색깔이 화려한데 8개이상의 pod가 비정상적으로 종료되고 실행되었기 때문입니다.)
 
-![cpu](../images/cpu.png)
+![cpu](./images/cpu.png)
 
-![memory](../images/memory.png)
+![memory](./images/memory.png)
 
 ## 마무리
 

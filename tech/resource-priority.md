@@ -42,7 +42,7 @@ css파일과 같은 리소스를 로드해올 때 다음과 같이 많이 사용
 
 `preload`는 현재 페이지에서 반드시 사용되는 리소스에만 사용되어야 합니다.
 
-![](../images/preload-warning.png)
+![](./images/preload-warning.png)
 
 `preload`를 사용했지만 현재 페이지에서 3초 내로 사용되지 않다면 위와 같은 warning이 출력되게 됩니다.
 
@@ -67,7 +67,7 @@ href="myfont.woff2">
 
 Chrome DevTools의 network panel에서 priority가 Highest로 찍힌걸 확인할 수 있습니다.
 
-![](../images/preload-highest.png)
+![](./images/preload-highest.png)
 
 ## preconnect & dns-prefetch
 
@@ -85,7 +85,7 @@ network 상황에 따라서 한 번의 round-trip이 상당한 시간이 소요�
 
 `preconnect`와 `dns-prefetch`는 실제로 리소스를 다운하는게 아니라 리소스 다운을 위한 network connection을 미리 해두는 것 입니다.
 
-![](../images/preconnect.png)
+![](./images/preconnect.png)
 
 이러한 방법으로 connection setup을 하는 100ms~500ms정도의 시간을 단축할 수 있습니다.
 
@@ -132,7 +132,7 @@ fonts와 같은 일부 리소스들의 경우 `preconnect`와 함께 `crossorigi
 <link rel="preconnect" as="style" href="./style.css" />
 ```
 
-![](../images/preconnect-network.png)
+![](./images/preconnect-network.png)
 
 ## prefetch
 
@@ -157,7 +157,7 @@ fonts와 같은 일부 리소스들의 경우 `preconnect`와 함께 `crossorigi
 
 다음과 같이 priority가 Lowest인 것을 확인할 수 있습니다.
 
-![](../images/prefetch-network.png)
+![](./images/prefetch-network.png)
 
 ## 요약
 

@@ -120,7 +120,7 @@ max-age가 거의 무한이고, age도 많이 흐르지 않았기에 유효한 �
 
 disk가 memory보다 데이터를 가져오는 속도가 느리기에 당연히 속도 차이가 난다. (memory: 0ms, disk: 3ms)
 
-![cache-memory-disk](../images/cache-memory-disk.png)
+![cache-memory-disk](./images/cache-memory-disk.png)
 
 ```
 [General]

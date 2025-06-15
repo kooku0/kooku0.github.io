@@ -1,7 +1,7 @@
 ---
 title: Execution Context
 date: 2021-05-03
-cover: ../images/ec-cover.png
+cover: ./images/ec-cover.png
 tags:
   - javascript
 ---
@@ -65,23 +65,23 @@ let banana = "banana";
 
 그리고 `let` 키워드를 가진 변수들이 `Lexical Environment`의 Environment Records`에 등록이 됩니다.`var`키워드는 undefined로 초기화가 되는 반면에 `let` 키워드는 초기화가 되지않아 할당전 호출하게 되면 Reference Error가 발생하게 됩니다.
 
-![ec-2](../images/ec2.png)
+![ec-2](./images/ec2.png)
 
 코드가 실행이 됨에 따라 각 변수에 값이 할당되게 됩니다.
 
-![ec-3](../images/ec3.png)
+![ec-3](./images/ec3.png)
 
 이후 block scope를 만나게 되면 `Lexical Environment`의 `Environment Records`의 새로운 area를 만들어 기존과 다른 area에 식별자를 등록하게 됩니다. 그리고 이러한 area는 stack으로 관리하여 변수가 충하지 않습니다.
 
-![ec-4](../images/ec4.png)
+![ec-4](./images/ec4.png)
 
 block scope가 실행이 되고 상위 area의 banana에 값이 할당됩니다.
 
-![ec-5](../images/ec5.png)
+![ec-5](./images/ec5.png)
 
 이후 block scope의 실행이 끝나면 `Environment Records` block scope가 제거됩니다.
 
-![ec-6](../images/ec6.png)
+![ec-6](./images/ec6.png)
 
 ## ThisBinding
 

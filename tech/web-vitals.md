@@ -79,7 +79,7 @@ export function reportWebVitals({ id, name, label, value }) {
 
 다음과 같이 구글 analytics에서 이벤트가 로깅된 것을 확인할 수 있습니다.
 
-![web-vitals-event](../images/web-vitals-event.png)
+![web-vitals-event](./images/web-vitals-event.png)
 
 로깅된 결과를 그래프로 볼 수 있는, GoogleChromeLabs에서 만든 오픈소스가 존재하는데, 바로 [Web Vitals Report](https://github.com/GoogleChromeLabs/web-vitals-report) 입니다. 참고로 [Web Service](https://web-vitals-report.web.app/)도 제공하고 있습니다.
 

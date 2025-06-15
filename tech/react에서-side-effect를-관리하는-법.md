@@ -10,7 +10,7 @@ keywords: ["아키텍처", "프론트엔드 컴포넌트", "프론트엔드 아�
 
 <!--truncate-->
 
-![](../images/functional-book.jpeg)
+![](./images/functional-book.jpeg)
 
 아직 2장 밖에 읽지 않았지만, 기억에 남는 문장들이 몇 개 있습니다.
 
@@ -32,7 +32,7 @@ keywords: ["아키텍처", "프론트엔드 컴포넌트", "프론트엔드 아�
 
 https://redux-saga.js.org/
 
-![](../images/redux-saga.png)
+![](./images/redux-saga.png)
 
 functional programming이 pure function들의 조합으로 프로그램을 구성한다고는 하지만 부수효과가 없는 프로그램은 없다고 생각합니다. functional programming은 코드문맥에서 발생하는 공통의 패턴을 함수로 만들어 재사용하게 함을 목적으로 둔다고 생각합니다. 이때의 함수는 순수함수겠죠.
 그리고 프론트에서도 공통적으로 사용되는 컴포넌트를 pure component로 만듦으로써 재사용이 가능하게 하고 테스트하기 쉽게 만들기 위해 functional programming의 철학이 필요하다고 생각합니다.

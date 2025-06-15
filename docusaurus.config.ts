@@ -34,16 +34,17 @@ export default async function createConfigAsync() {
             // Please change this to your repo.
             editUrl: 'https://github.com/kooku0/kooku0.github.io/edit/main/',
           } satisfies DocsOptions,
-          blog: {
-            blogSidebarTitle: '모든 게시물',
-            blogSidebarCount: 'ALL',
-            showReadingTime: true,
-            // Please change this to your repo.
-            editUrl: 'https://github.com/kooku0/kooku0.github.io/edit/main/',
-            postsPerPage: 'ALL',
-            path: 'blog',
-            id: 'blog',
-          } satisfies BlogOptions,
+          // blog: {
+          //   blogSidebarTitle: '모든 게시물',
+          //   blogSidebarCount: 'ALL',
+          //   showReadingTime: true,
+          //   // Please change this to your repo.
+          //   editUrl: 'https://github.com/kooku0/kooku0.github.io/edit/main/',
+          //   postsPerPage: 'ALL',
+          //   path: 'tech',
+          //   id: 'tech',
+          // } satisfies BlogOptions,
+
           theme: {
             customCss: './src/css/custom.css',
           },
@@ -59,6 +60,28 @@ export default async function createConfigAsync() {
     ],
 
     plugins: [
+      [
+        'content-blog',
+        {
+          id: 'tech',
+          routeBasePath: 'tech',
+          path: 'tech',
+          blogTitle: 'Tech',
+          blogDescription: 'Tech',
+          postsPerPage: 'ALL',
+        } satisfies BlogOptions,
+      ],
+      [
+        'content-blog',
+        {
+          id: 'somethings',
+          routeBasePath: 'somethings',
+          path: 'somethings',
+          blogTitle: '이것저것',
+          blogDescription: '이것저것',
+          postsPerPage: 'ALL',
+        } satisfies BlogOptions,
+      ],
       [
         'content-blog',
         {
@@ -101,8 +124,13 @@ export default async function createConfigAsync() {
           },
           items: [
             {
-              to: '/blog',
-              label: 'Blog',
+              to: '/somethings/',
+              label: '이것저것',
+              position: 'left',
+            },
+            {
+              to: '/tech/',
+              label: '테크',
               position: 'left',
             },
             {
@@ -151,8 +179,12 @@ export default async function createConfigAsync() {
               title: 'Docs',
               items: [
                 {
-                  label: '블로그',
-                  to: '/blog',
+                  label: '테크',
+                  to: '/tech/',
+                },
+                {
+                  label: '이것저것',
+                  to: '/somethings/',
                 },
                 {
                   label: '책',

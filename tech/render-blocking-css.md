@@ -21,11 +21,11 @@ CSS가 사용 가능해질 때까지(CSSOM이 만들어질 때까지)렌더링�
 
 ### media="all"
 
-![](../images/media-all.png)
+![](./images/media-all.png)
 
 ### media="print"
 
-![](../images/media-print.png)
+![](./images/media-print.png)
 
 ## 마무리
 

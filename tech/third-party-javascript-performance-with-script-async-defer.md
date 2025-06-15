@@ -42,13 +42,13 @@ Synchronous scripts는 DOM Pharsing을 막아 rendering을 지연시키기에, t
 
 `async` 속성을 가진 Sscript는 download를 마친 후 window's의 load event 전에 실행시킵니다. 이는 비동기 스크립트가 HTML에 나타나는 순서대로 실행되지 않을 가능성이 있다는 것을 의미합니다. 또한 DOM tree 생성을 하고 있는 도중 script 다운로드가 완료되면 DOM tree 생성을 interrupt 할 수도 있습니다.
 
-![](../images/async.png)
+![](./images/async.png)
 
 ### defer
 
 `defer` 속성을 가진 scripts는 HTML parsing이 완료된 이후, DOMContentLoaded 이벤트 이전에 실행됩니다. `defer`는 HTML이 순서대로 실행되는 것을 보장하고 parsing을 block하지 않습니다.
 
-![](../images/defer.png)
+![](./images/defer.png)
 
 - `async`는 load process 초기에 스크립트를 실행시키는 것이 중요할 때 사용합니다.
 - `defer`는 덜 중요한 요소에 사용하는 것이 좋습니다. 예를 들어 스크롤을 해야 볼 수 있는 동영상 플레이어.
