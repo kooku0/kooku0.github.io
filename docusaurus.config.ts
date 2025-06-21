@@ -1,7 +1,7 @@
-import { themes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
-import type { Options as DocsOptions } from '@docusaurus/plugin-content-docs';
 import type { Options as BlogOptions } from '@docusaurus/plugin-content-blog';
+import type { Options as DocsOptions } from '@docusaurus/plugin-content-docs';
+import type { Config } from '@docusaurus/types';
+import { themes } from 'prism-react-renderer';
 
 export default async function createConfigAsync() {
   return {
