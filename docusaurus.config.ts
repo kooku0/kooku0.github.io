@@ -3,7 +3,7 @@ import type { Options as DocsOptions } from '@docusaurus/plugin-content-docs';
 import type { Config } from '@docusaurus/types';
 import { themes } from 'prism-react-renderer';
 
-export default async function createConfigAsync() {
+export default async function createConfigAsync(): Promise<Config> {
   return {
     i18n: {
       defaultLocale: 'ko',
@@ -61,7 +61,7 @@ export default async function createConfigAsync() {
 
     plugins: [
       [
-        'content-blog',
+        '@docusaurus/plugin-content-blog',
         {
           id: 'tech',
           routeBasePath: 'tech',
@@ -72,7 +72,7 @@ export default async function createConfigAsync() {
         } satisfies BlogOptions,
       ],
       [
-        'content-blog',
+        '@docusaurus/plugin-content-blog',
         {
           id: 'somethings',
           routeBasePath: 'somethings',
@@ -83,7 +83,7 @@ export default async function createConfigAsync() {
         } satisfies BlogOptions,
       ],
       [
-        'content-blog',
+        '@docusaurus/plugin-content-blog',
         {
           id: 'retrospect',
           routeBasePath: 'retrospect',
@@ -94,7 +94,7 @@ export default async function createConfigAsync() {
         } satisfies BlogOptions,
       ],
       [
-        'content-blog',
+        '@docusaurus/plugin-content-blog',
         {
           id: 'journal',
           routeBasePath: 'journal',
@@ -218,5 +218,5 @@ export default async function createConfigAsync() {
           respectPrefersColorScheme: false,
         },
       },
-  } satisfies Config;
+  };
 }
