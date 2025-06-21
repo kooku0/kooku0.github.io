@@ -21,3 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.main {
+  padding: 2rem 0;
+}
+
+.main > p {
+  font-size: 1.5rem;
+}
