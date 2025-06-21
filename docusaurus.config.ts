@@ -31,7 +31,6 @@ export default async function createConfigAsync(): Promise<Config> {
         {
           docs: {
             sidebarPath: './sidebars.ts',
-            // Please change this to your repo.
             editUrl: 'https://github.com/kooku0/kooku0.github.io/edit/main/',
           } satisfies DocsOptions,
           // blog: {
@@ -68,6 +67,8 @@ export default async function createConfigAsync(): Promise<Config> {
           path: 'tech',
           blogTitle: 'Tech',
           blogDescription: 'Tech',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: '전체 게시물',
           postsPerPage: 'ALL',
         } satisfies BlogOptions,
       ],
@@ -80,6 +81,8 @@ export default async function createConfigAsync(): Promise<Config> {
           blogTitle: '이것저것',
           blogDescription: '이것저것',
           postsPerPage: 'ALL',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: '전체 게시물',
         } satisfies BlogOptions,
       ],
       [
@@ -90,6 +93,9 @@ export default async function createConfigAsync(): Promise<Config> {
           path: 'retrospect',
           blogTitle: '경험을 돌아봄',
           blogDescription: '경험을 돌아보고 깨달음을 얻어 발전하는 과정',
+          postsPerPage: 'ALL',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: '전체 게시물',
           exclude: ['**/archive'],
         } satisfies BlogOptions,
       ],
@@ -100,7 +106,9 @@ export default async function createConfigAsync(): Promise<Config> {
           routeBasePath: 'journal',
           path: 'journal',
           blogTitle: 'Journal',
+          blogDescription: 'Journal',
           blogSidebarCount: 'ALL',
+          blogSidebarTitle: '전체 게시물',
           postsPerPage: 'ALL',
         } satisfies BlogOptions,
       ],

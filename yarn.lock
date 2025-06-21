@@ -1545,7 +1545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@channel.io/channel-web-sdk-loader@npm:~2.0.0":
+"@channel.io/channel-web-sdk-loader@npm:^2.0.0":
   version: 2.0.0
   resolution: "@channel.io/channel-web-sdk-loader@npm:2.0.0"
   checksum: 10c0/8df26776cae0e4b4313beb824cc44d90267cbac9085e39e0b411ba2cd015eeddb020f0af880d053515240f150243a24d0c10bc341d2cf08e123bca2184f5cd53
@@ -7495,6 +7495,7 @@ __metadata:
   resolution: "kooku-log@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^2.0.1"
+    "@channel.io/channel-web-sdk-loader": "npm:^2.0.0"
     "@docusaurus/core": "npm:^3.8.1"
     "@docusaurus/module-type-aliases": "npm:^3.8.1"
     "@docusaurus/plugin-content-blog": "npm:^3.8.1"
@@ -7513,7 +7514,6 @@ __metadata:
     prism-react-renderer: "npm:^2.4.1"
     prismjs: "npm:^1.30.0"
     react: "npm:^19.1.0"
-    react-channel-plugin: "npm:^3.0.0"
     react-dom: "npm:^19.1.0"
     typescript: "npm:^5.2.2"
     url-loader: "npm:^4.1.1"
@@ -10331,19 +10331,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-channel-plugin@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "react-channel-plugin@npm:3.0.0"
-  dependencies:
-    "@channel.io/channel-web-sdk-loader": "npm:~2.0.0"
-    fast-deep-equal: "npm:^3.1.3"
-    tslib: "npm:^2.6.2"
-  peerDependencies:
-    react: ^16.8.0  || ^17.0.0 || ^18.0.0
-  checksum: 10c0/9d5a1c3c4d239db9d17c765ef3a2c3fd66fbf7eeb3a22a8318ca441cf8f4064cc9a0aa32a30a55af3ddba8c21fe6c9a40caa6a1bbdde0b0995492b8f6aeb4d68
-  languageName: node
-  linkType: hard
-
 "react-dom@npm:^19.1.0":
   version: 19.1.0
   resolution: "react-dom@npm:19.1.0"
@@ -11764,7 +11751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.6.0, tslib@npm:^2.6.2":
+"tslib@npm:^2.0.3, tslib@npm:^2.6.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62

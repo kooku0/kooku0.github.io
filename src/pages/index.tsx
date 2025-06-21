@@ -1,12 +1,15 @@
-import React from 'react';
-import { ReactChannelIO } from 'react-channel-plugin';
-
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
-
 import styles from './index.module.css';
+import * as ChannelService from '@channel.io/channel-web-sdk-loader';
+
+ChannelService.loadScript();
+
+ChannelService.boot({
+  "pluginKey": process.env.CHANNEL_ID_PLUGIN_KEY || '',
+});
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -25,16 +28,11 @@ const HomepageHeader = () => {
   );
 };
 
-// eslint-disable-next-line react/function-component-definition
-export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
-
-  return (
-    <ReactChannelIO autoBoot pluginKey={process.env.CHANNEL_ID_PLUGIN_KEY || ''}>
-      <Layout description="Description will go into a meta tag in <head />" title={`Hello from ${siteConfig.title}`}>
-        <HomepageHeader />
-        <main>Hi</main>
-      </Layout>
-    </ReactChannelIO>
+export default function Home() {
+  return (    
+    <Layout>
+      <HomepageHeader />
+      <main>Hi</main>
+    </Layout>
   );
 }

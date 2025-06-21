@@ -3,6 +3,8 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.defaultFormatter": "biomejs.biome",
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
@@ -21,6 +23,5 @@
     "source.fixAll": "explicit",
     "source.organizeImports.biome": "explicit"
   },
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "editor.tabSize": 2
 }
