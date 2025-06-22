@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[1996],{62375:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"VAN and PG","permalink":"/somethings/van-pg","unlisted":false,"date":"2025-06-14T00:00:00.000Z"}]}')}}]);
