@@ -75,11 +75,11 @@ export default async function createConfigAsync(): Promise<Config> {
       [
         '@docusaurus/plugin-content-blog',
         {
-          id: 'somethings',
-          routeBasePath: 'somethings',
-          path: 'somethings',
-          blogTitle: '이것저것',
-          blogDescription: '이것저것',
+          id: 'fintech',
+          routeBasePath: 'fintech',
+          path: 'fintech',
+          blogTitle: '핀테크',
+          blogDescription: '핀테크',
           postsPerPage: 'ALL',
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '전체 게시물',
@@ -119,6 +119,7 @@ export default async function createConfigAsync(): Promise<Config> {
           systemvars: true,
         },
       ],
+      ['@docusaurus/plugin-ideal-image', {}],
     ],
 
     themeConfig:
@@ -132,8 +133,8 @@ export default async function createConfigAsync(): Promise<Config> {
           },
           items: [
             {
-              to: '/somethings/',
-              label: '이것저것',
+              to: '/fintech/',
+              label: '핀테크',
               position: 'left',
             },
             {
@@ -191,8 +192,8 @@ export default async function createConfigAsync(): Promise<Config> {
                   to: '/tech/',
                 },
                 {
-                  label: '이것저것',
-                  to: '/somethings/',
+                  label: '핀테크',
+                  to: '/fintech/',
                 },
                 {
                   label: '책',
