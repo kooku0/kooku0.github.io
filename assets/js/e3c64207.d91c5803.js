@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[9081],{82627:e=>{e.exports=JSON.parse('{"tags":[{"label":"\uc9c0\uae09\uacb0\uc81c","permalink":"/fintech/tags/\uc9c0\uae09\uacb0\uc81c","count":1}]}')}}]);

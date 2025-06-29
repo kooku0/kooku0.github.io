@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[8452],{11096:e=>{e.exports=JSON.parse('{"blogBasePath":"/fintech","blogTitle":"\ud540\ud14c\ud06c","authorsListPath":"/fintech/authors"}')}}]);

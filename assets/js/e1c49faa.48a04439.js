@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[1319],{39888:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/fintech","page":1,"postsPerPage":1,"totalPages":1,"totalCount":1,"blogDescription":"\ud540\ud14c\ud06c","blogTitle":"\ud540\ud14c\ud06c"}}')}}]);

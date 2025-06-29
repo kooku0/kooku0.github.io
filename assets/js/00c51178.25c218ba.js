@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkooku_log=self.webpackChunkkooku_log||[]).push([[288],{11213:e=>{e.exports=JSON.parse('{"title":"\uc804\uccb4 \uac8c\uc2dc\ubb3c","items":[{"title":"\uacb0\uc81c\uc5d0 \ub300\ud55c \uae30\ubcf8\uc9c0\uc2dd - \uc9c0\uae09\uacb0\uc81c","permalink":"/fintech/payment-settlement","unlisted":false,"date":"2025-06-29T00:00:00.000Z"}]}')}}]);
