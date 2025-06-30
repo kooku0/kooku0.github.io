@@ -21,7 +21,7 @@ keywords: ["지급결제", "결제 서비스"]
 ## 지급, 청산 결제
 지급결제의 3단계는 지급, 청산, 결제 이다.
 
-<img src={require('./images/settlement-payment-3-steps.png').default} alt="지급결제 3단계" style={{ width: '300px' }} />
+![image](./images/settlement-payment-3-steps.png)
 
 ### 지급(payment)
 
@@ -37,7 +37,7 @@ keywords: ["지급결제", "결제 서비스"]
 
 자금결제시스템의 경우 **금융결제원**이 청산을 취합하여 확정한다.
 
-<img src={require('./images/clearing.png').default} alt="청산" style={{ width: '500px' }} />
+![image](./images/clearing.png)
 
 ### 결제(settlement)
 
@@ -45,8 +45,8 @@ keywords: ["지급결제", "결제 서비스"]
 
 자금결제시스템의 경우 **한국은행**이 결제를 담당하며, 매일 11시에 이루어진다.
 
-<img src={require('./images/settlement-1.png').default} alt="결제" style={{ width: '500px' }} />
-<img src={require('./images/settlement-2.png').default} alt="결제" style={{ width: '100%' }} />
+![image](./images/settlement-1.png)
+![image](./images/settlement-2.png)
 
 ### 결제(settlement) 두 방식
 
@@ -60,7 +60,7 @@ keywords: ["지급결제", "결제 서비스"]
 
 [거액결제시스템(large-value payment system)]에서 사용
 
-<img src={require('./images/rtgs.png').default} alt="실시간총액결제 방식" style={{ width: '300px' }} />
+![image](./images/rtgs.png)
 
 #### 🔹 이연차액결제 방식 (DNS: Deferred Net Settlement)
 
@@ -68,7 +68,7 @@ keywords: ["지급결제", "결제 서비스"]
 
 [소액결제시스템(retail payment system)]에서 사용: 우리가 사용하는 지급결제는 모두 이연차액결제 방식으로 이루어진다고 보면 된다.
 
-<img src={require('./images/dns.png').default} alt="이연차액결제 방식" style={{ width: '300px' }} />
+![image](./images/dns.png)
 
 
 ## Reference
