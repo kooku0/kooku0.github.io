@@ -223,7 +223,7 @@ export default async function createConfigAsync(): Promise<Config> {
           additionalLanguages: ['java', 'scala', 'docker', 'yaml'],
         },
         colorMode: {
-          defaultMode: 'dark',
+          defaultMode: 'light',
           respectPrefersColorScheme: false,
         },
       },
