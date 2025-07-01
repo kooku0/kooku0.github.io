@@ -4,10 +4,114 @@
         <title>Kooku's log Blog</title>
         <link>https://kooku0.github.io/fintech/</link>
         <description>Kooku's log Blog</description>
-        <lastBuildDate>Mon, 30 Jun 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[PG 개념정리]]></title>
+            <link>https://kooku0.github.io/fintech/pg/</link>
+            <guid>https://kooku0.github.io/fintech/pg/</guid>
+            <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[image]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/pg-1-47b87aa36b211facf41247206649f9a1.png" width="1104" height="646" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pg-개념">PG 개념<a href="https://kooku0.github.io/fintech/pg/#pg-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="PG 개념에 대한 직접 링크" title="PG 개념에 대한 직접 링크">​</a></h2>
+<p><u>온라인에서 재화의 구입 또는 용역의 이용에 있어서 지급결제정보를 송신하거나 수신하는 것 또는 그 대가의 정산을 대행하거나 매개하는 업무</u>를 <strong>전자지급결제대행업</strong>이라 한다. (전자금융거래법 제2조 제19호)</p>
+<blockquote>
+<p>PG가 온라인에서만 이루어진다고 했지만, 오프라인 가맹점이 PG를 도입하는 케이스도 많아지고 있다. 이유는 정산의 편의성, 간편결제제공(네이버페이, 카카오페이)등이다. 하지만 수수료가 비싸기 때문에 가맹점은 득실을 잘 판단해서 도입해야한다.</p>
+</blockquote>
+<p>전자지급결제대행 서비스를 '<strong>PG(Payment Gateway)</strong>'라고 부르는데, 전자지급결제대행업자는 자체 결제시스템을 통해 가맹점의 결제대행을 수행하는 업체(이하 "제1차 PG사")를 지칭한다. 예를들어 고객이 인터넷 쇼핑몰에서 물건을 구입하면서 신용카드로 결제하는 경우, 해당 물건 구입 대금은 고객 -&gt; 카드사 -&gt; 전자지급결제대행업자 -&gt; 인터넷 쇼핑몰 순으로 대금 결제가 진행된다.</p>
+<ul>
+<li>PG사는 온라인 사업자를 대신하여 카드사, 은행, 간편결제사 등과 계약을 맺고, 결제승인 및 정산을 대행하는 전자결제 서비스를 제공하는 업체다.</li>
+<li>미국과 달리 한국에서는 가맹점이 소비자의 카드 정보를 저장할 수 없기 때문에 <strong>온라인 결제는 반드시 PG사를 통해야 한다.</strong></li>
+<li>PG사는 하나의 <strong>대형 가맹점</strong>처럼 동작하며, 소규모 가맹점의 결제를 대신 처리한다. (예: 온라인 카드 결제시 카드사 앱에 'KG이니시스'나 '나이스페이먼츠'가 가맹점명으로 찍히는 것은 PG사가 중개한 거래이기 때문이다.)</li>
+<li>카드사는 매출이 큰 가맹점에는 낮은 수수료를 적용하고, 작은 가맹점에는 높은 수수료를 요구하는데, PG사가 대형 가맹점 역할을 하면서 소규모 가맹점에게 수수료 혜택을 줄 수 있는 구조가 된다.<!-- -->
+<ul>
+<li>다만 실제로는 PG 대행 수수료가 포함되어, <strong>직접 카드사와 계약하는 것보다 수수료가 더 높을 수 있다.</strong></li>
+</ul>
+</li>
+<li>그럼에도 불구하고 여러 카드사의 정산을 대신 처리해주기 때문에, <strong>가맹점은 정산 및 판매에 집중할 수 있는 장점</strong>이 있다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pg-역할">PG 역할<a href="https://kooku0.github.io/fintech/pg/#pg-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="PG 역할에 대한 직접 링크" title="PG 역할에 대한 직접 링크">​</a></h2>
+<ul>
+<li>PG사는 <strong>결제 대행 및 정산 대행 서비스</strong>를 제공한다.</li>
+<li>온라인 쇼핑몰을 비롯해 최근에는 오프라인 매장에서도 간편결제 연동을 위한 PG 서비스 제공 사례**가 증가하고 있다.</li>
+<li>상점과 계약한 정산일에 따라 여러 카드사에서 발생한 매출을 <strong>한 번에 정산</strong>해주어 현금 흐름 파악이 용이하다.</li>
+<li>신용카드 외에도 계좌이체, 휴대폰 결제, 무통장 입금, 상품권 등 <strong>다양한 결제 수단</strong>을 지원한다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pg와-van의-차이">PG와 VAN의 차이<a href="https://kooku0.github.io/fintech/pg/#pg%EC%99%80-van%EC%9D%98-%EC%B0%A8%EC%9D%B4" class="hash-link" aria-label="PG와 VAN의 차이에 대한 직접 링크" title="PG와 VAN의 차이에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>항목</th><th>PG</th><th>VAN</th></tr></thead><tbody><tr><td>기능</td><td>결제 대행, 정산 대행, 다양한 결제 수단 지원</td><td>카드 승인 중계</td></tr><tr><td>결제 수단</td><td>카드, 계좌이체, 간편결제 등 온라인 중심</td><td>오프라인 카드결제 중심</td></tr><tr><td>정산 주체</td><td>PG사 (통합 정산)</td><td>카드사 (개별 정산)</td></tr><tr><td>수익 구조</td><td>거래 금액 기반 수수료</td><td>거래 건수 기반 수수료</td></tr><tr><td>활용 범위</td><td>온라인/모바일/QR/오프라인 간편결제</td><td>오프라인 단말기 기반</td></tr><tr><td>부가 서비스</td><td>환불, 매출 리포트, 간편결제 지원 등</td><td>제한적, 일부 유료</td></tr></tbody></table>
+<ul>
+<li>VAN은 결제 데이터를 카드사에 전달하는 통신망 역할을 하며, <strong>결제 승인만 처리</strong>하고 정산은 하지 않는다.</li>
+<li>PG는 VAN을 통해 승인 과정을 진행하되, <strong>정산은 PG가 직접 수행</strong>하여 수수료를 차감한 후 가맹점에 입금한다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="van만-사용시-단점">VAN만 사용시 단점<a href="https://kooku0.github.io/fintech/pg/#van%EB%A7%8C-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EB%8B%A8%EC%A0%90" class="hash-link" aria-label="VAN만 사용시 단점에 대한 직접 링크" title="VAN만 사용시 단점에 대한 직접 링크">​</a></h2>
+<ul>
+<li>카드사마다 정산 계좌를 등록하고, 입금일이 상이해 <strong>매출 확인 및 정산이 복잡</strong>하다.<!-- -->
+<ul>
+<li>예: 신한카드 D+2일, 삼성카드 D+3일</li>
+</ul>
+</li>
+<li>수수료 차감 내역이나 정확한 입금액 파악이 어려워 <strong>정산 누락 위험</strong>이 있다.</li>
+<li>카드 외 결제수단(간편결제, 무통장입금 등) 지원불가</li>
+<li><strong>개별 카드사 사이트에서 수동으로 확인</strong>해야 하며, 자동화된 리포트나 통합 정산이 제공되지 않는다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pg를-사용할-경우-차이">PG를 사용할 경우 차이<a href="https://kooku0.github.io/fintech/pg/#pg%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%EA%B2%BD%EC%9A%B0-%EC%B0%A8%EC%9D%B4" class="hash-link" aria-label="PG를 사용할 경우 차이에 대한 직접 링크" title="PG를 사용할 경우 차이에 대한 직접 링크">​</a></h2>
+<ul>
+<li>PG는 다양한 결제 수단을 한 곳에서 제공하며, <strong>정산을 자동으로 통합 처리</strong>해준다.</li>
+<li><strong>소규모 가맹점 입장에서는 정산·회계의 부담이 줄고</strong>, 판매에 집주할 수 있다.<!-- -->
+<ul>
+<li>모든 카드사들에 대한 정산을 일괄 적용한다. D+n or 월정산 등.</li>
+<li>정산계좌도 PG 한 곳에만 등록하고 관리할 수 있다.</li>
+<li>환불&amp;CS등을 각 카드사로 요청하는게 아닌 한 곳에서 처리할 수 있다.</li>
+</ul>
+</li>
+<li>PG가 하나의 가맹점 역할을 하므로, 고객의 영수증에는 가맹점명 대신 PG사 명칭이 표시된다.</li>
+<li>다만, <strong>PG사의 수수료가 존재하므로 카드사 직접 계약보다 비용이 높을 수 있음</strong>은 고려해야 한다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="결제시장-변화-및-pg사의-위상-변화">결제시장 변화 및 PG사의 위상 변화<a href="https://kooku0.github.io/fintech/pg/#%EA%B2%B0%EC%A0%9C%EC%8B%9C%EC%9E%A5-%EB%B3%80%ED%99%94-%EB%B0%8F-pg%EC%82%AC%EC%9D%98-%EC%9C%84%EC%83%81-%EB%B3%80%ED%99%94" class="hash-link" aria-label="결제시장 변화 및 PG사의 위상 변화에 대한 직접 링크" title="결제시장 변화 및 PG사의 위상 변화에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/pg-2-a0bd9af79796ff4b24ca81c6e286c26b.png" width="1218" height="302" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/pg-3-f7488146d4d5639739182bd0dc401651.png" width="1280" height="275" class="img_ev3q"></p>
+<ul>
+<li>과거에는 카드사와 VAN사가 주도하던 오프라인 중심 시장 구조였으나 <strong>모바일 결제, 간편결제의 성장</strong>으로 PG사의 영향력이 확대되고 있다.</li>
+<li>PG사가 거래를 중개하면 카드사 입장에서는 <strong>누가, 얼마나 썼는지는 알 수 있지만 ‘어디서’ 사용했는지는 알 수 없다.</strong></li>
+<li>이로 인해 PG사가 <strong>결제 플랫폼에서 ‘갑’으로 전환되는 현상</strong>이 발생 중이다.</li>
+<li>VAN사 중 <strong>PG사를 보유한 곳은 경쟁력 상승</strong>, <strong>PG 없는 중소 VAN사는 입지가 축소</strong>되는 추세다.</li>
+<li>카드사 역시 PG를 거친 거래에 대해 <strong>‘결제처 식별 기술’을 통해 보완</strong>하고 있다.</li>
+<li>PG사 경쟁 심화로 온라인뿐 아니라 <strong>오프라인 POS 시장에도 진출</strong>하고 있으나, 대표적으로 <strong>토스페이먼츠의 POS 보급 사례처럼 성과는 제한적</strong>인 상황이다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="수익구조">수익구조<a href="https://kooku0.github.io/fintech/pg/#%EC%88%98%EC%9D%B5%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="수익구조에 대한 직접 링크" title="수익구조에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-결제-수수료-가맹점-수수료">1) 결제 수수료 (가맹점 수수료)<a href="https://kooku0.github.io/fintech/pg/#1-%EA%B2%B0%EC%A0%9C-%EC%88%98%EC%88%98%EB%A3%8C-%EA%B0%80%EB%A7%B9%EC%A0%90-%EC%88%98%EC%88%98%EB%A3%8C" class="hash-link" aria-label="1) 결제 수수료 (가맹점 수수료)에 대한 직접 링크" title="1) 결제 수수료 (가맹점 수수료)에 대한 직접 링크">​</a></h3>
+<ul>
+<li><strong>PG사의 핵심 수익원</strong></li>
+<li>가맹점으로부터 거래 건당 수수료 또는 거래 금액의 일정 비율을 수취</li>
+<li>일반적으로 결제 금액의 2.5%~3.5% 수준</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-정산-지연에-따른-이자-수익-정산-float">2) 정산 지연에 따른 이자 수익 (정산 Float)<a href="https://kooku0.github.io/fintech/pg/#2-%EC%A0%95%EC%82%B0-%EC%A7%80%EC%97%B0%EC%97%90-%EB%94%B0%EB%A5%B8-%EC%9D%B4%EC%9E%90-%EC%88%98%EC%9D%B5-%EC%A0%95%EC%82%B0-float" class="hash-link" aria-label="2) 정산 지연에 따른 이자 수익 (정산 Float)에 대한 직접 링크" title="2) 정산 지연에 따른 이자 수익 (정산 Float)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>PG사는 카드사로부터 결제 대금을 받아 <strong>가맹점에 입금하기 전까지 일정 기간 자금을 보유한다.</strong></li>
+<li>이 기간 동안 <strong>보유한 정산금을 운용하거나 이자 수익을 취하는 구조</strong>입니다.</li>
+</ul>
+<blockquote>
+<p>특히 거래량이 큰 PG사일수록 이자 수익이 무시할 수 없는 수준</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-가입비-및-연관리비-선택적-수익">3) 가입비 및 연관리비 (선택적 수익)<a href="https://kooku0.github.io/fintech/pg/#3-%EA%B0%80%EC%9E%85%EB%B9%84-%EB%B0%8F-%EC%97%B0%EA%B4%80%EB%A6%AC%EB%B9%84-%EC%84%A0%ED%83%9D%EC%A0%81-%EC%88%98%EC%9D%B5" class="hash-link" aria-label="3) 가입비 및 연관리비 (선택적 수익)에 대한 직접 링크" title="3) 가입비 및 연관리비 (선택적 수익)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>일부 PG사는 초기 서비스 계약 시 <strong>가입비</strong>를 받고,</li>
+<li>연간 유지/보수 명목으로 <strong>연관리비</strong>를 부과하기도 합니다.</li>
+<li>최근에는 경쟁 심화로 인해 대부분의 PG사들이 무료 정책으로 전환했지만, <strong>특수 업종이나 맞춤 서비스의 경우 여전히 존재</strong>합니다.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/pg-4-c5e5cdb3f14f64da0583857964037239.png" width="739" height="586" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2024년-pg사-매출-현황">2024년 PG사 매출 현황<a href="https://kooku0.github.io/fintech/pg/#2024%EB%85%84-pg%EC%82%AC-%EB%A7%A4%EC%B6%9C-%ED%98%84%ED%99%A9" class="hash-link" aria-label="2024년 PG사 매출 현황에 대한 직접 링크" title="2024년 PG사 매출 현황에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>PG사</th><th>2024년 매출</th></tr></thead><tbody><tr><td>NHN KCP</td><td>1조 340억원</td></tr><tr><td>토스페이먼츠</td><td>8165억원</td></tr><tr><td>KICC</td><td>7550억원</td></tr><tr><td>KG이니시스</td><td>6764억원</td></tr><tr><td>NICE</td><td>6288억원</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="https://kooku0.github.io/fintech/pg/#reference" class="hash-link" aria-label="Reference에 대한 직접 링크" title="Reference에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://www.pay2pay.co.kr/board/view?bId=1&amp;wr_id=3212" target="_blank" rel="noopener noreferrer">https://www.pay2pay.co.kr/board/view?bId=1&amp;wr_id=3212</a></li>
+<li><a href="https://brunch.co.kr/@smj3667/11" target="_blank" rel="noopener noreferrer">https://brunch.co.kr/@smj3667/11</a></li>
+<li><a href="https://platum.kr/archives/209263" target="_blank" rel="noopener noreferrer">https://platum.kr/archives/209263</a></li>
+</ul>]]></content:encoded>
+            <category>PG</category>
+        </item>
         <item>
             <title><![CDATA[VAN 개념, 업무, 수익구조, 한계]]></title>
             <link>https://kooku0.github.io/fintech/van/</link>
