@@ -2,11 +2,200 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kooku0.github.io/fintech/</id>
     <title>Kooku's log Blog</title>
-    <updated>2025-07-01T00:00:00.000Z</updated>
+    <updated>2025-07-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kooku0.github.io/fintech/"/>
     <subtitle>Kooku's log Blog</subtitle>
     <icon>https://kooku0.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[서비스 기업이 전자금융업 라이선스를 취득할 때 별도 법인을 설립하는 이유]]></title>
+        <id>https://kooku0.github.io/fintech/ft-sep-corp/</id>
+        <link href="https://kooku0.github.io/fintech/ft-sep-corp/"/>
+        <updated>2025-07-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[전자금융업(PG 등) 라이선스를 취득하거나 핀테크 사업을 전개할 때, 많은 서비스 기업이 모회사와 별도 법인을 세우는 방식을 택한다]]></summary>
+        <content type="html"><![CDATA[<p>전자금융업(PG 등) 라이선스를 취득하거나 핀테크 사업을 전개할 때, 많은 서비스 기업이 <strong>모회사와 별도 법인</strong>을 세우는 방식을 택한다<br>
+<!-- -->(예: 네이버–네이버페이, 카카오–카카오페이 등).<br>
+<!-- -->그 배경을 단계별로 살펴보면 다음과 같다.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-실무적-등록-요건-충족이-용이하다">1. 실무적 등록 요건 충족이 용이하다<a href="https://kooku0.github.io/fintech/ft-sep-corp/#1-%EC%8B%A4%EB%AC%B4%EC%A0%81-%EB%93%B1%EB%A1%9D-%EC%9A%94%EA%B1%B4-%EC%B6%A9%EC%A1%B1%EC%9D%B4-%EC%9A%A9%EC%9D%B4%ED%95%98%EB%8B%A4" class="hash-link" aria-label="1. 실무적 등록 요건 충족이 용이하다에 대한 직접 링크" title="1. 실무적 등록 요건 충족이 용이하다에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>자본금·부채비율·IT 보안인력 수</strong> 등 전자지급결제대행업(PG) 등록 요건을 별도 법인에 집중해 충족할 수 있다.</li>
+<li><strong>망분리·물리적 시스템 구축</strong> 등 보안·인프라 규제를 분리 운영할 수 있어, 기존 모회사 인프라를 대대적으로 손보지 않아도 된다.</li>
+<li>전자금융업은 <strong>사업(서비스) 단위가 아니라 “회사” 단위</strong>로 인허가·감사를 받으므로, 별도 법인을 두면 모회사가 직접 감사 대상이 되는 것을 방지할 수 있다.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-규제-준수-및-라이선스-취득-과정이-명확효율적">2. 규제 준수 및 라이선스 취득 과정이 명확·효율적<a href="https://kooku0.github.io/fintech/ft-sep-corp/#2-%EA%B7%9C%EC%A0%9C-%EC%A4%80%EC%88%98-%EB%B0%8F-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-%EC%B7%A8%EB%93%9D-%EA%B3%BC%EC%A0%95%EC%9D%B4-%EB%AA%85%ED%99%95%ED%9A%A8%EC%9C%A8%EC%A0%81" class="hash-link" aria-label="2. 규제 준수 및 라이선스 취득 과정이 명확·효율적에 대한 직접 링크" title="2. 규제 준수 및 라이선스 취득 과정이 명확·효율적에 대한 직접 링크">​</a></h2>
+<ul>
+<li>전자금융업은 금융위원회·금융감독원 등 감독기관의 <strong>엄격한 규제</strong>를 받는다.</li>
+<li>독립 법인은 모회사와 분리된 <strong>재무 구조·운영 체계</strong>를 갖추기 때문에, 자본금 요건·내부통제·리스크 관리 체계 등을 **“단일 조직”**에서 통합 관리하기에 적합하다.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-리스크-분리-및-책임-명확화">3. 리스크 분리 및 책임 명확화<a href="https://kooku0.github.io/fintech/ft-sep-corp/#3-%EB%A6%AC%EC%8A%A4%ED%81%AC-%EB%B6%84%EB%A6%AC-%EB%B0%8F-%EC%B1%85%EC%9E%84-%EB%AA%85%ED%99%95%ED%99%94" class="hash-link" aria-label="3. 리스크 분리 및 책임 명확화에 대한 직접 링크" title="3. 리스크 분리 및 책임 명확화에 대한 직접 링크">​</a></h2>
+<ul>
+<li>핀테크 사업은 <strong>사이버 보안, 개인정보 보호, 자금세탁, 금융 사기</strong> 등 다양한 리스크를 동반한다.</li>
+<li>별도 법인을 두면 <strong>법적·재무적 리스크를 모회사로부터 분리</strong>할 수 있어, 문제 발생 시 모회사의 핵심 사업에 미치는 영향을 최소화한다.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-운영-효율성과-전문성-강화">4. 운영 효율성과 전문성 강화<a href="https://kooku0.github.io/fintech/ft-sep-corp/#4-%EC%9A%B4%EC%98%81-%ED%9A%A8%EC%9C%A8%EC%84%B1%EA%B3%BC-%EC%A0%84%EB%AC%B8%EC%84%B1-%EA%B0%95%ED%99%94" class="hash-link" aria-label="4. 운영 효율성과 전문성 강화에 대한 직접 링크" title="4. 운영 효율성과 전문성 강화에 대한 직접 링크">​</a></h2>
+<ul>
+<li>핀테크 사업은 <strong>기술 개발, 금융 규제 대응, 고객 서비스</strong> 등 고도의 전문성을 요구한다.</li>
+<li>별도 조직에 <strong>전문 인력</strong>을 집중 배치해 <strong>민첩한 의사결정</strong>과 시장 대응이 가능하다.</li>
+<li>모회사와 동일 기준으로 <strong>망분리</strong>를 적용하는 것은 현실적으로 불가능에 가깝기 때문에, 결국 <strong>규제 부담을 분산</strong>하기 위해 분리를 택하게 된다.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-세제-및-회계-투명성">5. 세제 및 회계 투명성<a href="https://kooku0.github.io/fintech/ft-sep-corp/#5-%EC%84%B8%EC%A0%9C-%EB%B0%8F-%ED%9A%8C%EA%B3%84-%ED%88%AC%EB%AA%85%EC%84%B1" class="hash-link" aria-label="5. 세제 및 회계 투명성에 대한 직접 링크" title="5. 세제 및 회계 투명성에 대한 직접 링크">​</a></h2>
+<ul>
+<li>독립 법인은 <strong>별도 재무제표</strong>를 작성하므로 회계·세무 처리가 투명해진다.</li>
+<li>금융당국 감사·공시 요구사항에 대응하기 용이하며,<br>
+<!-- -->모회사와의 <strong>자금 흐름을 명확히 분리</strong>해 이해충돌을 방지할 수 있다.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-현실적인-첫-번째-허들--망분리-등-필수-규제">⚡️ 현실적인 “첫 번째 허들” — 망분리 등 필수 규제<a href="https://kooku0.github.io/fintech/ft-sep-corp/#%EF%B8%8F-%ED%98%84%EC%8B%A4%EC%A0%81%EC%9D%B8-%EC%B2%AB-%EB%B2%88%EC%A7%B8-%ED%97%88%EB%93%A4--%EB%A7%9D%EB%B6%84%EB%A6%AC-%EB%93%B1-%ED%95%84%EC%88%98-%EA%B7%9C%EC%A0%9C" class="hash-link" aria-label="⚡️ 현실적인 “첫 번째 허들” — 망분리 등 필수 규제에 대한 직접 링크" title="⚡️ 현실적인 “첫 번째 허들” — 망분리 등 필수 규제에 대한 직접 링크">​</a></h2>
+<p>기업 입장에서 가장 즉각적인 부담은 <strong>망분리·보안 설비 구축</strong> 등 기술적 규제를 모회사 전체에 적용해야 하는 점이다.<br>
+<!-- -->대부분의 기업은 초기에는 한 법인으로 시작했다가, 규제 준수·운영 부담이 커지면서 결국 별도 법인으로 <strong>스핀오프</strong>하는 사례가 많다.</p>]]></content>
+        <category label="핀테크" term="핀테크"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[서비스 기업의 PG 도입 전략 - 라이선스 취득 이유와 연동 선택의 현실]]></title>
+        <id>https://kooku0.github.io/fintech/1pg2pg/</id>
+        <link href="https://kooku0.github.io/fintech/1pg2pg/"/>
+        <updated>2025-07-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1-1 PG사와 가맹계약을 맺는 주체가 되어 플랫폼 내 서비스·가맹점의 부담 완화]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-1-pg사와-가맹계약을-맺는-주체가-되어-플랫폼-내-서비스가맹점의-부담-완화">1-1 PG사와 가맹계약을 맺는 주체가 되어 플랫폼 내 서비스·가맹점의 부담 완화<a href="https://kooku0.github.io/fintech/1pg2pg/#1-1-pg%EC%82%AC%EC%99%80-%EA%B0%80%EB%A7%B9%EA%B3%84%EC%95%BD%EC%9D%84-%EB%A7%BA%EB%8A%94-%EC%A3%BC%EC%B2%B4%EA%B0%80-%EB%90%98%EC%96%B4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%82%B4-%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B0%80%EB%A7%B9%EC%A0%90%EC%9D%98-%EB%B6%80%EB%8B%B4-%EC%99%84%ED%99%94" class="hash-link" aria-label="1-1 PG사와 가맹계약을 맺는 주체가 되어 플랫폼 내 서비스·가맹점의 부담 완화에 대한 직접 링크" title="1-1 PG사와 가맹계약을 맺는 주체가 되어 플랫폼 내 서비스·가맹점의 부담 완화에 대한 직접 링크">​</a></h2>
+<p>인터넷 쇼핑몰 플랫폼에 입점한 영세 업자가 1차 PG사와 직접 가맹계약을 맺기 어려운 경우, 플랫폼이 대신 1차 PG사와 가맹계약을 체결하는 경우가 많다. 결제대행 자체는 1차 PG사에 맡기고, 플랫폼이 입점 업체를 대신하여 수수료 협상과 대금 정산 업무를 수행하는 방식이다.</p>
+<p>이러한 구조에서 인터넷 쇼핑몰, 오픈마켓 등의 플랫폼 기업은 **'2차 PG사'**로 불린다.</p>
+<p>2차 PG사는 「전자금융거래법」상 명시된 <strong>전자지급결제대행업</strong>을 수행하고 있지만, 카드사와 직접 결제 시스템(승인/매입)을 연동하거나 계약하지 않고, 1차 PG사와 계약을 체결하여 시스템을 빌려 사용하거나 <strong>재판매</strong>하는 방식으로 운영된다.</p>
+<p>예를 들어, 인터넷 쇼핑몰 플랫폼(2차 PG사)의 경우:
+1️⃣ 구매자와 판매자를 중개하고,
+2️⃣ 물품 판매 또는 서비스 제공에 대한 대금을
+3️⃣ 구매자 또는 1차 PG사로부터 플랫폼이 직접 수취한 후,
+4️⃣ 중개수수료를 공제한 금액을 판매자에게 지급하는 구조로 운영된다.</p>
+<p>이러한 대금 결제 프로세스는 <strong>전자지급결제대행업</strong>에 해당하므로, 해당 라이선스를 반드시 취득해야 한다.</p>
+<blockquote>
+<p><strong>전자지급결제대행업의 등록 의무가 있음에도 불구하고 등록하지 않은 경우</strong>, 「전자금융거래법」 제49조 제5항 제5호에 따라 <strong>3년 이하의 징역 또는 2천만 원 이하의 벌금</strong>에 처해질 수 있다.</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-2-특정-플랫폼-기업에-특화된-정산연동등-새로운-기능을-개발할-때">1-2 특정 플랫폼 기업에 특화된 정산연동등 새로운 기능을 개발할 때<a href="https://kooku0.github.io/fintech/1pg2pg/#1-2-%ED%8A%B9%EC%A0%95-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B8%B0%EC%97%85%EC%97%90-%ED%8A%B9%ED%99%94%EB%90%9C-%EC%A0%95%EC%82%B0%EC%97%B0%EB%8F%99%EB%93%B1-%EC%83%88%EB%A1%9C%EC%9A%B4-%EA%B8%B0%EB%8A%A5%EC%9D%84-%EA%B0%9C%EB%B0%9C%ED%95%A0-%EB%95%8C" class="hash-link" aria-label="1-2 특정 플랫폼 기업에 특화된 정산연동등 새로운 기능을 개발할 때에 대한 직접 링크" title="1-2 특정 플랫폼 기업에 특화된 정산연동등 새로운 기능을 개발할 때에 대한 직접 링크">​</a></h2>
+<p>로열티, 쿠폰, 포인트 정산, 다단계 수수료 구조, 판매자 등급별 정산 주기 등 <strong>플랫폼에 특화된 기능</strong>이 요구될 경우, 자체 PG 시스템을 보유하고 있는 것이 훨씬 유연하다.</p>
+<p>라이선스를 취득하면, 1차 PG사의 범용 인터페이스에 의존하지 않고 <strong>플랫폼 비즈니스 모델에 최적화된 결제 및 정산 로직</strong>을 자유롭게 개발할 수 있다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-3-자체-간편결제-서비스-제공">1-3. 자체 간편결제 서비스 제공<a href="https://kooku0.github.io/fintech/1pg2pg/#1-3-%EC%9E%90%EC%B2%B4-%EA%B0%84%ED%8E%B8%EA%B2%B0%EC%A0%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%A0%9C%EA%B3%B5" class="hash-link" aria-label="1-3. 자체 간편결제 서비스 제공에 대한 직접 링크" title="1-3. 자체 간편결제 서비스 제공에 대한 직접 링크">​</a></h2>
+<p><strong>간편결제 서비스</strong>란 계좌정보나 카드정보를 서비스에 미리 등록해 두고,<br>
+<!-- -->비밀번호 입력이나 지문, 얼굴 등 <strong>생체 정보 인증</strong>만으로 간편하게 결제할 수 있는 시스템이다.</p>
+<p>이를 통해 플랫폼 사업자는:</p>
+<ul>
+<li>고객에게 <strong>편리한 결제 경험</strong>을 제공하고</li>
+<li><strong>결제 전환율을 높이며</strong></li>
+<li><strong>고객 결제 정보와 결제 내역을 보관·활용</strong>할 수 있다</li>
+</ul>
+<p>「전자금융거래법」상 간편결제는 **전자지급결제대행업(PG)**에 해당된다.</p>
+<ul>
+<li>또한, 당근머니, 네이버머니, 카카오페이머니, 쿠팡머니, 토스머니 등<br>
+<strong>충전식 페이머니</strong> 형태의 서비스는 **‘선불전자지급수단업’**이라는 별도 라이선스가 필요하다.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="간편결제를-사용하면-어떤-점이-좋은가">간편결제를 사용하면 어떤 점이 좋은가?<a href="https://kooku0.github.io/fintech/1pg2pg/#%EA%B0%84%ED%8E%B8%EA%B2%B0%EC%A0%9C%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%A9%B4-%EC%96%B4%EB%96%A4-%EC%A0%90%EC%9D%B4-%EC%A2%8B%EC%9D%80%EA%B0%80" class="hash-link" aria-label="간편결제를 사용하면 어떤 점이 좋은가?에 대한 직접 링크" title="간편결제를 사용하면 어떤 점이 좋은가?에 대한 직접 링크">​</a></h3>
+<ol>
+<li>
+<p><strong>고객의 결제 전환율을 높일 수 있다.</strong></p>
+<ul>
+<li>로그인만 하면 빠르게 결제 완료가 가능하다.<br>
+<!-- -->카드사 앱 등 외부 이동을 최소화해 <strong>매끄러운 결제 경험</strong>을 제공하며, 이탈 위험을 줄일 수 있다.</li>
+</ul>
+</li>
+<li>
+<p><strong>기존 고객의 재구매율을 높일 수 있다.</strong></p>
+<ul>
+<li>결제수단이 미리 등록되어 있어 <strong>편리한 경험</strong>이 반복되면 재구매 가능성이 증가한다.</li>
+</ul>
+</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>요약하면, 서비스 기업은 <strong>자체 PG 시스템</strong>을 통해 카드·계좌 정보를 저장하고<br>
+<!-- -->(+선불전자지급수단업 자격이 있다면 페이머니까지 운영)<br>
+<strong>간편한 결제 환경</strong>을 구축하기 위해 PG 라이선스를 취득하게 된다.</p><p>만약 1차 PG사에서 제공하는 간편결제 시스템을 그대로 사용하게 되면,<br>
+<strong>해당 PG사에 저장된 고객 결제 정보와 강하게 커플링</strong>되어 다른 PG사로의 이전이 매우 어렵다.</p><p>PG를 변경할 경우 기존 정보는 사용이 불가능해지고,<br>
+<strong>PG 라이선스가 없다면 관련 정보 저장조차 불가능하다.</strong></p><p>즉, <strong>특정 PG사에 종속되지 않고 자체 간편결제를 안정적으로 제공하기 위해 PG 라이선스는 필수적이다.</strong></p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-4-수수료-절감">1-4. 수수료 절감<a href="https://kooku0.github.io/fintech/1pg2pg/#1-4-%EC%88%98%EC%88%98%EB%A3%8C-%EC%A0%88%EA%B0%90" class="hash-link" aria-label="1-4. 수수료 절감에 대한 직접 링크" title="1-4. 수수료 절감에 대한 직접 링크">​</a></h2>
+<p>PG사의 수수료는 일반적으로 <strong>약 2.4% 수준</strong>으로,<br>
+<!-- -->결제금액 규모가 클수록 <strong>0.n% 차이만으로도 상당한 비용 차이</strong>가 발생한다.</p>
+<p>이러한 수수료 부담을 줄이기 위해 <strong>2차 PG 라이선스를 취득</strong>하기도 하며,<br>
+<!-- -->향후 <strong>1차 PG로 전환될 가능성까지 고려해 기반을 마련</strong>하려는 목적도 있다.</p>
+<p>→ <strong>1차 PG가 되면 자체적으로 수수료율 조정이 가능</strong>하므로,<br>
+<!-- -->중장기적인 관점에서 수수료 절감을 기대할 수 있다.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>정리</div><div class="admonitionContent_BuS1"><p>서비스·플랫폼 기업이 PG 라이선스를 취득하는 이유는 ▲입점 가맹점의 결제·정산 부담을 줄여 주고 ▲플랫폼 특화 기능을 민첩하게 개발하며 ▲자체 간편결제를 통해 고객 경험과 데이터 주도권을 확보하기 위함이다. 이를 수행하지 않을 경우 법적 제재 위험이 있으므로, 전자지급결제대행업 등록은 선택이 아닌 필수다.</p></div></div>
+<h1>2. 자체 PG 구축보다 1차 PG 연동이 유리한 이유</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-1-다양한-결제수단-도입의-효율성">2-1 다양한 결제수단 도입의 효율성<a href="https://kooku0.github.io/fintech/1pg2pg/#2-1-%EB%8B%A4%EC%96%91%ED%95%9C-%EA%B2%B0%EC%A0%9C%EC%88%98%EB%8B%A8-%EB%8F%84%EC%9E%85%EC%9D%98-%ED%9A%A8%EC%9C%A8%EC%84%B1" class="hash-link" aria-label="2-1 다양한 결제수단 도입의 효율성에 대한 직접 링크" title="2-1 다양한 결제수단 도입의 효율성에 대한 직접 링크">​</a></h2>
+<p>대형 1차 PG사들은 오랜 기간 PG 사업을 해오며 다양한 결제수단을 이미 보유하고 있다. 신용카드 결제는 물론, 가상계좌, 휴대폰 결제, 계좌이체, 간편결제 등 폭넓은 옵션을 제공한다.</p>
+<p>서비스/플랫폼 기업이 자체적으로 PG를 구축하여 이 모든 결제수단을 구현하려면 상당한 리소스가 소요된다. 반면, 1차 PG사와 연동하면 기능 개발 없이 해당 기능들을 그대로 사용할 수 있어, 개발 부담 없이 빠른 결제 시스템 구축이 가능하다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-2-수수료-구조에서의-경쟁력-확보">2-2 수수료 구조에서의 경쟁력 확보<a href="https://kooku0.github.io/fintech/1pg2pg/#2-2-%EC%88%98%EC%88%98%EB%A3%8C-%EA%B5%AC%EC%A1%B0%EC%97%90%EC%84%9C%EC%9D%98-%EA%B2%BD%EC%9F%81%EB%A0%A5-%ED%99%95%EB%B3%B4" class="hash-link" aria-label="2-2 수수료 구조에서의 경쟁력 확보에 대한 직접 링크" title="2-2 수수료 구조에서의 경쟁력 확보에 대한 직접 링크">​</a></h2>
+<p>PG사는 여러 하위 가맹점의 거래를 집계하여 카드사와 수수료 협상을 진행한다. 카드사 입장에서는 PG사를 하나의 대형 가맹점으로 보기 때문에, 거래 규모가 클수록 유리한 조건을 이끌어내기 쉽다.</p>
+<p>신규 서비스 기업이 직접 PG 역할을 하게 될 경우, 거래 금액이 상대적으로 적기 때문에 카드사와 유리한 수수료 조건을 협상하기 어렵고, 전체 수수료 구조가 비효율적이 될 수 있다.</p>
+<p>2차 PG의 입장에서는 복수의 1차 PG사와 연동이 가능하므로, 결제수단별로 더 유리한 수수료를 제시하는 PG사를 선택해 트래픽을 분산할 수 있다. 또한, 여러 PG사 간 경쟁을 유도해 협상력을 높이는 전략도 가능하다.
+예: “A사는 2.n% 수수료를 제안했는데, B사가 더 낮은 수수료를 제시하면 B사로 전환하겠다”와 같은 방식.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-3-개발-리소스-절감-및-카드사-계약-간소화">2-3 개발 리소스 절감 및 카드사 계약 간소화<a href="https://kooku0.github.io/fintech/1pg2pg/#2-3-%EA%B0%9C%EB%B0%9C-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EC%A0%88%EA%B0%90-%EB%B0%8F-%EC%B9%B4%EB%93%9C%EC%82%AC-%EA%B3%84%EC%95%BD-%EA%B0%84%EC%86%8C%ED%99%94" class="hash-link" aria-label="2-3 개발 리소스 절감 및 카드사 계약 간소화에 대한 직접 링크" title="2-3 개발 리소스 절감 및 카드사 계약 간소화에 대한 직접 링크">​</a></h2>
+<p>1차 PG사는 이미 여러 카드사와 직접 계약을 맺고 있으며, 카드사별 연동 개발을 완료한 상태다. 이에 따라 서비스 기업이 2차 PG로서 1차 PG와 연동하면, 각 카드사와 별도로 계약하거나 결제 시스템을 개별 구축할 필요가 없다.</p>
+<p>또한, 카드사마다 서로 다른 응답 코드나 오류 처리를 PG사가 일괄적으로 표준화(wrapping)해서 제공하므로, 개발 복잡도가 현저히 낮아지고 유지보수 또한 간편해진다.</p>
+<p>예를 들어, A카드사에서는 카드 해지 오류가 CARD001, B카드사에서는 CHI001로 다를 경우, PG사가 이를 E001_CANCELED 등으로 표준화해 내려주기 때문에 프론트/백엔드 개발자가 일관된 방식으로 처리할 수 있다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="https://kooku0.github.io/fintech/1pg2pg/#reference" class="hash-link" aria-label="Reference에 대한 직접 링크" title="Reference에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://platum.kr/archives/209263" target="_blank" rel="noopener noreferrer">https://platum.kr/archives/209263</a></li>
+<li><a href="https://www.pay2pay.co.kr/board/view?bId=1&amp;wr_id=3670" target="_blank" rel="noopener noreferrer">https://www.pay2pay.co.kr/board/view?bId=1&amp;wr_id=3670</a></li>
+<li><a href="https://docs.tosspayments.com/resources/glossary/easypay" target="_blank" rel="noopener noreferrer">https://docs.tosspayments.com/resources/glossary/easypay</a></li>
+</ul>]]></content>
+        <category label="PG" term="PG"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[신용카드 결제 시스템 (3당사자, 매입사, 발생사)]]></title>
+        <id>https://kooku0.github.io/fintech/creditcard-system/</id>
+        <link href="https://kooku0.github.io/fintech/creditcard-system/"/>
+        <updated>2025-07-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[신용카드의 정의]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="신용카드의-정의">신용카드의 정의<a href="https://kooku0.github.io/fintech/creditcard-system/#%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C%EC%9D%98-%EC%A0%95%EC%9D%98" class="hash-link" aria-label="신용카드의 정의에 대한 직접 링크" title="신용카드의 정의에 대한 직접 링크">​</a></h2>
+<p><strong>여신전문금융업법</strong>에서는 신용카드를 다음과 같이 정의한다.</p>
+<u>“신용카드란 이를 제시함으로써 반복하여 신용카드 가맹점에서 결제할 수 있는 증표로 신용카드업자가 발행한 것을 말한다. 이때 금전채무의 상환, 관련 법률에서 정하는 금융투자 상품, 사행성 게임물의 이용대가 및 이용에 따른 금전의 지급, 기타 사행행위 등은 결제 대상에서 제외된다.”</u>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3당사자-4당사자">3당사자, 4당사자<a href="https://kooku0.github.io/fintech/creditcard-system/#3%EB%8B%B9%EC%82%AC%EC%9E%90-4%EB%8B%B9%EC%82%AC%EC%9E%90" class="hash-link" aria-label="3당사자, 4당사자에 대한 직접 링크" title="3당사자, 4당사자에 대한 직접 링크">​</a></h2>
+<p>신용카드 결제시스템 구조는 3당사자 모델, 4당사자 모델로 나눌 수 있다.
+우리나라는 3당사자 모델로 되어 있으나 미국의 경우 3당사자와 4당사자 모델이 혼용되어 있는 구조로 되어 있다.
+여기서는 3당사자 모델만 소개한다.</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/creditcard-system-1-b3a415b4e86460266882f6f28e07f5a3.png" width="800" height="326" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3당사자-구조">3당사자 구조<a href="https://kooku0.github.io/fintech/creditcard-system/#3%EB%8B%B9%EC%82%AC%EC%9E%90-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="3당사자 구조에 대한 직접 링크" title="3당사자 구조에 대한 직접 링크">​</a></h3>
+<p>3당사자는 회원, 카드사, 가맹점으로 구성된다.</p>
+<p>카드사는 고객에게 카드를 발급하며 카드를 발급받은 고객을 회원(CardHolder)라고 한다. 그리고 회원이 카드를 결제할 수 있도록 가맹계약을 맺어야 한다. 회원이 발급받은 카드는 카드사가 가맹 계약을 맺은 가맹점에서만 카드를 사용할 수 있다.</p>
+<p>오프라인 매장이 카드가맹점이 되려면 9개 카드사와 모두 계약을 해야하는데 번거롭기 때문에 van사와 계약을 할 때 pos기나 카드결제 단말기(cat)을 설치하게 되면 van사 직원이 가게 사장님으로 부터 서류를 받아 대신해서 계약을 진행하는 경우가 많다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="발급사issuer와-매입사acquirer">발급사(issuer)와 매입사(acquirer)<a href="https://kooku0.github.io/fintech/creditcard-system/#%EB%B0%9C%EA%B8%89%EC%82%ACissuer%EC%99%80-%EB%A7%A4%EC%9E%85%EC%82%ACacquirer" class="hash-link" aria-label="발급사(issuer)와 매입사(acquirer)에 대한 직접 링크" title="발급사(issuer)와 매입사(acquirer)에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/van-3-a09a008af7c3d8c616052f4ddd19c5e0.png" width="780" height="218" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="발급사-issuer">발급사 (issuer)<a href="https://kooku0.github.io/fintech/creditcard-system/#%EB%B0%9C%EA%B8%89%EC%82%AC-issuer" class="hash-link" aria-label="발급사 (issuer)에 대한 직접 링크" title="발급사 (issuer)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>발급사는 신용카드를 발급하는 은행이나 금융기관을 가리킨다.</li>
+<li>사용자는 신용카드를 제공하고, 해당 카드를 사용하여 지출할 수 있는 권한을 부여한다.</li>
+<li>고객에게 카드발급, 카드 활성화, 카드 해지, 결제 승인 등의 서비스를 제공한다.</li>
+<li>카드 사용으로 발생하는 결제금액에 대해 고객에게 청구서를 발송하고, 고객이 지불한 금액을 수수료와 함께 매입사로 송금한다.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="매입사-acquirer">매입사 (acquirer)<a href="https://kooku0.github.io/fintech/creditcard-system/#%EB%A7%A4%EC%9E%85%EC%82%AC-acquirer" class="hash-link" aria-label="매입사 (acquirer)에 대한 직접 링크" title="매입사 (acquirer)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>매입사는 상인이나 가맹점에게 카드결제를 허용할 수 있도록 하는 금융기관을 말한다.</li>
+<li>card-holder: 상점에서 소비자가 신용카드로 결제를 할 때 그 금액을 상점에 미리 지불하고 나중에 소비자로부터 그 금액을 회수한다.</li>
+<li>merchant: 가맹점으로 부터 매출 전표를 매입하고 카드 가맹점에 대금을 입금해 주는 가맹점 대상 업무를 한다.</li>
+<li>국내 매입사는 9개 사 뿐이다.<!-- -->
+<ul>
+<li>현대, 농협, 비씨, 삼성, 롯데, 신한, 국민, 하나, 우리</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="발급사와-매입사가-같거나-다른-이유">발급사와 매입사가 같거나 다른 이유<a href="https://kooku0.github.io/fintech/creditcard-system/#%EB%B0%9C%EA%B8%89%EC%82%AC%EC%99%80-%EB%A7%A4%EC%9E%85%EC%82%AC%EA%B0%80-%EA%B0%99%EA%B1%B0%EB%82%98-%EB%8B%A4%EB%A5%B8-%EC%9D%B4%EC%9C%A0" class="hash-link" aria-label="발급사와 매입사가 같거나 다른 이유에 대한 직접 링크" title="발급사와 매입사가 같거나 다른 이유에 대한 직접 링크">​</a></h3>
+<p>대부분 카드사들이 매입사와 발급사의 업무를 병행하고 있다. 매입사는 9개사 뿐 이지만 발급사는 다양하다.
+특히 체크카드는 각 은행이 발급사 역할을 할 수 있어서 은행별 체크카드가 있다.</p>
+<p>국내의 대규모 카드사의 경우에는 매입사와 발급사가 같다.
+하지만 제주은행이나 NH농협카드와 같은 소규모 카드사나 은행은 다른 카드사가 매입을 대신하며 가맹점을 공유하기도 한다.
+미국은 발급사와 매입사 산업이 철저히 분리되어 있지만 우리나라는 결제망, 인프라 구성 및 운용이 많이 들어서 대형 카드사에 매입을 위임하는 경우가 많다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="https://kooku0.github.io/fintech/creditcard-system/#reference" class="hash-link" aria-label="Reference에 대한 직접 링크" title="Reference에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://yozm.wishket.com/magazine/detail/1115/" target="_blank" rel="noopener noreferrer">https://yozm.wishket.com/magazine/detail/1115/</a></li>
+<li><a href="https://www.pay2pay.co.kr/board/view?bId=1&amp;wr_id=3212" target="_blank" rel="noopener noreferrer">https://www.pay2pay.co.kr/board/view?bId=1&amp;wr_id=3212</a></li>
+<li><a href="https://anodos.tistory.com/entry/%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%8B%9C%EC%9E%A5%EC%97%90%EC%84%9C%EC%9D%98-%EB%B0%9C%EA%B8%89%EC%82%ACissuer%EC%99%80-%EB%A7%A4%EC%9E%85%EC%82%ACacquirer" target="_blank" rel="noopener noreferrer">https://anodos.tistory.com/entry/신용카드-시장에서의-발급사issuer와-매입사acquirer</a></li>
+<li><a href="https://dabinlee.tistory.com/20" target="_blank" rel="noopener noreferrer">https://dabinlee.tistory.com/20</a></li>
+<li><a href="https://yuweol.tistory.com/528" target="_blank" rel="noopener noreferrer">https://yuweol.tistory.com/528</a></li>
+<li><a href="https://docs.tosspayments.com/resources/glossary/card" target="_blank" rel="noopener noreferrer">https://docs.tosspayments.com/resources/glossary/card</a></li>
+</ul>]]></content>
+        <category label="신용카드" term="신용카드"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PG 개념정리]]></title>
         <id>https://kooku0.github.io/fintech/pg/</id>
@@ -222,44 +411,83 @@
         <category label="VAN" term="VAN"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[결제에 대한 기본지식 - 지급결제]]></title>
+        <title type="html"><![CDATA[지급결제 시스템의 이해 - 자금결제시스템]]></title>
         <id>https://kooku0.github.io/fintech/payment-settlement/</id>
         <link href="https://kooku0.github.io/fintech/payment-settlement/"/>
         <updated>2025-06-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[지급결제는 크게 자금결제시스템, 증권결제시스템, 외환결제시스템으로 구분할 수 있는데 여기서는 자금결제시스템만 소개한다.]]></summary>
-        <content type="html"><![CDATA[<p>지급결제는 크게 자금결제시스템, 증권결제시스템, 외환결제시스템으로 구분할 수 있는데 여기서는 자금결제시스템만 소개한다.</p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>정보</div><div class="admonitionContent_BuS1"><p>우리가 일상적으로 사용하는 ‘결제(Payment)’와 학술적 의미의 ‘결제(Settlement)’는 엄연히 다른 개념이다. 우리는 물건을 사고 대금을 지불할 때 ‘결제(Payment)’라는 표현을 쓰지만 이 행위를 학술적으로 표현하면 ‘지급’ 또는 ‘지불’이라고 한다.</p></div></div>
-<p>경제주체들이 경제활동에 따른 채권,채무관계를 해소하는 행위를 지급결제라고 한다. 식사후 카드로 대금을 지불하는 것, 부모님이 인터넷뱅킹으로 용돈을 송금하는 것, 기업이 어음등으로 원자재 구입대금을 지급하는 것, 계좌이체로 종업원에게 급여를 지급하는 것 모두 지급결제의 예라고 할 수 있다.</p>
-<p>법적으로 간단히 말하면 결제는 <strong>채무를 이행하는 방법</strong>이다. 대개의 상황에서 채무를 이행하려면 돈이 필요하다. 지폐는 빚을 청산하기 위해 일반적으로 통용되는 방법이다.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="지급-청산-결제">지급, 청산 결제<a href="https://kooku0.github.io/fintech/payment-settlement/#%EC%A7%80%EA%B8%89-%EC%B2%AD%EC%82%B0-%EA%B2%B0%EC%A0%9C" class="hash-link" aria-label="지급, 청산 결제에 대한 직접 링크" title="지급, 청산 결제에 대한 직접 링크">​</a></h2>
-<p>지급결제의 3단계는 지급, 청산, 결제 이다.</p>
-<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/settlement-payment-3-steps-c1c8e26e40159f869b18534db5636665.png" width="705" height="402" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="지급payment">지급(payment)<a href="https://kooku0.github.io/fintech/payment-settlement/#%EC%A7%80%EA%B8%89payment" class="hash-link" aria-label="지급(payment)에 대한 직접 링크" title="지급(payment)에 대한 직접 링크">​</a></h3>
-<p>지급이란 소비자, 구매자 및 채무자 등이 재화 및 서비스를 수취하고 이에 대한 대가로 소비자 등이 현금 또는 카드등을 통해 화폐적 가치를 이전하는 행위이다.</p>
-<p>우리가 사용하는 지급결제수단은 크게 현금과 비현금이 있다. 현금은 국가가 보장한 지급결제수단이기에 지급과 동시에 결제가 완료되지만, 비현금 지급결제수단은 금융기관간 자금이체 과정을 통해 현금으로 전환되며 이를 위해 "지급 -&gt; 청산 -&gt; 결제"의 세 단계가 필요하다. (비현금 결제수단에는 어음, 수표, 카드(신용/체크), 계좌이체 등이 있다.)</p>
-<p>비현금지급수단으로 지급이 이루어지게 되면 지급인이 자신의 지급채무를 해소하기 위하여 수취인 앞으로 자금이체를 의뢰하는 지급지시(Payment order)를 송부하고, 수취인이 이를 수신하게 되는데, 이는 지급결제의 시작 단계이다.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="청산clearing">청산(clearing)<a href="https://kooku0.github.io/fintech/payment-settlement/#%EC%B2%AD%EC%82%B0clearing" class="hash-link" aria-label="청산(clearing)에 대한 직접 링크" title="청산(clearing)에 대한 직접 링크">​</a></h3>
-<p>청산은 현금이외의 지급수단으로 지급이 이루어졌을때 금융기관들이 서로 주고 받을 금액을 계산하는 것이다. 청산기관(clearing house)이 거래당사자 간에 개입해 결제를 위해 송부된 계좌이체, 어음, 수표 등의 지급수단을 확인한 후 최종적으로 수취하거나 지급해야할 차액을 산출하게 된다. (이연차액결제(DNS) 방식)</p>
-<p>자금결제시스템의 경우 <strong>금융결제원</strong>이 청산을 취합하여 확정한다.</p>
-<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/clearing-23abac3ed82b3627300fa1316523b221.png" width="1024" height="1100" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="결제settlement">결제(settlement)<a href="https://kooku0.github.io/fintech/payment-settlement/#%EA%B2%B0%EC%A0%9Csettlement" class="hash-link" aria-label="결제(settlement)에 대한 직접 링크" title="결제(settlement)에 대한 직접 링크">​</a></h3>
-<p>결제는 청산과정을 통해 계산된 금액을 지급하여 완결시키는 과정으로 각 금융기관이 중앙은행에 개설한 당좌예금계좌 간 자금이체 등을 통하여 지급은행에서 수취은행으로 실제로 자금이 이동되어 최종적으로 채권&amp;채무관계를 종결하게 된다.</p>
-<p>자금결제시스템의 경우 <strong>한국은행</strong>이 결제를 담당하며, 매일 11시에 이루어진다.</p>
-<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/settlement-1-8bdcb557adc9f39d5f5ff23490a254aa.png" width="1024" height="783" class="img_ev3q">
-<img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/settlement-2-929401ca757eac6f41d5387d8c27fb55.png" width="1064" height="587" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="결제settlement-두-방식">결제(settlement) 두 방식<a href="https://kooku0.github.io/fintech/payment-settlement/#%EA%B2%B0%EC%A0%9Csettlement-%EB%91%90-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="결제(settlement) 두 방식에 대한 직접 링크" title="결제(settlement) 두 방식에 대한 직접 링크">​</a></h3>
-<p>결제는 두가지 방식이 있다.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-실시간총액결제-방식-rtgs-real-time-gross-settlement">🔸 실시간총액결제 방식 (RTGS: Real Time Gross Settlement)<a href="https://kooku0.github.io/fintech/payment-settlement/#-%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%B4%9D%EC%95%A1%EA%B2%B0%EC%A0%9C-%EB%B0%A9%EC%8B%9D-rtgs-real-time-gross-settlement" class="hash-link" aria-label="🔸 실시간총액결제 방식 (RTGS: Real Time Gross Settlement)에 대한 직접 링크" title="🔸 실시간총액결제 방식 (RTGS: Real Time Gross Settlement)에 대한 직접 링크">​</a></h4>
-<p>실시간총액결제 방식은 결제 금액이 커 결제시점 관리가 중요한 거액결제 시스템에서 주로 사용한다. 금융기관등이 한국은행에 지급 요청할 경우 즉시 건별로 결제가 이루어져 신용리스크가 없는 장점이 있다. 그러나 건별로 요청 금액만큼의 자금이 필요해 결제에 필요한 유동성이 과다 요구되는 단점이 있다.</p>
+        <summary type="html"><![CDATA[지급결제는 자금결제시스템·증권결제시스템·외환결제시스템으로 구분할 수 있지만, 여기서는 자금결제시스템만 다룬다.]]></summary>
+        <content type="html"><![CDATA[<p>지급결제는 <strong>자금결제시스템·증권결제시스템·외환결제시스템</strong>으로 구분할 수 있지만, 여기서는 <strong>자금결제시스템</strong>만 다룬다.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>정보</div><div class="admonitionContent_BuS1"><p>우리가 일상적으로 사용하는 ‘결제(Payment)’와 학술적 의미의 ‘결제(Settlement)’는 엄연히 다른 개념이다.<br>
+<!-- -->일반적으로는 물건을 사고 대금을 지불할 때 ‘결제(Payment)’라고 표현하지만, 학술적으로는 이를 ‘지급’ 또는 ‘지불’이라 한다.</p></div></div>
+<p>경제주체들이 경제활동에서 발생한 <strong>채권·채무 관계를 해소하는 행위</strong>가 바로 지급결제다.<br>
+<!-- -->예를 들어</p>
 <ul>
-<li>지급과 결제 사이의 시간이 길수록 금융 리스크가 커진다. 실시간 총액결제방식은 이 시간을 최소한으로 하여 리스크를 줄인다.</li>
+<li>식사 후 카드로 대금을 지불하는 것</li>
+<li>부모님이 인터넷뱅킹으로 용돈을 송금하는 것</li>
+<li>기업이 어음으로 원자재 대금을 지급하는 것</li>
+<li>계좌이체로 종업원에게 급여를 지급하는 것</li>
 </ul>
-<p>[거액결제시스템(large-value payment system)]에서 사용</p>
+<p>모두 지급결제의 사례다.</p>
+<p>법적으로 보면 결제는 <strong>채무를 이행하는 수단</strong>이다. 대부분의 경우 채무 이행에는 돈이 필요하며, 지폐는 빚을 청산하기 위해 일반적으로 통용되는 방법이다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-지급청산결제-3단계">2. 지급·청산·결제 3단계<a href="https://kooku0.github.io/fintech/payment-settlement/#2-%EC%A7%80%EA%B8%89%EC%B2%AD%EC%82%B0%EA%B2%B0%EC%A0%9C-3%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="2. 지급·청산·결제 3단계에 대한 직접 링크" title="2. 지급·청산·결제 3단계에 대한 직접 링크">​</a></h2>
+<p>지급결제 과정은 <strong>지급 → 청산 → 결제</strong>의 세 단계로 이루어진다.</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/settlement-payment-3-steps-c1c8e26e40159f869b18534db5636665.png" width="705" height="402" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-1-지급-payment">2-1. 지급 (payment)<a href="https://kooku0.github.io/fintech/payment-settlement/#2-1-%EC%A7%80%EA%B8%89-payment" class="hash-link" aria-label="2-1. 지급 (payment)에 대한 직접 링크" title="2-1. 지급 (payment)에 대한 직접 링크">​</a></h3>
+<p>소비자·구매자·채무자가 재화나 서비스를 받고 <strong>현금 또는 카드를 이용해 화폐적 가치를 이전</strong>하는 행위다.</p>
+<ul>
+<li><strong>현금</strong>은 국가가 보장한 지급수단이므로 지급과 동시에 결제가 완료된다.</li>
+<li><strong>비현금</strong> 지급수단(어음, 수표, 카드, 계좌이체 등)은 금융기관 간 자금이체를 거쳐 현금으로 전환되므로 <strong>지급 → 청산 → 결제</strong> 3단계를 거친다.</li>
+</ul>
+<p>비현금 지급수단으로 지급이 이루어지면, 지급인은 <strong>지급지시(Payment order)</strong> 를 통해 수취인에게 자금이체를 의뢰하고 수취인이 이를 수신하면서 지급결제가 시작된다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-2-청산-clearing">2-2. 청산 (clearing)<a href="https://kooku0.github.io/fintech/payment-settlement/#2-2-%EC%B2%AD%EC%82%B0-clearing" class="hash-link" aria-label="2-2. 청산 (clearing)에 대한 직접 링크" title="2-2. 청산 (clearing)에 대한 직접 링크">​</a></h3>
+<p>현금이 아닌 지급수단으로 거래가 이뤄질 때, 금융기관들이 <strong>상호 주고받을 금액을 계산</strong>하는 과정이다.<br>
+<strong>청산기관(clearing house)</strong> 은 계좌이체·어음·수표 등을 확인한 뒤 최종 <strong>수취·지급 차액</strong>을 산출한다(이연차액결제, DNS 방식).</p>
+<p>자금결제시스템에서는 <strong>금융결제원</strong>이 청산을 취합·확정한다.</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/clearing-23abac3ed82b3627300fa1316523b221.png" width="1024" height="1100" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-3-결제-settlement">2-3. 결제 (settlement)<a href="https://kooku0.github.io/fintech/payment-settlement/#2-3-%EA%B2%B0%EC%A0%9C-settlement" class="hash-link" aria-label="2-3. 결제 (settlement)에 대한 직접 링크" title="2-3. 결제 (settlement)에 대한 직접 링크">​</a></h3>
+<p>청산으로 확정된 금액을 <strong>실제 자금이체로 완결</strong>하는 단계다.<br>
+<!-- -->각 금융기관이 중앙은행에 개설한 <strong>당좌예금계좌</strong> 간 자금이체를 통해 지급은행에서 수취은행으로 자금이 이동하면서 최종적으로 채권·채무가 소멸한다.</p>
+<p>자금결제시스템에서는 <strong>한국은행</strong>이 결제를 담당하며, 결제는 <strong>매일 11시</strong>에 이뤄진다.</p>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/settlement-1-8bdcb557adc9f39d5f5ff23490a254aa.png" width="1024" height="783" class="img_ev3q"><br>
+<img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/settlement-2-929401ca757eac6f41d5387d8c27fb55.png" width="1064" height="587" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-4-결제의-두-가지-방식">2-4. 결제의 두 가지 방식<a href="https://kooku0.github.io/fintech/payment-settlement/#2-4-%EA%B2%B0%EC%A0%9C%EC%9D%98-%EB%91%90-%EA%B0%80%EC%A7%80-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="2-4. 결제의 두 가지 방식에 대한 직접 링크" title="2-4. 결제의 두 가지 방식에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-4-1-실시간총액결제-방식-rtgs-real-time-gross-settlement">2-4-1. 실시간총액결제 방식 (RTGS: Real-Time Gross Settlement)<a href="https://kooku0.github.io/fintech/payment-settlement/#2-4-1-%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%B4%9D%EC%95%A1%EA%B2%B0%EC%A0%9C-%EB%B0%A9%EC%8B%9D-rtgs-real-time-gross-settlement" class="hash-link" aria-label="2-4-1. 실시간총액결제 방식 (RTGS: Real-Time Gross Settlement)에 대한 직접 링크" title="2-4-1. 실시간총액결제 방식 (RTGS: Real-Time Gross Settlement)에 대한 직접 링크">​</a></h4>
+<ul>
+<li>거액결제시스템(large-value payment system)에서 사용.</li>
+<li>각 결제 요청이 들어올 때마다 <strong>건별·실시간</strong>으로 처리되어 신용리스크가 없지만, 건별로 자금을 확보해야 하므로 <strong>유동성 부담</strong>이 크다.</li>
+<li>지급과 결제 사이 시간을 최소화해 리스크를 줄인다.</li>
+</ul>
 <p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/rtgs-92d622c724573744e5a712e784628d6b.png" width="1024" height="1128" class="img_ev3q"></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="이연차액결제-방식-dns-deferred-net-settlement">🔹&nbsp;이연차액결제 방식 (DNS: Deferred Net Settlement)<a href="https://kooku0.github.io/fintech/payment-settlement/#%EC%9D%B4%EC%97%B0%EC%B0%A8%EC%95%A1%EA%B2%B0%EC%A0%9C-%EB%B0%A9%EC%8B%9D-dns-deferred-net-settlement" class="hash-link" aria-label="🔹&nbsp;이연차액결제 방식 (DNS: Deferred Net Settlement)에 대한 직접 링크" title="🔹&nbsp;이연차액결제 방식 (DNS: Deferred Net Settlement)에 대한 직접 링크">​</a></h4>
-<p>이연차액결제 방식은 지급이 소액&amp;대량으로 인해 매번 총액으로 결제를 완료시키기 보다는 일정기간 동안의 모든 지급&amp;수취 자금을 서로 차감한 후 차액을 한번만 결제하고 결제유동성을 크게 절감하는등 결제효율성을 크게 높일 수 있다. 그러나 결제 이연에 따라 신용리스크가 증가하게 되는 단점이 있다.</p>
-<p>[소액결제시스템(retail payment system)]에서 사용: 우리가 사용하는 지급결제는 모두 이연차액결제 방식으로 이루어진다고 보면 된다.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-4-2-이연차액결제-방식-dns-deferred-net-settlement">2-4-2. 이연차액결제 방식 (DNS: Deferred Net Settlement)<a href="https://kooku0.github.io/fintech/payment-settlement/#2-4-2-%EC%9D%B4%EC%97%B0%EC%B0%A8%EC%95%A1%EA%B2%B0%EC%A0%9C-%EB%B0%A9%EC%8B%9D-dns-deferred-net-settlement" class="hash-link" aria-label="2-4-2. 이연차액결제 방식 (DNS: Deferred Net Settlement)에 대한 직접 링크" title="2-4-2. 이연차액결제 방식 (DNS: Deferred Net Settlement)에 대한 직접 링크">​</a></h4>
+<ul>
+<li>소액결제시스템(retail payment system)에서 사용.</li>
+<li>일정 기간 모든 지급·수취 자금을 <strong>차감하여 한 번에 결제</strong>하므로 결제 유동성을 절감하고 효율성을 높인다.</li>
+<li>결제 이연으로 <strong>신용리스크</strong>가 증가할 수 있다는 단점이 있다.</li>
+<li>일상적인 소액 지급결제는 대부분 이 방식을 따른다.</li>
+</ul>
 <p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/dns-29dc95930cd96a93c841cde8ab465cda.png" width="1024" height="1100" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-자금결제-시스템">3. 자금결제 시스템<a href="https://kooku0.github.io/fintech/payment-settlement/#3-%EC%9E%90%EA%B8%88%EA%B2%B0%EC%A0%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C" class="hash-link" aria-label="3. 자금결제 시스템에 대한 직접 링크" title="3. 자금결제 시스템에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/ps-flow-948959c2ecfd2a3519bff895c2f000cd.jpg" width="3744" height="2444" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-1-거액결제-시스템--한은금융망">3-1. 거액결제 시스템 – 한은금융망<a href="https://kooku0.github.io/fintech/payment-settlement/#3-1-%EA%B1%B0%EC%95%A1%EA%B2%B0%EC%A0%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C--%ED%95%9C%EC%9D%80%EA%B8%88%EC%9C%B5%EB%A7%9D" class="hash-link" aria-label="3-1. 거액결제 시스템 – 한은금융망에 대한 직접 링크" title="3-1. 거액결제 시스템 – 한은금융망에 대한 직접 링크">​</a></h3>
+<p>거액결제시스템은 금융기관 간 거래되는 <strong>원화 거액 자금</strong>을 실시간으로 결제하는 RTGS 방식이며, 중앙은행인 <strong>한국은행</strong>이 직접 운영한다. 이를 <strong>한은금융망</strong>이라고 부른다.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-1-1-한은금융망-구축-및-가동">3-1-1. 한은금융망 구축 및 가동<a href="https://kooku0.github.io/fintech/payment-settlement/#3-1-1-%ED%95%9C%EC%9D%80%EA%B8%88%EC%9C%B5%EB%A7%9D-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EA%B0%80%EB%8F%99" class="hash-link" aria-label="3-1-1. 한은금융망 구축 및 가동에 대한 직접 링크" title="3-1-1. 한은금융망 구축 및 가동에 대한 직접 링크">​</a></h4>
+<p>과거에는 이연차액결제(DNS) 방식이 일반적이었으나, <strong>신용리스크</strong> 문제로 각국 중앙은행이 <strong>RTGS</strong> 방식으로 전환했다.<br>
+<!-- -->RTGS는 결제가 완료되면 취소할 수 없어 <strong>결제리스크를 원천적으로 제거</strong>할 수 있다.</p>
+<p>2009년 한은금융망 재구축 시 RTGS를 기본으로 하되, 일부 거래에 <strong>차액결제</strong>를 도입한 <strong>혼합형 결제시스템</strong>을 운영 중이다.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-1-2-한은금융망의-운영-및-관리">3-1-2. 한은금융망의 운영 및 관리<a href="https://kooku0.github.io/fintech/payment-settlement/#3-1-2-%ED%95%9C%EC%9D%80%EA%B8%88%EC%9C%B5%EB%A7%9D%EC%9D%98-%EC%9A%B4%EC%98%81-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="3-1-2. 한은금융망의 운영 및 관리에 대한 직접 링크" title="3-1-2. 한은금융망의 운영 및 관리에 대한 직접 링크">​</a></h4>
+<ul>
+<li>참가 요건: 한국은행과의 <strong>당좌예금거래 약정</strong>, 재무 건전성, 예상 이용 건수, 전문 인력 등.</li>
+<li>참가 기관: 1997년 158개 → 외환위기 이후 감소 → 2025년 현재 <strong>은행 52개, 비은행 84개</strong>(총 136개).</li>
+<li>2022년 기준 <strong>일평균 결제 금액 524.3조 원</strong>, <strong>연간 결제 건수 2.33만 건</strong>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-2-소액결제-시스템">3-2. 소액결제 시스템<a href="https://kooku0.github.io/fintech/payment-settlement/#3-2-%EC%86%8C%EC%95%A1%EA%B2%B0%EC%A0%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C" class="hash-link" aria-label="3-2. 소액결제 시스템에 대한 직접 링크" title="3-2. 소액결제 시스템에 대한 직접 링크">​</a></h3>
+<p>현금이 아닌 비현금 지급수단을 이용한 거래는 <strong>다수 은행</strong>이 관여하므로 은행 간 자금결제가 필요하다.<br>
+<!-- -->예를 들어 갑이 A은행을 통해 B은행의 을에게 송금하면, B은행은 을에게 먼저 자금을 지급한 후 A은행에 이를 청구한다.</p>
+<ul>
+<li>일평균(2022년) <strong>99.3조 원, 3.6천만 건</strong>이 처리된다.</li>
+<li>소액결제는 수많은 거래를 <strong>차액결제</strong> 방식으로 처리해 결제 건수·금액을 대폭 축소하고 비용을 절감한다.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="image" src="https://kooku0.github.io/assets/images/sps-flow-847d309132691cfa9805ec17cebea5b2.jpg" width="3443" height="2365" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="https://kooku0.github.io/fintech/payment-settlement/#reference" class="hash-link" aria-label="Reference에 대한 직접 링크" title="Reference에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://product.kyobobook.co.kr/detail/S000200710559" target="_blank" rel="noopener noreferrer">https://product.kyobobook.co.kr/detail/S000200710559</a></li>
