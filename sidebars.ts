@@ -173,6 +173,23 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: '경영',
+      items: [
+        {
+          type: 'category',
+          label: '그로스 해킹',
+          items: [
+            'books/growth-hacking/01',
+            'books/growth-hacking/02',
+            'books/growth-hacking/03',
+            'books/growth-hacking/04',
+            'books/growth-hacking/05',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: '핀테크',
       items: [
         {
