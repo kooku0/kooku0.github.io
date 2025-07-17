@@ -186,6 +186,19 @@ const sidebars: SidebarsConfig = {
             'books/growth-hacking/05',
           ],
         },
+        {
+          type: 'category',
+          label: '제로 투 원',
+          items: [
+            'books/zero-to-one/index',
+            'books/zero-to-one/intro',
+            'books/zero-to-one/01',
+            'books/zero-to-one/02',
+            'books/zero-to-one/03',
+            'books/zero-to-one/04',
+            'books/zero-to-one/05',
+          ],
+        },
       ],
     },
     {
