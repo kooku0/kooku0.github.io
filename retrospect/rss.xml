@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Kooku's log Blog</title>
+        <title>고민한 내용, 경험한 내용, 공부한 내용들을 기록하는 공간입니다. Blog</title>
         <link>https://kooku0.github.io/retrospect/</link>
-        <description>Kooku's log Blog</description>
+        <description>고민한 내용, 경험한 내용, 공부한 내용들을 기록하는 공간입니다. Blog</description>
         <lastBuildDate>Sun, 23 Apr 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>

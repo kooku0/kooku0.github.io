@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kooku0.github.io/retrospect/</id>
-    <title>Kooku's log Blog</title>
+    <title>고민한 내용, 경험한 내용, 공부한 내용들을 기록하는 공간입니다. Blog</title>
     <updated>2023-04-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kooku0.github.io/retrospect/"/>
-    <subtitle>Kooku's log Blog</subtitle>
+    <subtitle>고민한 내용, 경험한 내용, 공부한 내용들을 기록하는 공간입니다. Blog</subtitle>
     <icon>https://kooku0.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[경험한거 느낀거 생각한거 정리]]></title>
