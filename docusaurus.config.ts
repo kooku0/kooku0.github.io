@@ -9,7 +9,7 @@ export default async function createConfigAsync(): Promise<Config> {
       defaultLocale: 'ko',
       locales: ['ko'],
     },
-    title: "Kooku's log",
+    title: '고민한 내용, 경험한 내용, 공부한 내용들을 기록하는 공간입니다.',
     tagline: '고민한 내용, 경험한 내용, 공부한 내용들을 기록하는 공간입니다.',
     url: 'https://kooku0.github.io',
     baseUrl: '/',
