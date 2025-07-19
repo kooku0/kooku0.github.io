@@ -14,7 +14,8 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "lint": "biome check --diagnostic-level=error",
-    "cj": "echo \"# $(date +%Y.%m.%d)\n\" > journal/$(date +%Y)/$(date +%m)/$(date +%d).md"
+    "cj": "echo \"# $(date +%Y.%m.%d)\n\" > journal/$(date +%Y)/$(date +%m)/$(date +%d).md",
+    "generate-toc": "yarn node scripts/generate-toc.js"
   },
   "dependencies": {
     "@channel.io/channel-web-sdk-loader": "^2.0.0",
@@ -28,6 +29,8 @@
     "@types/react-dom": "^19.1.6",
     "clsx": "^2.1.1",
     "file-loader": "^6.2.0",
+    "glob": "^11.0.3",
+    "gray-matter": "^4.0.3",
     "prism-react-renderer": "^2.4.1",
     "prismjs": "^1.30.0",
     "react": "^19.1.0",
