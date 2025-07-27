@@ -29,6 +29,7 @@ slug: /books/
 
 - [그로스 해킹](./growth-hacking/01.md)
 - [제로 투 원](./zero-to-one/index.md)
+- [디멘드](./demand/index.md)
 
 ## 핀테크
 

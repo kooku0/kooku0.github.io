@@ -202,6 +202,11 @@ const sidebars: SidebarsConfig = {
             'books/zero-to-one/08',
           ],
         },
+        {
+          type: 'category',
+          label: '디멘드',
+          items: ['books/demand/index', 'books/demand/intro'],
+        },
       ],
     },
     {
