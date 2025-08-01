@@ -205,7 +205,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: '디멘드',
-          items: ['books/demand/index', 'books/demand/intro', 'books/demand/01'],
+          items: ['books/demand/index', 'books/demand/intro', 'books/demand/01', 'books/demand/02'],
         },
       ],
     },
