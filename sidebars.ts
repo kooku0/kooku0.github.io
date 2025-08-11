@@ -5,7 +5,7 @@ const sidebars: SidebarsConfig = {
     'books/index',
     {
       type: 'category',
-      label: '테크',
+      label: '개발 (Dev)',
       items: [
         {
           type: 'category',
@@ -87,7 +87,6 @@ const sidebars: SidebarsConfig = {
           items: [
             'books/test-driven-development/introduction',
             'books/test-driven-development/preface',
-            'books/test-driven-development/01',
             'books/test-driven-development/01',
           ],
         },

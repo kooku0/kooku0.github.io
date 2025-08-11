@@ -139,7 +139,7 @@ export default async function createConfigAsync(): Promise<Config> {
             },
             {
               to: '/tech/',
-              label: '테크',
+              label: '개발 (Dev)',
               position: 'left',
             },
             {
